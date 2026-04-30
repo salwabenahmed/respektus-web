@@ -201,7 +201,7 @@
   <script>
     var SUPABASE_URL = 'https://dvwcbpekhsteyzwvxixs.supabase.co';
     var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2d2NicGVraHN0ZXl6d3Z4aXhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYzMDExMjMsImV4cCI6MjA2MTg3NzEyM30.n1F4_9VgzlWoqQ_kSJnFdX0sTMwjA_nIbKwGO1MJNbc';
-    var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, { auth: { flowType: 'implicit', detectSessionInUrl: true, persistSession: false, autoRefreshToken: false } });
 
     var eyeSvgOpen = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="#A0A0A0" stroke-width="1.8"/></svg>';
     var eyeSvgClosed = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/><path d="M1 1l22 22" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/></svg>';
@@ -217,42 +217,86 @@
       }
     }
 
-    async function init() {
-      var hash = window.location.hash;
-      var search = window.location.search;
-      var hasRecoveryHash = hash && hash.includes('type=recovery');
-      var hasRecoveryCode = search && search.includes('code=');
+    var resetReady = false;
 
-      if (hasRecoveryHash || hasRecoveryCode) {
+    // Ecoute l'evenement PASSWORD_RECOVERY de Supabase (declenche par detectSessionInUrl)
+    sb.auth.onAuthStateChange(function(event, session) {
+      console.log('Auth event:', event);
+      if (event === 'PASSWORD_RECOVERY' || (event === 'SIGNED_IN' && session)) {
+        resetReady = true;
         document.getElementById('homePage').style.display = 'none';
-        document.getElementById('loadingPage').style.display = 'block';
+        document.getElementById('loadingPage').style.display = 'none';
+        document.getElementById('resetPage').style.display = 'block';
+      }
+    });
 
+    async function init() {
+      var hash = window.location.hash || '';
+      var search = window.location.search || '';
+      var hasRecovery = hash.includes('type=recovery') || hash.includes('access_token') || search.includes('code=') || search.includes('token_hash=');
+
+      if (!hasRecovery) return;
+
+      document.getElementById('homePage').style.display = 'none';
+      document.getElementById('loadingPage').style.display = 'block';
+
+      // Cas 1 : code= dans query string (PKCE flow)
+      if (search.includes('code=')) {
         try {
-          if (hasRecoveryCode) {
-            var params = new URLSearchParams(search);
-            var code = params.get('code');
-            if (code) {
-              var { data, error } = await sb.auth.exchangeCodeForSession(code);
-              if (error) throw error;
-            }
-          } else if (hasRecoveryHash) {
-            var hashParams = new URLSearchParams(hash.substring(1));
-            var accessToken = hashParams.get('access_token');
-            var refreshToken = hashParams.get('refresh_token');
-            if (accessToken) {
-              var { data, error } = await sb.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
-              if (error) throw error;
-            }
-          }
+          var code = new URLSearchParams(search).get('code');
+          var r = await sb.auth.exchangeCodeForSession(code);
+          if (r.error) throw r.error;
+        } catch (e) {
+          console.error('Code exchange error:', e);
           document.getElementById('loadingPage').style.display = 'none';
           document.getElementById('resetPage').style.display = 'block';
+          document.getElementById('resetForm').style.display = 'none';
+          document.getElementById('errorBlock').style.display = 'block';
+          return;
+        }
+      }
+
+      // Cas 2 : token_hash= dans query string (verifyOtp flow)
+      if (search.includes('token_hash=')) {
+        try {
+          var p = new URLSearchParams(search);
+          var r = await sb.auth.verifyOtp({ token_hash: p.get('token_hash'), type: 'recovery' });
+          if (r.error) throw r.error;
         } catch (e) {
-          console.error('Session error:', e);
+          console.error('OTP verify error:', e);
+          document.getElementById('loadingPage').style.display = 'none';
+          document.getElementById('resetPage').style.display = 'block';
+          document.getElementById('resetForm').style.display = 'none';
+          document.getElementById('errorBlock').style.display = 'block';
+          return;
+        }
+      }
+
+      // Cas 3 : access_token dans hash → detectSessionInUrl le gere automatiquement
+      // (handled by onAuthStateChange above)
+
+      // Fallback : si apres 3 secondes rien ne s'est passe, afficher erreur
+      setTimeout(function() {
+        if (!resetReady && document.getElementById('loadingPage').style.display !== 'none') {
           document.getElementById('loadingPage').style.display = 'none';
           document.getElementById('resetPage').style.display = 'block';
           document.getElementById('resetForm').style.display = 'none';
           document.getElementById('errorBlock').style.display = 'block';
         }
+      }, 3000);
+
+      // Si pas d'erreur et hash present, afficher le form (cas hash detecte)
+      if (hash.includes('access_token') || hash.includes('type=recovery')) {
+        setTimeout(function() {
+          if (!resetReady) {
+            document.getElementById('loadingPage').style.display = 'none';
+            document.getElementById('resetPage').style.display = 'block';
+          }
+        }, 500);
+      } else {
+        // Pour code= et token_hash=, afficher direct
+        document.getElementById('loadingPage').style.display = 'none';
+        document.getElementById('resetPage').style.display = 'block';
       }
     }
     init();
