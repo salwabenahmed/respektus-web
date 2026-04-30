@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/mentions-legales", "destination": "/mentions-legales.html" },
+    { "source": "/cgv", "destination": "/cgv.html" },
+    { "source": "/confidentialite", "destination": "/confidentialite.html" }
+  ]
+}

@@ -4,77 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RESPEKTUS® - Beauté naturelle et bien-être</title>
+  <meta name="description" content="RESPEKTUS® - Votre assistant beauté naturelle personnalisé. Recettes sur mesure, aromathérapie certifiée et conseils adaptés à votre profil unique.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><path d='M30 14C30 14 44 25 42 40C40 50 30 52 30 52C30 52 20 50 18 40C16 25 30 14 30 14Z' fill='%232C5F3F'/></svg>">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAF7F2; color: #1A1A1A; min-height: 100vh; }
-    .hero { text-align: center; padding: 80px 24px 60px; }
-    .brand { font-size: 32px; font-weight: 900; color: #2C5F3F; letter-spacing: 6px; margin-bottom: 8px; }
-    .tagline { font-size: 14px; color: #4A7C59; letter-spacing: 2px; font-style: italic; margin-bottom: 40px; }
+    .hero { text-align: center; padding: 60px 24px 50px; }
+    .brand { font-size: 32px; font-weight: 900; color: #2C5F3F; letter-spacing: 6px; margin-bottom: 6px; }
+    .tagline { font-size: 13px; color: #4A7C59; letter-spacing: 1.5px; font-style: italic; margin-bottom: 40px; }
     .title { font-size: 28px; font-weight: 800; line-height: 1.3; margin-bottom: 16px; }
-    .subtitle { font-size: 16px; color: #6B6B6B; line-height: 1.6; max-width: 500px; margin: 0 auto 40px; }
-    .cta { display: inline-block; background: #2C5F3F; color: #FFF; padding: 16px 40px; border-radius: 14px; font-size: 16px; font-weight: 700; text-decoration: none; }
+    .subtitle { font-size: 15px; color: #6B6B6B; line-height: 1.6; max-width: 520px; margin: 0 auto 40px; }
+    .cta { display: inline-block; background: #2C5F3F; color: #FFF; padding: 16px 40px; border-radius: 14px; font-size: 16px; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .cta:hover { opacity: 0.9; }
-    .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 24px; max-width: 800px; margin: 0 auto; }
-    .feature { background: #FFF; border-radius: 16px; padding: 24px; flex: 1; min-width: 220px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
-    .feature h3 { font-size: 16px; font-weight: 800; margin-bottom: 8px; color: #2C5F3F; }
-    .feature p { font-size: 13px; color: #6B6B6B; line-height: 1.5; }
-    .footer { text-align: center; padding: 40px 24px; font-size: 12px; color: #B0B0B0; }
-    .footer a { color: #2C5F3F; text-decoration: none; }
+    .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; padding: 20px 24px 40px; max-width: 900px; margin: 0 auto; }
+    .feature { background: #FFF; border-radius: 16px; padding: 24px 20px; flex: 1; min-width: 200px; max-width: 260px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .feature .icon { font-size: 28px; margin-bottom: 10px; }
+    .feature h3 { font-size: 15px; font-weight: 800; margin-bottom: 6px; color: #2C5F3F; }
+    .feature p { font-size: 12px; color: #6B6B6B; line-height: 1.5; }
+    .footer { text-align: center; padding: 40px 24px; font-size: 12px; color: #B0B0B0; border-top: 1px solid #E8E0D5; margin-top: 20px; }
+    .footer a { color: #2C5F3F; text-decoration: none; margin: 0 8px; }
+    .footer a:hover { text-decoration: underline; }
+    /* Reset password */
     .reset-container { display: none; max-width: 440px; margin: 0 auto; padding: 40px 24px; }
     .card { background: #FFF; border-radius: 20px; padding: 32px 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center; }
     .card h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
-    .card .sub { font-size: 14px; color: #8A8A8A; margin-bottom: 24px; }
+    .card .sub { font-size: 14px; color: #8A8A8A; margin-bottom: 24px; line-height: 1.5; }
     .input-group { margin-bottom: 16px; text-align: left; }
     .input-group label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; }
     .input-group input { width: 100%; padding: 14px 16px; border: 1.5px solid #E8E0D5; border-radius: 14px; font-size: 15px; background: #FAF7F2; outline: none; }
     .input-group input:focus { border-color: #2C5F3F; }
-    .btn { width: 100%; padding: 16px; background: #2C5F3F; color: #FFF; border: none; border-radius: 14px; font-size: 16px; font-weight: 800; cursor: pointer; }
+    .btn { width: 100%; padding: 16px; background: #2C5F3F; color: #FFF; border: none; border-radius: 14px; font-size: 16px; font-weight: 800; cursor: pointer; margin-top: 8px; }
     .btn:hover { opacity: 0.9; }
     .btn:disabled { background: #C0C0C0; }
-    .error { color: #D9534F; font-size: 13px; font-weight: 600; margin-top: 8px; display: none; }
-    .success { display: none; padding: 20px 0; }
-    .success h3 { font-size: 20px; font-weight: 800; color: #2C5F3F; margin-bottom: 8px; }
-    .success p { font-size: 14px; color: #6B6B6B; }
+    .error-msg { color: #D9534F; font-size: 13px; font-weight: 600; margin-top: 8px; display: none; }
+    .success-block { display: none; padding: 20px 0; text-align: center; }
+    .success-block h3 { font-size: 20px; font-weight: 800; color: #2C5F3F; margin-bottom: 8px; }
+    .success-block p { font-size: 14px; color: #6B6B6B; line-height: 1.5; }
+    /* Legal pages */
+    .legal-page { display: none; max-width: 700px; margin: 0 auto; padding: 40px 24px; }
+    .legal-page h1 { font-size: 24px; font-weight: 800; color: #2C5F3F; margin-bottom: 8px; }
+    .legal-page .back { display: inline-block; color: #2C5F3F; font-weight: 600; text-decoration: none; margin-bottom: 24px; font-size: 14px; }
+    .legal-page h2 { font-size: 16px; font-weight: 800; color: #1A1A1A; margin-top: 24px; margin-bottom: 8px; }
+    .legal-page p { font-size: 14px; color: #4A4A4A; line-height: 1.7; margin-bottom: 12px; }
+    .legal-page ul { margin-left: 20px; margin-bottom: 12px; }
+    .legal-page li { font-size: 14px; color: #4A4A4A; line-height: 1.7; margin-bottom: 4px; }
   </style>
 </head>
 <body>
 
+  <!-- ════════════════════════════════════════════════ -->
   <!-- PAGE D'ACCUEIL -->
+  <!-- ════════════════════════════════════════════════ -->
   <div id="homePage">
     <div class="hero">
       <div class="brand">RESPEKTUS®</div>
       <div class="tagline">Respectez votre nature, révélez votre beauté</div>
       <h1 class="title">Votre assistant beauté<br>naturelle personnalisé</h1>
-      <p class="subtitle">Recettes sur mesure, aromathérapie certifiée et conseils adaptés à votre profil unique. Téléchargez l'application RESPEKTUS.</p>
-      <a href="#" class="cta">Bientôt disponible</a>
+      <p class="subtitle">Recettes sur mesure, aromathérapie certifiée et conseils adaptés à votre profil unique. Découvrez une nouvelle façon de prendre soin de vous, naturellement.</p>
+      <a href="#" class="cta">Bientôt sur App Store et Google Play</a>
     </div>
 
     <div class="features">
       <div class="feature">
-        <h3>🌿 Lia, votre conseillère</h3>
-        <p>Intelligence artificielle spécialisée en aromathérapie et cosmétique naturelle. Des conseils personnalisés selon votre type de peau.</p>
+        <div class="icon">🌿</div>
+        <h3>Lia, votre conseillère IA</h3>
+        <p>Intelligence artificielle spécialisée en aromathérapie. Des recettes et conseils personnalisés selon votre type de peau et vos objectifs.</p>
       </div>
       <div class="feature">
-        <h3>📋 Calendrier de soins</h3>
-        <p>Suivez vos cures et routines jour par jour. Recevez des rappels et photographiez vos progrès.</p>
+        <div class="icon">📷</div>
+        <h3>Scanner d'ingrédients</h3>
+        <p>Scannez vos produits cosmétiques pour connaître la composition, les ingrédients naturels et les alternatives plus saines.</p>
       </div>
       <div class="feature">
-        <h3>💬 Le Cercle</h3>
-        <p>Rejoignez la communauté beauté naturelle. Partagez vos recettes, posez vos questions et inspirez-vous.</p>
+        <div class="icon">📋</div>
+        <h3>Calendrier de soins</h3>
+        <p>Suivez vos cures et routines jour par jour. Recevez des rappels et photographiez vos progrès avant/après.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">💬</div>
+        <h3>Le Cercle</h3>
+        <p>Rejoignez la communauté beauté naturelle. Partagez vos recettes, vos résultats et inspirez-vous mutuellement.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏪</div>
+        <h3>Boutique</h3>
+        <p>Huiles essentielles, actifs naturels et accessoires sélectionnés par nos experts. Livraison rapide en France.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎁</div>
+        <h3>Programme fidélité</h3>
+        <p>Gagnez des points à chaque achat et chaque interaction. Échangez-les contre des réductions exclusives.</p>
       </div>
     </div>
 
     <div class="footer">
       <p>© 2026 RESPEKTUS® — Tous droits réservés</p>
-      <p style="margin-top: 8px;">
-        <a href="/mentions-legales">Mentions légales</a> · 
-        <a href="/cgv">CGV</a> · 
-        <a href="/confidentialite">Politique de confidentialité</a>
+      <p style="margin-top: 10px;">
+        <a href="#mentions-legales" onclick="showPage('mentionsPage')">Mentions légales</a> · 
+        <a href="#cgv" onclick="showPage('cgvPage')">CGV</a> · 
+        <a href="#confidentialite" onclick="showPage('confPage')">Politique de confidentialité</a> · 
+        <a href="mailto:contact@respektus.com">Contact</a>
       </p>
     </div>
   </div>
 
+  <!-- ════════════════════════════════════════════════ -->
   <!-- PAGE RESET PASSWORD -->
+  <!-- ════════════════════════════════════════════════ -->
   <div id="resetPage" class="reset-container">
     <div style="text-align:center; margin-bottom: 32px;">
       <div class="brand">RESPEKTUS®</div>
@@ -93,34 +129,190 @@
         <label>Confirmer le mot de passe</label>
         <input type="password" id="confirmPassword" placeholder="Retapez votre mot de passe" />
       </div>
-      <p class="error" id="error"></p>
+      <p class="error-msg" id="errorMsg"></p>
       <button class="btn" onclick="handleReset()">Changer mon mot de passe</button>
     </div>
 
-    <div class="success" id="successBlock">
+    <div class="success-block" id="successBlock">
       <h3>✅ Mot de passe modifié !</h3>
       <p>Vous pouvez maintenant retourner dans l'application RESPEKTUS et vous connecter avec votre nouveau mot de passe.</p>
     </div>
   </div>
 
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- MENTIONS LEGALES -->
+  <!-- ════════════════════════════════════════════════ -->
+  <div id="mentionsPage" class="legal-page">
+    <a href="#" class="back" onclick="showPage('homePage')">← Retour à l'accueil</a>
+    <h1>Mentions légales</h1>
+    
+    <h2>Éditeur du site</h2>
+    <p>RESPEKTUS®<br>
+    Marque déposée auprès de l'INPI<br>
+    Email : contact@respektus.com</p>
+    
+    <h2>Hébergeur</h2>
+    <p>Vercel Inc.<br>
+    440 N Barranca Ave #4133<br>
+    Covina, CA 91723, États-Unis<br>
+    Site : vercel.com</p>
+    
+    <h2>Propriété intellectuelle</h2>
+    <p>L'ensemble des contenus présents sur le site et l'application RESPEKTUS® (textes, images, logos, marques, graphismes) sont protégés par le droit de la propriété intellectuelle. Toute reproduction, représentation ou exploitation non autorisée est interdite.</p>
+    
+    <h2>Responsabilité</h2>
+    <p>Les informations et recettes fournies par RESPEKTUS® et Lia (assistant IA) sont données à titre informatif et ne se substituent pas à un avis médical. En cas de doute, consultez un professionnel de santé. RESPEKTUS® ne saurait être tenu responsable de l'utilisation faite des huiles essentielles et produits naturels.</p>
+    
+    <h2>Données personnelles</h2>
+    <p>Pour en savoir plus sur la collecte et le traitement de vos données personnelles, consultez notre <a href="#confidentialite" onclick="showPage('confPage')">Politique de confidentialité</a>.</p>
+
+    <div class="footer">
+      <p>© 2026 RESPEKTUS® — Tous droits réservés</p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- CGV -->
+  <!-- ════════════════════════════════════════════════ -->
+  <div id="cgvPage" class="legal-page">
+    <a href="#" class="back" onclick="showPage('homePage')">← Retour à l'accueil</a>
+    <h1>Conditions Générales de Vente</h1>
+    
+    <h2>Article 1 — Objet</h2>
+    <p>Les présentes conditions générales de vente (CGV) régissent les ventes de produits réalisées via l'application mobile RESPEKTUS® et le site respektus.com.</p>
+    
+    <h2>Article 2 — Produits</h2>
+    <p>Les produits proposés à la vente sont des huiles essentielles, actifs naturels, cosmétiques naturels et accessoires de bien-être. Les descriptions et photographies des produits sont aussi fidèles que possible mais ne sauraient engager la responsabilité de RESPEKTUS®.</p>
+    
+    <h2>Article 3 — Prix</h2>
+    <p>Les prix sont indiqués en euros, toutes taxes comprises (TTC). RESPEKTUS® se réserve le droit de modifier ses prix à tout moment, étant entendu que les produits seront facturés au prix en vigueur au moment de la validation de la commande.</p>
+    
+    <h2>Article 4 — Commande</h2>
+    <p>La validation de la commande implique l'acceptation des présentes CGV. Un email de confirmation est envoyé à l'adresse indiquée lors de la commande.</p>
+    
+    <h2>Article 5 — Paiement</h2>
+    <p>Le paiement est effectué par carte bancaire via la plateforme sécurisée Stripe. Le paiement est débité au moment de la validation de la commande.</p>
+    
+    <h2>Article 6 — Livraison</h2>
+    <p>Les produits sont livrés en France métropolitaine. Les délais de livraison sont donnés à titre indicatif (3 à 7 jours ouvrés). RESPEKTUS® ne saurait être tenu responsable des retards de livraison imputables au transporteur.</p>
+    
+    <h2>Article 7 — Droit de rétractation</h2>
+    <p>Conformément à l'article L221-18 du Code de la consommation, le client dispose d'un délai de 14 jours à compter de la réception des produits pour exercer son droit de rétractation, sans avoir à justifier de motifs. Les produits ouverts ou utilisés ne pourront être retournés pour des raisons d'hygiène.</p>
+    
+    <h2>Article 8 — Service client</h2>
+    <p>Pour toute question ou réclamation : contact@respektus.com</p>
+    
+    <h2>Article 9 — Droit applicable</h2>
+    <p>Les présentes CGV sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.</p>
+
+    <div class="footer">
+      <p>© 2026 RESPEKTUS® — Tous droits réservés</p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- POLITIQUE DE CONFIDENTIALITE -->
+  <!-- ════════════════════════════════════════════════ -->
+  <div id="confPage" class="legal-page">
+    <a href="#" class="back" onclick="showPage('homePage')">← Retour à l'accueil</a>
+    <h1>Politique de confidentialité</h1>
+    
+    <h2>1. Responsable du traitement</h2>
+    <p>RESPEKTUS® est responsable du traitement des données personnelles collectées via l'application mobile et le site respektus.com.</p>
+    
+    <h2>2. Données collectées</h2>
+    <p>Nous collectons les données suivantes :</p>
+    <ul>
+      <li>Données d'identification : prénom, adresse email, date de naissance</li>
+      <li>Données de profil beauté : type de peau, type de cheveux, objectifs de soin, allergies</li>
+      <li>Données d'utilisation : historique des conversations avec Lia, recettes sauvegardées, soins en cours</li>
+      <li>Données de la communauté (Cercle) : publications, commentaires, photos partagées</li>
+      <li>Données de commande : adresse de livraison, historique d'achats</li>
+    </ul>
+    
+    <h2>3. Finalités du traitement</h2>
+    <p>Vos données sont utilisées pour :</p>
+    <ul>
+      <li>Personnaliser les conseils et recettes de Lia selon votre profil</li>
+      <li>Gérer votre compte et vos commandes</li>
+      <li>Permettre les interactions au sein de la communauté (Cercle)</li>
+      <li>Améliorer nos services et notre application</li>
+      <li>Vous envoyer des communications relatives à vos soins (rappels, bilans)</li>
+    </ul>
+    
+    <h2>4. Base légale</h2>
+    <p>Le traitement de vos données est fondé sur votre consentement (profil beauté, newsletter) et sur l'exécution du contrat (commandes, compte utilisateur).</p>
+    
+    <h2>5. Durée de conservation</h2>
+    <p>Vos données sont conservées pendant la durée de votre inscription. En cas de suppression de votre compte, vos données sont effacées dans un délai de 30 jours, à l'exception des données nécessaires au respect d'obligations légales (factures : 10 ans).</p>
+    
+    <h2>6. Partage des données</h2>
+    <p>Vos données ne sont jamais vendues. Elles peuvent être partagées avec :</p>
+    <ul>
+      <li>Supabase (hébergement de la base de données — serveurs en Europe)</li>
+      <li>OpenAI (traitement des conversations avec Lia — données anonymisées)</li>
+      <li>Stripe (traitement des paiements — certifié PCI DSS)</li>
+      <li>Resend (envoi d'emails transactionnels)</li>
+    </ul>
+    
+    <h2>7. Vos droits (RGPD)</h2>
+    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+    <ul>
+      <li>Droit d'accès à vos données</li>
+      <li>Droit de rectification</li>
+      <li>Droit à l'effacement (« droit à l'oubli »)</li>
+      <li>Droit à la portabilité</li>
+      <li>Droit d'opposition</li>
+      <li>Droit à la limitation du traitement</li>
+    </ul>
+    <p>Pour exercer ces droits, contactez-nous à : contact@respektus.com</p>
+    
+    <h2>8. Sécurité</h2>
+    <p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données : chiffrement des mots de passe, connexions sécurisées (HTTPS), accès restreint aux données.</p>
+    
+    <h2>9. Cookies</h2>
+    <p>Le site respektus.com utilise des cookies strictement nécessaires au fonctionnement du service. Aucun cookie publicitaire n'est utilisé.</p>
+    
+    <h2>10. Contact</h2>
+    <p>Pour toute question relative à vos données personnelles : contact@respektus.com</p>
+    <p>Vous pouvez également adresser une réclamation auprès de la CNIL : <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a></p>
+
+    <div class="footer">
+      <p>© 2026 RESPEKTUS® — Tous droits réservés</p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- SCRIPTS -->
+  <!-- ════════════════════════════════════════════════ -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
     var SUPABASE_URL = 'https://dvwcbpekhsteyzwvxixs.supabase.co';
     var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2d2NicGVraHN0ZXl6d3Z4aXhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYzMDExMjMsImV4cCI6MjA2MTg3NzEyM30.n1F4_9VgzlWoqQ_kSJnFdX0sTMwjA_nIbKwGO1MJNbc';
     var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-    // Detecter si c'est un lien de reset password
+    // Navigation entre les pages
+    function showPage(pageId) {
+      document.getElementById('homePage').style.display = 'none';
+      document.getElementById('resetPage').style.display = 'none';
+      document.getElementById('mentionsPage').style.display = 'none';
+      document.getElementById('cgvPage').style.display = 'none';
+      document.getElementById('confPage').style.display = 'none';
+      document.getElementById(pageId).style.display = 'block';
+      window.scrollTo(0, 0);
+      return false;
+    }
+
+    // Detecter si c'est un lien de reset password ou une page legale
     async function init() {
       var hash = window.location.hash;
+      
+      // Reset password
       if (hash && hash.includes('type=recovery')) {
-        // Cacher la page d'accueil, afficher le formulaire reset
-        document.getElementById('homePage').style.display = 'none';
-        document.getElementById('resetPage').style.display = 'block';
-
+        showPage('resetPage');
         var params = new URLSearchParams(hash.substring(1));
         var accessToken = params.get('access_token');
         var refreshToken = params.get('refresh_token');
-
         if (accessToken) {
           try {
             await sb.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
@@ -128,13 +320,25 @@
             showError('Le lien a expiré. Demandez un nouveau lien dans l\'application.');
           }
         }
+        return;
       }
+
+      // Pages legales
+      if (hash === '#mentions-legales') { showPage('mentionsPage'); return; }
+      if (hash === '#cgv') { showPage('cgvPage'); return; }
+      if (hash === '#confidentialite') { showPage('confPage'); return; }
+
+      // Pathname
+      var path = window.location.pathname;
+      if (path === '/mentions-legales') { showPage('mentionsPage'); return; }
+      if (path === '/cgv') { showPage('cgvPage'); return; }
+      if (path === '/confidentialite') { showPage('confPage'); return; }
     }
 
     init();
 
     function showError(msg) {
-      var el = document.getElementById('error');
+      var el = document.getElementById('errorMsg');
       el.textContent = msg;
       el.style.display = 'block';
     }
@@ -142,16 +346,15 @@
     async function handleReset() {
       var pw = document.getElementById('password').value;
       var cpw = document.getElementById('confirmPassword').value;
-      var errEl = document.getElementById('error');
-      errEl.style.display = 'none';
+      document.getElementById('errorMsg').style.display = 'none';
 
       if (pw.length < 6) { showError('Le mot de passe doit contenir au moins 6 caractères.'); return; }
       if (pw !== cpw) { showError('Les mots de passe ne correspondent pas.'); return; }
 
       try {
-        var { error } = await sb.auth.updateUser({ password: pw });
-        if (error) {
-          showError(error.message || 'Erreur lors de la mise à jour.');
+        var result = await sb.auth.updateUser({ password: pw });
+        if (result.error) {
+          showError(result.error.message || 'Erreur lors de la mise à jour.');
         } else {
           document.getElementById('resetForm').style.display = 'none';
           document.getElementById('successBlock').style.display = 'block';
