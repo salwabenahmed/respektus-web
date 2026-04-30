@@ -33,16 +33,23 @@
     .card { background: #FFF; border-radius: 20px; padding: 32px 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center; }
     .card h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
     .card .sub { font-size: 14px; color: #8A8A8A; margin-bottom: 24px; }
-    .input-group { margin-bottom: 16px; text-align: left; }
+    .input-group { margin-bottom: 16px; text-align: left; position: relative; }
     .input-group label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; }
-    .input-group input { width: 100%; padding: 14px 16px; border: 1.5px solid #E8E0D5; border-radius: 14px; font-size: 15px; background: #FAF7F2; outline: none; }
+    .input-group input { width: 100%; padding: 14px 48px 14px 16px; border: 1.5px solid #E8E0D5; border-radius: 14px; font-size: 15px; background: #FAF7F2; outline: none; }
     .input-group input:focus { border-color: #2C5F3F; }
+    .eye-btn { position: absolute; right: 14px; top: 35px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .eye-btn svg { display: block; }
     .btn { width: 100%; padding: 16px; background: #2C5F3F; color: #FFF; border: none; border-radius: 14px; font-size: 16px; font-weight: 800; cursor: pointer; }
     .btn:hover { opacity: 0.9; }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
     .error { color: #D9534F; font-size: 13px; font-weight: 600; margin-top: 8px; display: none; }
     .success { display: none; padding: 20px 0; }
     .success h3 { font-size: 20px; font-weight: 800; color: #2C5F3F; margin-bottom: 8px; }
     .success p { font-size: 14px; color: #6B6B6B; }
+    .loading { display: none; text-align: center; padding: 60px 24px; }
+    .loading p { font-size: 15px; color: #8A8A8A; margin-top: 16px; }
+    .spinner { width: 36px; height: 36px; border: 3px solid #E8E0D5; border-top-color: #2C5F3F; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto; }
+    @keyframes spin { to { transform: rotate(360deg); } }
     @media (max-width: 600px) {
       .hero { padding: 50px 20px 40px; }
       .title { font-size: 22px; }
@@ -118,6 +125,27 @@
     </div>
   </div>
 
+  <!-- LOADING -->
+  <div id="loadingPage" class="loading">
+    <div style="text-align:center; margin-bottom: 32px;">
+      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 6 C30 6, 52 20, 50 40 C48 54, 30 56, 30 56 C30 56, 12 54, 10 40 C8 20, 30 6, 30 6Z" fill="#2C5F3F" opacity="0.12"/>
+        <path d="M30 10 C30 10, 48 22, 46 40 C44 52, 30 54, 30 54 C30 54, 16 52, 14 40 C12 22, 30 10, 30 10Z" fill="#2C5F3F" opacity="0.3"/>
+        <path d="M30 14 C30 14, 44 25, 42 40 C40 50, 30 52, 30 52 C30 52, 20 50, 18 40 C16 25, 30 14, 30 14Z" fill="#2C5F3F"/>
+        <line x1="30" y1="50" x2="30" y2="18" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M30 26 L23 21" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <path d="M30 33 L23 29" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <path d="M30 40 L23 37" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <path d="M30 26 L37 21" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <path d="M30 33 L37 29" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+        <path d="M30 40 L37 37" stroke="#FAF7F2" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+      </svg>
+      <div class="brand" style="font-size:22px; margin-top:12px;">RESPEKTUS<span class="registered">®</span></div>
+    </div>
+    <div class="spinner"></div>
+    <p>Vérification en cours...</p>
+  </div>
+
   <!-- PAGE RESET PASSWORD -->
   <div id="resetPage" class="reset-container">
     <div style="text-align:center; margin-bottom: 32px;">
@@ -143,18 +171,29 @@
       <div class="input-group">
         <label>Nouveau mot de passe</label>
         <input type="password" id="password" placeholder="6 caractères minimum" />
+        <button class="eye-btn" onclick="toggleEye('password', this)" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="#A0A0A0" stroke-width="1.8"/></svg>
+        </button>
       </div>
       <div class="input-group">
         <label>Confirmer le mot de passe</label>
         <input type="password" id="confirmPassword" placeholder="Retapez votre mot de passe" />
+        <button class="eye-btn" onclick="toggleEye('confirmPassword', this)" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="#A0A0A0" stroke-width="1.8"/></svg>
+        </button>
       </div>
       <p class="error" id="error"></p>
-      <button class="btn" onclick="handleReset()">Changer mon mot de passe</button>
+      <button class="btn" id="resetBtn" onclick="handleReset()">Changer mon mot de passe</button>
     </div>
 
     <div class="success" id="successBlock">
       <h3>Mot de passe modifié !</h3>
       <p>Vous pouvez maintenant retourner dans l'application RESPEKTUS et vous connecter avec votre nouveau mot de passe.</p>
+    </div>
+
+    <div class="card" id="errorBlock" style="display:none;">
+      <h2 style="color:#D9534F;">Lien expiré</h2>
+      <p class="sub">Ce lien de réinitialisation a expiré ou est invalide. Retournez dans l'application RESPEKTUS et demandez un nouveau lien.</p>
     </div>
   </div>
 
@@ -164,17 +203,55 @@
     var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2d2NicGVraHN0ZXl6d3Z4aXhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYzMDExMjMsImV4cCI6MjA2MTg3NzEyM30.n1F4_9VgzlWoqQ_kSJnFdX0sTMwjA_nIbKwGO1MJNbc';
     var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
+    var eyeSvgOpen = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="#A0A0A0" stroke-width="1.8"/></svg>';
+    var eyeSvgClosed = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/><path d="M1 1l22 22" stroke="#A0A0A0" stroke-width="1.8" stroke-linecap="round"/></svg>';
+
+    function toggleEye(inputId, btn) {
+      var input = document.getElementById(inputId);
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.innerHTML = eyeSvgClosed;
+      } else {
+        input.type = 'password';
+        btn.innerHTML = eyeSvgOpen;
+      }
+    }
+
     async function init() {
       var hash = window.location.hash;
-      if (hash && hash.includes('type=recovery')) {
+      var search = window.location.search;
+      var hasRecoveryHash = hash && hash.includes('type=recovery');
+      var hasRecoveryCode = search && search.includes('code=');
+
+      if (hasRecoveryHash || hasRecoveryCode) {
         document.getElementById('homePage').style.display = 'none';
-        document.getElementById('resetPage').style.display = 'block';
-        var params = new URLSearchParams(hash.substring(1));
-        var accessToken = params.get('access_token');
-        var refreshToken = params.get('refresh_token');
-        if (accessToken) {
-          try { await sb.auth.setSession({ access_token: accessToken, refresh_token: refreshToken }); }
-          catch (e) { showError('Le lien a expiré. Demandez un nouveau lien dans l\'application.'); }
+        document.getElementById('loadingPage').style.display = 'block';
+
+        try {
+          if (hasRecoveryCode) {
+            var params = new URLSearchParams(search);
+            var code = params.get('code');
+            if (code) {
+              var { data, error } = await sb.auth.exchangeCodeForSession(code);
+              if (error) throw error;
+            }
+          } else if (hasRecoveryHash) {
+            var hashParams = new URLSearchParams(hash.substring(1));
+            var accessToken = hashParams.get('access_token');
+            var refreshToken = hashParams.get('refresh_token');
+            if (accessToken) {
+              var { data, error } = await sb.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
+              if (error) throw error;
+            }
+          }
+          document.getElementById('loadingPage').style.display = 'none';
+          document.getElementById('resetPage').style.display = 'block';
+        } catch (e) {
+          console.error('Session error:', e);
+          document.getElementById('loadingPage').style.display = 'none';
+          document.getElementById('resetPage').style.display = 'block';
+          document.getElementById('resetForm').style.display = 'none';
+          document.getElementById('errorBlock').style.display = 'block';
         }
       }
     }
@@ -188,11 +265,14 @@
       document.getElementById('error').style.display = 'none';
       if (pw.length < 6) { showError('Le mot de passe doit contenir au moins 6 caractères.'); return; }
       if (pw !== cpw) { showError('Les mots de passe ne correspondent pas.'); return; }
+      var btn = document.getElementById('resetBtn');
+      btn.disabled = true;
+      btn.textContent = 'Modification...';
       try {
         var { error } = await sb.auth.updateUser({ password: pw });
-        if (error) { showError(error.message || 'Erreur lors de la mise à jour.'); }
+        if (error) { showError(error.message || 'Erreur lors de la mise à jour.'); btn.disabled = false; btn.textContent = 'Changer mon mot de passe'; }
         else { document.getElementById('resetForm').style.display = 'none'; document.getElementById('successBlock').style.display = 'block'; }
-      } catch (e) { showError('Erreur de connexion. Réessayez.'); }
+      } catch (e) { showError('Erreur de connexion. Réessayez.'); btn.disabled = false; btn.textContent = 'Changer mon mot de passe'; }
     }
   </script>
 </body>
