@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESPEKTUS® - Beauté naturelle et bien-être</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAF7F2; color: #1A1A1A; min-height: 100vh; }
+    .hero { text-align: center; padding: 80px 24px 60px; }
+    .brand { font-size: 32px; font-weight: 900; color: #2C5F3F; letter-spacing: 6px; margin-bottom: 8px; }
+    .tagline { font-size: 14px; color: #4A7C59; letter-spacing: 2px; font-style: italic; margin-bottom: 40px; }
+    .title { font-size: 28px; font-weight: 800; line-height: 1.3; margin-bottom: 16px; }
+    .subtitle { font-size: 16px; color: #6B6B6B; line-height: 1.6; max-width: 500px; margin: 0 auto 40px; }
+    .cta { display: inline-block; background: #2C5F3F; color: #FFF; padding: 16px 40px; border-radius: 14px; font-size: 16px; font-weight: 700; text-decoration: none; }
+    .cta:hover { opacity: 0.9; }
+    .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 24px; max-width: 800px; margin: 0 auto; }
+    .feature { background: #FFF; border-radius: 16px; padding: 24px; flex: 1; min-width: 220px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .feature h3 { font-size: 16px; font-weight: 800; margin-bottom: 8px; color: #2C5F3F; }
+    .feature p { font-size: 13px; color: #6B6B6B; line-height: 1.5; }
+    .footer { text-align: center; padding: 40px 24px; font-size: 12px; color: #B0B0B0; }
+    .footer a { color: #2C5F3F; text-decoration: none; }
+    .reset-container { display: none; max-width: 440px; margin: 0 auto; padding: 40px 24px; }
+    .card { background: #FFF; border-radius: 20px; padding: 32px 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center; }
+    .card h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .card .sub { font-size: 14px; color: #8A8A8A; margin-bottom: 24px; }
+    .input-group { margin-bottom: 16px; text-align: left; }
+    .input-group label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+    .input-group input { width: 100%; padding: 14px 16px; border: 1.5px solid #E8E0D5; border-radius: 14px; font-size: 15px; background: #FAF7F2; outline: none; }
+    .input-group input:focus { border-color: #2C5F3F; }
+    .btn { width: 100%; padding: 16px; background: #2C5F3F; color: #FFF; border: none; border-radius: 14px; font-size: 16px; font-weight: 800; cursor: pointer; }
+    .btn:hover { opacity: 0.9; }
+    .btn:disabled { background: #C0C0C0; }
+    .error { color: #D9534F; font-size: 13px; font-weight: 600; margin-top: 8px; display: none; }
+    .success { display: none; padding: 20px 0; }
+    .success h3 { font-size: 20px; font-weight: 800; color: #2C5F3F; margin-bottom: 8px; }
+    .success p { font-size: 14px; color: #6B6B6B; }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE D'ACCUEIL -->
+  <div id="homePage">
+    <div class="hero">
+      <div class="brand">RESPEKTUS®</div>
+      <div class="tagline">Respectez votre nature, révélez votre beauté</div>
+      <h1 class="title">Votre assistant beauté<br>naturelle personnalisé</h1>
+      <p class="subtitle">Recettes sur mesure, aromathérapie certifiée et conseils adaptés à votre profil unique. Téléchargez l'application RESPEKTUS.</p>
+      <a href="#" class="cta">Bientôt disponible</a>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>🌿 Lia, votre conseillère</h3>
+        <p>Intelligence artificielle spécialisée en aromathérapie et cosmétique naturelle. Des conseils personnalisés selon votre type de peau.</p>
+      </div>
+      <div class="feature">
+        <h3>📋 Calendrier de soins</h3>
+        <p>Suivez vos cures et routines jour par jour. Recevez des rappels et photographiez vos progrès.</p>
+      </div>
+      <div class="feature">
+        <h3>💬 Le Cercle</h3>
+        <p>Rejoignez la communauté beauté naturelle. Partagez vos recettes, posez vos questions et inspirez-vous.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 RESPEKTUS® — Tous droits réservés</p>
+      <p style="margin-top: 8px;">
+        <a href="/mentions-legales">Mentions légales</a> · 
+        <a href="/cgv">CGV</a> · 
+        <a href="/confidentialite">Politique de confidentialité</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- PAGE RESET PASSWORD -->
+  <div id="resetPage" class="reset-container">
+    <div style="text-align:center; margin-bottom: 32px;">
+      <div class="brand">RESPEKTUS®</div>
+      <div class="tagline">beauté naturelle et bien-être</div>
+    </div>
+
+    <div class="card" id="resetForm">
+      <h2>Nouveau mot de passe</h2>
+      <p class="sub">Choisissez votre nouveau mot de passe pour votre compte RESPEKTUS.</p>
+      
+      <div class="input-group">
+        <label>Nouveau mot de passe</label>
+        <input type="password" id="password" placeholder="6 caractères minimum" />
+      </div>
+      <div class="input-group">
+        <label>Confirmer le mot de passe</label>
+        <input type="password" id="confirmPassword" placeholder="Retapez votre mot de passe" />
+      </div>
+      <p class="error" id="error"></p>
+      <button class="btn" onclick="handleReset()">Changer mon mot de passe</button>
+    </div>
+
+    <div class="success" id="successBlock">
+      <h3>✅ Mot de passe modifié !</h3>
+      <p>Vous pouvez maintenant retourner dans l'application RESPEKTUS et vous connecter avec votre nouveau mot de passe.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    var SUPABASE_URL = 'https://dvwcbpekhsteyzwvxixs.supabase.co';
+    var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2d2NicGVraHN0ZXl6d3Z4aXhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYzMDExMjMsImV4cCI6MjA2MTg3NzEyM30.n1F4_9VgzlWoqQ_kSJnFdX0sTMwjA_nIbKwGO1MJNbc';
+    var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    // Detecter si c'est un lien de reset password
+    async function init() {
+      var hash = window.location.hash;
+      if (hash && hash.includes('type=recovery')) {
+        // Cacher la page d'accueil, afficher le formulaire reset
+        document.getElementById('homePage').style.display = 'none';
+        document.getElementById('resetPage').style.display = 'block';
+
+        var params = new URLSearchParams(hash.substring(1));
+        var accessToken = params.get('access_token');
+        var refreshToken = params.get('refresh_token');
+
+        if (accessToken) {
+          try {
+            await sb.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
+          } catch (e) {
+            showError('Le lien a expiré. Demandez un nouveau lien dans l\'application.');
+          }
+        }
+      }
+    }
+
+    init();
+
+    function showError(msg) {
+      var el = document.getElementById('error');
+      el.textContent = msg;
+      el.style.display = 'block';
+    }
+
+    async function handleReset() {
+      var pw = document.getElementById('password').value;
+      var cpw = document.getElementById('confirmPassword').value;
+      var errEl = document.getElementById('error');
+      errEl.style.display = 'none';
+
+      if (pw.length < 6) { showError('Le mot de passe doit contenir au moins 6 caractères.'); return; }
+      if (pw !== cpw) { showError('Les mots de passe ne correspondent pas.'); return; }
+
+      try {
+        var { error } = await sb.auth.updateUser({ password: pw });
+        if (error) {
+          showError(error.message || 'Erreur lors de la mise à jour.');
+        } else {
+          document.getElementById('resetForm').style.display = 'none';
+          document.getElementById('successBlock').style.display = 'block';
+        }
+      } catch (e) {
+        showError('Erreur de connexion. Réessayez.');
+      }
+    }
+  </script>
+</body>
+</html>
