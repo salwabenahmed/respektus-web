@@ -3,6 +3,7 @@
     { "source": "/mentions-legales", "destination": "/mentions-legales.html" },
     { "source": "/cgv", "destination": "/cgv.html" },
     { "source": "/confidentialite", "destination": "/confidentialite.html" },
-    { "source": "/parrainage", "destination": "/parrainage.html" }
+    { "source": "/parrainage", "destination": "/parrainage.html" },
+    { "source": "/email-confirmed", "destination": "/email-confirmed.html" }
   ]
 }
