@@ -37,8 +37,9 @@
     .palier-sub { font-size: 12px; color: #6B6B6B; }
     .palier-points { font-size: 14px; color: #2C5F3F; font-weight: 800; white-space: nowrap; }
 
-    .tier-row { display: flex; gap: 14px; padding: 16px; background: #FFF; border-radius: 14px; margin: 10px 0; border: 1px solid #E8E0D5; }
+    .tier-row { display: flex; gap: 14px; padding: 16px; background: #FFF; border-radius: 14px; margin: 10px 0; border: 1px solid #E8E0D5; align-items: center; }
     .tier-num { width: 40px; height: 40px; border-radius: 12px; background: #2C5F3F; color: #FFF; font-weight: 900; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .tier-icon { width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .tier-content { flex: 1; }
     .tier-title { font-size: 14px; font-weight: 800; color: #1A1A1A; margin-bottom: 4px; }
     .tier-desc { font-size: 13px; color: #4A4A4A; line-height: 1.5; }
@@ -147,28 +148,48 @@
     <p>Votre statut évolue automatiquement selon les points gagnés dans l'année en cours. Une icône le signale à côté de votre nom dans le Cercle et votre profil. À chaque date anniversaire, votre statut repart de Graine pour une nouvelle saison.</p>
 
     <div class="tier-row" style="border-color:#9CB89A;background:#F4F8F2;">
-      <div class="tier-num" style="background:#9CB89A;">G</div>
+      <div class="tier-icon" style="background:#F4F8F2;border:1px solid #9CB89A;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="6" fill="#9CB89A"/></svg>
+      </div>
       <div class="tier-content">
         <div class="tier-title">Graine — 0 à 299 points annuels</div>
         <div class="tier-desc">Vous démarrez votre aventure RESPEKTUS®. Toutes les fonctionnalités gratuites sont accessibles.</div>
       </div>
     </div>
     <div class="tier-row" style="border-color:#4A7C59;background:#EEF7F2;">
-      <div class="tier-num" style="background:#4A7C59;">B</div>
+      <div class="tier-icon" style="background:#EEF7F2;border:1px solid #4A7C59;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M12 4 C8 7, 6 12, 12 20 C18 12, 16 7, 12 4 Z" fill="#4A7C59"/>
+          <path d="M12 12 L12 20" stroke="#FFF" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </div>
       <div class="tier-content">
         <div class="tier-title">Bourgeon — 300 à 599 points annuels</div>
         <div class="tier-desc">Vous prenez racine dans la communauté. Première étape de progression visible sur votre profil.</div>
       </div>
     </div>
     <div class="tier-row" style="border-color:#C05080;background:#FFF0F8;">
-      <div class="tier-num" style="background:#C05080;">F</div>
+      <div class="tier-icon" style="background:#FFF0F8;border:1px solid #C05080;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="6" r="3" fill="#C05080"/>
+          <circle cx="18" cy="12" r="3" fill="#C05080"/>
+          <circle cx="12" cy="18" r="3" fill="#C05080"/>
+          <circle cx="6" cy="12" r="3" fill="#C05080"/>
+          <circle cx="12" cy="12" r="2.5" fill="#FFF"/>
+        </svg>
+      </div>
       <div class="tier-content">
         <div class="tier-title">Fleur — 600 à 999 points annuels</div>
         <div class="tier-desc">Membre actif et engagé. Accès prioritaire aux nouveautés de l'application.</div>
       </div>
     </div>
     <div class="tier-row" style="border-color:#2C5F3F;background:#EEF7F2;">
-      <div class="tier-num" style="background:#2C5F3F;">A</div>
+      <div class="tier-icon" style="background:#EEF7F2;border:1px solid #2C5F3F;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3 L18 12 L15 12 L20 20 L4 20 L9 12 L6 12 Z" fill="#2C5F3F"/>
+          <path d="M10 20 L10 22 L14 22 L14 20" fill="#2C5F3F"/>
+        </svg>
+      </div>
       <div class="tier-content">
         <div class="tier-title">Arbre — 1 000 points annuels et plus</div>
         <div class="tier-desc">Membre pilier de la communauté. Visible comme tel pour les autres membres du Cercle.</div>
@@ -233,7 +254,7 @@
       <div class="tier-num">25</div>
       <div class="tier-content">
         <div class="tier-title">25 personnes parrainées</div>
-        <div class="tier-desc">Badge Arbre + statut Ambassadeur + 1 000 points bonus + accès Premium à vie.</div>
+        <div class="tier-desc">Badge Arbre + statut Ambassadeur + 1 000 points bonus + tests produits en avant-première offerts et de nombreux autres avantages réservés à celles et ceux qui font vivre la communauté RESPEKTUS. Vous comptez énormément pour nous.</div>
       </div>
     </div>
 
