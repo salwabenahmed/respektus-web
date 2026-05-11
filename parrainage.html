@@ -6,68 +6,67 @@
   <title>Programme de fidélité et parrainage - RESPEKTUS®</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAF7F2; color: #1A1A1A; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAF7F2; color: #1A1A1A; scroll-behavior: smooth; }
     .header { text-align: center; padding: 40px 24px 20px; }
     .brand { font-size: 22px; font-weight: 900; color: #2C5F3F; letter-spacing: 4px; text-decoration: none; }
     .back { display: inline-block; margin-top: 12px; color: #2C5F3F; text-decoration: none; font-weight: 600; font-size: 14px; }
-    .content { max-width: 700px; margin: 0 auto; padding: 20px 24px 60px; }
-    h1 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
+    .content { max-width: 740px; margin: 0 auto; padding: 20px 24px 60px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 10px; }
     .intro { font-size: 16px; color: #6B6B6B; line-height: 1.6; margin-bottom: 32px; }
-    h2 { font-size: 20px; font-weight: 800; margin-top: 36px; margin-bottom: 14px; color: #1A1A1A; }
-    h3 { font-size: 16px; font-weight: 700; margin-top: 20px; margin-bottom: 8px; color: #2C5F3F; }
+    h2 { font-size: 22px; font-weight: 800; margin-top: 44px; margin-bottom: 16px; color: #1A1A1A; padding-top: 12px; }
+    h3 { font-size: 16px; font-weight: 700; margin-top: 22px; margin-bottom: 10px; color: #2C5F3F; }
     p { font-size: 14px; line-height: 1.7; color: #4A4A4A; margin-bottom: 12px; }
-    .section-card { background: #FFF; border-radius: 16px; padding: 24px; margin: 16px 0; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .anchor { position: relative; top: -40px; }
 
-    /* Points table */
-    .points-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-    .points-table th { text-align: left; font-size: 12px; font-weight: 700; color: #8A8A8A; text-transform: uppercase; letter-spacing: 1px; padding: 10px 12px; border-bottom: 2px solid #F0EBE5; }
-    .points-table td { padding: 12px; font-size: 14px; border-bottom: 1px solid #F5F0E8; }
-    .points-table td:last-child { text-align: right; font-weight: 800; color: #2C5F3F; }
+    .nav-pills { display: flex; gap: 10px; margin: 20px 0 36px; flex-wrap: wrap; }
+    .nav-pills a { background: #FFF; border: 1px solid #E8E0D5; padding: 10px 18px; border-radius: 14px; color: #2C5F3F; text-decoration: none; font-weight: 700; font-size: 13px; }
+    .nav-pills a:hover { background: #EEF7F2; }
 
-    /* Statuts */
-    .statut-cards { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
-    .statut-card { flex: 1; min-width: 140px; border-radius: 14px; padding: 20px 16px; text-align: center; }
-    .statut-name { font-size: 16px; font-weight: 800; margin-bottom: 4px; }
-    .statut-points { font-size: 12px; color: #6B6B6B; }
-    .statut-benefits { font-size: 11px; color: #4A4A4A; margin-top: 8px; line-height: 1.5; }
-    .bronze { background: #FFF8F0; border: 1px solid #E8D5C0; }
-    .bronze .statut-name { color: #C8956E; }
-    .silver { background: #F5F5F5; border: 1px solid #D0D0D0; }
-    .silver .statut-name { color: #8A8A8A; }
-    .gold { background: #FFF8E6; border: 1px solid #E8D9A0; }
-    .gold .statut-name { color: #C8A96E; }
-    .diamond { background: #F0F0FF; border: 1px solid #C0C0E0; }
-    .diamond .statut-name { color: #9B8EE0; }
+    .section-card { background: #FFF; border-radius: 16px; padding: 22px; margin: 16px 0; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
 
-    /* Paliers */
-    .palier-row { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: #FFF; border-radius: 12px; margin: 8px 0; border: 1px solid #F0EBE5; }
-    .palier-label { font-size: 14px; font-weight: 700; }
-    .palier-points { font-size: 13px; color: #2C5F3F; font-weight: 800; }
+    .points-table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+    .points-table th { text-align: left; font-size: 11px; font-weight: 700; color: #8A8A8A; text-transform: uppercase; letter-spacing: 1px; padding: 12px 10px; border-bottom: 2px solid #F0EBE5; }
+    .points-table td { padding: 12px 10px; font-size: 14px; border-bottom: 1px solid #F5F0E8; }
+    .points-table td:last-child { text-align: right; font-weight: 800; color: #2C5F3F; white-space: nowrap; }
+    .points-table tr:last-child td { border-bottom: none; }
 
-    /* Parrainage */
+    .palier-row { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; background: #FFF; border-radius: 14px; margin: 10px 0; border: 1px solid #E8E0D5; }
+    .palier-row.featured { border-color: #C8A96E; background: #FFFBEC; }
+    .palier-left { display: flex; flex-direction: column; gap: 4px; }
+    .palier-label { font-size: 15px; font-weight: 800; color: #1A1A1A; }
+    .palier-sub { font-size: 12px; color: #6B6B6B; }
+    .palier-points { font-size: 14px; color: #2C5F3F; font-weight: 800; white-space: nowrap; }
+
+    .tier-row { display: flex; gap: 14px; padding: 16px; background: #FFF; border-radius: 14px; margin: 10px 0; border: 1px solid #E8E0D5; }
+    .tier-num { width: 40px; height: 40px; border-radius: 12px; background: #2C5F3F; color: #FFF; font-weight: 900; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .tier-content { flex: 1; }
+    .tier-title { font-size: 14px; font-weight: 800; color: #1A1A1A; margin-bottom: 4px; }
+    .tier-desc { font-size: 13px; color: #4A4A4A; line-height: 1.5; }
+
+    .reward-box { background: #EEF7F2; border-radius: 18px; padding: 26px; margin: 24px 0; border: 1px solid #C0DEC9; }
+    .reward-box h3 { font-size: 16px; font-weight: 800; color: #2C5F3F; margin-bottom: 16px; text-align: center; }
+    .reward-grid { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
+    .reward-item { text-align: center; min-width: 140px; }
+    .reward-value { font-size: 28px; font-weight: 900; color: #2C5F3F; }
+    .reward-label { font-size: 12px; color: #4A7C59; font-weight: 600; margin-top: 6px; line-height: 1.4; }
+
     .step-cards { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
-    .step-card { background: #FFF; border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; box-shadow: 0 1px 6px rgba(0,0,0,0.03); }
+    .step-card { background: #FFF; border-radius: 14px; padding: 18px 20px; display: flex; gap: 14px; align-items: flex-start; box-shadow: 0 1px 6px rgba(0,0,0,0.03); }
     .step-number { width: 36px; height: 36px; border-radius: 10px; background: #2C5F3F; color: #FFF; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .step-content h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
     .step-content p { font-size: 13px; color: #6B6B6B; margin: 0; }
 
-    .reward-box { background: #EEF7F2; border-radius: 16px; padding: 24px; margin: 20px 0; border: 1px solid #C0DEC9; }
-    .reward-box h3 { font-size: 16px; font-weight: 800; color: #2C5F3F; margin-bottom: 16px; text-align: center; }
-    .reward-row { display: flex; justify-content: center; gap: 32px; }
-    .reward-item { text-align: center; }
-    .reward-value { font-size: 26px; font-weight: 900; color: #2C5F3F; }
-    .reward-label { font-size: 11px; color: #4A7C59; font-weight: 600; margin-top: 4px; }
-
     .faq { margin-top: 20px; }
-    .faq-item { background: #FFF; border-radius: 12px; padding: 18px; margin-bottom: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
-    .faq-item h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
-    .faq-item p { font-size: 12px; color: #6B6B6B; margin: 0; line-height: 1.6; }
+    .faq-item { background: #FFF; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
+    .faq-item h4 { font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #1A1A1A; }
+    .faq-item p { font-size: 13px; color: #6B6B6B; margin: 0; line-height: 1.6; }
+
+    .note { font-size: 12px; color: #8A8A8A; font-style: italic; margin-top: 14px; line-height: 1.6; }
 
     .footer { text-align: center; padding: 40px 24px; font-size: 12px; color: #B0B0B0; }
     .footer a { color: #2C5F3F; text-decoration: none; }
-    .note { font-size: 12px; color: #8A8A8A; font-style: italic; margin-top: 16px; line-height: 1.6; }
 
-    @media (max-width: 600px) { .reward-row { flex-direction: column; gap: 12px; } .statut-cards { flex-direction: column; } }
+    @media (max-width: 600px) { .reward-grid { flex-direction: column; gap: 12px; } }
   </style>
 </head>
 <body>
@@ -75,151 +74,198 @@
     <a href="/" class="brand">RESPEKTUS®</a><br>
     <a href="/" class="back">← Retour à l'accueil</a>
   </div>
+
   <div class="content">
     <h1>Programme de fidélité et parrainage</h1>
-    <p class="intro">Gagnez des points, montez en statut et profitez d'avantages exclusifs. Chaque interaction dans l'application vous rapproche de récompenses.</p>
+    <p class="intro">Pour une beauté qui nous respecte, chaque action vous rapproche de récompenses concrètes : bons d'achat Aroma-Zone, statut Ambassadeur, accès aux tests produits, Premium à vie.</p>
 
-    <!-- COMMENT GAGNER DES POINTS -->
-    <h2>Comment gagner des points</h2>
+    <div class="nav-pills">
+      <a href="#fidelite">Programme de fidélité</a>
+      <a href="#parrainage">Programme de parrainage</a>
+    </div>
+
+    <!-- ====================== FIDÉLITÉ ====================== -->
+    <div id="fidelite" class="anchor"></div>
+    <h2>Programme de fidélité</h2>
+    <p>Gagnez des points à chaque interaction dans l'application RESPEKTUS®. Vos points se cumulent et se convertissent en bons d'achat Aroma-Zone, notre partenaire cosmétique naturelle.</p>
+
+    <h3>Comment gagner des points</h3>
     <div class="section-card">
       <table class="points-table">
         <thead>
           <tr><th>Action</th><th>Points</th></tr>
         </thead>
         <tbody>
-          <tr><td>Inscription à l'application</td><td>+30 pts</td></tr>
-          <tr><td>Compléter le diagnostic beauté</td><td>+20 pts</td></tr>
-          <tr><td>Premier achat</td><td>+50 pts</td></tr>
-          <tr><td>Chaque achat (1€ = 1 point)</td><td>+1 pt/€</td></tr>
-          <tr><td>Laisser un avis produit</td><td>+5 pts</td></tr>
-          <tr><td>Publier dans le Cercle (max 1/jour)</td><td>+2 pts</td></tr>
-          <tr><td>Parrainer un proche</td><td>+50 pts</td></tr>
+          <tr><td>Inscription à l'application</td><td>+50 pts</td></tr>
+          <tr><td>Bienvenue avec un code parrain</td><td>+100 pts</td></tr>
+          <tr><td>Compléter votre profil beauté</td><td>+30 pts</td></tr>
+          <tr><td>Premier post dans le Cercle</td><td>+20 pts</td></tr>
+          <tr><td>Post dans le Cercle (max 25 pts/jour)</td><td>+5 pts</td></tr>
+          <tr><td>Commentaire dans le Cercle (max 10 pts/jour)</td><td>+1 pt</td></tr>
+          <tr><td>Sauvegarder une recette</td><td>+5 pts</td></tr>
+          <tr><td>Cocher un jour de soin dans le calendrier</td><td>+10 pts</td></tr>
+          <tr><td>Connexion 7 jours d'affilée</td><td>+30 pts</td></tr>
+          <tr><td>Soin terminé entièrement</td><td>+50 pts</td></tr>
+          <tr><td>Personne parrainée qui s'inscrit</td><td>+200 pts</td></tr>
+          <tr><td>Personne parrainée qui passe Premium</td><td>+500 pts</td></tr>
+          <tr><td>Vidéo récompensée regardée (max 10 pts/jour)</td><td>+2 pts</td></tr>
         </tbody>
       </table>
     </div>
 
-    <!-- CONVERTIR SES POINTS -->
-    <h2>Convertir ses points</h2>
-    <p>Utilisez vos points quand vous le souhaitez pour obtenir des réductions sur vos prochains achats :</p>
-    <div class="palier-row"><span class="palier-label">5€ de réduction</span><span class="palier-points">300 pts</span></div>
-    <div class="palier-row"><span class="palier-label">10€ de réduction</span><span class="palier-points">500 pts</span></div>
-    <div class="palier-row"><span class="palier-label">15€ de réduction</span><span class="palier-points">700 pts</span></div>
-    <div class="palier-row"><span class="palier-label">25€ de réduction</span><span class="palier-points">1 000 pts</span></div>
+    <h3>Convertir vos points en bons Aroma-Zone</h3>
+    <p>Vos points s'échangent contre des bons d'achat Aroma-Zone, marque française de référence en cosmétique naturelle. Le bon est envoyé par email sous 48 heures, valable 90 jours.</p>
 
-    <!-- STATUTS -->
-    <h2>Les statuts</h2>
-    <p>Votre statut évolue en fonction des points accumulés sur l'année. Plus vous montez, plus vous bénéficiez d'avantages exclusifs.</p>
-    <div class="statut-cards">
-      <div class="statut-card bronze">
-        <div class="statut-name">Bronze</div>
-        <div class="statut-points">0 - 199 pts/an</div>
-        <div class="statut-benefits">Accès à l'application et aux conseils de Lia</div>
+    <div class="palier-row">
+      <div class="palier-left">
+        <span class="palier-label">Bon Aroma-Zone 5 €</span>
+        <span class="palier-sub">Envoyé par email sous 48 heures</span>
       </div>
-      <div class="statut-card silver">
-        <div class="statut-name">Silver</div>
-        <div class="statut-points">200 - 499 pts/an</div>
-        <div class="statut-benefits">Livraison offerte dès 30€ d'achat</div>
-      </div>
-      <div class="statut-card gold">
-        <div class="statut-name">Gold</div>
-        <div class="statut-points">500 - 999 pts/an</div>
-        <div class="statut-benefits">Livraison offerte + échantillons gratuits + accès prioritaire aux nouveautés</div>
-      </div>
-      <div class="statut-card diamond">
-        <div class="statut-name">Diamond</div>
-        <div class="statut-points">1 000+ pts/an</div>
-        <div class="statut-benefits">Tous les avantages Gold + 10% de réduction permanente + conseils VIP personnalisés</div>
-      </div>
+      <span class="palier-points">1 000 pts</span>
     </div>
-    <p class="note">* Les points de statut se réinitialisent chaque année à la date anniversaire de votre premier point. Les points convertibles en réductions n'expirent pas tant que votre compte est actif.</p>
+    <div class="palier-row">
+      <div class="palier-left">
+        <span class="palier-label">Bon Aroma-Zone 12 €</span>
+        <span class="palier-sub">Envoyé par email sous 48 heures</span>
+      </div>
+      <span class="palier-points">2 000 pts</span>
+    </div>
+    <div class="palier-row">
+      <div class="palier-left">
+        <span class="palier-label">Bon Aroma-Zone 20 €</span>
+        <span class="palier-sub">Envoyé par email sous 48 heures</span>
+      </div>
+      <span class="palier-points">3 000 pts</span>
+    </div>
+    <div class="palier-row featured">
+      <div class="palier-left">
+        <span class="palier-label">Bon Aroma-Zone 50 €</span>
+        <span class="palier-sub">+ statut Ambassadeur + accès aux tests produits</span>
+      </div>
+      <span class="palier-points">5 000 pts</span>
+    </div>
 
-    <!-- PARRAINAGE -->
+    <p class="note">Les points convertibles n'expirent pas tant que votre compte est actif. Les bons d'achat sont valables 90 jours à compter de leur génération.</p>
+
+    <!-- ====================== PARRAINAGE ====================== -->
+    <div id="parrainage" class="anchor"></div>
     <h2>Programme de parrainage</h2>
-    <p>Partagez RESPEKTUS® avec vos proches et soyez récompensés ensemble.</p>
+    <p>Partagez RESPEKTUS® avec vos proches. Vous gagnez des points à chaque inscription, et plus vous parrainez, plus vous débloquez de récompenses.</p>
 
+    <h3>Comment ça fonctionne</h3>
     <div class="step-cards">
       <div class="step-card">
         <div class="step-number">1</div>
         <div class="step-content">
-          <h4>Trouvez votre code</h4>
-          <p>Votre code de parrainage unique se trouve dans votre profil, section "Programme de fidélité".</p>
+          <h4>Récupérez votre code parrain</h4>
+          <p>Votre code unique se trouve dans votre profil, section Programme de fidélité. Format : RSP-XXXXXX.</p>
         </div>
       </div>
       <div class="step-card">
         <div class="step-number">2</div>
         <div class="step-content">
           <h4>Partagez-le</h4>
-          <p>Envoyez votre code à vos proches ou partagez-le sur les réseaux sociaux. Votre filleul le saisit lors de son inscription.</p>
+          <p>Envoyez votre code à vos proches ou partagez-le sur les réseaux sociaux. La personne parrainée le saisit lors de son inscription.</p>
         </div>
       </div>
       <div class="step-card">
         <div class="step-number">3</div>
         <div class="step-content">
-          <h4>Profitez des récompenses</h4>
-          <p>Dès que votre filleul crée son compte avec votre code, vous recevez tous les deux vos récompenses automatiquement.</p>
+          <h4>Vous gagnez tous les deux</h4>
+          <p>Dès la création du compte, vous recevez +200 points et la personne parrainée +100 points de bienvenue. Aucun achat requis.</p>
         </div>
+      </div>
+    </div>
+
+    <h3>Paliers de parrainage</h3>
+    <p>Plus vous parrainez, plus vous débloquez de récompenses bonus :</p>
+
+    <div class="tier-row">
+      <div class="tier-num">1</div>
+      <div class="tier-content">
+        <div class="tier-title">1 personne parrainée</div>
+        <div class="tier-desc">+200 points pour vous, +100 points de bienvenue pour la personne parrainée.</div>
+      </div>
+    </div>
+    <div class="tier-row">
+      <div class="tier-num">5</div>
+      <div class="tier-content">
+        <div class="tier-title">5 personnes parrainées</div>
+        <div class="tier-desc">Badge Bourgeon + 200 points bonus.</div>
+      </div>
+    </div>
+    <div class="tier-row">
+      <div class="tier-num">10</div>
+      <div class="tier-content">
+        <div class="tier-title">10 personnes parrainées</div>
+        <div class="tier-desc">Badge Fleur + 500 points bonus.</div>
+      </div>
+    </div>
+    <div class="tier-row">
+      <div class="tier-num">25</div>
+      <div class="tier-content">
+        <div class="tier-title">25 personnes parrainées</div>
+        <div class="tier-desc">Badge Arbre + statut Ambassadeur + 1 000 points bonus + accès Premium à vie.</div>
       </div>
     </div>
 
     <div class="reward-box">
-      <h3>Récompenses de parrainage</h3>
-      <div class="reward-row">
+      <h3>À la première inscription parrainée</h3>
+      <div class="reward-grid">
         <div class="reward-item">
-          <div class="reward-value">5€</div>
-          <div class="reward-label">de réduction pour vous</div>
+          <div class="reward-value">+200 pts</div>
+          <div class="reward-label">pour vous</div>
         </div>
         <div class="reward-item">
-          <div class="reward-value">5€</div>
-          <div class="reward-label">de réduction pour votre filleul</div>
-        </div>
-        <div class="reward-item">
-          <div class="reward-value">+50</div>
-          <div class="reward-label">points fidélité chacun</div>
+          <div class="reward-value">+100 pts</div>
+          <div class="reward-label">pour la personne parrainée</div>
         </div>
       </div>
     </div>
 
-    <!-- FAQ -->
+    <!-- ====================== FAQ ====================== -->
     <h2>Questions fréquentes</h2>
     <div class="faq">
       <div class="faq-item">
         <h4>Combien de personnes puis-je parrainer ?</h4>
-        <p>Il n'y a pas de limite. Plus vous parrainez, plus vous cumulez de récompenses.</p>
+        <p>Il n'y a pas de limite. Plus vous parrainez, plus vous cumulez de points et débloquez de paliers bonus.</p>
       </div>
       <div class="faq-item">
-        <h4>Quand est-ce que je reçois ma récompense de parrainage ?</h4>
-        <p>La réduction de 5€ et les 50 points sont crédités automatiquement dès que votre filleul crée son compte avec votre code.</p>
+        <h4>Quand est-ce que je reçois mes points de parrainage ?</h4>
+        <p>Les 200 points sont crédités automatiquement dès que la personne parrainée crée son compte avec votre code. Aucun achat n'est requis.</p>
       </div>
       <div class="faq-item">
-        <h4>Mon filleul doit-il acheter quelque chose ?</h4>
-        <p>Non, la récompense est activée dès la création du compte. Aucun achat minimum n'est requis.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Où trouver mon code de parrainage ?</h4>
-        <p>Dans l'application RESPEKTUS, allez dans votre Profil, puis dans "Programme de fidélité". Votre code unique y est affiché avec un bouton pour le copier.</p>
-      </div>
-      <div class="faq-item">
-        <h4>La réduction de 5€ a-t-elle une date d'expiration ?</h4>
-        <p>La réduction est valable 6 mois à compter de son attribution.</p>
+        <h4>Où trouver mon code parrain ?</h4>
+        <p>Dans l'application RESPEKTUS®, ouvrez votre Profil puis la section Programme de fidélité. Votre code est affiché avec un bouton de partage.</p>
       </div>
       <div class="faq-item">
         <h4>Mes points expirent-ils ?</h4>
-        <p>Les points convertibles en réductions n'expirent pas tant que votre compte est actif. Les points de statut se réinitialisent annuellement.</p>
+        <p>Non, vos points ne s'effacent pas tant que votre compte reste actif.</p>
       </div>
       <div class="faq-item">
-        <h4>Combien de posts par jour donnent des points ?</h4>
-        <p>Vous gagnez 2 points par publication dans le Cercle, avec un maximum d'une publication récompensée par jour.</p>
+        <h4>Comment recevoir mon bon d'achat Aroma-Zone ?</h4>
+        <p>Une fois le palier atteint, ouvrez la section Programme de fidélité de votre profil et cliquez sur le bon souhaité. Un email contenant le code vous parvient sous 48 heures à l'adresse de votre compte.</p>
+      </div>
+      <div class="faq-item">
+        <h4>C'est quoi le statut Ambassadeur ?</h4>
+        <p>À partir de 5 000 points cumulés ou 25 personnes parrainées, vous devenez Ambassadeur RESPEKTUS®. Vous accédez aux tests produits en avant-première et bénéficiez de récompenses exclusives.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Y a-t-il une limite de points par jour ?</h4>
+        <p>Certaines actions sont plafonnées pour éviter les abus : 25 points par jour pour les posts, 10 points par jour pour les commentaires, 10 points par jour pour les vidéos récompensées. Les autres actions ne sont pas limitées.</p>
       </div>
     </div>
 
   </div>
+
   <div class="footer">
     <p>© 2026 RESPEKTUS® — Tous droits réservés</p>
     <p style="margin-top: 8px;">
-      <a href="/mentions-legales">Mentions légales</a> · 
-      <a href="/cgv">CGV</a> · 
-      <a href="/confidentialite">Politique de confidentialité</a> · 
-      <a href="/parrainage">Programme de fidélité</a>
+      <a href="/mentions-legales">Mentions légales</a> ·
+      <a href="/cgv">CGV</a> ·
+      <a href="/confidentialite">Confidentialité</a> ·
+      <a href="/parrainage#fidelite">Fidélité</a> ·
+      <a href="/parrainage#parrainage">Parrainage</a>
     </p>
   </div>
 </body>
