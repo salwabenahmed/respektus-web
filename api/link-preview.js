@@ -43,15 +43,43 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Only http/https allowed' });
   }
 
-  // 4. Fetch du site cible avec timeout
+  // 3bis. Cas spéciaux : APIs oEmbed officielles (résultat plus fiable que le scraping)
+  const host = parsed.hostname.replace(/^www\./, '');
+  if (host === 'youtube.com' || host === 'youtu.be' || host === 'm.youtube.com') {
+    const oembed = await tryOEmbed(`https://www.youtube.com/oembed?url=${encodeURIComponent(url)}&format=json`);
+    if (oembed) {
+      return res.status(200).json({
+        url,
+        title: String(oembed.title || '').slice(0, 200),
+        description: oembed.author_name ? `Par ${oembed.author_name}` : '',
+        image: String(oembed.thumbnail_url || '').slice(0, 500),
+        siteName: 'YouTube',
+      });
+    }
+  }
+  if (host === 'vimeo.com' || host === 'player.vimeo.com') {
+    const oembed = await tryOEmbed(`https://vimeo.com/api/oembed.json?url=${encodeURIComponent(url)}`);
+    if (oembed) {
+      return res.status(200).json({
+        url,
+        title: String(oembed.title || '').slice(0, 200),
+        description: oembed.author_name ? `Par ${oembed.author_name}` : '',
+        image: String(oembed.thumbnail_url || '').slice(0, 500),
+        siteName: 'Vimeo',
+      });
+    }
+  }
+
+  // 4. Fetch du site cible avec timeout (User-Agent réaliste pour éviter les blocages anti-bot)
   let html;
   try {
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), 5000);
     const r = await fetch(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; RESPEKTUS-LinkPreview/1.0; +https://respektus.com)',
-        'Accept': 'text/html,application/xhtml+xml',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8',
       },
       signal: ctrl.signal,
       redirect: 'follow',
@@ -108,6 +136,22 @@ export default async function handler(req, res) {
     image: String(image).trim().slice(0, 500),
     siteName: String(siteName).trim().slice(0, 100),
   });
+}
+
+async function tryOEmbed(endpoint) {
+  try {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 4000);
+    const r = await fetch(endpoint, {
+      headers: { 'User-Agent': 'Mozilla/5.0 RESPEKTUS-LinkPreview/1.0' },
+      signal: ctrl.signal,
+    });
+    clearTimeout(t);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch {
+    return null;
+  }
 }
 
 function decodeEntities(s = '') {
