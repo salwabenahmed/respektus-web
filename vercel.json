@@ -6,6 +6,7 @@
     { "source": "/parrainage", "destination": "/parrainage.html" },
     { "source": "/email-confirmed", "destination": "/email-confirmed.html" },
     { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" }
+    { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" },
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" }
   ]
 }

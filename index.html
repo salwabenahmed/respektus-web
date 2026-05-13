@@ -3,7 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RESPEKTUS® - Beauté naturelle et bien-être</title>
+<title>RESPEKTUS® — Aromathérapie scientifique et beauté naturelle personnalisée</title>
+<meta name="description" content="RESPEKTUS, votre assistant beauté naturelle. Recettes d'aromathérapie scientifique sur mesure, conseils certifiés, calendrier de soins et communauté bienveillante.">
+<meta name="keywords" content="aromathérapie, huiles essentielles, beauté naturelle, cosmétique naturelle, recettes DIY, soins cheveux, soins visage, RESPEKTUS">
+<meta name="author" content="RESPEKTUS">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.respektus.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.respektus.com/">
+<meta property="og:title" content="RESPEKTUS® — Aromathérapie scientifique et beauté naturelle">
+<meta property="og:description" content="Votre assistant beauté naturelle personnalisé. Recettes sur mesure, aromathérapie certifiée et conseils adaptés à votre profil unique.">
+<meta property="og:site_name" content="RESPEKTUS">
+<meta property="og:locale" content="fr_FR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RESPEKTUS® — Aromathérapie scientifique et beauté naturelle">
+<meta name="twitter:description" content="Votre assistant beauté naturelle personnalisé.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RESPEKTUS",
+  "alternateName": "RESPEKTUS®",
+  "url": "https://www.respektus.com",
+  "logo": "https://www.respektus.com/logo.png",
+  "description": "Assistant beauté naturelle personnalisé. Recettes d'aromathérapie scientifique sur mesure et conseils certifiés.",
+  "email": "contact@respektus.com",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "RESPEKTUS",
+  "url": "https://www.respektus.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.respektus.com/blog?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#FAF7F2;color:#1A1A1A;min-height:100vh}
@@ -19,6 +63,23 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .feature-icon{width:48px;height:48px;margin:0 auto 16px;background:#EEF7F2;border-radius:14px;display:flex;align-items:center;justify-content:center}
 .feature h3{font-size:16px;font-weight:800;margin-bottom:8px;color:#2C5F3F}
 .feature p{font-size:13px;color:#6B6B6B;line-height:1.6}
+.blog-section{padding:60px 24px 40px;max-width:1120px;margin:0 auto}
+.blog-section-head{text-align:center;margin-bottom:36px}
+.blog-section-eyebrow{font-size:12px;font-weight:800;color:#2C5F3F;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.blog-section-title{font-size:28px;font-weight:800;color:#1A1A1A;letter-spacing:-0.3px;margin-bottom:10px}
+.blog-section-sub{font-size:14px;color:#6B6B6B;max-width:520px;margin:0 auto}
+.blog-grid-home{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;margin-bottom:30px}
+.blog-card-home{background:#FFF;border-radius:16px;overflow:hidden;border:1px solid #E8E0D5;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+.blog-card-home:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,0.06)}
+.blog-card-home-img{width:100%;aspect-ratio:16/10;background:#EEF7F2;object-fit:cover;display:block}
+.blog-card-home-body{padding:20px;flex:1;display:flex;flex-direction:column}
+.blog-card-home-cat{display:inline-block;align-self:flex-start;background:#EEF7F2;color:#2C5F3F;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border-radius:8px;margin-bottom:10px}
+.blog-card-home-title{font-size:17px;font-weight:800;color:#1A1A1A;line-height:1.35;margin-bottom:8px}
+.blog-card-home-intro{font-size:13px;color:#6B6B6B;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.blog-cta-row{text-align:center}
+.blog-cta{display:inline-block;background:#FFF;border:1.5px solid #2C5F3F;color:#2C5F3F;padding:12px 28px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none}
+.blog-cta:hover{background:#2C5F3F;color:#FFF}
+.blog-loading{text-align:center;padding:30px;color:#8A8A8A;font-size:13px}
 .contact-section{text-align:center;padding:50px 24px;background:#FFF;margin-top:40px}
 .contact-section h2{font-size:22px;font-weight:800;margin-bottom:12px}
 .contact-section p{font-size:14px;color:#6B6B6B;margin-bottom:20px}
@@ -58,6 +119,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <div class="feature"><h3>Calendrier de soins</h3><p>Suivez vos cures et routines jour par jour avec photos avant/après.</p></div>
 <div class="feature"><h3>Le Cercle</h3><p>Rejoignez la communauté beauté naturelle. Partagez vos recettes.</p></div>
 </div>
+<section class="blog-section" id="blog">
+<div class="blog-section-head">
+<div class="blog-section-eyebrow">Le Journal RESPEKTUS</div>
+<h2 class="blog-section-title">Conseils, recettes et regards d'experts</h2>
+<p class="blog-section-sub">Aromathérapie scientifique, beauté naturelle, bien-être : nos articles pour prendre soin de soi en conscience.</p>
+</div>
+<div id="blogHome" class="blog-grid-home"><div class="blog-loading">Chargement des derniers articles…</div></div>
+<div class="blog-cta-row"><a href="/blog" class="blog-cta">Voir tous les articles</a></div>
+</section>
+
 <div class="contact-section">
 <h2>Une question ?</h2>
 <p>Notre équipe est à votre écoute.</p>
@@ -98,6 +169,31 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 </div>
 
 <script>
+(function loadLatestArticles(){
+  var holder = document.getElementById('blogHome');
+  if(!holder) return;
+  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+  fetch('/api/articles').then(function(r){return r.ok?r.json():null;}).then(function(data){
+    if(!data || !data.articles || data.articles.length===0){
+      holder.innerHTML = '<div class="blog-loading">Aucun article pour l\'instant.</div>';
+      return;
+    }
+    var latest = data.articles.slice(0,3);
+    holder.innerHTML = latest.map(function(a){
+      return '<a class="blog-card-home" href="/blog/'+esc(a.slug)+'">'+
+        (a.photo ? '<img class="blog-card-home-img" src="'+esc(a.photo)+'" alt="'+esc(a.title)+'" loading="lazy">' : '<div class="blog-card-home-img"></div>')+
+        '<div class="blog-card-home-body">'+
+          '<span class="blog-card-home-cat">'+esc(a.category)+'</span>'+
+          '<h3 class="blog-card-home-title">'+esc(a.title)+'</h3>'+
+          '<p class="blog-card-home-intro">'+esc(a.intro)+'</p>'+
+        '</div>'+
+      '</a>';
+    }).join('');
+  }).catch(function(){
+    holder.innerHTML = '<div class="blog-loading">Articles bientôt disponibles.</div>';
+  });
+})();
+
 var SUPABASE_URL='https://dvwcbpekhsteyzwvxixs.supabase.co';
 var SUPABASE_KEY='sb_publishable_TtbRezOy-ioeTcxgjH7CGw_WoE3sgzO';
 var ACCESS_TOKEN=null;

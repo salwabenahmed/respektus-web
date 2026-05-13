@@ -67,6 +67,27 @@ export default async function handler(req, res) {
     const url = `https://www.respektus.com/blog/${a.slug}`;
     const descSafe = escapeHtml((a.intro || '').slice(0, 200));
     const titleSafe = escapeHtml(a.title);
+    const datePublished = a.date ? new Date(a.date).toISOString() : new Date().toISOString();
+
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: a.title,
+      description: a.intro,
+      image: a.photo ? [a.photo] : undefined,
+      datePublished,
+      dateModified: datePublished,
+      author: { '@type': 'Organization', name: 'RESPEKTUS', url: 'https://www.respektus.com' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'RESPEKTUS',
+        logo: { '@type': 'ImageObject', url: 'https://www.respektus.com/logo.png' },
+      },
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      articleSection: a.category,
+      inLanguage: 'fr-FR',
+    };
+    const jsonLdStr = JSON.stringify(jsonLd).replace(/</g, '\\u003c');
 
     const html = `<!DOCTYPE html>
 <html lang="fr">
@@ -75,15 +96,25 @@ export default async function handler(req, res) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${titleSafe} — RESPEKTUS®</title>
 <meta name="description" content="${descSafe}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="RESPEKTUS">
+<link rel="canonical" href="${url}">
+
 <meta property="og:title" content="${titleSafe}">
 <meta property="og:description" content="${descSafe}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="${url}">
+<meta property="og:site_name" content="RESPEKTUS">
+<meta property="og:locale" content="fr_FR">
+<meta property="article:published_time" content="${datePublished}">
+<meta property="article:section" content="${escapeHtml(a.category)}">
 ${a.photo ? `<meta property="og:image" content="${escapeHtml(a.photo)}">` : ''}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${titleSafe}">
 <meta name="twitter:description" content="${descSafe}">
 ${a.photo ? `<meta name="twitter:image" content="${escapeHtml(a.photo)}">` : ''}
+
+<script type="application/ld+json">${jsonLdStr}</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Georgia,serif;background:#FAF7F2;color:#1A1A1A;line-height:1.65}
