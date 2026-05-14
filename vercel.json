@@ -5,6 +5,7 @@
     { "source": "/confidentialite", "destination": "/confidentialite.html" },
     { "source": "/parrainage", "destination": "/parrainage.html" },
     { "source": "/email-confirmed", "destination": "/email-confirmed.html" },
+    { "source": "/charte", "destination": "/charte.html" },
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" },
     { "source": "/sitemap.xml", "destination": "/api/sitemap" }
