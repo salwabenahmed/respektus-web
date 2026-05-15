@@ -10,6 +10,7 @@
     { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" },
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
     { "source": "/actif/:id", "destination": "/api/actif-page?id=:id" },
-    { "source": "/recette/:id", "destination": "/api/recette-page?id=:id" }
+    { "source": "/recette/:id", "destination": "/api/recette-page?id=:id" },
+    { "source": "/post/:id", "destination": "/api/post-page?id=:id" }
   ]
 }
