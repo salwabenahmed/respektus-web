@@ -2,8 +2,10 @@
 // Affiche le contenu du post + média + CTA téléchargement de l'app.
 // OG tags pour preview riche sur WhatsApp/FB/Twitter/iMessage.
 
-const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL || 'https://dvwcbpekhsteyzwvxixs.supabase.co';
-const SUPABASE_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY;
+// La clé anon Supabase est publique par design (déjà exposée côté client web et app)
+// On la met en fallback pour que la page SSR fonctionne même si l'env Vercel n'a pas la variable
+const SUPABASE_URL = process.env.SUPABASE_URL || process.env.EXPO_PUBLIC_SUPABASE_URL || 'https://dvwcbpekhsteyzwvxixs.supabase.co';
+const SUPABASE_KEY = process.env.SUPABASE_ANON_KEY || process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_TtbRezOy-ioeTcxgjH7CGw_WoE3sgzO';
 
 function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
