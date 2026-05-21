@@ -3,6 +3,9 @@
 // OG tags pour previews sur réseaux sociaux + messageries.
 
 import { RECETTES_BIBLIOTHEQUE } from './_recettes-data.js';
+import { ACTIFS } from './_actifs-data.js';
+
+const ACTIFS_COUNT = ACTIFS.length;
 
 function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
@@ -62,9 +65,14 @@ export default function handler(req, res) {
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#FAF7F2;color:#1A1A1A;line-height:1.65}
-.header{text-align:center;padding:32px 24px 22px;background:#FFF;border-bottom:1px solid #E8E0D5}
-.brand{font-size:22px;font-weight:900;color:#2C5F3F;letter-spacing:4px;text-decoration:none}
-.tagline{font-size:11px;color:#4A7C59;letter-spacing:1.5px;font-style:italic;margin-top:4px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:#FFF;border-bottom:1px solid #E8E0D5;gap:12px;flex-wrap:wrap}
+.brand{font-size:18px;font-weight:900;color:#2C5F3F;letter-spacing:2px;text-decoration:none}
+.header-nav{display:flex;gap:8px;flex-wrap:wrap}
+.header-nav a{text-decoration:none;color:#2C5F3F;font-weight:700;font-size:13px;padding:6px 12px;border-radius:8px}
+.header-nav a:hover{background:#EEF7F2}
+.back-bar{background:#FAF7F2;padding:14px 24px;border-bottom:1px solid #EFE9DC}
+.back-link{display:inline-flex;align-items:center;gap:6px;color:#2C5F3F;text-decoration:none;font-weight:700;font-size:14px;background:#FFF;padding:8px 14px;border-radius:999px;border:1px solid #C0DEC9}
+.back-link:hover{background:#EEF7F2}
 article{max-width:680px;margin:0 auto;padding:36px 24px 80px}
 .cat-badge{display:inline-block;background:#EEF7F2;color:#2C5F3F;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:6px 12px;border-radius:8px;margin-bottom:14px}
 h1{font-size:30px;font-weight:800;line-height:1.25;color:#1A1A1A;margin-bottom:8px;letter-spacing:-0.4px}
@@ -99,7 +107,16 @@ h2{font-size:18px;font-weight:800;color:#2C5F3F;text-transform:uppercase;letter-
 
 <div class="header">
   <a href="/" class="brand">RESPEKTUS®</a>
-  <div class="tagline">Pour une beauté qui nous respecte</div>
+  <nav class="header-nav">
+    <a href="/actifs">Actifs</a>
+    <a href="/recettes">Recettes</a>
+    <a href="/blog">Blog</a>
+    <a href="/a-propos">À propos</a>
+  </nav>
+</div>
+
+<div class="back-bar">
+  <a href="/recettes" class="back-link"><span style="font-size:18px;line-height:1">←</span> Toutes les recettes</a>
 </div>
 
 <article>
@@ -133,11 +150,10 @@ h2{font-size:18px;font-weight:800;color:#2C5F3F;text-transform:uppercase;letter-
 
   <div class="cta-section">
     <div class="cta-title">Vous voulez plus de recettes ?</div>
-    <div class="cta-sub">124 recettes certifiées aromathérapie scientifique, 120+ actifs naturels détaillés, votre assistante Lia, et une communauté bienveillante vous attendent dans l'app RESPEKTUS®.</div>
+    <div class="cta-sub">${RECETTES_BIBLIOTHEQUE.length} recettes certifiées aromathérapie scientifique, ${ACTIFS_COUNT} actifs naturels détaillés, votre assistante Lia, et une communauté bienveillante vous attendent dans l'app RESPEKTUS®.</div>
     <div class="cta-features">
       <span class="cta-feature">Hors connexion</span>
       <span class="cta-feature">Gratuit</span>
-      <span class="cta-feature">Sans publicité</span>
     </div>
     <a href="https://apps.apple.com/" class="cta-btn">App Store</a>
     <a href="https://play.google.com/store" class="cta-btn">Google Play</a>

@@ -1,5 +1,9 @@
 // Sitemap dynamique pour Google. Inclut les pages statiques + tous les articles
-// du blog (lus depuis Airtable). Vercel sert /sitemap.xml via rewrite.
+// du blog (lus depuis Airtable) + toutes les fiches actifs et recettes.
+// Vercel sert /sitemap.xml via rewrite.
+
+import { ACTIFS } from './_actifs-data.js';
+import { RECETTES_BIBLIOTHEQUE } from './_recettes-data.js';
 
 const CACHE_TTL_MS = 15 * 60 * 1000;
 let _cache = null;
@@ -46,12 +50,28 @@ export default async function handler(req, res) {
 
   const staticPages = [
     { loc: `${HOST}/`, priority: '1.0', changefreq: 'weekly', lastmod: today },
+    { loc: `${HOST}/actifs`, priority: '0.9', changefreq: 'weekly', lastmod: today },
+    { loc: `${HOST}/recettes`, priority: '0.9', changefreq: 'weekly', lastmod: today },
     { loc: `${HOST}/blog`, priority: '0.9', changefreq: 'daily', lastmod: today },
     { loc: `${HOST}/parrainage`, priority: '0.7', changefreq: 'monthly', lastmod: today },
     { loc: `${HOST}/mentions-legales`, priority: '0.3', changefreq: 'yearly', lastmod: today },
     { loc: `${HOST}/cgv`, priority: '0.3', changefreq: 'yearly', lastmod: today },
     { loc: `${HOST}/confidentialite`, priority: '0.3', changefreq: 'yearly', lastmod: today },
   ];
+
+  // Fiches actifs et recettes — toutes indexables
+  const actifUrls = (ACTIFS || []).map(a => ({
+    loc: `${HOST}/actif/${a.id}`,
+    priority: '0.7',
+    changefreq: 'monthly',
+    lastmod: today,
+  }));
+  const recetteUrls = (RECETTES_BIBLIOTHEQUE || []).map(r => ({
+    loc: `${HOST}/recette/${r.id}`,
+    priority: '0.7',
+    changefreq: 'monthly',
+    lastmod: today,
+  }));
 
   let articles = [];
   try { articles = await getCached(); } catch (e) { console.error('sitemap articles err:', e); }
@@ -63,7 +83,7 @@ export default async function handler(req, res) {
     lastmod: (a.date || today).split('T')[0],
   }));
 
-  const all = [...staticPages, ...articleUrls];
+  const all = [...staticPages, ...actifUrls, ...recetteUrls, ...articleUrls];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

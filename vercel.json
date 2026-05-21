@@ -6,9 +6,12 @@
     { "source": "/parrainage", "destination": "/parrainage.html" },
     { "source": "/email-confirmed", "destination": "/email-confirmed.html" },
     { "source": "/charte", "destination": "/charte.html" },
+    { "source": "/a-propos", "destination": "/a-propos.html" },
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" },
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
+    { "source": "/actifs", "destination": "/api/actifs-list" },
+    { "source": "/recettes", "destination": "/api/recettes-list" },
     { "source": "/actif/:id", "destination": "/api/actif-page?id=:id" },
     { "source": "/recette/:id", "destination": "/api/recette-page?id=:id" },
     { "source": "/post/:id", "destination": "/api/post-page?id=:id" }

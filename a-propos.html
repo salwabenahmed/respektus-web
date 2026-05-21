@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — RESPEKTUS®</title>
+<meta name="description" content="Le mot de la fondatrice, notre cadre scientifique, notre engagement et nos partenariats. RESPEKTUS® — Cosmétique naturelle scientifique et ethnobotanique.">
+<link rel="canonical" href="https://www.respektus.com/a-propos">
+<meta property="og:title" content="À propos de RESPEKTUS®">
+<meta property="og:description" content="Le mot de Salwa, fondatrice, et notre démarche scientifique et éthique.">
+<meta property="og:url" content="https://www.respektus.com/a-propos">
+<meta property="og:type" content="website">
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; margin: 0; color: #1A1A1A; background: #FAF7F2; line-height: 1.6; }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 18px 28px; background: #FFFFFF; border-bottom: 1px solid #EFE9DC; flex-wrap: wrap; gap: 12px; }
+.header a.brand { text-decoration: none; color: #2C5F3F; font-weight: 900; font-size: 18px; letter-spacing: 2px; }
+.header nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.header nav a { text-decoration: none; color: #2C5F3F; font-weight: 700; font-size: 13px; padding: 8px 12px; border-radius: 8px; }
+.header nav a:hover, .header nav a.active { background: #EEF7F2; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 22px 60px; }
+.hero { text-align: center; padding: 30px 0 24px; border-bottom: 1px solid #EFE9DC; margin-bottom: 24px; }
+.hero h1 { font-size: 36px; font-weight: 300; letter-spacing: -0.4px; margin: 0 0 10px; color: #1A1A1A; }
+.hero .subtitle { color: #6B6B6B; font-size: 14px; max-width: 540px; margin: 0 auto; }
+.toc { background: #FFFFFF; border: 1px solid #EFE9DC; border-radius: 16px; padding: 18px 22px; margin-bottom: 30px; }
+.toc h2 { font-size: 12px; font-weight: 800; color: #8A7E62; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 12px; }
+.toc ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.toc a { color: #2C5F3F; text-decoration: none; font-weight: 600; font-size: 14px; padding: 8px 12px; border-radius: 8px; display: block; background: #FAF7F2; }
+.toc a:hover { background: #EEF7F2; }
+
+.section { padding-top: 40px; padding-bottom: 10px; scroll-margin-top: 20px; }
+.section + .section { border-top: 1px solid #EFE9DC; margin-top: 40px; padding-top: 50px; }
+.section h2.section-title { font-size: 26px; font-weight: 800; color: #2C5F3F; letter-spacing: -0.3px; margin: 0 0 6px; }
+.section .section-eyebrow { font-size: 11px; font-weight: 800; color: #C8A96E; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+
+.lead { font-size: 17px; color: #2C5F3F; font-weight: 600; font-style: italic; margin: 0 0 18px; line-height: 1.6; }
+.heading { font-size: 20px; font-weight: 800; color: #1A1A1A; margin: 28px 0 12px; letter-spacing: -0.2px; }
+.h1 { font-size: 21px; font-weight: 700; color: #1A1A1A; margin: 26px 0 12px; display: flex; align-items: center; gap: 10px; letter-spacing: -0.3px; }
+.h1 .bar { width: 3px; height: 22px; border-radius: 2px; background: #2C5F3F; }
+.h2 { font-size: 15px; font-weight: 800; color: #2C5F3F; margin: 18px 0 8px; }
+p { font-size: 15px; color: #3D3D3D; margin: 0 0 14px; line-height: 1.65; }
+.bullets { list-style: none; padding: 0; margin: 0 0 16px; }
+.bullets li { padding: 6px 0 6px 18px; position: relative; font-size: 14.5px; color: #3D3D3D; line-height: 1.6; }
+.bullets li::before { content: ''; position: absolute; left: 0; top: 13px; width: 6px; height: 6px; border-radius: 3px; background: #2C5F3F; }
+.quote { background: #EEF7F2; border-left: 3px solid #2C5F3F; border-radius: 12px; padding: 14px 18px; margin: 16px 0; font-style: italic; color: #2C5F3F; font-weight: 500; }
+.divider { height: 1px; background: #EFE9DC; margin: 22px 0; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 18px 0 22px; }
+.stat { background: #FFFFFF; border: 1px solid #EFE9DC; border-radius: 14px; padding: 16px 12px; text-align: center; }
+.stat-num { font-size: 28px; font-weight: 800; color: #2C5F3F; letter-spacing: -0.6px; }
+.stat-label { font-size: 11px; color: #8A8A8A; font-weight: 600; margin-top: 4px; }
+
+.steps { display: grid; gap: 10px; margin: 18px 0; }
+.step { display: flex; gap: 12px; background: #FFFFFF; border: 1px solid #EFE9DC; border-radius: 14px; padding: 14px; }
+.step-num { flex-shrink: 0; width: 30px; height: 30px; border-radius: 15px; background: #EEF7F2; color: #2C5F3F; font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; justify-content: center; }
+.step strong { font-size: 14px; color: #1A1A1A; display: block; margin-bottom: 4px; }
+.step p { font-size: 13px; color: #3D3D3D; margin: 0; line-height: 1.5; }
+
+.examples { display: grid; gap: 10px; margin: 18px 0; }
+.example { background: #FFFFFF; border: 1px solid #EFE9DC; border-radius: 14px; padding: 14px; }
+.example strong { font-size: 14px; color: #1A1A1A; display: block; margin-bottom: 6px; }
+.example p { font-size: 13px; color: #3D3D3D; margin: 0 0 8px; line-height: 1.55; }
+.pmid { display: inline-block; background: #EEF3FF; color: #5E80C0; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.3px; }
+
+.pillars { display: grid; gap: 12px; margin: 18px 0; }
+.pillar { background: #FFFFFF; border-left: 3px solid #2C5F3F; border: 1px solid #EFE9DC; border-radius: 14px; padding: 14px; }
+.pillar h4 { font-size: 14px; font-weight: 800; color: #1A1A1A; margin: 0 0 8px; }
+.pillar p { font-size: 13.5px; color: #3D3D3D; margin: 0; line-height: 1.55; }
+
+.exclusions { display: grid; gap: 12px; margin: 18px 0; }
+.exclusion { background: #FFF0F0; border: 1px solid #F5C6C6; border-left: 4px solid #C44545; border-radius: 14px; padding: 14px; }
+.exclusion h4 { font-size: 14px; font-weight: 800; color: #C44545; margin: 0 0 8px; }
+.exclusion p { font-size: 13.5px; color: #5C2C2C; margin: 0; line-height: 1.55; }
+
+.closing { background: #2C5F3F; color: #FFFFFF; border-radius: 16px; padding: 24px; margin: 26px 0 0; text-align: center; }
+.closing strong { display: block; font-size: 15px; margin-bottom: 8px; }
+.closing p { color: rgba(255,255,255,0.9); font-style: italic; margin: 0 0 14px; font-size: 14px; }
+.closing .motto { font-size: 14px; font-weight: 800; letter-spacing: 0.4px; }
+
+.signature { font-style: italic; color: #8A7E62; margin-top: 28px; font-size: 14px; }
+.ptypes { display: grid; gap: 12px; margin: 18px 0; }
+.ptype { background: #FFFFFF; border: 1px solid #EFE9DC; border-radius: 14px; padding: 14px; }
+.ptype h4 { font-size: 14px; font-weight: 800; color: #2C5F3F; margin: 0 0 6px; }
+.ptype p { font-size: 13.5px; color: #3D3D3D; margin: 0; line-height: 1.55; }
+.cta-email { display: inline-block; background: #EEF7F2; color: #2C5F3F; padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 800; text-decoration: none; margin-top: 16px; }
+.cta-email:hover { background: #2C5F3F; color: #FFFFFF; }
+
+footer { padding: 32px 24px; text-align: center; color: #8A8A8A; font-size: 12px; border-top: 1px solid #EFE9DC; background: #FFFFFF; margin-top: 40px; }
+footer a { color: #2C5F3F; text-decoration: none; }
+@media (max-width: 600px) { main { padding: 18px 16px 40px; } .hero h1 { font-size: 28px; } .section h2.section-title { font-size: 22px; } }
+</style>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="/">RESPEKTUS<sup>®</sup></a>
+  <nav>
+    <a href="/actifs">Actifs</a>
+    <a href="/recettes">Recettes</a>
+    <a href="/blog">Blog</a>
+    <a href="/a-propos" class="active">À propos</a>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <h1>À propos de RESPEKTUS®</h1>
+    <p class="subtitle">Le mot de la fondatrice, notre cadre scientifique, notre engagement et nos partenariats — la vision et les fondements de RESPEKTUS® dans une seule page.</p>
+  </div>
+
+  <nav class="toc" aria-label="Sommaire">
+    <h2>Sommaire</h2>
+    <ul>
+      <li><a href="#mot-fondatrice">Le mot de la fondatrice</a></li>
+      <li><a href="#cadre-scientifique">Notre cadre scientifique</a></li>
+      <li><a href="#engagement">Notre engagement</a></li>
+      <li><a href="#partenariats">Partenariats</a></li>
+    </ul>
+  </nav>
+
+  <section class="section" id="mot-fondatrice">
+    <div class="section-eyebrow">Le mot de la fondatrice</div>
+    <h2 class="section-title">Salwa, fondatrice</h2>
+    <p class="lead">Bienvenue dans la communauté RESPEKTUS®.</p>
+<p>Je m&#39;appelle Salwa, je suis maman de trois enfants et fondatrice de RESPEKTUS®. Avant d&#39;être tout cela, je suis simplement une femme qui a un jour décidé que prendre soin de soi ne devait plus rimer avec subir des produits qu&#39;on ne comprend pas.</p>
+<div class="divider"></div>
+<h2 class="heading">Tout a commencé avec ma fille.</h2>
+<p>Lorsque ma fille a déclaré son eczéma, j&#39;ai vu sa peau souffrir, et avec elle, mon cœur de maman. J&#39;ai testé crème après crème, ordonnance après ordonnance, sans jamais trouver de réponse durable. Chaque tube contenait des ingrédients que je ne savais pas prononcer. Chaque flacon promettait un miracle qui ne venait jamais.</p>
+<p>Un soir, en lisant les étiquettes une énième fois, j&#39;ai eu cette pensée toute simple : « Je ne veux plus mettre du plastique sur le visage de ma fille. Ni sur le mien. »</p>
+<p>Alors j&#39;ai cherché. Vraiment cherché.</p>
+<div class="divider"></div>
+<h2 class="heading">Et puis j&#39;ai découvert les huiles essentielles.</h2>
+<p>Je me suis plongée dans les livres et les formations, nuit après nuit. C&#39;est là que j&#39;ai eu la révélation :</p>
+<blockquote class="quote">On nous fait croire qu&#39;il faut choisir : « naturel et doux » OU « efficace et chimique ». Comme si la nature ne pouvait pas être puissante. C&#39;est faux.</blockquote>
+<p>Les huiles essentielles sont naturelles ET puissantes. Elles renversent cette fausse balance. Associées aux bons actifs naturels (beurres, huiles végétales, hydrolats, argiles), elles offrent tout ce dont notre peau et notre corps ont besoin pour leurs petits et grands maux.</p>
+<p>Je suis littéralement tombée amoureuse de ce monde.</p>
+<div class="divider"></div>
+<h2 class="heading">De la passion à l&#39;expertise.</h2>
+<p>Ensuite, j&#39;ai décidé d&#39;aller plus loin : me former sérieusement. En 2020, j&#39;ai obtenu mes deux certifications complémentaires en aromathérapie cosmétique et en formulation cosmétique naturelle et bio.</p>
+<div class="divider"></div>
+<h2 class="heading">Pourquoi RESPEKTUS® ?</h2>
+<p>Du latin respectus : le regard, la considération, le respect.</p>
+<p>Parce que tu es unique. Ta peau, ton histoire, tes besoins ne ressemblent à ceux de personne d&#39;autre. Tu n&#39;es pas un « type de peau standard ». Tu mérites un soin pensé pour toi.</p>
+<p>C&#39;est pour cela que dans RESPEKTUS®, tu ne trouveras pas qu&#39;une simple bibliothèque de recettes. Tu y trouveras Lia, ton accompagnatrice intelligente, qui apprend à te connaître (ta peau, ton âge, tes besoins, tes contre-indications) et qui te guide chaque jour vers les soins faits pour toi.</p>
+<div class="divider"></div>
+<h2 class="heading">Bienvenue chez toi.</h2>
+<p>Si tu es ici, c&#39;est que toi aussi tu cherches autre chose. Quelque chose de plus vrai, de plus respectueux, de plus toi.</p>
+<p>Une vraie communauté t&#39;attend ici, animée par la même conviction.</p>
+<p>Ensemble, retrouvons notre nature. Et révélons-la.</p>
+<div class="signature"></div>
+  </section>
+
+  <section class="section" id="cadre-scientifique">
+    <div class="section-eyebrow">Rigueur et preuves</div>
+    <h2 class="section-title">Notre cadre scientifique</h2>
+    <p class="lead">Pourquoi vous pouvez faire confiance à RESPEKTUS®</p>
+<h2 class="h1"><span class="bar"></span>Notre engagement</h2>
+<p>Chez RESPEKTUS®, chaque recette repose sur des fondements vérifiables. Pas de promesses creuses, pas d&#39;ingrédients « magiques » choisis pour leur effet de mode. Juste une démarche claire : réconcilier la sagesse de l&#39;aromathérapie traditionnelle avec la rigueur de la science moderne.</p>
+<p>Voici comment nous travaillons, et pourquoi vous pouvez nous faire confiance.</p>
+<div class="stats"><div class="stat"><div class="stat-num">27+</div><div class="stat-label">Références PubMed</div></div><div class="stat"><div class="stat-num">103</div><div class="stat-label">Recettes validées</div></div><div class="stat"><div class="stat-num">200</div><div class="stat-label">Actifs référencés</div></div><div class="stat"><div class="stat-num">2</div><div class="stat-label">Certifications FFA®</div></div></div>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Nos sources scientifiques</h2>
+<h3 class="h2">PubMed et la littérature internationale</h3>
+<p>PubMed est la base de données scientifique de référence mondiale (National Library of Medicine, États-Unis). Elle recense plus de 35 millions d&#39;articles issus de revues médicales validées par comités de relecture.</p>
+<p>Pour chaque ingrédient majeur de nos recettes, nous vérifions systématiquement :</p>
+<ul class="bullets"><li>Les études cliniques randomisées (RCT) disponibles</li><li>Les méta-analyses récentes (synthèses de plusieurs études)</li><li>Les revues toxicologiques et de sécurité</li><li>Les données spécifiques pour les populations sensibles (grossesse, allaitement, enfants, conditions médicales)</li></ul>
+<p>Plus de 27 références PubMed sont citées dans notre bibliothèque.</p>
+<h3 class="h2">Revues scientifiques spécialisées</h3>
+<p>Au-delà de PubMed, nous nous appuyons sur des revues à comité de lecture : Phytotherapy Research, Journal of Ethnopharmacology, Phytomedicine, Clinical Microbiology Reviews, FASEB Journal.</p>
+<h3 class="h2">Pharmacopée européenne</h3>
+<p>Pour les ingrédients à usage cosmétique reconnu (Calendula, Lavande, Hélichryse...), nous nous référons à la Pharmacopée européenne, qui définit les standards officiels de qualité et d&#39;utilisation des plantes en Europe.</p>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Nos références professionnelles</h2>
+<h3 class="h2">Fédération Française d&#39;Aromathérapie (FFA®)</h3>
+<p>La FFA® est l&#39;organisme français de référence pour la formation en aromathérapie. Sa charte exige une rigueur méthodologique dans l&#39;utilisation des huiles essentielles.</p>
+<p>Notre fondatrice Salwa est certifiée FFA® Praticienne en aromathérapie cosmétique (2020), garantissant une maîtrise des propriétés, contre-indications, dosages et synergies.</p>
+<h3 class="h2">Formulation cosmétique naturelle et bio</h3>
+<p>Salwa est également certifiée en formulation cosmétique naturelle et bio (2020), ce qui lui permet de concevoir des recettes complètes (huiles, baumes, gels, sticks, lotions) en respectant les standards de la cosmétique bio.</p>
+<h3 class="h2">Thèses académiques</h3>
+<p>Plusieurs de nos recettes s&#39;inspirent également de thèses universitaires en pharmacie, comme celle d&#39;Alexis Pierre (Université de Bordeaux, 2016) sur l&#39;aromathérapie dermatologique de comptoir.</p>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Comment nous travaillons</h2>
+<p>Pour chaque recette, nous suivons une méthodologie en 5 étapes :</p>
+<div class="steps">
+        <div class="step"><span class="step-num">1</span><div><strong>Identification de l&#39;indication</strong><p>Quel est le besoin réel ? (apaiser, hydrater, cicatriser, réguler le sébum...)</p></div></div>
+        <div class="step"><span class="step-num">2</span><div><strong>Sélection des actifs</strong><p>Quels ingrédients ont démontré leur efficacité ET leur sécurité pour cette indication ?</p></div></div>
+        <div class="step"><span class="step-num">3</span><div><strong>Dosage précis</strong><p>Quelle concentration est optimale (en pourcentage et en gouttes), pour quel format (huile, baume, stick, gel) ?</p></div></div>
+        <div class="step"><span class="step-num">4</span><div><strong>Vérification des contre-indications</strong><p>Grossesse, allaitement, enfants, conditions médicales : toutes les précautions sont identifiées et mentionnées.</p></div></div>
+        <div class="step"><span class="step-num">5</span><div><strong>Construction de la pyramide olfactive</strong><p>Pour les soins parfumés, nous appliquons les principes de la haute parfumerie naturelle (tête, cœur, fond) pour un sillage cohérent et durable.</p></div></div></div>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Ce que nous ne faisons pas</h2>
+<p>Par éthique, nous nous engageons à ne JAMAIS :</p>
+<ul class="bullets"><li>Vous promettre un effet miracle sans données scientifiques</li><li>Utiliser un ingrédient simplement parce qu&#39;il est à la mode</li><li>Vous proposer une « crème universelle » qui marcherait pour tout le monde</li><li>Cacher une contre-indication, même si elle complique une recette</li><li>Affirmer que l&#39;aromathérapie remplace une consultation médicale</li></ul>
+<blockquote class="quote">Si une indication nécessite un avis médical, nous vous le disons clairement. Nos recettes sont des soutiens complémentaires, jamais des traitements de remplacement.</blockquote>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Quelques exemples concrets</h2>
+<p>Voici trois études scientifiques qui valident des recettes de notre bibliothèque :</p>
+<div class="examples"><div class="example"><strong>Romarin et anti-chute de cheveux</strong><p>Panahi Y. et al. (2015) ont démontré que l&#39;huile essentielle de Romarin a une efficacité équivalente au Minoxidil 2% dans le traitement de l&#39;alopécie androgénétique, sans les effets secondaires.</p><span class="pmid">PubMed PMID 25842469</span></div><div class="example"><strong>Tea Tree et acné</strong><p>Carson C.F. et al. (2006) ont validé les propriétés antibactériennes du Tea Tree contre Propionibacterium acnes dans une revue de référence.</p><span class="pmid">PubMed PMID 16418522</span></div><div class="example"><strong>Lavande et sommeil</strong><p>Une méta-analyse de 11 essais cliniques (628 adultes, 2025) confirme l&#39;efficacité de la Lavande pour améliorer la qualité du sommeil.</p><span class="pmid">PubMed PMID 40600743</span></div></div>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Notre bibliographie complète</h2>
+<p>Toutes nos références sont accessibles :</p>
+<ul class="bullets"><li>Dans la fiche de chaque recette (section « Source »)</li><li>Dans notre bibliographie complète (accessible depuis le menu À propos)</li><li>Via des liens directs PubMed pour les références principales</li></ul>
+<div class="divider"></div>
+<div class="closing"><strong>Voilà notre engagement.</strong><p>Chez RESPEKTUS®, derrière chaque goutte d&#39;huile essentielle, il y a des heures de recherche, de vérification, et la volonté de bien faire.</p><div class="motto">Naturel ET puissant. Sans compromis. Avec preuves.</div></div>
+  </section>
+
+  <section class="section" id="engagement">
+    <div class="section-eyebrow">Transparence absolue</div>
+    <h2 class="section-title">Notre engagement</h2>
+    <p class="lead">Respectez votre nature, révélez votre beauté.</p>
+<p>Chez RESPEKTUS®, nous croyons qu&#39;une cosmétique efficace n&#39;a pas besoin d&#39;être agressive. Notre démarche s&#39;appuie sur trois piliers : la rigueur scientifique, la tradition ethnobotanique et la transparence absolue envers vous.</p>
+<p>Cette page existe pour vous expliquer, dans le détail, ce que nous mettons dans nos formules et, tout aussi important, ce que nous en avons exclu. Vous y trouverez les fondements de soins pensés pour le visage, le corps, les cheveux, la barbe, le rasage et le bien-être quotidien de toutes et tous.</p>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Ce que vous trouverez dans RESPEKTUS®</h2>
+<p>Notre bibliothèque rassemble plus de 200 actifs sélectionnés selon trois critères stricts.</p>
+<div class="pillars"><div class="pillar"><h4>Tradition documentée</h4><p>Chaque actif possède une histoire d&#39;usage cosmétique avérée, qu&#39;elle soit issue de l&#39;aromathérapie française (FFA), de la cosmétologie marocaine ancestrale (Argan, Ghassoul, Henné, Savon Noir Beldi), de l&#39;Ayurveda indienne (Amla, Brahmi, Shikakai, Curcuma) ou de la pharmacopée amazonienne (Andiroba, Buriti, Cupuaçu).</p></div><div class="pillar"><h4>Validation scientifique</h4><p>Lorsque cela est possible, nous référençons les études publiées sur PubMed, les méta-analyses et les essais cliniques randomisés (RCT). Notre bibliographie inclut des publications sur la Lavande, le Tea Tree, le Romarin, la Rose de Damas, le Bakuchiol et bien d&#39;autres.</p></div><div class="pillar"><h4>Traçabilité d&#39;origine</h4><p>Nous privilégions les filières qui respectent les terroirs et les personnes qui les cultivent : coopératives de l&#39;Atlas marocain pour l&#39;Argan, AOP Provence pour la Lavande Vraie, AOP Corse pour l&#39;Hélichryse, vallée de Kelaat M&#39;Gouna pour la Rose de Damas.</p></div></div>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Ce que vous ne trouverez jamais</h2>
+<p>Voici notre engagement formel, point par point.</p>
+<div class="exclusions"><div class="exclusion"><h4>Sans parabènes</h4><p>Les parabènes (Methylparaben, Ethylparaben, Propylparaben, Butylparaben) sont une famille de conservateurs synthétiques utilisés massivement dans la cosmétique conventionnelle depuis les années 1950. Ils sont aujourd&#39;hui suspectés d&#39;agir comme perturbateurs endocriniens. Le principe de précaution s&#39;impose. Aucune formule RESPEKTUS® n&#39;en contient.</p></div><div class="exclusion"><h4>Sans isothiazolinones</h4><p>Cette famille inclut le Methylisothiazolinone (MIT) et le Methylchloroisothiazolinone (MCIT). Le MIT a été désigné « Allergène de l&#39;année 2013 » par l&#39;American Contact Dermatitis Society. Ces molécules sont responsables d&#39;une épidémie d&#39;allergies cutanées de contact entre 2010 et 2015, ce qui a conduit à plusieurs restrictions réglementaires européennes. RESPEKTUS® en est totalement exempt.</p></div><div class="exclusion"><h4>Sans formaldéhyde ni libérateurs</h4><p>Le formaldéhyde est classé cancérigène certain pour l&#39;humain (Groupe 1) par le Centre International de Recherche sur le Cancer (CIRC). Au-delà du formaldéhyde direct, certains conservateurs en libèrent lentement dans la formule : DMDM Hydantoin, Diazolidinyl Urea, Imidazolidinyl Urea, Quaternium-15, Bronopol. Aucun n&#39;est utilisé dans nos formulations.</p></div><div class="exclusion"><h4>Sans phénoxyéthanol</h4><p>Bien qu&#39;autorisé en cosmétique, le phénoxyéthanol fait l&#39;objet de restrictions par l&#39;ANSM pour les produits destinés au siège des nourrissons. Par cohérence avec notre démarche de tolérance maximale, nous l&#39;avons exclu de toutes nos formules, qu&#39;elles soient destinées aux adultes ou aux enfants.</p></div><div class="exclusion"><h4>Sans BHA et BHT</h4><p>Le Butylated Hydroxyanisole (BHA) et le Butylated Hydroxytoluene (BHT) sont des antioxydants synthétiques controversés, suspectés d&#39;effets endocriniens. Nous les remplaçons par la Vitamine E naturelle et l&#39;extrait CO2 de Romarin.</p></div><div class="exclusion"><h4>Sans triclosan, EDTA, sulfates agressifs</h4><p>Le triclosan est un antibactérien suspecté de favoriser les résistances bactériennes. L&#39;EDTA est un chélateur synthétique non biodégradable. Les sulfates agressifs (Sodium Lauryl Sulfate SLS, Sodium Laureth Sulfate SLES) décapent la barrière cutanée et fragilisent particulièrement les peaux soumises au rasage quotidien. RESPEKTUS® utilise exclusivement des tensioactifs doux d&#39;origine sucroglucidique (Coco-Glucoside, Décyl-Glucoside, Lauryl-Glucoside) ou solides (Sodium Cocoyl Isethionate).</p></div><div class="exclusion"><h4>Sans silicones, PEG, huiles minérales</h4><p>Les silicones (Dimethicone, Cyclomethicone) créent un film occlusif qui maquille les imperfections sans les soigner. Les PEG (Polyéthylène Glycols) résultent d&#39;un procédé d&#39;éthoxylation impliquant l&#39;oxyde d&#39;éthylène, classé cancérigène. Les huiles minérales (Paraffinum Liquidum, Petrolatum) sont des dérivés pétroliers sans bénéfice cutané. Aucune de ces familles n&#39;entre dans la composition RESPEKTUS®.</p></div></div>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Notre approche des conservateurs</h2>
+<p>Toute formule contenant de l&#39;eau (sérum, lotion, crème, gel) nécessite un conservateur. C&#39;est une exigence sanitaire incontournable : sans conservation, une formule aqueuse est contaminée par des micro-organismes en 48 à 72 heures.</p>
+<p>Chez RESPEKTUS®, nous utilisons deux familles de conservateurs.</p>
+<h3 class="h2">Conservateurs 100% naturels</h3>
+<p>Issus de la fermentation probiotique (AMTicide Coconut, Leucidal Liquid SF) ou d&#39;extraction végétale (extrait CO2 de Romarin, Vitamine E naturelle, Acide citrique).</p>
+<h3 class="h2">Conservateurs certifiés Ecocert et Cosmos</h3>
+<p>Comme le Cosgard (Geogard 221), composé de Benzyl Alcohol et de Dehydroacetic Acid. Ces molécules sont synthétisées à partir de sources renouvelables et sont reconnues par les principaux référentiels de cosmétique biologique européens.</p>
+<blockquote class="quote">Cette distinction est claire dans nos fiches : chaque conservateur est identifié par un badge « 100% naturel » ou « Certifié naturel ». Vous choisissez en conscience.</blockquote>
+<div class="divider"></div>
+<h2 class="h1"><span class="bar"></span>Pourquoi cela compte</h2>
+<p>Une peau saine est une peau qui n&#39;est pas constamment exposée à des molécules controversées.</p>
+<p>Que vous soyez en attente d&#39;un enfant, jeune parent, à la recherche d&#39;un soin adapté à une peau réactive, soucieux des ingrédients que vous appliquez chaque matin sur votre visage et votre barbe, ou simplement attentif à votre santé, vous méritez des produits dont vous pouvez lire et comprendre la composition.</p>
+<p>RESPEKTUS® est née de cette conviction : la cosmétique naturelle ne doit pas être un argument marketing flou, mais un engagement vérifiable, ingrédient par ingrédient.</p>
+<p>Vous trouverez dans chaque fiche de notre bibliothèque l&#39;origine géographique, la composition, les contre-indications et les sources scientifiques de référence. Aucune zone d&#39;ombre.</p>
+<div class="divider"></div>
+<div class="closing"><strong>C&#39;est le respect que vous méritez.</strong><p>C&#39;est le respect que vous porte la nature.</p><div class="motto">Respectez votre nature, révélez votre beauté.</div></div>
+  </section>
+
+  <section class="section" id="partenariats">
+    <div class="section-eyebrow">Collaborations</div>
+    <h2 class="section-title">Partenariats</h2>
+    
+  <p class="lead">RESPEKTUS® avance grâce à des collaborations choisies avec exigence et bienveillance.</p>
+  <p>Si vous vous reconnaissez dans l'un des profils ci-dessous, écrivez-nous — nous lisons chaque message.</p>
+  <h3 class="h2">Profils recherchés</h3>
+  <div class="ptypes"><div class="ptype"><h4>Marques et fournisseurs bio</h4><p>Vous fabriquez des huiles essentielles, végétales, hydrolats, beurres ou ingrédients cosmétiques d&#39;exception. Vous partagez nos valeurs de transparence et de traçabilité.</p></div><div class="ptype"><h4>Influenceuses et créatrices de contenu</h4><p>Vous parlez beauté naturelle, slow cosmétique ou aromathérapie. Vous cherchez à collaborer avec une marque ancrée dans la rigueur scientifique.</p></div><div class="ptype"><h4>Professionnel·les de santé</h4><p>Aromathérapeutes diplômé·es, dermatologues, sages-femmes, pharmacien·nes : RESPEKTUS® cherche des relais experts pour valider, enrichir et accompagner sa communauté.</p></div><div class="ptype"><h4>Presse et médias</h4><p>Rédactrices et journalistes beauté, podcasts, presse féminine et lifestyle. Nous serons ravies de vous présenter notre démarche et notre fondatrice.</p></div><div class="ptype"><h4>Investisseurs et partenaires stratégiques</h4><p>Vous souhaitez accompagner le développement de RESPEKTUS® avec une vision éthique et durable.</p></div></div>
+  <h3 class="h2">Nos valeurs non négociables</h3>
+  <ul class="bullets"><li>Transparence absolue sur les sources et les ingrédients</li><li>Rigueur scientifique : aucune promesse sans preuve</li><li>Respect du vivant : femmes, plantes, planète</li><li>Cosmétique naturelle et bio, sans compromis</li><li>Communauté avant marketing</li></ul>
+  <h3 class="h2">Nous contacter</h3>
+  <p>Si l'un de ces profils est le vôtre, écrivez-nous avec quelques lignes de présentation et le type de collaboration envisagée.</p>
+  <a href="mailto:contact@respektus.com" class="cta-email">contact@respektus.com</a>
+
+  </section>
+</main>
+<footer>
+  <p>© 2026 RESPEKTUS® — Tous droits réservés</p>
+  <p style="margin-top:8px"><a href="/">Accueil</a> · <a href="/actifs">Actifs</a> · <a href="/recettes">Recettes</a> · <a href="/blog">Blog</a> · <a href="/charte">Charte</a> · <a href="/mentions-legales">Mentions légales</a> · <a href="/cgv">CGV</a> · <a href="/confidentialite">Confidentialité</a></p>
+</footer>
+</body>
+</html>
