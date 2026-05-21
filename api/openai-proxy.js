@@ -20,21 +20,32 @@ const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 const MAX_TOKENS_CAP = 1600;        // jamais plus de 1600 tokens de sortie
 const ALLOWED_MODELS = new Set(['gpt-4o', 'gpt-4o-mini']);
 
+// Renvoie { user } si OK, sinon { error, detail } pour diagnostic
 async function verifyJwt(authHeader) {
-  if (!authHeader || !authHeader.startsWith('Bearer ')) return null;
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return { error: 'no_bearer', detail: 'Header Authorization absent ou mal formé' };
+  }
   const jwt = authHeader.slice(7);
+  if (!jwt || jwt === 'undefined' || jwt === 'null') {
+    return { error: 'empty_jwt', detail: 'Token JWT vide' };
+  }
   const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL;
   const ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY;
-  if (!SUPABASE_URL || !ANON_KEY) return null;
+  if (!SUPABASE_URL) return { error: 'missing_env', detail: 'EXPO_PUBLIC_SUPABASE_URL non définie côté serveur' };
+  if (!ANON_KEY) return { error: 'missing_env', detail: 'EXPO_PUBLIC_SUPABASE_ANON_KEY non définie côté serveur' };
   try {
     const r = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
       headers: { Authorization: `Bearer ${jwt}`, apikey: ANON_KEY },
     });
-    if (!r.ok) return null;
+    if (!r.ok) {
+      const txt = await r.text().catch(() => '');
+      return { error: 'supabase_rejected', detail: `Supabase /auth/v1/user → HTTP ${r.status} : ${txt.slice(0, 120)}` };
+    }
     const data = await r.json();
-    return data?.id ? { id: data.id, email: data.email } : null;
-  } catch {
-    return null;
+    if (!data?.id) return { error: 'no_user_id', detail: 'Réponse Supabase sans user id' };
+    return { user: { id: data.id, email: data.email } };
+  } catch (e) {
+    return { error: 'fetch_failed', detail: `Appel Supabase a planté : ${e?.message || 'erreur réseau'}` };
   }
 }
 
@@ -48,8 +59,16 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   // ─── Auth obligatoire ────────────────────────────────────────────────────
-  const user = await verifyJwt(req.headers.authorization);
-  if (!user) return res.status(401).json({ error: 'Authentification requise' });
+  const authResult = await verifyJwt(req.headers.authorization);
+  if (authResult.error) {
+    console.error('[openai-proxy] auth refused:', authResult.error, authResult.detail);
+    return res.status(401).json({
+      error: 'Authentification requise',
+      reason: authResult.error,
+      detail: authResult.detail,
+    });
+  }
+  const user = authResult.user;
 
   // ─── Validation du body ──────────────────────────────────────────────────
   let body = req.body;
