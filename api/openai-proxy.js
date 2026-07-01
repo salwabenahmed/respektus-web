@@ -18,7 +18,7 @@ const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 
 // Limites de garde-fou (en plus du plafond OpenAI lui-même)
 const MAX_TOKENS_CAP = 1600;        // jamais plus de 1600 tokens de sortie
-const ALLOWED_MODELS = new Set(['gpt-4o', 'gpt-4o-mini']);
+const ALLOWED_MODELS = new Set(['gpt-4o', 'gpt-4o-mini', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-5-mini']);
 
 // Renvoie { user } si OK, sinon { error, detail } pour diagnostic
 async function verifyJwt(authHeader) {
@@ -97,31 +97,49 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Configuration serveur invalide' });
   }
 
+  const streamMode = body?.stream === true;
+
   try {
     const r = await fetch(OPENAI_URL, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-      },
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
       body: JSON.stringify({
         model,
         messages,
         max_tokens: safeMaxTokens,
         temperature: safeTemp,
-        // Pass-through optionnel : autorise uniquement le format JSON OpenAI
+        ...(streamMode ? { stream: true } : {}),
         ...(response_format && response_format.type === 'json_object'
           ? { response_format: { type: 'json_object' } }
           : {}),
       }),
     });
+
     if (!r.ok) {
       const errText = await r.text();
       console.error('[openai-proxy] OpenAI HTTP', r.status, errText.slice(0, 200));
       return res.status(r.status).json({ error: 'Erreur OpenAI', detail: errText.slice(0, 200) });
     }
+
+    if (streamMode) {
+      res.setHeader('Content-Type', 'text/event-stream');
+      res.setHeader('Cache-Control', 'no-cache');
+      res.setHeader('X-Accel-Buffering', 'no');
+      const reader = r.body.getReader();
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          res.write(value);
+        }
+      } finally {
+        reader.releaseLock();
+        res.end();
+      }
+      return;
+    }
+
     const data = await r.json();
-    // On renvoie tel quel pour que l'app n'ait pas à changer de format
     return res.status(200).json(data);
   } catch (e) {
     console.error('[openai-proxy] fetch error:', e?.message);
