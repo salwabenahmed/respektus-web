@@ -18,9 +18,8 @@ const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 
 // Limites de garde-fou (en plus du plafond OpenAI lui-même)
 const MAX_TOKENS_CAP = 1600;        // jamais plus de 1600 tokens de sortie
-const ALLOWED_MODELS = new Set(['gpt-4o', 'gpt-4o-mini', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-5-mini']);
-// Modèles non reconnus → remappés vers gpt-4.1 pour compatibilité ascendante
-const MODEL_REMAP = { 'gpt-5.5': 'gpt-4.1', 'gpt-4.5': 'gpt-4.1' };
+const ALLOWED_MODELS = new Set(['gpt-4o', 'gpt-4o-mini', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-5-mini', 'gpt-5.5']);
+const MODEL_REMAP = {};
 
 // Renvoie { user } si OK, sinon { error, detail } pour diagnostic
 async function verifyJwt(authHeader) {
