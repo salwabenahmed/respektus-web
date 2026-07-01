@@ -19,6 +19,8 @@ const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 // Limites de garde-fou (en plus du plafond OpenAI lui-même)
 const MAX_TOKENS_CAP = 1600;        // jamais plus de 1600 tokens de sortie
 const ALLOWED_MODELS = new Set(['gpt-4o', 'gpt-4o-mini', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-5-mini']);
+// Modèles non reconnus → remappés vers gpt-4.1 pour compatibilité ascendante
+const MODEL_REMAP = { 'gpt-5.5': 'gpt-4.1', 'gpt-4.5': 'gpt-4.1' };
 
 // Renvoie { user } si OK, sinon { error, detail } pour diagnostic
 async function verifyJwt(authHeader) {
@@ -84,7 +86,8 @@ export default async function handler(req, res) {
   if (!Array.isArray(messages) || messages.length === 0) {
     return res.status(400).json({ error: 'Le champ messages est requis' });
   }
-  if (!ALLOWED_MODELS.has(model)) {
+  const resolvedModel = MODEL_REMAP[model] || model;
+  if (!ALLOWED_MODELS.has(resolvedModel)) {
     return res.status(400).json({ error: `Modèle non autorisé. Autorisés : ${[...ALLOWED_MODELS].join(', ')}` });
   }
   const safeMaxTokens = Math.min(Math.max(50, Number(max_tokens) || 1400), MAX_TOKENS_CAP);
@@ -104,7 +107,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
       body: JSON.stringify({
-        model,
+        model: resolvedModel,
         messages,
         max_tokens: safeMaxTokens,
         temperature: safeTemp,
