@@ -41,7 +41,7 @@ async function fetchArticles() {
       id: rec.id, slug,
       title: f['Titre'] || '', category: f['Categorie'] || 'Aromathérapie',
       intro: f['Intro'] || '', content: f['Contenu'] || '', tip: f['Conseil'] || '',
-      cta: f['CTA'] || '', ctaLink: f['CTA Lien'] || '',
+      cta: f['CTA'] || '', ctaLink: f['CTA Lien'] || f['CTA LIEN'] || '',
       photo, date: f['Date'] || '',
     };
   });
