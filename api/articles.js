@@ -2,7 +2,7 @@
 // Lit la table Airtable "Blog" (même formule que l'app), génère un slug auto-friendly
 // depuis le titre, et met en cache 5 minutes pour ne pas spammer Airtable.
 
-const CACHE_TTL_MS = 5 * 60 * 1000;
+const CACHE_TTL_MS = 60 * 1000;
 let _cache = null;
 let _cacheAt = 0;
 
@@ -61,7 +61,7 @@ async function getArticlesCached() {
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
+  res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=1800');
   try {
     const articles = await getArticlesCached();
     // Filtrage par slug si paramètre fourni

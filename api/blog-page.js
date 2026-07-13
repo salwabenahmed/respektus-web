@@ -2,7 +2,7 @@
 // Server-side : injecte les bonnes balises Open Graph pour le partage social
 // (Facebook, Twitter, LinkedIn, WhatsApp affichent une preview avec image + titre).
 
-const CACHE_TTL_MS = 5 * 60 * 1000;
+const CACHE_TTL_MS = 60 * 1000;
 let _cache = null;
 let _cacheAt = 0;
 
@@ -14,13 +14,10 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
-function paragraphs(text) {
-  return String(text || '')
-    .split(/\n{2,}/)
-    .map(p => p.trim())
-    .filter(Boolean)
-    .map(p => `<p>${escapeHtml(p).replace(/\n/g, '<br>')}</p>`)
-    .join('\n');
+// Le champ Contenu contient du HTML écrit directement dans Airtable (<h2>, <p>, <strong>, <ul>...).
+// On l'injecte tel quel : Airtable n'est éditable que par Salwa, pas de contenu utilisateur tiers.
+function articleContentHtml(text) {
+  return String(text || '');
 }
 
 async function fetchArticles() {
@@ -44,6 +41,7 @@ async function fetchArticles() {
       id: rec.id, slug,
       title: f['Titre'] || '', category: f['Categorie'] || 'Aromathérapie',
       intro: f['Intro'] || '', content: f['Contenu'] || '', tip: f['Conseil'] || '',
+      cta: f['CTA'] || '', ctaLink: f['CTA Lien'] || '',
       photo, date: f['Date'] || '',
     };
   });
@@ -65,8 +63,12 @@ export default async function handler(req, res) {
 
     const dateFormatted = a.date ? new Date(a.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
     const url = `https://www.respektus.com/blog/${a.slug}`;
-    const descSafe = escapeHtml((a.intro || '').slice(0, 200));
-    const titleSafe = escapeHtml(a.title);
+    // Versions texte pur pour <title>, meta tags, JSON-LD, attributs alt/href : le HTML y casserait tout.
+    const descSafe = escapeHtml((a.intro || '').replace(/<[^>]+>/g, '').slice(0, 200));
+    const titleSafe = escapeHtml((a.title || '').replace(/<[^>]+>/g, ''));
+    // Versions affichées dans la page : HTML inline (<strong>, <em>...) toléré tel quel.
+    const titleHtml = a.title || '';
+    const introHtml = a.intro || '';
     const datePublished = a.date ? new Date(a.date).toISOString() : new Date().toISOString();
 
     const jsonLd = {
@@ -126,12 +128,22 @@ article{max-width:720px;margin:0 auto;padding:50px 24px 80px}
 .cat{display:inline-block;background:#EEF7F2;color:#2C5F3F;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:6px 12px;border-radius:8px;margin-bottom:18px}
 h1{font-size:36px;font-weight:800;line-height:1.2;color:#1A1A1A;letter-spacing:-0.5px;margin-bottom:14px}
 .date{font-size:13px;color:#8A8A8A;font-style:italic;margin-bottom:28px}
-.cover{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin-bottom:32px;background:#EEF7F2;display:block}
+.cover{width:100%;aspect-ratio:16/9;object-fit:contain;border-radius:14px;margin-bottom:32px;background:#EEF7F2;display:block}
 .intro{font-size:18px;color:#3D3D3D;line-height:1.7;margin-bottom:28px;font-style:italic;border-left:3px solid #2C5F3F;padding-left:18px}
+.content h2{font-size:22px;font-weight:800;color:#2C5F3F;line-height:1.3;margin:34px 0 14px}
+.content h3{font-size:18px;font-weight:800;color:#2C5F3F;line-height:1.3;margin:28px 0 12px}
 .content p{font-size:16px;color:#2C2C2C;line-height:1.75;margin-bottom:20px}
+.content strong,.content b{color:#1A1A1A;font-weight:700}
+.content em,.content i{font-style:italic}
+.content a{color:#2C5F3F;font-weight:700}
+.content ul,.content ol{margin:0 0 20px 22px}
+.content li{font-size:16px;color:#2C2C2C;line-height:1.75;margin-bottom:8px}
 .tip{background:#FFF8E6;border-radius:14px;padding:22px 26px;margin:36px 0;border-left:3px solid #C8A96E}
 .tip-label{font-size:11px;font-weight:800;color:#C8A96E;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
 .tip-text{font-size:15px;color:#5C4A2C;line-height:1.7}
+.cta{margin:36px 0;text-align:center}
+.cta-btn{display:inline-block;background:#2C5F3F;color:#FFF;font-weight:700;font-size:15px;padding:14px 30px;border-radius:12px;text-decoration:none}
+.cta-text{font-size:15px;font-weight:700;color:#2C5F3F}
 
 .share{margin-top:48px;padding-top:28px;border-top:1px solid #E8E0D5}
 .share-label{font-size:11px;font-weight:800;color:#8A8A8A;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
@@ -160,15 +172,23 @@ h1{font-size:36px;font-weight:800;line-height:1.2;color:#1A1A1A;letter-spacing:-
 
 <article>
   <span class="cat">${escapeHtml(a.category)}</span>
-  <h1>${titleSafe}</h1>
+  <h1>${titleHtml}</h1>
   ${dateFormatted ? `<div class="date">${escapeHtml(dateFormatted)}</div>` : ''}
   ${a.photo ? `<img class="cover" src="${escapeHtml(a.photo)}" alt="${titleSafe}">` : ''}
-  ${a.intro ? `<div class="intro">${escapeHtml(a.intro)}</div>` : ''}
-  <div class="content">${paragraphs(a.content)}</div>
+  ${a.intro ? `<div class="intro">${introHtml}</div>` : ''}
+  <div class="content">${articleContentHtml(a.content)}</div>
   ${a.tip ? `
     <div class="tip">
       <div class="tip-label">Le conseil RESPEKTUS</div>
       <div class="tip-text">${escapeHtml(a.tip).replace(/\n/g, '<br>')}</div>
+    </div>
+  ` : ''}
+
+  ${a.cta ? `
+    <div class="cta">
+      ${a.ctaLink
+        ? `<a class="cta-btn" href="${escapeHtml(a.ctaLink)}" target="_blank" rel="noopener">${escapeHtml(a.cta)}</a>`
+        : `<div class="cta-text">${escapeHtml(a.cta)}</div>`}
     </div>
   ` : ''}
 
@@ -199,7 +219,7 @@ h1{font-size:36px;font-weight:800;line-height:1.2;color:#1A1A1A;letter-spacing:-
 </html>`;
 
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
+    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=1800');
     return res.status(200).send(html);
   } catch (e) {
     console.error('blog-page error:', e);
