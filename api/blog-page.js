@@ -14,10 +14,24 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
-// Le champ Contenu contient du HTML écrit directement dans Airtable (<h2>, <p>, <strong>, <ul>...).
-// On l'injecte tel quel : Airtable n'est éditable que par Salwa, pas de contenu utilisateur tiers.
+// Le champ Contenu accepte deux écritures : du HTML direct (<h2>, <p>, <strong>...)
+// ou l'ancienne convention **texte** (compatible avec la version de l'app encore publiée
+// tant que le prochain build, qui sait lire le HTML, n'est pas sorti). On détecte laquelle
+// est utilisée et on produit du HTML dans les deux cas.
 function articleContentHtml(text) {
-  return String(text || '');
+  const raw = String(text || '');
+  if (/<[a-z][\s\S]*>/i.test(raw)) return raw;
+  return raw.split('\n').map(line => {
+    const t = line.trim();
+    if (!t) return '';
+    if (t.startsWith('**') && t.endsWith('**') && t.length > 4) {
+      return `<h2>${escapeHtml(t.slice(2, -2))}</h2>`;
+    }
+    const inline = t.split(/(\*\*[^*]+\*\*)/g)
+      .map(p => (p.startsWith('**') && p.endsWith('**')) ? `<strong>${escapeHtml(p.slice(2, -2))}</strong>` : escapeHtml(p))
+      .join('');
+    return `<p>${inline}</p>`;
+  }).filter(Boolean).join('\n');
 }
 
 async function fetchArticles() {
