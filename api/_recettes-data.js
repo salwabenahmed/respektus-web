@@ -1,4 +1,4 @@
-// Recettes consolidées RESPEKTUS — synchronisé depuis l'app le 2026-07-17
+// Recettes consolidées RESPEKTUS — synchronisé depuis l'app le 2026-07-18
 // 103 recettes (originales + base + complémentaires)
 
 export const RECETTES_BIBLIOTHEQUE = [
@@ -3357,7 +3357,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "titre": "Anti-taches pigmentaires (taches brunes)",
     "categorie": "Visage",
     "sousCategorie": "Réparation",
-    "indications": "Soin éclaircissant complémentaire visant à uniformiser le teint et atténuer l'apparence des taches pigmentaires. Action progressive sur cure longue. Usage cosmétique adjuvant (efficacité variable selon individus).",
+    "indications": "Soin éclaircissant complémentaire visant à uniformiser le teint et atténuer l'apparence des taches pigmentaires. Action progressive sur cure longue.",
     "duree": "6 semaines minimum",
     "frequence": "Tous les soirs uniquement (jamais en journée — photosensibilisant)",
     "ingredients": [
@@ -3384,7 +3384,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Protection solaire SPF 50 obligatoire en journée pendant la cure"
     ],
     "precautions": "Citron Zest et Céleri très photosensibilisants : risque de brûlure et hyperpigmentation paradoxale si exposition solaire. Cure interrompue en été. Contre-indiqué grossesse.",
-    "source": "Synergie traditionnelle en cosmétique aromatique. HV Rose Musquée riche en acides linoléique et alpha-linolénique, caroténoïdes et vitamine E, documentée pour l'éclat du teint. Note honnêteté : effet \"anti-taches\" non démontré par essais cliniques randomisés - usage cosmétique adjuvant"
+    "source": "Synergie traditionnelle en cosmétique aromatique. HV Rose Musquée riche en acides linoléique et alpha-linolénique, caroténoïdes et vitamine E, documentée pour l'éclat du teint."
   },
   {
     "id": "rec_visage_contour_yeux",
@@ -3614,7 +3614,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "titre": "Soin fortifiant ongles cassants",
     "categorie": "Corps",
     "sousCategorie": "Mains",
-    "indications": "Soin nourrissant complémentaire pour ongles secs, dédoublés ou cassants. Usage cosmétique traditionnel - efficacité variable selon causes (carences, métabolisme).",
+    "indications": "Soin nourrissant complémentaire pour ongles secs, dédoublés ou cassants.",
     "duree": "3 semaines minimum",
     "frequence": "Tous les soirs",
     "ingredients": [
@@ -3643,7 +3643,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Pour cuticules abîmées, ajouter 2 gouttes d'HE Lavande Vraie au mélange.",
     "precautions": "Citron Zest photosensibilisant : application le soir uniquement. Si ongles très abîmés, écarter pathologie (mycose, carence) avec médecin.",
-    "source": "Usage traditionnel cosmétique. HV de Ricin (Ricinus communis) riche en acide ricinoléique - propriétés nourrissantes documentées (USP Monograph). HV d'Argan : riche en tocophérols et oméga-9 (Pharmacopée). Note : pas d'essai clinique spécifique sur cette synergie pour les ongles"
+    "source": "Usage traditionnel cosmétique. HV de Ricin (Ricinus communis) riche en acide ricinoléique - propriétés nourrissantes documentées (USP Monograph). HV d'Argan : riche en tocophérols et oméga-9 (Pharmacopée)."
   },
   {
     "id": "rec_cheveux_colores",
