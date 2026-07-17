@@ -313,23 +313,23 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "38 ml (81%)"
+        "quantite": "38 ml (80,6%)"
       },
       {
         "nom": "Huile végétale de Ricin",
-        "quantite": "9 ml (19%)"
+        "quantite": "9 ml (19,1%)"
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "~0,1% (1 goutte)"
+        "quantite": "0,1% (1 goutte)"
       },
       {
         "nom": "HE Citron Jaune Zest",
-        "quantite": "~0,1% (1 goutte)"
+        "quantite": "0,1% (1 goutte)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
-        "quantite": "~0,1% (1 goutte)"
+        "quantite": "0,1% (1 goutte)"
       },
       {
         "nom": "PROTOCOLE LONG — protocole Hay 1998 (3 à 7 mois, flacon 25 ml)",
