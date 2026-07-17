@@ -578,7 +578,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Adulte — HV Coco",
-        "quantite": "50 ml (95%)"
+        "quantite": "50 ml (95,2%)"
       },
       {
         "nom": "Adulte — HE Lavande Aspic",
@@ -891,11 +891,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Macérât huileux de Carotte",
-        "quantite": "9 ml (30%)"
+        "quantite": "9 ml (29,7%)"
       },
       {
         "nom": "Huile végétale de Rose Musquée",
-        "quantite": "21 ml (69%)"
+        "quantite": "21 ml (69,4%)"
       },
       {
         "nom": "HE Carotte",
@@ -1042,27 +1042,27 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat d'Hamamélis",
-        "quantite": "70 ml (67%)"
+        "quantite": "70 ml (67,3%)"
       },
       {
         "nom": "Hydrolat de Tea Tree",
-        "quantite": "30 ml (29%)"
+        "quantite": "30 ml (28,8%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "3 ml (3%)"
+        "quantite": "3 ml (2,9%)"
       },
       {
         "nom": "HE Tea Tree",
-        "quantite": "0,25% (5 gouttes)"
+        "quantite": "0,2% (5 gouttes)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
-        "quantite": "0,25% (5 gouttes)"
+        "quantite": "0,2% (5 gouttes)"
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "12 gouttes (~0,6%)"
+        "quantite": "12 gouttes (0,6%)"
       }
     ],
     "etapes": [
@@ -1126,19 +1126,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat de Lavande Vraie",
-        "quantite": "60 ml (59%)"
+        "quantite": "60 ml (59,6%)"
       },
       {
         "nom": "Hydrolat de Bleuet",
-        "quantite": "40 ml (40%)"
+        "quantite": "40 ml (39,7%)"
       },
       {
         "nom": "HE Camomille Romaine (Noble)",
-        "quantite": "0,15% (3 gouttes)"
+        "quantite": "0,1% (3 gouttes)"
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "12 gouttes (~0,6%)"
+        "quantite": "12 gouttes (0,6%)"
       }
     ],
     "etapes": [
@@ -1162,11 +1162,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat de Tea Tree",
-        "quantite": "60 ml (59%)"
+        "quantite": "60 ml (59,3%)"
       },
       {
         "nom": "Hydrolat de Romarin Verbénone",
-        "quantite": "40 ml (40%)"
+        "quantite": "40 ml (39,5%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -1178,7 +1178,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "12 gouttes (~0,6%)"
+        "quantite": "12 gouttes (0,6%)"
       }
     ],
     "etapes": [
@@ -1201,27 +1201,27 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Gel d'Aloe Vera pur",
-        "quantite": "90 ml (89%)"
+        "quantite": "90 ml (89,2%)"
       },
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "5 ml (5%)"
+        "quantite": "5 ml (4,9%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "5 ml (5%)"
+        "quantite": "5 ml (4,9%)"
       },
       {
         "nom": "HE Lavande Aspic",
-        "quantite": "0,25% (5 gouttes)"
+        "quantite": "0,2% (5 gouttes)"
       },
       {
         "nom": "HE Camomille Romaine (Noble)",
-        "quantite": "0,25% (5 gouttes)"
+        "quantite": "0,2% (5 gouttes)"
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "12 gouttes (~0,6%)"
+        "quantite": "12 gouttes (0,6%)"
       }
     ],
     "etapes": [
@@ -1245,11 +1245,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Gel d'Aloe Vera pur",
-        "quantite": "28 ml (91%)"
+        "quantite": "28 ml (91,7%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "2 ml (7%)"
+        "quantite": "2 ml (6,6%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -1265,7 +1265,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "4 gouttes (~0,6%)"
+        "quantite": "4 gouttes (0,7%)"
       }
     ],
     "etapes": [
@@ -1288,23 +1288,23 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Gel d'Aloe Vera pur",
-        "quantite": "22 ml (73%)"
+        "quantite": "22 ml (72,7%)"
       },
       {
         "nom": "Hydrolat de Bleuet",
-        "quantite": "7 ml (23%)"
+        "quantite": "7 ml (23,1%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "1 ml (3%)"
+        "quantite": "1 ml (3,3%)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "0,1% (1 goutte)"
+        "quantite": "0,2% (1 goutte)"
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "4 gouttes (~0,6%)"
+        "quantite": "4 gouttes (0,7%)"
       }
     ],
     "etapes": [
@@ -1332,19 +1332,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Hydrolat de Camomille Romaine",
-        "quantite": "13 ml (88%)"
+        "quantite": "13 ml (87,7%)"
       },
       {
         "nom": "Actif Caféine 2%",
-        "quantite": "0,6 g (4%)"
+        "quantite": "0,6 g (4,1%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "1 ml (7%)"
+        "quantite": "1 ml (6,8%)"
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "4 gouttes (~0,6%)"
+        "quantite": "4 gouttes (1,4%)"
       },
       {
         "nom": "PHASE HUILEUSE (phase huile, ~50% du flacon)",
@@ -1352,19 +1352,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "HV Calophylle Inophyle",
-        "quantite": "4,5 ml (29%)"
+        "quantite": "4,5 ml (29,8%)"
       },
       {
         "nom": "HV Rose Musquée",
-        "quantite": "10,5 ml (69%)"
+        "quantite": "10,5 ml (69,6%)"
       },
       {
         "nom": "HE Hélichryse Italienne",
-        "quantite": "~0,3% (1 goutte)"
+        "quantite": "0,3% (1 goutte)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "~0,3% (1 goutte)"
+        "quantite": "0,3% (1 goutte)"
       }
     ],
     "etapes": [
@@ -1469,19 +1469,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "30 ml (~97%)"
+        "quantite": "30 ml (96,8%)"
       },
       {
         "nom": "HE Hélichryse Italienne",
-        "quantite": "~1,6% (10 gouttes)"
+        "quantite": "1,6% (10 gouttes)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
-        "quantite": "~0,8% (5 gouttes)"
+        "quantite": "0,8% (5 gouttes)"
       },
       {
         "nom": "HE Cyprès Toujours Vert (ou Cèdre d'Atlas si grossesse)",
-        "quantite": "~0,8% (5 gouttes)"
+        "quantite": "0,8% (5 gouttes)"
       }
     ],
     "etapes": [
@@ -1580,23 +1580,23 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Beurre de Karité brut",
-        "quantite": "12 g (60%)"
+        "quantite": "12 g (59,7%)"
       },
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "6 g (30%)"
+        "quantite": "6 g (29,9%)"
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "2 g (9,1%)"
+        "quantite": "2 g (10%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
-        "quantite": "~0,3% (1 goutte)"
+        "quantite": "0,2% (1 goutte)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "~0,3% (1 goutte)"
+        "quantite": "0,2% (1 goutte)"
       }
     ],
     "etapes": [
@@ -2019,11 +2019,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Souchet",
-        "quantite": "34 ml (68,9%)"
+        "quantite": "34 ml (68,3%)"
       },
       {
         "nom": "Huile végétale de Pépin de Courge",
-        "quantite": "15 ml (29,5%)"
+        "quantite": "15 ml (30,2%)"
       },
       {
         "nom": "HE Sauge Sclarée",
@@ -2337,7 +2337,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Base shampoing neutre bio",
-        "quantite": "186 ml (93%)"
+        "quantite": "186 ml (93,3%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
@@ -2958,19 +2958,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "HE Camomille Romaine",
-        "quantite": "~1,9% (2 gouttes)"
+        "quantite": "1,9% (2 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "~1,9% (2 gouttes)"
+        "quantite": "1,9% (2 gouttes)"
       },
       {
         "nom": "HE Néroli (Fleur d'Oranger)",
-        "quantite": "~1% (1 goutte)"
+        "quantite": "1% (1 goutte)"
       },
       {
         "nom": "HV Noyau d'Abricot",
-        "quantite": "5 ml (95%)"
+        "quantite": "5 ml (95,2%)"
       }
     ],
     "etapes": [
@@ -3214,19 +3214,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "HV de Noyau d'Abricot",
-        "quantite": "15 ml (96%)"
+        "quantite": "15 ml (95,8%)"
       },
       {
         "nom": "HE Basilic Tropical",
-        "quantite": "~1,6% (5 gouttes)"
+        "quantite": "1,6% (5 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "~1,6% (5 gouttes)"
+        "quantite": "1,6% (5 gouttes)"
       },
       {
         "nom": "HE Menthe Poivrée",
-        "quantite": "~1% (3 gouttes)"
+        "quantite": "1% (3 gouttes)"
       }
     ],
     "etapes": [
