@@ -332,43 +332,43 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "0,1% (1 goutte)"
       },
       {
-        "nom": "PROTOCOLE LONG — protocole Hay 1998 (3 à 7 mois, flacon 25 ml)",
+        "nom": "PROTOCOLE LONG — protocole Hay 1998 (3 à 7 mois, flacon 100 ml)",
         "quantite": ""
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "3 ml (12%)"
+        "quantite": "12,5 ml (12,5%)"
       },
       {
         "nom": "Huile végétale de Pépins de Raisin",
-        "quantite": "19 ml (77%)"
+        "quantite": "83,5 ml (83,5%)"
       },
       {
         "nom": "HE Thym à Thymol",
-        "quantite": "2% (10 gouttes)"
+        "quantite": "1 ml — 20 gouttes (1%)"
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "3% (15 gouttes)"
+        "quantite": "1 ml — 20 gouttes (1%)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "3% (15 gouttes)"
+        "quantite": "1 ml — 20 gouttes (1%)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
-        "quantite": "3% (15 gouttes)"
+        "quantite": "1 ml — 20 gouttes (1%)"
       }
     ],
     "etapes": [
       "COMMENT CHOISIR : commencer toujours par le PROTOCOLE COURT pour tester la tolérance. Si les résultats sont positifs après 3 semaines, passer au PROTOCOLE LONG",
-      "Préparer la synergie choisie dans un flacon ambré de 50 ml. Ne préparer qu'UN SEUL protocole à la fois",
+      "Préparer la synergie choisie dans un flacon ambré (50 ml pour le protocole court, 100 ml pour le protocole long). Ne préparer qu'UN SEUL protocole à la fois",
       "PROTOCOLE COURT (3 semaines) : appliquer chaque soir sur les zones de pelade et la périphérie. Masser exactement 2 minutes. Évaluer les résultats au bout de 3 semaines",
       "PROTOCOLE LONG (3 à 7 mois, si le COURT est bien toléré) : même application chaque soir. Durée calquée sur l'étude clinique Hay 1998 (7 mois). Ne pas interrompre avant 3 mois pour juger de l'efficacité",
       "Laisser poser toute la nuit, laver le matin avec un shampoing doux"
     ],
     "bonus": "Protocole long Hay et al. 1998 (Archives of Dermatology) : 44% d'amélioration significative en 7 mois.",
-    "precautions": "Romarin, Thym et Cèdre contre-indiqués grossesse, hypertension, épilepsie. Citron Zest photosensibilisant. Diagnostic dermatologique préalable indispensable. Protocole long : concentrations élevées conformes à l'étude Hay 1998 (11% HE total) — application strictement localisée sur les zones de pelade uniquement.",
+    "precautions": "Romarin, Thym et Cèdre contre-indiqués grossesse, hypertension, épilepsie. Citron Zest photosensibilisant. Diagnostic dermatologique préalable indispensable. Protocole long : dosage exact de l'étude Hay 1998 (1% de chaque HE, 4% d'HE au total) — application strictement localisée sur les zones de pelade uniquement.",
     "source": "Hay IC, Jamieson M, Ormerod AD (1998) - Archives of Dermatology 134(11):1349-1352 - PMID 9828867 : étude clinique randomisée aromathérapie sur 86 patients atteints d'alopecia areata"
   },
   {
