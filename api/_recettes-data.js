@@ -1,4 +1,4 @@
-// Recettes consolidées RESPEKTUS — synchronisé depuis l'app le 2026-05-21
+// Recettes consolidées RESPEKTUS — synchronisé depuis l'app le 2026-07-17
 // 103 recettes (originales + base + complémentaires)
 
 export const RECETTES_BIBLIOTHEQUE = [
@@ -13,11 +13,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "50 ml (100%)"
+        "quantite": "49 ml (98%)"
       },
       {
         "nom": "HE Citron Jaune Zest",
-        "quantite": "2,5% (25 gouttes)"
+        "quantite": "2% (20 gouttes)"
       }
     ],
     "etapes": [
@@ -31,114 +31,152 @@ export const RECETTES_BIBLIOTHEQUE = [
     "source": "Synergie traditionnelle revitalisante. Citron Zest : limonène tonifiant cutané documenté (Pharmacopée européenne). HV Noisette : profil pénétrant adapté au cuir chevelu"
   },
   {
-    "id": "rec_02_brillance_cheveux",
-    "titre": "Brillance et éclat (shampoing + masque)",
+    "id": "rec_02_brillance_shampoing",
+    "titre": "Shampoing brillance et éclat",
     "categorie": "Cheveux",
     "sousCategorie": "Entretien",
-    "indications": "Apporte brillance et éclat aux cheveux ternes",
-    "duree": "Quotidien (shampoing) + 1 fois par semaine (masque)",
-    "frequence": "Shampoing à chaque lavage, masque 1x/semaine",
+    "indications": "Shampoing quotidien qui apporte brillance et éclat aux cheveux ternes",
+    "volume_total": "200 ml",
+    "duree": "Quotidien",
+    "frequence": "À chaque lavage",
     "ingredients": [
       {
-        "nom": "Shampoing — Base shampoing neutre bio",
-        "quantite": "200 ml"
+        "nom": "Base shampoing neutre bio",
+        "quantite": "194 ml (97,1%)"
       },
       {
-        "nom": "Shampoing — HV Jojoba",
-        "quantite": "5 ml"
+        "nom": "HV Jojoba",
+        "quantite": "5 ml (2,5%)"
       },
       {
-        "nom": "Shampoing — HE Bois de Hô",
-        "quantite": "10 gouttes"
+        "nom": "HE Bois de Hô",
+        "quantite": "10 gouttes (~0,25%)"
       },
       {
-        "nom": "Shampoing — HE Ylang-Ylang Totum",
-        "quantite": "5 gouttes"
-      },
-      {
-        "nom": "Masque — HV Argan",
-        "quantite": "25 ml"
-      },
-      {
-        "nom": "Masque — HV Jojoba",
-        "quantite": "25 ml"
-      },
-      {
-        "nom": "Masque — HE Romarin à Cinéole",
-        "quantite": "2% (20 gouttes)"
-      },
-      {
-        "nom": "Masque — HE Ylang-Ylang Totum",
-        "quantite": "1,5% (15 gouttes)"
-      },
-      {
-        "nom": "Masque — HE Litsée Citronnée",
-        "quantite": "0,5% (5 gouttes)"
+        "nom": "HE Ylang-Ylang Totum",
+        "quantite": "5 gouttes (~0,12%)"
       }
     ],
     "etapes": [
-      "Shampoing : mélanger les HE et HV dans la base, agiter à chaque utilisation",
-      "Masque : appliquer sur cheveux secs ou humides, des racines aux pointes",
-      "Garder le masque toute la nuit",
-      "Laver le lendemain avec le shampoing brillance"
+      "Verser la base shampoing dans un flacon ambré",
+      "Ajouter la HV Jojoba puis les HE",
+      "Agiter à chaque utilisation",
+      "Laver les cheveux en massant le cuir chevelu",
+      "Rincer abondamment"
     ],
-    "bonus": "La Litsée Citronnée apporte une note fraîche et un éclat lumineux à la fibre.",
-    "precautions": "Test cutané préalable. Romarin contre-indiqué grossesse, hypertension, épilepsie.",
-    "source": "Romarin à Cinéole : Panahi 2015 (PMID 25842469) - stimulation du cuir chevelu. Ylang-Ylang : usage cosmétique traditionnel pour brillance capillaire"
+    "bonus": "Pour un effet renforcé, combiner avec le « Masque brillance et éclat » 1 fois par semaine.",
+    "precautions": "Test cutané préalable. Éviter le contact avec les yeux.",
+    "source": "Ylang-Ylang : usage cosmétique traditionnel pour brillance capillaire. Bois de Hô : alternative durable au Bois de Rose (CITES)."
   },
   {
-    "id": "rec_03_reflets_blonds",
-    "titre": "Reflets blonds (shampoing + masque)",
+    "id": "rec_02_brillance_masque",
+    "titre": "Masque brillance et éclat",
     "categorie": "Cheveux",
     "sousCategorie": "Entretien",
-    "indications": "Révèle les reflets dorés naturels et apaise le cuir chevelu",
-    "duree": "Cure de 4 semaines",
-    "frequence": "Shampoing quotidien + masque 3 fois par semaine",
+    "indications": "Masque hebdomadaire pour nourrir la fibre capillaire et raviver la brillance",
+    "volume_total": "50 ml",
+    "duree": "4 semaines",
+    "frequence": "1 fois par semaine",
     "ingredients": [
       {
-        "nom": "Shampoing — Base shampoing neutre bio",
-        "quantite": "200 ml"
+        "nom": "HV Argan",
+        "quantite": "24 ml (48%)"
       },
       {
-        "nom": "Shampoing — HE Camomille Romaine (Noble)",
-        "quantite": "5 g"
+        "nom": "HV Jojoba",
+        "quantite": "24 ml (48%)"
       },
       {
-        "nom": "Shampoing — HE Citron Jaune Zest",
-        "quantite": "4 g"
+        "nom": "HE Romarin à Cinéole",
+        "quantite": "20 gouttes (2%)"
       },
       {
-        "nom": "Masque — HV Jojoba",
-        "quantite": "30 ml"
+        "nom": "HE Ylang-Ylang Totum",
+        "quantite": "15 gouttes (1,5%)"
       },
       {
-        "nom": "Masque — HE Camomille Romaine (Noble)",
-        "quantite": "2%"
-      },
-      {
-        "nom": "Masque — HE Citron Jaune Zest",
-        "quantite": "1%"
-      },
-      {
-        "nom": "Rinçage final — Hydrolat de Camomille Romaine",
-        "quantite": "100 ml"
-      },
-      {
-        "nom": "Rinçage final — Jus de citron frais",
-        "quantite": "1 cuillère à soupe"
+        "nom": "HE Litsée Citronnée",
+        "quantite": "5 gouttes (0,5%)"
       }
     ],
     "etapes": [
-      "Préparer shampoing et masque séparément, conserver en flacons ambrés",
-      "Masque : appliquer le soir sur cheveux secs, masser cuir chevelu",
+      "Mélanger les huiles végétales dans un flacon ambré",
+      "Ajouter les huiles essentielles, agiter délicatement",
+      "Appliquer sur cheveux secs ou humides, des racines aux pointes",
+      "Laisser poser toute la nuit (ou minimum 1 heure)",
+      "Laver le lendemain avec le « Shampoing brillance et éclat »"
+    ],
+    "bonus": "La Litsée Citronnée apporte une note fraîche et un éclat lumineux à la fibre.",
+    "precautions": "Test cutané préalable. Romarin à Cinéole contre-indiqué grossesse, allaitement, enfants moins de 6 ans, hypertension, épilepsie. Litsée Citronnée déconseillée grossesse 1er trimestre.",
+    "source": "Romarin à Cinéole : Panahi 2015 (PMID 25842469) - stimulation du cuir chevelu. Ylang-Ylang : usage cosmétique traditionnel pour brillance capillaire."
+  },
+  {
+    "id": "rec_03_reflets_blonds_shampoing",
+    "titre": "Shampoing reflets blonds",
+    "categorie": "Cheveux",
+    "sousCategorie": "Entretien",
+    "indications": "Shampoing quotidien qui révèle les reflets dorés naturels et apaise le cuir chevelu",
+    "volume_total": "200 ml",
+    "duree": "Cure de 4 semaines",
+    "frequence": "Quotidien",
+    "ingredients": [
+      {
+        "nom": "Base shampoing neutre bio",
+        "quantite": "199,5 ml (99,8%)"
+      },
+      {
+        "nom": "HE Camomille Romaine (Noble)",
+        "quantite": "5 gouttes (~0,12%)"
+      },
+      {
+        "nom": "HE Citron Jaune Zest",
+        "quantite": "4 gouttes (~0,10%)"
+      }
+    ],
+    "etapes": [
+      "Verser la base shampoing dans un flacon ambré",
+      "Ajouter les huiles essentielles, agiter délicatement",
+      "Agiter à chaque utilisation",
+      "Laver les cheveux en massant le cuir chevelu",
+      "Rincer abondamment puis appliquer le rinçage final (voir bonus)"
+    ],
+    "bonus": "Rinçage final pour amplifier les reflets : mélanger 100 ml d'Hydrolat de Camomille Romaine avec 1 cuillère à soupe de jus de citron frais. Verser sur les cheveux après le dernier rinçage à l'eau, sans rincer. Sécher au soleil — l'exposition solaire active les pigments et révèle les reflets dorés.",
+    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron photosensibilisant sur la peau : éviter le contact cutané direct. Bien rincer si coulure sur le visage ou la nuque. Le rinçage final non rincé s'applique sur la fibre capillaire — l'exposition au soleil est l'étape qui active les reflets, c'est voulu.",
+    "source": "Camomille Romaine et Citron : usages référentiels traditionnels documentés pour les reflets dorés des cheveux blonds. Hydrolat de Camomille : Pharmacopée européenne."
+  },
+  {
+    "id": "rec_03_reflets_blonds_masque",
+    "titre": "Masque reflets blonds",
+    "categorie": "Cheveux",
+    "sousCategorie": "Entretien",
+    "indications": "Masque pour nourrir la fibre et intensifier les reflets dorés",
+    "volume_total": "30 ml",
+    "duree": "Cure de 4 semaines",
+    "frequence": "3 fois par semaine",
+    "ingredients": [
+      {
+        "nom": "HV Jojoba",
+        "quantite": "30 ml (97%)"
+      },
+      {
+        "nom": "HE Camomille Romaine (Noble)",
+        "quantite": "12 gouttes (2%)"
+      },
+      {
+        "nom": "HE Citron Jaune Zest",
+        "quantite": "6 gouttes (1%)"
+      }
+    ],
+    "etapes": [
+      "Mélanger la HV Jojoba et les HE dans un flacon ambré",
+      "Appliquer le soir sur cheveux secs, masser le cuir chevelu",
       "Laisser poser toute la nuit",
-      "Laver le matin avec le shampoing reflets blonds",
-      "Rinçage final : mélanger l'Hydrolat de Camomille Romaine avec le jus de citron frais et verser sur les cheveux après le dernier rinçage à l'eau, sans rincer",
+      "Laver le matin avec le « Shampoing reflets blonds »",
       "Sécher de préférence au soleil pour intensifier les reflets dorés"
     ],
     "bonus": "Pour amplifier les reflets, sécher au soleil après lavage.",
-    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron Zest photosensibilisant : application le soir.",
-    "source": "Camomille Romaine et Citron : usages référentiels traditionnels documentés pour les reflets dorés des cheveux blonds. Hydrolat de Camomille : Pharmacopée européenne"
+    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron Zest photosensibilisant : application le soir uniquement.",
+    "source": "Camomille Romaine et Citron : usages référentiels traditionnels documentés pour les reflets dorés des cheveux blonds."
   },
   {
     "id": "rec_04_cheveux_secs",
@@ -151,11 +189,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Coco",
-        "quantite": "35 ml (70%)"
+        "quantite": "34 ml (68,3%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "15 ml (30%)"
+        "quantite": "15 ml (29,2%)"
       },
       {
         "nom": "HE Bois de Hô",
@@ -187,11 +225,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "30 ml (60%)"
+        "quantite": "29 ml (58,2%)"
       },
       {
         "nom": "Huile végétale de Ricin",
-        "quantite": "20 ml (40%)"
+        "quantite": "19 ml (38,8%)"
       },
       {
         "nom": "HE Romarin à Cinéole",
@@ -227,15 +265,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Phase 1 — HV Millepertuis",
-        "quantite": "50 ml"
+        "quantite": "50 ml (98%)"
       },
       {
         "nom": "Phase 1 — HE Camomille Romaine (Noble)",
-        "quantite": "3% (30 gouttes)"
+        "quantite": "2% (20 gouttes)"
       },
       {
         "nom": "Phase 2 — HV Millepertuis",
-        "quantite": "50 ml"
+        "quantite": "50 ml (97%)"
       },
       {
         "nom": "Phase 2 — HE Camomille Romaine (Noble)",
@@ -251,10 +289,11 @@ export const RECETTES_BIBLIOTHEQUE = [
       }
     ],
     "etapes": [
-      "Phase 1 (5 jours) : appliquer la synergie forte sur le cuir chevelu, masser doucement",
-      "Phase 2 (10 jours) : passer à la synergie apaisante",
-      "Application le soir, laisser poser 30 minutes minimum",
-      "Laver avec un shampoing très doux"
+      "Préparer DEUX flacons ambrés séparément : un pour la Phase 1, un pour la Phase 2",
+      "PHASE 1 — Jours 1 à 5 : appliquer le flacon Phase 1 chaque soir sur le cuir chevelu. Masser doucement 2 à 3 minutes. Concentration forte pour déclencher l'apaisement",
+      "PHASE 2 — Jours 6 à 15 : passer au flacon Phase 2. Formule plus douce, 3 actifs complémentaires. Même application chaque soir",
+      "Laisser poser 30 minutes minimum (ou toute la nuit), puis laver avec un shampoing très doux",
+      "IMPORTANT : Millepertuis fortement photosensibilisant. Application le soir UNIQUEMENT, jamais avant exposition au soleil"
     ],
     "precautions": "Millepertuis fortement photosensibilisant : application le soir UNIQUEMENT, jamais de jour. Allergie aux astéracées possible.",
     "source": "HV Millepertuis : usage référentiel apaisant cutané (Pharmacopée). Camomille Romaine : effets apaisants documentés. Lavande Vraie : revue 2023 (PMC10671255)"
@@ -274,60 +313,62 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "40 ml (80%)"
+        "quantite": "38 ml (81%)"
       },
       {
         "nom": "Huile végétale de Ricin",
-        "quantite": "10 ml (20%)"
+        "quantite": "9 ml (19%)"
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "10 gouttes (1%)"
+        "quantite": "~0,1% (1 goutte)"
       },
       {
         "nom": "HE Citron Jaune Zest",
-        "quantite": "10 gouttes (1%)"
+        "quantite": "~0,1% (1 goutte)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
-        "quantite": "10 gouttes (1%)"
+        "quantite": "~0,1% (1 goutte)"
       },
       {
-        "nom": "PROTOCOLE LONG — protocole Hay 1998 (3 à 7 mois, flacon 50 ml)",
+        "nom": "PROTOCOLE LONG — protocole Hay 1998 (3 à 7 mois, flacon 25 ml)",
         "quantite": ""
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "25 ml (50%)"
+        "quantite": "3 ml (12%)"
       },
       {
         "nom": "Huile végétale de Pépins de Raisin",
-        "quantite": "25 ml (50%)"
+        "quantite": "19 ml (77%)"
+      },
+      {
+        "nom": "HE Thym à Thymol",
+        "quantite": "2% (10 gouttes)"
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "10 gouttes (1%)"
+        "quantite": "3% (15 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "10 gouttes (1%)"
+        "quantite": "3% (15 gouttes)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
-        "quantite": "10 gouttes (1%)"
+        "quantite": "3% (15 gouttes)"
       }
     ],
     "etapes": [
-      "Choisir l'un des deux protocoles (jamais les deux en même temps)",
-      "Préparer la synergie sélectionnée dans un flacon ambré de 50 ml",
-      "Appliquer le soir sur les zones de pelade ET la périphérie immédiate",
-      "Masser exactement 2 minutes le cuir chevelu pour activer la microcirculation",
-      "Laisser poser toute la nuit, laver le matin avec un shampoing doux",
-      "PROTOCOLE COURT : à tester 3 semaines pour évaluer la tolérance",
-      "PROTOCOLE LONG : protocole Hay 1998 — appliquer tous les soirs pendant 3 à 7 mois (durée de l'étude clinique)"
+      "COMMENT CHOISIR : commencer toujours par le PROTOCOLE COURT pour tester la tolérance. Si les résultats sont positifs après 3 semaines, passer au PROTOCOLE LONG",
+      "Préparer la synergie choisie dans un flacon ambré de 50 ml. Ne préparer qu'UN SEUL protocole à la fois",
+      "PROTOCOLE COURT (3 semaines) : appliquer chaque soir sur les zones de pelade et la périphérie. Masser exactement 2 minutes. Évaluer les résultats au bout de 3 semaines",
+      "PROTOCOLE LONG (3 à 7 mois, si le COURT est bien toléré) : même application chaque soir. Durée calquée sur l'étude clinique Hay 1998 (7 mois). Ne pas interrompre avant 3 mois pour juger de l'efficacité",
+      "Laisser poser toute la nuit, laver le matin avec un shampoing doux"
     ],
     "bonus": "Protocole long Hay et al. 1998 (Archives of Dermatology) : 44% d'amélioration significative en 7 mois.",
-    "precautions": "Romarin et Cèdre contre-indiqués grossesse, hypertension, épilepsie. Citron Zest photosensibilisant. Diagnostic dermatologique préalable indispensable.",
+    "precautions": "Romarin, Thym et Cèdre contre-indiqués grossesse, hypertension, épilepsie. Citron Zest photosensibilisant. Diagnostic dermatologique préalable indispensable. Protocole long : concentrations élevées conformes à l'étude Hay 1998 (11% HE total) — application strictement localisée sur les zones de pelade uniquement.",
     "source": "Hay IC, Jamieson M, Ormerod AD (1998) - Archives of Dermatology 134(11):1349-1352 - PMID 9828867 : étude clinique randomisée aromathérapie sur 86 patients atteints d'alopecia areata"
   },
   {
@@ -341,11 +382,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "30 ml (60%)"
+        "quantite": "29 ml (58,2%)"
       },
       {
         "nom": "Huile végétale de Nigelle",
-        "quantite": "20 ml (40%)"
+        "quantite": "19 ml (38,8%)"
       },
       {
         "nom": "HE Camomille Romaine (Noble)",
@@ -380,11 +421,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "30 ml (60%)"
+        "quantite": "29 ml (57,6%)"
       },
       {
         "nom": "Huile végétale de Nigelle",
-        "quantite": "20 ml (40%)"
+        "quantite": "19 ml (38,4%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -423,11 +464,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "25 ml (50%)"
+        "quantite": "24 ml (48,2%)"
       },
       {
         "nom": "Huile végétale de Nigelle",
-        "quantite": "25 ml (50%)"
+        "quantite": "24 ml (48,3%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -466,11 +507,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Millepertuis",
-        "quantite": "30 ml (60%)"
+        "quantite": "29 ml (57,9%)"
       },
       {
         "nom": "Huile végétale de Nigelle",
-        "quantite": "20 ml (40%)"
+        "quantite": "19 ml (38,6%)"
       },
       {
         "nom": "HE Camomille Romaine (Noble)",
@@ -490,12 +531,12 @@ export const RECETTES_BIBLIOTHEQUE = [
       }
     ],
     "etapes": [
+      "ATTENTION : Millepertuis fortement PHOTOSENSIBILISANT. Application le soir UNIQUEMENT. Ne jamais appliquer avant une exposition au soleil (délai minimum 12h)",
       "Appliquer le soir sur cuir chevelu sec",
-      "Masser doucement sans gratter les plaques",
-      "Laisser poser toute la nuit",
+      "Masser doucement sans gratter les plaques. Laisser poser toute la nuit",
       "Laver le matin avec un shampoing doux"
     ],
-    "precautions": "Millepertuis très photosensibilisant : application le soir UNIQUEMENT. Encens et Romarin contre-indiqués grossesse. Synergie en complément du traitement dermatologique.",
+    "precautions": "Millepertuis très photosensibilisant : application le soir UNIQUEMENT, jamais avant soleil (délai 12h). Encens et Romarin contre-indiqués grossesse. Synergie en complément du traitement dermatologique.",
     "source": "Moussaieff A et al. (2008) FASEB Journal - PubMed PMID 18492727 : incensole acétate de l'Encens Oliban active TRPV3 cérébral - effets anxiolytiques et anti-inflammatoires"
   },
   {
@@ -509,60 +550,61 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Enfant 2-6 ans — HV Coco",
-        "quantite": "50 ml"
+        "quantite": "50 ml (99%)"
       },
       {
-        "nom": "Enfant 2-6 ans — HE Lavande Aspic",
-        "quantite": "5 gouttes"
+        "nom": "Enfant 2-6 ans — HE Lavande Vraie",
+        "quantite": "~0,5% (5 gouttes)"
       },
       {
         "nom": "Enfant 2-6 ans — HE Tea Tree",
-        "quantite": "5 gouttes"
+        "quantite": "~0,5% (5 gouttes)"
       },
       {
-        "nom": "Enfant 6-12 ans — HV Coco",
-        "quantite": "50 ml"
+        "nom": "Enfant 7-12 ans — HV Coco",
+        "quantite": "50 ml (97,5%)"
       },
       {
-        "nom": "Enfant 6-12 ans — HE Lavande Aspic",
-        "quantite": "10 gouttes"
+        "nom": "Enfant 7-12 ans — HE Lavande Vraie",
+        "quantite": "~1% (10 gouttes)"
       },
       {
-        "nom": "Enfant 6-12 ans — HE Tea Tree",
-        "quantite": "10 gouttes"
+        "nom": "Enfant 7-12 ans — HE Tea Tree",
+        "quantite": "~1% (10 gouttes)"
       },
       {
-        "nom": "Enfant 6-12 ans — HE Clou de Girofle",
-        "quantite": "5 gouttes"
+        "nom": "Enfant 7-12 ans — HE Clou de Girofle",
+        "quantite": "~0,5% (5 gouttes)"
       },
       {
         "nom": "Adulte — HV Coco",
-        "quantite": "50 ml"
+        "quantite": "50 ml (95%)"
       },
       {
         "nom": "Adulte — HE Lavande Aspic",
-        "quantite": "15 gouttes"
+        "quantite": "~1,4% (15 gouttes)"
       },
       {
         "nom": "Adulte — HE Tea Tree",
-        "quantite": "15 gouttes"
+        "quantite": "~1,4% (15 gouttes)"
       },
       {
         "nom": "Adulte — HE Clou de Girofle",
-        "quantite": "10 gouttes"
+        "quantite": "~1% (10 gouttes)"
       },
       {
         "nom": "Adulte — HE Romarin à Cinéole",
-        "quantite": "10 gouttes"
+        "quantite": "~1% (10 gouttes)"
       }
     ],
     "etapes": [
-      "Pré-traitement au savon noir sur cheveux secs",
-      "Appliquer la synergie adaptée à l'âge sur tout le cuir chevelu",
-      "Couvrir d'un bonnet plastique 2 à 3 heures",
-      "Passer le peigne à poux mèche par mèche",
-      "Rinçage final au vinaigre dilué 50/50",
-      "Renouveler chaque soir pendant 10 jours"
+      "Choisir UNIQUEMENT la formule correspondant à l'âge de la personne à traiter. Ne pas mélanger les formules",
+      "2-6 ans : dosage très doux, 2 HE seulement (Lavande Vraie uniquement). 7-12 ans : concentration légèrement renforcée, Clou de Girofle ajouté (Lavande Vraie — pas Aspic). Adulte : formule complète à 4 HE",
+      "Pré-traitement au savon noir sur cheveux secs (15 minutes)",
+      "Appliquer la synergie choisie sur tout le cuir chevelu, jusqu'aux pointes",
+      "Couvrir d'un bonnet plastique 2 à 3 heures pour asphyxier les parasites",
+      "Rincer puis passer le peigne à poux mèche par mèche. Rinçage final au vinaigre dilué 50/50 (décolleur de lentes)",
+      "Renouveler chaque soir pendant 10 jours pour éliminer les œufs qui éclosent"
     ],
     "precautions": "Réservé aux enfants de 2 ans minimum. Clou de Girofle dermocaustique : respecter strictement le dosage. Pas pendant la grossesse.",
     "source": "Synergie traditionnelle anti-poux. Tea Tree pédiculicide documenté (Carson 2006 PMID 16418522). Clou de Girofle (eugénol) : effet insecticide validé. HV Coco : effet asphyxiant sur les poux"
@@ -578,33 +620,37 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat de Lavande Vraie",
-        "quantite": "80 ml"
+        "quantite": "80 ml (77%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "20 ml"
+        "quantite": "20 ml (20%)"
       },
       {
-        "nom": "HE Lavande Aspic",
-        "quantite": "1% (15 gouttes)"
+        "nom": "HE Lavande Vraie",
+        "quantite": "1% (20 gouttes)"
       },
       {
         "nom": "HE Tea Tree",
-        "quantite": "0,7% (10 gouttes)"
+        "quantite": "0,7% (14 gouttes)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
-        "quantite": "0,7% (10 gouttes)"
+        "quantite": "0,7% (14 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "12 gouttes (~0,6%)"
       }
     ],
     "etapes": [
-      "Préparer en flacon spray, agiter avant chaque utilisation",
+      "Préparer en flacon spray avec le Cosgard, agiter vigoureusement avant chaque utilisation",
       "Vaporiser sur cheveux secs (nuque, derrière les oreilles)",
       "Bien faire pénétrer en tapotant",
       "Pas besoin de rincer"
     ],
     "bonus": "Recette RESPEKTUS® : usage préventif quotidien en période d'épidémie scolaire.",
-    "precautions": "Réservé aux enfants de 3 ans minimum. Tea Tree et Géranium contre-indiqués grossesse, allaitement.",
+    "precautions": "Réservé aux enfants de 3 ans minimum. Lavande Vraie utilisée ici (pas Lavande Aspic — camphrée, interdite moins de 7 ans). Tea Tree et Géranium contre-indiqués grossesse, allaitement.",
     "source": "Trongtokit Y et al. (2005) - Phytother Res 19(4):303-309 - PubMed PMID 16041723 : étude comparative de répulsivité de 38 HE. Géraniol et linalol : composants répulsifs validés"
   },
   {
@@ -651,11 +697,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "30 ml (60%)"
+        "quantite": "29 ml (58,2%)"
       },
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "20 ml (40%)"
+        "quantite": "19 ml (38,8%)"
       },
       {
         "nom": "HE Lavande Vraie",
@@ -690,11 +736,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "20 ml (67%)"
+        "quantite": "20 ml (66,3%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "10 ml (33%)"
+        "quantite": "10 ml (32,7%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
@@ -710,7 +756,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Massage léger en mouvements circulaires",
       "Éviter le contour des yeux"
     ],
-    "precautions": "Géranium éviter 1er trimestre grossesse. Romarin contre-indiqué grossesse, hypertension, épilepsie.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Romarin contre-indiqué grossesse, hypertension, épilepsie.",
     "source": "HV Noisette et Jojoba : profils non-comédogènes documentés (Pharmacopée européenne) pour peaux mixtes. Géranium : régulateur sébum traditionnel"
   },
   {
@@ -724,11 +770,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Rose Musquée",
-        "quantite": "20 ml (67%)"
+        "quantite": "20 ml (66,1%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "10 ml (33%)"
+        "quantite": "10 ml (32,6%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
@@ -750,7 +796,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les zones ridées"
     ],
     "bonus": "L'option Rose de Damas amplifie l'action régénérante (recette premium).",
-    "precautions": "Géranium éviter 1er trimestre grossesse. Rose de Damas contre-indiquée grossesse.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Rose de Damas contre-indiquée grossesse.",
     "source": "Valerón-Almazán P et al. (2015) - J Cosmetics Dermatol Sci Appl 5:161-167 : étude clinique 108 patients - HV Rose Musquée améliore significativement érythème, dyschromie et atrophie cutanée"
   },
   {
@@ -764,11 +810,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "15 ml (50%)"
+        "quantite": "20 ml (65,9%)"
       },
       {
         "nom": "Huile végétale de Noyau d'Abricot",
-        "quantite": "15 ml (50%)"
+        "quantite": "10 ml (33,2%)"
       },
       {
         "nom": "HE Carotte",
@@ -802,15 +848,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "10 ml (33%)"
+        "quantite": "10 ml (34,5%)"
       },
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "13 ml (44%)"
+        "quantite": "14 ml (45,9%)"
       },
       {
         "nom": "Huile végétale de Noyau d'Abricot",
-        "quantite": "7 ml (23%)"
+        "quantite": "6 ml (18,7%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
@@ -845,11 +891,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Macérât huileux de Carotte",
-        "quantite": "15 ml (50%)"
+        "quantite": "9 ml (30%)"
       },
       {
         "nom": "Huile végétale de Rose Musquée",
-        "quantite": "15 ml (50%)"
+        "quantite": "21 ml (69%)"
       },
       {
         "nom": "HE Carotte",
@@ -883,15 +929,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "18 ml (60%)"
+        "quantite": "18 ml (59,4%)"
       },
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "6 ml (20%)"
+        "quantite": "6 ml (19,8%)"
       },
       {
         "nom": "Huile végétale de Nigelle",
-        "quantite": "6 ml (20%)"
+        "quantite": "6 ml (19,8%)"
       },
       {
         "nom": "HE Camomille Romaine (Noble)",
@@ -922,11 +968,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Standard — HV Macadamia",
-        "quantite": "15 ml (50%)"
+        "quantite": "15 ml (49,5%)"
       },
       {
         "nom": "Standard — HV Jojoba",
-        "quantite": "15 ml (50%)"
+        "quantite": "15 ml (49,5%)"
       },
       {
         "nom": "Standard — HE Bois de Hô",
@@ -961,11 +1007,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "15 ml (50%)"
+        "quantite": "15 ml (49,5%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "15 ml (50%)"
+        "quantite": "15 ml (49,5%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
@@ -982,7 +1028,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Le matin : rincer simplement à l'hydrolat"
     ],
     "bonus": "Le Jojoba a une composition très proche du sébum humain : il régule naturellement sa production.",
-    "precautions": "Géranium éviter 1er trimestre. Romarin contre-indiqué grossesse, hypertension, épilepsie.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Romarin contre-indiqué grossesse, hypertension, épilepsie.",
     "source": "HV Noisette et Jojoba : profils non-comédogènes documentés pour peaux mixtes à grasses (Pharmacopée européenne). Géranium : régulateur sébum traditionnel"
   },
   {
@@ -996,15 +1042,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat d'Hamamélis",
-        "quantite": "70 ml"
+        "quantite": "70 ml (67%)"
       },
       {
         "nom": "Hydrolat de Tea Tree",
-        "quantite": "30 ml"
+        "quantite": "30 ml (29%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "3 ml"
+        "quantite": "3 ml (3%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -1016,7 +1062,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Conservateur Cosgard",
-        "quantite": "4 gouttes"
+        "quantite": "12 gouttes (~0,6%)"
       }
     ],
     "etapes": [
@@ -1040,11 +1086,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat de Rose de Damas",
-        "quantite": "70 ml"
+        "quantite": "70 ml (69%)"
       },
       {
         "nom": "Hydrolat de Néroli",
-        "quantite": "30 ml"
+        "quantite": "30 ml (30%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
@@ -1053,16 +1099,20 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Bois de Hô",
         "quantite": "0,2% (4 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "12 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Mélanger les hydrolats dans un flacon spray",
-      "Ajouter les HE et bien agiter",
+      "Ajouter les HE et le Cosgard, bien agiter",
       "Vaporiser matin et soir sur peau propre",
       "Tapoter doucement pour faire pénétrer"
     ],
     "bonus": "Recette RESPEKTUS® : duo Rose et Néroli pour un effet anti-âge sensoriel.",
-    "precautions": "Géranium éviter 1er trimestre. Conservation 3 semaines au frigo.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 1 mois au frigo avec Cosgard.",
     "source": "Hydrolat de Rose de Damas et Néroli : référentiels Pharmacopée européenne pour tonification cutanée. Bois de Hô : alternative durable au Bois de Rose"
   },
   {
@@ -1076,25 +1126,29 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat de Lavande Vraie",
-        "quantite": "60 ml"
+        "quantite": "60 ml (59%)"
       },
       {
         "nom": "Hydrolat de Bleuet",
-        "quantite": "40 ml"
+        "quantite": "40 ml (40%)"
       },
       {
         "nom": "HE Camomille Romaine (Noble)",
         "quantite": "0,15% (3 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "12 gouttes (~0,6%)"
       }
     ],
     "etapes": [
-      "Mélanger les hydrolats et l'HE dans un flacon spray",
+      "Mélanger les hydrolats, l'HE et le Cosgard dans un flacon spray",
       "Bien agiter avant chaque utilisation",
       "Vaporiser sur peau propre, tapoter doucement",
       "Conserver au réfrigérateur"
     ],
     "bonus": "Recette RESPEKTUS® minimaliste — formule la plus douce de la gamme.",
-    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Conservation 3 semaines au frigo.",
+    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Conservation 1 mois au frigo avec Cosgard.",
     "source": "Hydrolats de Lavande et Bleuet : référentiels Pharmacopée européenne pour peaux réactives. Camomille Romaine : effets apaisants documentés"
   },
   {
@@ -1108,11 +1162,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Hydrolat de Tea Tree",
-        "quantite": "60 ml"
+        "quantite": "60 ml (59%)"
       },
       {
         "nom": "Hydrolat de Romarin Verbénone",
-        "quantite": "40 ml"
+        "quantite": "40 ml (40%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -1121,15 +1175,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Géranium Rosat Bourbon",
         "quantite": "0,2% (4 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "12 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Mélanger les hydrolats dans un flacon spray",
-      "Ajouter les HE, bien agiter",
+      "Ajouter les HE et le Cosgard, bien agiter",
       "Vaporiser sur peau propre, ne pas rincer",
       "Conserver au réfrigérateur"
     ],
-    "precautions": "Tea Tree et Géranium contre-indiqués grossesse, allaitement. Romarin Verbénone hépatotoxique à hautes doses (ici tracé).",
+    "precautions": "Tea Tree et Géranium contre-indiqués grossesse, allaitement. Romarin Verbénone hépatotoxique à hautes doses (ici tracé). Conservation 1 mois au frigo avec Cosgard.",
     "source": "Enshaieh S et al. (2007) - Indian J Dermatol Venereol Leprol - PubMed PMID 17314442 : Tea Tree topique randomisée double-aveugle - réduction 40-47% des lésions acnéiques"
   },
   {
@@ -1143,15 +1201,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Gel d'Aloe Vera pur",
-        "quantite": "90 ml"
+        "quantite": "90 ml (89%)"
       },
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "5 ml"
+        "quantite": "5 ml (5%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "3 ml"
+        "quantite": "5 ml (5%)"
       },
       {
         "nom": "HE Lavande Aspic",
@@ -1160,16 +1218,20 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Camomille Romaine (Noble)",
         "quantite": "0,25% (5 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "12 gouttes (~0,6%)"
       }
     ],
     "etapes": [
-      "Mélanger l'aloe et la glycérine, ajouter l'huile végétale",
-      "Disperser les HE dans le mélange",
-      "Conserver au frigo dans un flacon airless",
-      "Appliquer le soir en couche fine"
+      "Pour coups de soleil légers seulement (peau rouge, non cloquée). En cas de coup de soleil étendu ou douloureux : consulter un médecin",
+      "Mélanger l'aloe et la glycérine, ajouter l'huile végétale et le Cosgard",
+      "Disperser les HE dans le mélange, remuer doucement",
+      "Conserver au frigo dans un flacon airless. Appliquer le soir en couche fine"
     ],
     "bonus": "Recette RESPEKTUS® : sensation glaçon immédiate sortie du frigo.",
-    "precautions": "Lavande Aspic contre-indiquée grossesse 1er trimestre, allaitement, enfants moins de 7 ans, épilepsie. En cas de coup de soleil sévère, consulter un médecin.",
+    "precautions": "Lavande Aspic contre-indiquée grossesse 1er trimestre, allaitement, enfants moins de 7 ans, épilepsie. Conservation 1 mois au frigo avec Cosgard. En cas de coup de soleil sévère ou étendu : consultation médicale urgente.",
     "source": "Aloe Vera : référentiel Pharmacopée européenne pour apaisement post-exposition. Lavande Aspic : usage traditionnel après-soleil documenté"
   },
   {
@@ -1183,32 +1245,36 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Gel d'Aloe Vera pur",
-        "quantite": "25 ml"
+        "quantite": "28 ml (91%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "1 ml"
+        "quantite": "2 ml (7%)"
       },
       {
         "nom": "HE Tea Tree",
-        "quantite": "0,5% (5 gouttes)"
+        "quantite": "0,5% (3 gouttes)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
-        "quantite": "0,3% (3 gouttes)"
+        "quantite": "0,3% (2 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "0,2% (2 gouttes)"
+        "quantite": "0,2% (1 goutte)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "4 gouttes (~0,6%)"
       }
     ],
     "etapes": [
-      "Mélanger aloe et glycérine dans un petit pot",
+      "Mélanger aloe, glycérine et Cosgard dans un petit flacon",
       "Disperser les HE en remuant bien",
       "Appliquer directement sur le bouton au coton-tige",
       "Renouveler 1 à 2 fois par jour jusqu'à disparition"
     ],
-    "precautions": "Tea Tree et Géranium contre-indiqués grossesse, allaitement. Usage local strict.",
+    "precautions": "Tea Tree et Géranium contre-indiqués grossesse, allaitement. Usage local strict. Conservation 1 mois au frigo avec Cosgard.",
     "source": "Enshaieh 2007 (PMID 17314442) : Tea Tree topique sur lésions acnéiques. Aloe Vera : Pharmacopée européenne"
   },
   {
@@ -1222,29 +1288,33 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Gel d'Aloe Vera pur",
-        "quantite": "22 ml"
+        "quantite": "22 ml (73%)"
       },
       {
         "nom": "Hydrolat de Bleuet",
-        "quantite": "6 ml"
+        "quantite": "7 ml (23%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "1 ml"
+        "quantite": "1 ml (3%)"
       },
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,1% (1 goutte)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "4 gouttes (~0,6%)"
       }
     ],
     "etapes": [
-      "Mélanger délicatement tous les ingrédients",
+      "Mélanger délicatement tous les ingrédients avec le Cosgard",
       "Conserver au frigo dans un flacon roll-on",
       "Appliquer le matin sur l'os de l'orbite",
       "Tapoter avec l'annulaire (jamais sur la paupière mobile)"
     ],
     "bonus": "Recette RESPEKTUS® à conserver au frigo pour un effet décongestionnant amplifié.",
-    "precautions": "Ne JAMAIS appliquer dans l'œil. Dosage HE volontairement très faible (zone fine).",
+    "precautions": "Ne JAMAIS appliquer dans l'œil. Dosage HE volontairement très faible (zone fine). Conservation 1 mois au frigo avec Cosgard.",
     "source": "Hydrolat de Bleuet : référentiel Pharmacopée européenne pour décongestion du contour de l'œil. Aloe Vera apaisant documenté"
   },
   {
@@ -1257,43 +1327,52 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "Matin et soir",
     "ingredients": [
       {
-        "nom": "Phase aqueuse — Hydrolat de Camomille Romaine",
-        "quantite": "13 ml"
+        "nom": "PHASE AQUEUSE (phase eau, ~50% du flacon)",
+        "quantite": ""
       },
       {
-        "nom": "Phase aqueuse — Actif Caféine 2%",
-        "quantite": "0,6 g"
+        "nom": "Hydrolat de Camomille Romaine",
+        "quantite": "13 ml (88%)"
       },
       {
-        "nom": "Phase aqueuse — Glycérine végétale",
-        "quantite": "1 ml"
+        "nom": "Actif Caféine 2%",
+        "quantite": "0,6 g (4%)"
       },
       {
-        "nom": "Phase aqueuse — Conservateur Cosgard",
-        "quantite": "4 gouttes"
+        "nom": "Glycérine végétale",
+        "quantite": "1 ml (7%)"
       },
       {
-        "nom": "Phase huileuse — HV Calophylle Inophyle",
-        "quantite": "7,5 ml"
+        "nom": "Conservateur Cosgard",
+        "quantite": "4 gouttes (~0,6%)"
       },
       {
-        "nom": "Phase huileuse — HV Rose Musquée",
-        "quantite": "7,5 ml"
+        "nom": "PHASE HUILEUSE (phase huile, ~50% du flacon)",
+        "quantite": ""
       },
       {
-        "nom": "Phase huileuse — HE Hélichryse Italienne",
-        "quantite": "0,5% (3 gouttes)"
+        "nom": "HV Calophylle Inophyle",
+        "quantite": "4,5 ml (29%)"
       },
       {
-        "nom": "Phase huileuse — HE Lavande Vraie",
-        "quantite": "0,5% (3 gouttes)"
+        "nom": "HV Rose Musquée",
+        "quantite": "10,5 ml (69%)"
+      },
+      {
+        "nom": "HE Hélichryse Italienne",
+        "quantite": "~0,3% (1 goutte)"
+      },
+      {
+        "nom": "HE Lavande Vraie",
+        "quantite": "~0,3% (1 goutte)"
       }
     ],
     "etapes": [
-      "Préparer phase aqueuse et huileuse séparément",
-      "Verser les deux dans un flacon roll-on biphase",
-      "Bien agiter avant chaque utilisation",
-      "Appliquer matin et soir sur l'os de l'orbite, tapoter"
+      "FABRICATION BIPHASE : les deux phases ne se mélangent pas, elles restent séparées dans le flacon roll-on (c'est normal et voulu). Bien agiter avant chaque utilisation",
+      "Préparer la PHASE AQUEUSE dans un bol : Hydrolat de Camomille (13 ml), Actif Caféine (0,6 g), Glycérine végétale (1 ml), Conservateur Cosgard (4 gouttes). Mélanger",
+      "Préparer la PHASE HUILEUSE dans un autre bol : HV Calophylle (4,5 ml), HV Rose Musquée (10,5 ml), HE Hélichryse (1 goutte), HE Lavande (1 goutte). Mélanger",
+      "Verser les deux phases dans un flacon roll-on biphase de 30 ml. Étiqueter et conserver au frigo (durée 3 mois)",
+      "UTILISATION : agiter vigoureusement avant chaque emploi. Appliquer matin et soir sur l'os orbitaire en tapotant doucement. Ne jamais frotter, ne pas approcher de l'œil"
     ],
     "bonus": "Recette RESPEKTUS® biphase — conservation 3 mois au frigo. La caféine active la microcirculation.",
     "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Ne JAMAIS appliquer dans l'œil.",
@@ -1310,15 +1389,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Rose Musquée",
-        "quantite": "12 ml (40%)"
+        "quantite": "12 ml (41,2%)"
       },
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "12 ml (40%)"
+        "quantite": "12 ml (41,1%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "6 ml (20%)"
+        "quantite": "5 ml (16,6%)"
       },
       {
         "nom": "HE Ciste Ladanifère",
@@ -1339,7 +1418,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur l'ovale du visage et le cou",
       "5 minutes de massage minimum"
     ],
-    "precautions": "Ciste contre-indiqué grossesse, allaitement, anticoagulants. Encens contre-indiqué grossesse. Géranium éviter 1er trimestre.",
+    "precautions": "Ciste contre-indiqué grossesse, allaitement, anticoagulants. Encens contre-indiqué grossesse. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié.",
     "source": "Moussaieff A et al. (2008) FASEB Journal - PMID 18492727 : Encens Oliban (incensole) effets régénérants. Rose Musquée : Valerón-Almazán 2015"
   },
   {
@@ -1353,19 +1432,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Beurre de Karité brut",
-        "quantite": "12 g (60%)"
+        "quantite": "12 g (60,6%)"
       },
       {
         "nom": "Macérât huileux de Vanille",
-        "quantite": "4 g (20%)"
+        "quantite": "4 g (20,2%)"
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "2 g (10%)"
+        "quantite": "2 g (9,1%)"
       },
       {
         "nom": "Huile végétale de Coco",
-        "quantite": "2 g (10%)"
+        "quantite": "2 g (10,1%)"
       }
     ],
     "etapes": [
@@ -1380,61 +1459,39 @@ export const RECETTES_BIBLIOTHEQUE = [
   },
   {
     "id": "rec_34_couperose",
-    "titre": "Couperose (2 versions)",
+    "titre": "Couperose · sérum quotidien",
     "categorie": "Visage",
     "sousCategorie": "Réparation",
     "indications": "Calme l'inflammation et renforce les capillaires fragilisés",
+    "volume_total": "30 ml",
     "duree": "Long terme",
-    "frequence": "Tous les soirs et au besoin",
+    "frequence": "Matin et soir",
     "ingredients": [
       {
-        "nom": "Version FORTE — HV Calophylle Inophyle",
-        "quantite": "20 ml"
+        "nom": "Huile végétale de Jojoba",
+        "quantite": "30 ml (~97%)"
       },
       {
-        "nom": "Version FORTE — HV Calendula",
-        "quantite": "10 ml"
+        "nom": "HE Hélichryse Italienne",
+        "quantite": "~1,6% (10 gouttes)"
       },
       {
-        "nom": "Version FORTE — HE Hélichryse Italienne",
-        "quantite": "0,5% (3 gouttes)"
+        "nom": "HE Géranium Rosat Bourbon",
+        "quantite": "~0,8% (5 gouttes)"
       },
       {
-        "nom": "Version FORTE — HE Cyprès Toujours Vert",
-        "quantite": "0,5% (3 gouttes)"
-      },
-      {
-        "nom": "Version FORTE — HE Ciste Ladanifère",
-        "quantite": "0,3% (2 gouttes)"
-      },
-      {
-        "nom": "Version FORTE — HE Géranium Rosat Bourbon",
-        "quantite": "0,5% (3 gouttes)"
-      },
-      {
-        "nom": "Version DOUCE — HV Calophylle Inophyle",
-        "quantite": "20 ml"
-      },
-      {
-        "nom": "Version DOUCE — HV Calendula",
-        "quantite": "10 ml"
-      },
-      {
-        "nom": "Version DOUCE — HE Hélichryse Italienne",
-        "quantite": "1% (6 gouttes)"
-      },
-      {
-        "nom": "Version DOUCE — HE Lavande Vraie",
-        "quantite": "0,5% (3 gouttes)"
+        "nom": "HE Cyprès Toujours Vert (ou Cèdre d'Atlas si grossesse)",
+        "quantite": "~0,8% (5 gouttes)"
       }
     ],
     "etapes": [
-      "Version FORTE pour usage standard",
-      "Version DOUCE pour grossesse/anticoagulants/cancers hormonaux",
-      "Appliquer le soir, tamponner doucement sans frotter",
-      "Compléter par un hydrolat de Camomille en spray le matin"
+      "Déposer les huiles essentielles dans un flacon compte-gouttes opaque de 30 ml, puis compléter avec l'huile végétale de Jojoba",
+      "Fermer et agiter délicatement",
+      "Appliquer quelques gouttes matin et soir sur les zones atteintes en petits mouvements circulaires très doux pour faire pénétrer, sur peau démaquillée et propre",
+      "Ne jamais frotter. La peau couperosée est très fragilisée",
+      "Le matin en complément : vaporiser un hydrolat de Camomille Romaine pour calmer les rougeurs"
     ],
-    "precautions": "Version FORTE contre-indiquée grossesse, allaitement, anticoagulants, cancers hormono-dépendants. Diagnostic dermatologique préalable.",
+    "precautions": "GROSSESSE, ALLAITEMENT, ANTICOAGULANTS : formule CONTRE-INDIQUÉE en l'état (Hélichryse + Géranium + Cyprès). Remplacer les 3 HE par : HE Camomille Romaine Noble 5 gouttes + HE Bois de Hô 5 gouttes + HE Lavande Vraie 10 gouttes dans le même Jojoba 30 ml. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Diagnostic dermatologique préalable.",
     "source": "Antunes Viegas D et al. (2014) - J Ethnopharmacol - PMID 24239849 : Helichrysum italicum, composés italidiones documentés pour effet vasculaire et anti-inflammatoire"
   },
   {
@@ -1448,11 +1505,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "20 ml (67%)"
+        "quantite": "20 ml (65,7%)"
       },
       {
         "nom": "Huile végétale de Nigelle",
-        "quantite": "10 ml (33%)"
+        "quantite": "10 ml (32,3%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -1487,11 +1544,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "15 ml (50%)"
+        "quantite": "21 ml (69%)"
       },
       {
         "nom": "Macérât huileux de Carotte",
-        "quantite": "15 ml (50%)"
+        "quantite": "9 ml (30%)"
       },
       {
         "nom": "HE Lavande Aspic",
@@ -1531,15 +1588,15 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "2 g (10%)"
+        "quantite": "2 g (9,1%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
-        "quantite": "1 goutte"
+        "quantite": "~0,3% (1 goutte)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "1 goutte"
+        "quantite": "~0,3% (1 goutte)"
       }
     ],
     "etapes": [
@@ -1548,7 +1605,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Verser dans un pot ou stick à lèvres",
       "Appliquer plusieurs fois par jour"
     ],
-    "precautions": "Géranium éviter 1er trimestre grossesse. Conservation 6 mois.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois.",
     "source": "HV Calendula et Beurre de Karité : référentiels Pharmacopée européenne pour cicatrisation des gerçures"
   },
   {
@@ -1562,7 +1619,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "50 ml (100%)"
+        "quantite": "49 ml (98%)"
       },
       {
         "nom": "HE Romarin à Cinéole",
@@ -1597,11 +1654,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noyau d'Abricot",
-        "quantite": "25 ml (50%)"
+        "quantite": "25 ml (49%)"
       },
       {
         "nom": "Macérât huileux de Vanille",
-        "quantite": "25 ml (50%)"
+        "quantite": "25 ml (49%)"
       },
       {
         "nom": "HE Petit-Grain Bigarade",
@@ -1636,11 +1693,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noyau d'Abricot",
-        "quantite": "30 ml (60%)"
+        "quantite": "24 ml (49%)"
       },
       {
         "nom": "Macérât huileux de Vanille",
-        "quantite": "20 ml (40%)"
+        "quantite": "24 ml (49%)"
       },
       {
         "nom": "HE Lavande Vraie",
@@ -1676,11 +1733,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Macérât huileux de Vanille",
-        "quantite": "30 ml (60%)"
+        "quantite": "24,5 ml (49%)"
       },
       {
         "nom": "Huile végétale de Macadamia",
-        "quantite": "20 ml (40%)"
+        "quantite": "24,5 ml (49%)"
       },
       {
         "nom": "HE Néroli",
@@ -1719,11 +1776,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Macadamia",
-        "quantite": "30 ml (60%)"
+        "quantite": "29 ml (58,2%)"
       },
       {
         "nom": "Macérât huileux de Vanille",
-        "quantite": "20 ml (40%)"
+        "quantite": "19 ml (38,8%)"
       },
       {
         "nom": "HE Cardamome",
@@ -1771,19 +1828,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Beurre de Karité",
-        "quantite": "5 g (10%)"
+        "quantite": "5 g (10,2%)"
       },
       {
         "nom": "Huile végétale de Macadamia",
-        "quantite": "25 ml (50%)"
+        "quantite": "26 ml (51,3%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "10 ml (20%)"
+        "quantite": "8 ml (16,6%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "10 ml (20%)"
+        "quantite": "10 ml (20,4%)"
       },
       {
         "nom": "HE Bois de Hô",
@@ -1814,19 +1871,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Beurre de Karité",
-        "quantite": "5 g (10%)"
+        "quantite": "6 g (11%)"
       },
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "15 ml (30%)"
+        "quantite": "17 ml (33%)"
       },
       {
         "nom": "Huile végétale de Bourrache",
-        "quantite": "10 ml (20%)"
+        "quantite": "11 ml (22%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "15 ml (30%)"
+        "quantite": "17 ml (33%)"
       },
       {
         "nom": "HE Camomille Romaine (Noble)",
@@ -1857,15 +1914,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Beurre de Karité",
-        "quantite": "15 g (60%)"
+        "quantite": "18 g (70,6%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "7 g (28%)"
+        "quantite": "5 g (19,9%)"
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "3 g (12%)"
+        "quantite": "2 g (8,5%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
@@ -1878,7 +1935,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Verser dans un pot en verre",
       "Laisser durcir à température ambiante"
     ],
-    "precautions": "Géranium éviter 1er trimestre grossesse. Conservation 6 mois.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois.",
     "source": "Beurre de Karité, HV Argan, cire d'abeille : référentiels Pharmacopée européenne pour nutrition et film protecteur des mains"
   },
   {
@@ -1892,7 +1949,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "30 ml (100%)"
+        "quantite": "29 ml (97%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -1927,11 +1984,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "25 ml (50%)"
+        "quantite": "34,5 ml (68,5%)"
       },
       {
         "nom": "Macérât huileux de Carotte",
-        "quantite": "25 ml (50%)"
+        "quantite": "15 ml (30%)"
       },
       {
         "nom": "HE Lavande Aspic",
@@ -1962,11 +2019,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Souchet",
-        "quantite": "35 ml (70%)"
+        "quantite": "34 ml (68,9%)"
       },
       {
         "nom": "Huile végétale de Pépin de Courge",
-        "quantite": "15 ml (30%)"
+        "quantite": "15 ml (29,5%)"
       },
       {
         "nom": "HE Sauge Sclarée",
@@ -2001,11 +2058,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "25 ml (50%)"
+        "quantite": "24 ml (47%)"
       },
       {
         "nom": "Huile végétale de Calophylle Inophyle",
-        "quantite": "25 ml (50%)"
+        "quantite": "24 ml (47%)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
@@ -2041,11 +2098,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Rose Musquée",
-        "quantite": "30 ml (60%)"
+        "quantite": "34 ml (68,7%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "20 ml (40%)"
+        "quantite": "14 ml (28,3%)"
       },
       {
         "nom": "HE Hélichryse Italienne",
@@ -2067,7 +2124,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Résultats visibles à partir de 6 à 8 semaines"
     ],
     "bonus": "Compatible grossesse à partir du 4ème mois (retirer alors l'Hélichryse).",
-    "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Géranium éviter 1er trimestre.",
+    "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié.",
     "source": "Valerón-Almazán P et al. (2015) : HV Rose Musquée améliore élasticité et apparence cutanée. Hélichryse Italienne : Antunes Viegas 2014 (PMID 24239849)"
   },
   {
@@ -2081,15 +2138,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Beurre de Karité brut",
-        "quantite": "25 g (50%)"
+        "quantite": "28 g (55,9%)"
       },
       {
         "nom": "Huile végétale de Rose Musquée",
-        "quantite": "15 g (30%)"
+        "quantite": "17 g (33,5%)"
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "5 g (10%)"
+        "quantite": "5 g (9,1%)"
       },
       {
         "nom": "HE Hélichryse Italienne",
@@ -2116,19 +2173,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "sousCategorie": "Pieds",
     "indications": "Répare les talons fissurés et secs",
     "duree": "Jusqu'à amélioration visible",
-    "frequence": "Le soir de l'épilation, puis tous les soirs jusqu'à la prochaine épilation",
+    "frequence": "Tous les soirs",
     "ingredients": [
       {
         "nom": "Beurre de Karité brut",
-        "quantite": "25 g (50%)"
+        "quantite": "25 g (49,1%)"
       },
       {
         "nom": "Huile végétale de Coco",
-        "quantite": "20 g (40%)"
+        "quantite": "20 g (39,3%)"
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "5 g (10%)"
+        "quantite": "5 g (9,1%)"
       },
       {
         "nom": "HE Hélichryse Italienne",
@@ -2160,23 +2217,23 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "30 ml (100%)"
+        "quantite": "29 ml (98%)"
       },
       {
         "nom": "HE Néroli",
-        "quantite": "0,5% (5 gouttes)"
+        "quantite": "0,5% (3 gouttes)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
-        "quantite": "0,5% (5 gouttes)"
+        "quantite": "0,5% (3 gouttes)"
       },
       {
         "nom": "HE Petit-Grain Bigarade",
-        "quantite": "0,5% (5 gouttes)"
+        "quantite": "0,5% (3 gouttes)"
       },
       {
         "nom": "HE Patchouli",
-        "quantite": "0,5% (5 gouttes)"
+        "quantite": "0,5% (3 gouttes)"
       }
     ],
     "etapes": [
@@ -2200,23 +2257,23 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Coco vierge",
-        "quantite": "15 g (50%)"
+        "quantite": "25 g (49,4%)"
       },
       {
         "nom": "Argile blanche kaolin",
-        "quantite": "7 g (23%)"
+        "quantite": "11 g (22,7%)"
       },
       {
         "nom": "Fécule de maïs",
-        "quantite": "5 g (17%)"
+        "quantite": "8 g (16,8%)"
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "3 g (10%)"
+        "quantite": "5 g (9,1%)"
       },
       {
         "nom": "HE Palmarosa",
-        "quantite": "2% (12 gouttes)"
+        "quantite": "2% (20 gouttes)"
       }
     ],
     "etapes": [
@@ -2240,23 +2297,23 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Base lavante neutre bio",
-        "quantite": "135 ml (90%)"
+        "quantite": "184 ml (92%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "7 ml (5%)"
+        "quantite": "7 ml (3,5%)"
       },
       {
         "nom": "Glycérine végétale",
-        "quantite": "5 ml (3%)"
+        "quantite": "5 ml (2,5%)"
       },
       {
         "nom": "HE Néroli",
-        "quantite": "0,8% (12 gouttes)"
+        "quantite": "1% (40 gouttes)"
       },
       {
         "nom": "HE Petit-Grain Bigarade",
-        "quantite": "0,8% (12 gouttes)"
+        "quantite": "1% (40 gouttes)"
       }
     ],
     "etapes": [
@@ -2280,7 +2337,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Base shampoing neutre bio",
-        "quantite": "180 ml (90%)"
+        "quantite": "186 ml (93%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
@@ -2292,15 +2349,15 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "0,7% (15 gouttes)"
+        "quantite": "0,7% (28 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "0,5% (10 gouttes)"
+        "quantite": "0,5% (20 gouttes)"
       },
       {
         "nom": "HE Litsée Citronnée",
-        "quantite": "0,5% (10 gouttes)"
+        "quantite": "0,5% (20 gouttes)"
       }
     ],
     "etapes": [
@@ -2324,11 +2381,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "20 ml (67%)"
+        "quantite": "20 ml (66%)"
       },
       {
         "nom": "Huile végétale de Noisette",
-        "quantite": "10 ml (33%)"
+        "quantite": "10 ml (32,4%)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
@@ -2363,11 +2420,11 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "15 ml (50%)"
+        "quantite": "20 ml (65,8%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "15 ml (50%)"
+        "quantite": "10 ml (33,2%)"
       },
       {
         "nom": "HE Encens Oliban",
@@ -2379,7 +2436,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
-        "quantite": "0,15% (1 goutte)"
+        "quantite": "~0,15% (1 goutte)"
       }
     ],
     "etapes": [
@@ -2389,7 +2446,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser pénétrer pendant la nuit"
     ],
     "bonus": "Recette RESPEKTUS® : dosage volontairement limité à 1% HE pour respecter la peau homme.",
-    "precautions": "Encens et Cèdre contre-indiqués grossesse. Géranium éviter 1er trimestre. Formule réservée adultes.",
+    "precautions": "Encens et Cèdre contre-indiqués grossesse. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Formule réservée adultes.",
     "source": "Moussaieff A et al. (2008) FASEB Journal - PMID 18492727 : Encens Oliban (incensole) effets régénérants TRPV3"
   },
   {
@@ -2403,15 +2460,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "18 ml (60%)"
+        "quantite": "19 ml (61,9%)"
       },
       {
         "nom": "Huile végétale de Ricin",
-        "quantite": "6 ml (20%)"
+        "quantite": "6 ml (20,6%)"
       },
       {
         "nom": "Huile végétale d'Argan",
-        "quantite": "6 ml (20%)"
+        "quantite": "5 ml (16,5%)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
@@ -2429,7 +2486,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les pointes"
     ],
     "precautions": "Bay Saint-Thomas potentiellement irritant : test cutané obligatoire. Formule réservée adultes.",
-    "source": "HV Ricin : référentiel Pharmacopée pour nutrition fibre pileuse. Bay Saint-Thomas : usage traditionnel pour stimulation des follicules"
+    "source": "HV Ricin : référentiel Pharmacopée pour nutrition fibre pileuse. Bay Saint-Thomas : usage traditionnel pour stimulation du cuir chevelu"
   },
   {
     "id": "rec_60_apres_rasage",
@@ -2442,15 +2499,15 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Beurre de Karité",
-        "quantite": "5 g (17%)"
+        "quantite": "5 g (16,8%)"
       },
       {
         "nom": "Huile végétale de Calendula",
-        "quantite": "15 ml (50%)"
+        "quantite": "15 ml (49,5%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "10 ml (33%)"
+        "quantite": "10 ml (32,7%)"
       },
       {
         "nom": "HE Lavande Vraie",
@@ -2482,7 +2539,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "30 ml (100%)"
+        "quantite": "29 ml (98%)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
@@ -2522,23 +2579,23 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Coco vierge",
-        "quantite": "15 g (50%)"
+        "quantite": "25 g (50,4%)"
       },
       {
         "nom": "Argile blanche kaolin",
-        "quantite": "10 g (33%)"
+        "quantite": "17 g (33,2%)"
       },
       {
         "nom": "Cire d'abeille blanche",
-        "quantite": "5 g (17%)"
+        "quantite": "7 g (14,4%)"
       },
       {
         "nom": "HE Tea Tree",
-        "quantite": "1,3% (8 gouttes)"
+        "quantite": "1,3% (13 gouttes)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
-        "quantite": "0,7% (4 gouttes)"
+        "quantite": "0,7% (7 gouttes)"
       }
     ],
     "etapes": [
@@ -2561,7 +2618,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Base lavante neutre bio",
-        "quantite": "175 ml (87,5%)"
+        "quantite": "184 ml (92,1%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
@@ -2573,19 +2630,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "HE Cèdre d'Atlas",
-        "quantite": "0,8% (15 gouttes)"
+        "quantite": "0,8% (32 gouttes)"
       },
       {
         "nom": "HE Eucalyptus Radié",
-        "quantite": "0,5% (10 gouttes)"
+        "quantite": "0,5% (20 gouttes)"
       },
       {
         "nom": "HE Petit-Grain Bigarade",
-        "quantite": "0,4% (8 gouttes)"
+        "quantite": "0,4% (16 gouttes)"
       },
       {
         "nom": "HE Gingembre",
-        "quantite": "0,2% (4 gouttes)"
+        "quantite": "0,2% (8 gouttes)"
       }
     ],
     "etapes": [
@@ -2609,7 +2666,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Base shampoing neutre bio",
-        "quantite": "175 ml (87,5%)"
+        "quantite": "186 ml (92,8%)"
       },
       {
         "nom": "Huile végétale de Jojoba",
@@ -2621,15 +2678,15 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "1% (20 gouttes)"
+        "quantite": "1% (40 gouttes)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
-        "quantite": "0,75% (15 gouttes)"
+        "quantite": "0,75% (30 gouttes)"
       },
       {
         "nom": "HE Petit-Grain Bigarade",
-        "quantite": "0,5% (10 gouttes)"
+        "quantite": "0,5% (20 gouttes)"
       }
     ],
     "etapes": [
@@ -2797,7 +2854,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Macadamia",
-        "quantite": "30 ml"
+        "quantite": "29 ml (97%)"
       },
       {
         "nom": "HE Épinette Noire",
@@ -2901,19 +2958,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "HE Camomille Romaine",
-        "quantite": "2 gouttes"
+        "quantite": "~1,9% (2 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "2 gouttes"
+        "quantite": "~1,9% (2 gouttes)"
       },
       {
         "nom": "HE Néroli (Fleur d'Oranger)",
-        "quantite": "1 goutte"
+        "quantite": "~1% (1 goutte)"
       },
       {
         "nom": "HV Noyau d'Abricot",
-        "quantite": "5 ml"
+        "quantite": "5 ml (95%)"
       }
     ],
     "etapes": [
@@ -2959,7 +3016,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Pratique régulière conseillée pour effet cumulé"
     ],
     "bonus": "L'Encens (Boswellia) est utilisé depuis 5000 ans pour la méditation et la spiritualité. Effet démontré sur l'apaisement de l'esprit (effet sur les ions calcium dans le cerveau).",
-    "precautions": "Patchouli, Encens : éviter 1er trimestre grossesse. Test cutané si application sur peau.",
+    "precautions": "Patchouli, Encens : déconseillés pendant toute la grossesse sauf avis d'un professionnel qualifié. Test cutané si application sur peau.",
     "source": "Moussaieff A et al. (2008) - FASEB Journal - PubMed PMID 18492727 : l'incensole acétate (composant de l'encens/Boswellia) active les canaux TRPV3 cérébraux, produisant des effets anxiolytiques et anti-dépressifs. Distribution incensole dans Boswellia (PubMed PMID 30802641)"
   },
   {
@@ -2992,7 +3049,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "etapes": [
       "Diffuser le matin pendant 15-30 minutes (au lever)",
       "Idéalement avec une lampe de luminothérapie pour effet renforcé",
-      "Compléter avec marche extérieure 20-30 min/jour (lumière naturelle = meilleur antidépresseur)",
+      "Compléter avec marche extérieure 20-30 min/jour (la lumière naturelle soutient le rythme circadien et contribue à l'humeur)",
       "Cure complète d'octobre à mars"
     ],
     "bonus": "Les agrumes (Pamplemousse, Citron, Mandarine) sont riches en limonène, molécule étudiée pour son effet antidépresseur léger. À combiner avec luminothérapie + activité physique pour effets optimaux.",
@@ -3041,8 +3098,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "Soirée, ponctuel",
     "ingredients": [
       {
-        "nom": "HV de Vanille (macérât)",
-        "quantite": "30 ml"
+        "nom": "Macérât huileux de Vanille",
+        "quantite": "14,5 ml (49%)"
+      },
+      {
+        "nom": "Huile végétale de Macadamia",
+        "quantite": "14,5 ml (48,5%)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
@@ -3068,44 +3129,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     "source": "Choi SY et al. (2014), Evidence-Based Complementary and Alternative Medicine — PMC4082953. Étude RCT inhalation Néroli chez femmes ménopausées : augmentation du désir sexuel et amélioration de la qualité de vie"
   },
   {
-    "id": "rec_bien_grossesse_zen",
-    "titre": "Sérénité de la grossesse (à partir du 4ème mois)",
-    "categorie": "Bien-être",
-    "sousCategorie": "Grossesse",
-    "indications": "Apaise les tensions et l'anxiété pendant la grossesse, à partir du 4ème mois. Soutient le sommeil et la détente. Évidence scientifique : études cliniques randomisées sur lavande et néroli pendant grossesse et post-partum.",
-    "avertissement_medical": "À utiliser à partir du 4ème mois de grossesse uniquement. Tester d'abord en olfaction simple. Consulter votre sage-femme ou médecin avant utilisation.",
-    "duree": "À partir du 4ème mois",
-    "frequence": "Quotidien",
-    "ingredients": [
-      {
-        "nom": "HE Mandarine Zest",
-        "quantite": "3 gouttes"
-      },
-      {
-        "nom": "HE Petit-Grain Bigarade",
-        "quantite": "2 gouttes"
-      },
-      {
-        "nom": "HE Lavande Vraie",
-        "quantite": "2 gouttes"
-      }
-    ],
-    "etapes": [
-      "Diffusion uniquement (pas d'application cutanée pour la grossesse)",
-      "15-20 minutes par jour",
-      "Idéalement le soir avant le coucher pour favoriser le sommeil",
-      "Possibilité : respirer le flacon ouvert 30 secondes"
-    ],
-    "bonus": "Synergie ultra-douce, validée pour la grossesse (à partir du 4ème mois). Le Petit-Grain est traditionnellement utilisé pour les \"petites peurs\" de la grossesse.",
-    "precautions": "JAMAIS d'HE au 1er trimestre. À partir du 4ème mois : diffusion uniquement avec ces 3 HE testées. Mandarine Zest photosensibilisante. Demander avis sage-femme/gynéco.",
-    "source": "Effet de l'inhalation de lavande en post-partum sur stress, anxiété et dépression (PubMed PMID 27095995, étude RCT sur 140 femmes). Aromathérapie au Néroli pendant le travail (PMC8871902, 2022, étude RCT sur 88 femmes)"
-  },
-  {
     "id": "rec_bien_panique",
-    "titre": "Crise de panique - urgence",
+    "titre": "Crise de panique · soutien olfactif",
     "categorie": "Bien-être",
     "sousCategorie": "Anxiété",
-    "indications": "Apaisement immédiat lors d'une crise d'angoisse ou panique",
+    "indications": "Soutien olfactif pour aider à retrouver le calme lors d'un moment de panique ou d'angoisse aiguë. Ne remplace pas un suivi médical.",
+    "avertissement_medical": "Les crises de panique répétées sont une condition médicale. Consulter un médecin ou psychologue si elles se répètent. Cette synergie est un soutien, non un traitement.",
     "duree": "Pendant la crise",
     "frequence": "À chaque crise",
     "ingredients": [
@@ -3164,7 +3193,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       }
     ],
     "etapes": [
-      "Diffuser 12 gouttes le matin pendant la routine matinale (15 min)",
+      "Diffuser le matin 15 min selon les recommandations du fabricant (généralement 5 à 10 gouttes)",
       "OU : 1 goutte Menthe sur les poignets (frotter + inspirer)",
       "Idéalement combiner avec douche fraîche et musique énergisante",
       "NE PAS utiliser après 16h (effet stimulant)"
@@ -3185,19 +3214,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "HV de Noyau d'Abricot",
-        "quantite": "15 ml"
+        "quantite": "15 ml (96%)"
       },
       {
         "nom": "HE Basilic Tropical",
-        "quantite": "5 gouttes"
+        "quantite": "~1,6% (5 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "5 gouttes"
+        "quantite": "~1,6% (5 gouttes)"
       },
       {
         "nom": "HE Menthe Poivrée",
-        "quantite": "3 gouttes"
+        "quantite": "~1% (3 gouttes)"
       }
     ],
     "etapes": [
@@ -3222,7 +3251,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "HV Onagre ou Noyau d'Abricot",
-        "quantite": "30 ml"
+        "quantite": "29 ml (97%)"
       },
       {
         "nom": "HE Géranium Rosat Bourbon",
@@ -3243,8 +3272,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Cure 21 jours du 14ème jour du cycle au début des règles",
       "Pour la ménopause : tous les jours en cure de 3 semaines puis pause 1 semaine"
     ],
-    "bonus": "Le Géranium Rosat est régulateur hormonal doux. À combiner avec Sauge Sclarée (mais ATTENTION : contre-indiquée si antécédent cancer hormono-dépendant).",
-    "precautions": "CONTRE-INDIQUÉ grossesse, allaitement, antécédent cancer hormono-dépendant. Géranium éviter 1er trimestre. Toujours consulter un médecin/gynécologue.",
+    "bonus": "À combiner avec Sauge Sclarée si besoin de renforcer l'action (ATTENTION : Sauge Sclarée contre-indiquée si antécédent cancer hormono-dépendant).",
+    "precautions": "CONTRE-INDIQUÉ grossesse, allaitement, antécédent cancer hormono-dépendant. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Toujours consulter un médecin/gynécologue.",
     "source": "Méta-analyse Aromatherapy for Managing Menopausal Symptoms (PubMed PMID 34242093, 2021). Étude inhalation Néroli chez femmes ménopausées (PMC4082953)"
   },
   {
@@ -3279,9 +3308,9 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Boire un grand verre d'eau immédiatement après",
       "Renouveler le stick toutes les 4 semaines"
     ],
-    "bonus": "La Cannelle régule la glycémie et coupe les envies de sucre (études). Combiner avec hydratation, sport, et identification émotionnelle de l'envie compulsive.",
+    "bonus": "L'inhalation d'HE peut soutenir le rituel de pause et réduire l'impulsivité du moment. Combiner avec hydratation, sport, et identification émotionnelle de l'envie compulsive.",
     "precautions": "Cannelle INTERDITE en application cutanée pure (très dermocaustique). Menthe Poivrée : interdite enfants moins de 7 ans, grossesse, épilepsie. Inhalation uniquement.",
-    "source": "Études Cannelle et glycémie - Diabetes Care"
+    "source": "Note : les études sur Cannelle et glycémie concernent la poudre ou l'extrait d'écorce — pas l'HE en inhalation. Usage ici : soutien olfactif du rituel, non prétention glycémique."
   },
   {
     "id": "rec_visage_peau_mature",
@@ -3293,12 +3322,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "Tous les soirs",
     "ingredients": [
       {
-        "nom": "Huile végétale de Rose Musquée (60%)",
-        "quantite": "18 ml"
+        "nom": "Huile végétale de Rose Musquée",
+        "quantite": "17 ml (58%)"
       },
       {
-        "nom": "Huile végétale d'Argan (40%)",
-        "quantite": "12 ml"
+        "nom": "Huile végétale d'Argan",
+        "quantite": "12 ml (39%)"
       },
       {
         "nom": "HE Ciste Ladanifère",
@@ -3319,8 +3348,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer le soir sur peau propre, en massage circulaire ascendant",
       "Insister sur ovale du visage, cou et décolleté"
     ],
-    "bonus": "Le Ciste agit sur la fermeté tissulaire, l'Encens Oliban est régénérant cellulaire (effet anti-âge documenté), le Géranium tonifie les fibroblastes.",
-    "precautions": "Ciste contre-indiqué grossesse, allaitement et sous anticoagulants. Géranium éviter 1er trimestre. Test cutané au préalable.",
+    "bonus": "Le Ciste agit sur la fermeté tissulaire, l'Encens Oliban contribue au renouvellement cutané (traditionnellement utilisé pour soutenir la réparation cutanée), le Géranium est traditionnellement utilisé pour améliorer l'aspect de la peau mature.",
+    "precautions": "Ciste contre-indiqué grossesse, allaitement et sous anticoagulants. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Test cutané au préalable.",
     "source": "Synergie traditionnelle anti-âge. Effets régénérants documentés : Encens Oliban (incensole acetate, Moussaieff 2008, PubMed PMID 18492727). HV de Rose Musquée riche en acides gras essentiels (Source FAO). Géranium Rosat : propriétés cicatrisantes documentées en cosmétologie"
   },
   {
@@ -3334,7 +3363,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Rose Musquée",
-        "quantite": "30 ml"
+        "quantite": "29 ml (97%)"
       },
       {
         "nom": "HE Céleri",
@@ -3355,7 +3384,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Protection solaire SPF 50 obligatoire en journée pendant la cure"
     ],
     "precautions": "Citron Zest et Céleri très photosensibilisants : risque de brûlure et hyperpigmentation paradoxale si exposition solaire. Cure interrompue en été. Contre-indiqué grossesse.",
-    "source": "Synergie traditionnelle en cosmétique aromatique. HV Rose Musquée riche en acide trans-rétinoïque naturel (vit A) documentée pour l'éclat du teint. Note honnêteté : effet \"anti-taches\" non démontré par essais cliniques randomisés - usage cosmétique adjuvant"
+    "source": "Synergie traditionnelle en cosmétique aromatique. HV Rose Musquée riche en acides linoléique et alpha-linolénique, caroténoïdes et vitamine E, documentée pour l'éclat du teint. Note honnêteté : effet \"anti-taches\" non démontré par essais cliniques randomisés - usage cosmétique adjuvant"
   },
   {
     "id": "rec_visage_contour_yeux",
@@ -3367,12 +3396,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "Matin et soir",
     "ingredients": [
       {
-        "nom": "Huile végétale de Rose Musquée (50%)",
-        "quantite": "5 ml"
+        "nom": "Huile végétale de Rose Musquée",
+        "quantite": "5 ml (49,5%)"
       },
       {
-        "nom": "Huile végétale de Jojoba (50%)",
-        "quantite": "5 ml"
+        "nom": "Huile végétale de Jojoba",
+        "quantite": "5 ml (49,5%)"
       },
       {
         "nom": "HE Bois de Hô",
@@ -3425,7 +3454,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Rincer à l'eau tiède puis appliquer un soin nourrissant"
     ],
     "bonus": "Pour peaux sèches : remplacer argile verte par argile blanche (kaolin) et ajouter 1/2 cuillère à café d'huile de Jojoba.",
-    "precautions": "Ne jamais utiliser de récipient ni ustensile métallique (l'argile perd ses propriétés). Tea Tree contre-indiqué grossesse.",
+    "precautions": "Ne jamais utiliser de récipient ni ustensile métallique (l'argile perd ses propriétés). Tea Tree déconseillé par précaution grossesse.",
     "source": "Effets antibactériens du Tea Tree validés : Enshaieh et al. 2007 (PubMed PMID 17314442) - étude randomisée double-aveugle sur acné. Activité antimicrobienne validée : Orchard et Vuuren 2017 (PubMed PMID 28546822). Lavande : revue 2023 sur 11 études cliniques (PMC10671255)"
   },
   {
@@ -3439,7 +3468,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "30 ml"
+        "quantite": "29 ml (98%)"
       },
       {
         "nom": "HE Tea Tree",
@@ -3474,12 +3503,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "Soir, ou matin et soir en cure intensive",
     "ingredients": [
       {
-        "nom": "Huile végétale de Calophylle Inophyle (50%)",
-        "quantite": "25 ml"
+        "nom": "Huile végétale de Calophylle Inophyle",
+        "quantite": "25 ml (47,5%)"
       },
       {
-        "nom": "Huile végétale de Noisette (50%)",
-        "quantite": "25 ml"
+        "nom": "Huile végétale de Noisette",
+        "quantite": "25 ml (47,5%)"
       },
       {
         "nom": "HE Cyprès Toujours Vert",
@@ -3513,8 +3542,8 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "2 à 3 fois par semaine maximum",
     "ingredients": [
       {
-        "nom": "Base neutre pour bain (ou lait entier, ou miel)",
-        "quantite": "1 cuillère à soupe"
+        "nom": "Base neutre dispersante, Solubol ou Polysorbate 80",
+        "quantite": "1 cuillère à soupe (ou lait entier — acceptable ; miel en dernier recours, dispersion imparfaite)"
       },
       {
         "nom": "HE Lavande Vraie",
@@ -3590,12 +3619,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "Tous les soirs",
     "ingredients": [
       {
-        "nom": "Huile végétale de Ricin (60%)",
-        "quantite": "6 ml"
+        "nom": "Huile végétale de Ricin",
+        "quantite": "6 ml (58%)"
       },
       {
-        "nom": "Huile végétale d'Argan (40%)",
-        "quantite": "4 ml"
+        "nom": "Huile végétale d'Argan",
+        "quantite": "4 ml (39%)"
       },
       {
         "nom": "HE Citron Jaune Zest",
@@ -3626,12 +3655,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "1 à 2 fois par semaine en masque",
     "ingredients": [
       {
-        "nom": "Huile végétale d'Argan (60%)",
-        "quantite": "18 ml"
+        "nom": "Huile végétale d'Argan",
+        "quantite": "17 ml (58%)"
       },
       {
-        "nom": "Huile végétale de Jojoba (40%)",
-        "quantite": "12 ml"
+        "nom": "Huile végétale de Jojoba",
+        "quantite": "12 ml (39%)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
@@ -3657,17 +3686,17 @@ export const RECETTES_BIBLIOTHEQUE = [
     "titre": "Stimuler la pousse des cheveux",
     "categorie": "Cheveux",
     "sousCategorie": "Cuir chevelu",
-    "indications": "Stimule la microcirculation du cuir chevelu et soutient la pousse capillaire. ÉVIDENCE FORTE : étude clinique randomisée a montré que l'HE de Romarin est comparable au Minoxidil 2% à 6 mois (Panahi et al. 2015).",
+    "indications": "Stimule la microcirculation du cuir chevelu et soutient la pousse capillaire. ÉVIDENCE FORTE : dans une étude randomisée, l'HE de Romarin a obtenu des résultats comparables au Minoxidil 2% après 6 mois (Panahi et al. 2015).",
     "duree": "3 mois minimum",
     "frequence": "2 à 3 fois par semaine",
     "ingredients": [
       {
-        "nom": "Huile végétale de Ricin (50%)",
-        "quantite": "25 ml"
+        "nom": "Huile végétale de Ricin",
+        "quantite": "24 ml (47,5%)"
       },
       {
-        "nom": "Huile végétale de Jojoba (50%)",
-        "quantite": "25 ml"
+        "nom": "Huile végétale de Jojoba",
+        "quantite": "24 ml (48%)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
@@ -3679,7 +3708,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       },
       {
         "nom": "HE Bay Saint-Thomas",
-        "quantite": "1% (10 gouttes)"
+        "quantite": "0,5% (5 gouttes)"
       }
     ],
     "etapes": [
@@ -3689,8 +3718,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser minimum 1h (idéalement la nuit)",
       "Laver avec un shampoing doux"
     ],
-    "bonus": "Le ricin nourrit en profondeur, le romarin active la circulation, le bay saint-thomas est reconnu pour stimuler les follicules.",
-    "precautions": "Romarin et Bay Saint-Thomas contre-indiqués grossesse, hypertension, épilepsie. Bay Saint-Thomas potentiellement irritant : test cutané obligatoire.",
+    "bonus": "Le ricin nourrit en profondeur, le romarin active la circulation, le Bay Saint-Thomas stimule le cuir chevelu. Concentration limitée à 0,5% (irritant à forte dose).",
+    "precautions": "Romarin et Bay Saint-Thomas contre-indiqués grossesse, hypertension, épilepsie. Bay Saint-Thomas irritant cutané : ne jamais dépasser 0,5%, test cutané obligatoire.",
     "source": "Panahi Y et al. (2015) - SKINmed - PubMed PMID 25842469 : étude randomisée comparative HE de Romarin vs Minoxidil 2% sur 100 patients atteints d'alopécie androgénétique - efficacité comparable à 6 mois. Murata K et al. (2013) - Phytotherapy Research - PMID 22517595 : extrait de Romarin et croissance capillaire"
   },
   {
@@ -3704,7 +3733,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Ricin",
-        "quantite": "50 ml"
+        "quantite": "47 ml (95%)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
@@ -3775,27 +3804,27 @@ export const RECETTES_BIBLIOTHEQUE = [
     "ingredients": [
       {
         "nom": "Huile végétale de Jojoba",
-        "quantite": "3 ml"
+        "quantite": "3 ml (13%)"
       },
       {
         "nom": "Huile végétale de Pépins de Raisin",
-        "quantite": "20 ml"
+        "quantite": "20 ml (85%)"
       },
       {
         "nom": "HE Thym à Thymol",
-        "quantite": "2 gouttes"
+        "quantite": "~0,4% (2 gouttes)"
       },
       {
         "nom": "HE Lavande Vraie",
-        "quantite": "3 gouttes"
+        "quantite": "~0,6% (3 gouttes)"
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "3 gouttes"
+        "quantite": "~0,6% (3 gouttes)"
       },
       {
         "nom": "HE Cèdre d'Atlas",
-        "quantite": "2 gouttes"
+        "quantite": "~0,4% (2 gouttes)"
       }
     ],
     "etapes": [
@@ -3841,43 +3870,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Le soir avant le coucher, inhaler 3 fois en visualisant le lâcher-prise"
     ],
     "bonus": "L'Encens Oliban est traditionnellement utilisé en méditation pour ses effets sur la respiration et l'apaisement mental.",
-    "precautions": "Encens Oliban contre-indiqué grossesse. Voie olfactive privilégiée (pas d'usage cutané non encadré pour cette synergie).",
+    "precautions": "Encens Oliban déconseillé par précaution grossesse (données insuffisantes). Voie olfactive privilégiée (pas d'usage cutané non encadré pour cette synergie).",
     "source": "Revue systématique 2023 : Lavande inhalation et anxiété (PubMed PMC10671255) - 11 études, 972 participants. Moussaieff et al. 2008 - FASEB Journal PMID 18492727 : incensole acétate de l'Encens Oliban active TRPV3 cérébral avec effet anxiolytique"
-  },
-  {
-    "id": "rec_pierre_varicelle",
-    "titre": "Apaisement varicelle",
-    "categorie": "Corps",
-    "sousCategorie": "Réparation",
-    "indications": "Synergie antivirale, antiprurigineuse et anti-inflammatoire pour la varicelle. Soulage les vésicules, calme le prurit et réduit le risque de surinfection",
-    "duree": "Jusqu'à disparition des croûtes",
-    "frequence": "6 à 8 fois par jour",
-    "ingredients": [
-      {
-        "nom": "Huile végétale de Millepertuis",
-        "quantite": "50 gouttes (50%)"
-      },
-      {
-        "nom": "HE Ravintsara",
-        "quantite": "20 gouttes (20%)"
-      },
-      {
-        "nom": "HE Menthe Poivrée",
-        "quantite": "20 gouttes (20%)"
-      },
-      {
-        "nom": "HE Eucalyptus Citronné",
-        "quantite": "10 gouttes (10%)"
-      }
-    ],
-    "etapes": [
-      "Préparer le mélange dans un flacon de 10 ml (total 100 gouttes)",
-      "Appliquer 2 à 3 gouttes sur les zones affectées",
-      "Renouveler 6 à 8 fois par jour jusqu'à disparition des croûtes"
-    ],
-    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie).",
-    "precautions": "INTERDIT enfants de moins de 3 ans (Pierre A.). Menthe Poivrée interdite grossesse, allaitement, épilepsie, hypertension. Eucalyptus Citronné déconseillé asthme sévère. Millepertuis photosensibilisant : application le soir, couvrir les zones avant exposition solaire (délai 8 à 12h).",
-    "source": "Pierre A. (2016) — L'aromathérapie adaptée aux pathologies dermatologiques de comptoir — Thèse pour le Diplôme d'État de Docteur en Pharmacie, Université de Bordeaux, HAL hal-01732967, p.105"
   },
   {
     "id": "rec_pierre_zona",
@@ -3910,12 +3904,13 @@ export const RECETTES_BIBLIOTHEQUE = [
       }
     ],
     "etapes": [
+      "ADULTE UNIQUEMENT. Zona principalement après 60 ans — toujours sous suivi médical. Les HE NE REMPLACENT PAS le traitement antiviral (aciclovir/valaciclovir) indispensable",
       "Préparer le mélange dans un flacon de 1 ml (total 20 gouttes)",
-      "Appliquer pur localement sur le trajet nerveux atteint",
-      "Renouveler 6 fois par jour ou plus si nécessaire pendant 48 heures"
+      "Appliquer pur localement sur le trajet nerveux atteint. Application strictement localisée — protéger la peau saine autour",
+      "Renouveler 6 fois par jour pendant 48 heures, puis évaluer avec le médecin"
     ],
     "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie).",
-    "precautions": "Réservé ADULTE (zona principalement après 60 ans). Menthe Poivrée interdite grossesse, allaitement, épilepsie, hypertension. Niaouli et Ravintsara contre-indiqués grossesse et allaitement. Millepertuis photosensibilisant. L'aromathérapie NE GUÉRIT PAS le zona — le traitement médical antiviral (aciclovir/valaciclovir) reste indispensable. Consulter un médecin.",
+    "precautions": "Réservé ADULTE (zona principalement après 60 ans). ZONA OPHTALMIQUE (atteinte de l'oeil, rougeur ou douleur sur le trajet ophtalmique) : urgence médicale absolue, appeler le 15 immédiatement. Menthe Poivrée interdite grossesse, allaitement, épilepsie, hypertension. Niaouli et Ravintsara contre-indiqués grossesse et allaitement. Millepertuis photosensibilisant et interactions médicamenteuses possibles (par précaution chez patients sous anticoagulants, immunosuppresseurs ou contraceptifs oraux). L'aromathérapie NE GUÉRIT PAS le zona — le traitement médical antiviral (aciclovir/valaciclovir) reste indispensable. Consulter un médecin.",
     "source": "Pierre A. (2016) — L'aromathérapie adaptée aux pathologies dermatologiques de comptoir — Thèse Université de Bordeaux, HAL hal-01732967, p.108"
   },
   {
@@ -3949,14 +3944,14 @@ export const RECETTES_BIBLIOTHEQUE = [
       }
     ],
     "etapes": [
-      "Préparer 5 gouttes pour chaque application individuelle",
-      "Protéger la peau saine autour (vernis transparent ou pansement adhésif percé)",
-      "Appliquer 1 goutte du mélange au coton-tige strictement sur la verrue",
-      "Recouvrir d'un petit pansement durant toute la journée",
-      "Renouveler 2 fois par jour pendant 3 à 4 semaines jusqu'à disparition"
+      "AVERTISSEMENT : 4 des 5 HE sont DERMOCAUSTIQUES (brûlent la peau saine). Application STRICTEMENT localisée sur la verrue — jamais sur la peau autour, jamais sur le visage, jamais pur sur grande surface. INTERDIT enfants de moins de 12 ans, grossesse, allaitement",
+      "Protéger IMPÉRATIVEMENT la peau saine autour avec vernis transparent ou pansement adhésif percé (ne laisser que la verrue exposée)",
+      "Appliquer 1 seule goutte au coton-tige, directement sur la verrue uniquement",
+      "Recouvrir d'un pansement toute la journée. En cas de brûlure ou rougeur : arrêter IMMÉDIATEMENT et appliquer HV neutre (jamais d'eau)",
+      "Renouveler 2 fois par jour pendant 3 à 4 semaines. Faire une pause si irritation"
     ],
     "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). Alternative plus douce disponible (synergie verrues douce).",
-    "precautions": "TRÈS DERMOCAUSTIQUE — protéger impérativement la peau saine autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. Contre-indiqué asthmatiques et épileptiques. Tester en pli du coude 24h avant la première application. En cas de brûlure : arrêter immédiatement et appliquer une HV neutre (jamais d'eau).",
+    "precautions": "TRÈS DERMOCAUSTIQUE — protéger impérativement la peau saine autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. Ne jamais utiliser sur les verrues génitales (consulter un médecin). Contre-indiqué asthmatiques et épileptiques. Tester en pli du coude 24h avant la première application. En cas de brûlure : arrêter immédiatement et appliquer une HV neutre (jamais d'eau).",
     "source": "Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.153 (Exemple 1)"
   },
   {
@@ -4018,13 +4013,14 @@ export const RECETTES_BIBLIOTHEQUE = [
       }
     ],
     "etapes": [
-      "REFROIDIR D'ABORD la brûlure sous eau fraîche pendant minimum 5 minutes (étape essentielle)",
+      "UNIQUEMENT pour brûlures superficielles de 1er degré (peau rouge, intacte, sans cloque). Brûlure étendue, profonde, avec cloque ou 2e/3e degré : appeler le 15 (SAMU) immédiatement",
+      "REFROIDIR D'ABORD sous eau fraîche tiède pendant 10 à 15 minutes AVANT toute application d'HE",
       "Préparer le mélange dans un flacon de 5 ml (total 100 gouttes)",
-      "Déposer quelques gouttes du mélange sur la plaie",
-      "Renouveler 6 fois par jour"
+      "Déposer 2 à 3 gouttes du mélange sur la zone brûlée. Renouveler 6 fois par jour",
+      "Millepertuis photosensibilisant : couvrir la zone brûlée avant toute exposition solaire (délai 8h minimum)"
     ],
     "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). La formule combine propriétés cicatrisantes, antidouleur et désinfectantes.",
-    "precautions": "Brûlures de 1er degré UNIQUEMENT (peau rouge intacte). Pour 2e/3e degré : urgences médicales obligatoires. Brûlure étendue ou profonde : APPEL URGENT au 15 (SAMU). Lavande Aspic interdite enfants de moins de 6 ans et grossesse 1er trimestre. Millepertuis photosensibilisant : application le soir, couvrir la zone avant exposition solaire (délai 8 à 12h).",
+    "precautions": "Brûlures de 1er degré UNIQUEMENT (peau rouge intacte, sans cloque). Ne jamais appliquer sur brûlure ouverte ou avec cloque éclatée (risque de surinfection). Pour 2e/3e degré : urgences médicales obligatoires. Brûlure étendue ou profonde : APPEL URGENT au 15 (SAMU). Lavande Aspic interdite enfants de moins de 6 ans et grossesse 1er trimestre. Millepertuis photosensibilisant et interactions médicamenteuses possibles par précaution (anticoagulants, immunosuppresseurs) : application le soir, couvrir la zone avant exposition solaire (délai 8 à 12h).",
     "source": "Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.158 (Exemple 1)",
     "avertissement_medical": "Brûlure étendue, profonde ou de 2e/3e degré : appeler immédiatement le 15 (SAMU). Cette synergie est réservée aux brûlures superficielles de 1er degré sur peau intacte."
   },
@@ -4067,40 +4063,5 @@ export const RECETTES_BIBLIOTHEQUE = [
     "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie).",
     "precautions": "Cannelle de Chine TRÈS DERMOCAUSTIQUE : appliquer strictement sur l'ongle, jamais sur la peau autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. En cas de rougeur ou brûlure de la peau autour : arrêter et diluer dans HV Calophylle 50/50. Onychomycose persistante après 3 semaines : consultation médicale (traitement antifongique oral parfois nécessaire).",
     "source": "Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.149 (Exemple 2)"
-  }
-];
-
-export const CATEGORIES_RECETTES = [
-  {
-    "key": "Tous",
-    "label": "Tous"
-  },
-  {
-    "key": "Visage",
-    "label": "Visage"
-  },
-  {
-    "key": "Cheveux",
-    "label": "Cheveux"
-  },
-  {
-    "key": "Corps",
-    "label": "Corps"
-  },
-  {
-    "key": "Bien-être",
-    "label": "Bien-être"
-  },
-  {
-    "key": "Minceur",
-    "label": "Minceur"
-  },
-  {
-    "key": "Homme",
-    "label": "Homme"
-  },
-  {
-    "key": "Toilette",
-    "label": "Toilette"
   }
 ];

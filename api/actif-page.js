@@ -8,11 +8,44 @@
 import { ACTIFS } from './_actifs-data.js';
 import { RECETTES_BIBLIOTHEQUE } from './_recettes-data.js';
 
-const ACTIFS_COUNT = ACTIFS.length;
+const ACTIFS_COUNT = Math.floor(ACTIFS.length / 50) * 50; // chiffre rond pour l'affichage marketing
 const RECETTES_COUNT = RECETTES_BIBLIOTHEQUE.length;
 
 function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function resolveRecipeId(shortId) {
+  const exact = RECETTES_BIBLIOTHEQUE.find(r => r.id === shortId);
+  if (exact) return exact.id;
+  const prefix = RECETTES_BIBLIOTHEQUE.find(r => r.id.startsWith(shortId + '_'));
+  return prefix ? prefix.id : null;
+}
+
+function resolveRecipeName(shortId) {
+  const fullId = resolveRecipeId(shortId);
+  if (!fullId) return null;
+  const rec = RECETTES_BIBLIOTHEQUE.find(r => r.id === fullId);
+  return { id: fullId, titre: rec?.titre || rec?.title || '' };
+}
+
+function renderUtilisation(u) {
+  if (typeof u !== 'string') return `<li>${escapeHtml(String(u))}</li>`;
+  if (!/\brec_/i.test(u)) return `<li>${escapeHtml(u)}</li>`;
+  const m = u.match(/^(.*?)\s*\(([^)]*\brec_[a-z0-9_,\s]+[^)]*)\)\s*(.*)/i);
+  if (!m) {
+    const clean = u.replace(/\(?\s*rec_[a-z0-9_]+\s*,?\s*/gi, '').replace(/\)\s*$/, '').trim();
+    return `<li>${escapeHtml(clean)}</li>`;
+  }
+  const text = m[1].trim();
+  const shortIds = (m[2].match(/rec_[a-z0-9_]+/gi) || []).map(s => s.toLowerCase());
+  const suffix = m[3] ? ` ${m[3].trim()}` : '';
+  const links = shortIds.map(shortId => {
+    const resolved = resolveRecipeName(shortId);
+    if (!resolved) return '';
+    return `<a href="/recette/${resolved.id}" class="rec-link">Voir la recette →</a>`;
+  }).filter(Boolean).join(' ');
+  return `<li>${escapeHtml(text + suffix)}${links ? ' ' + links : ''}</li>`;
 }
 
 const CATEGORY_COLORS = {
@@ -98,6 +131,8 @@ li:before{content:"•";color:${cfg.text};font-weight:800;font-size:18px;line-he
 .cta-btn{display:inline-block;background:#FFF;color:#2C5F3F;text-decoration:none;font-weight:800;font-size:14px;padding:14px 28px;border-radius:12px;margin:6px}
 .cta-features{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:18px}
 .cta-feature{font-size:11px;color:#A8D5B5;background:rgba(255,255,255,0.08);padding:5px 10px;border-radius:8px}
+.rec-link{display:inline-flex;align-items:center;background:#EEF7F2;color:#2C5F3F;text-decoration:none;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;border:1px solid #C0DEC9;margin-left:6px;white-space:nowrap}
+.rec-link:hover{background:#D8EEE3}
 .footer{text-align:center;padding:32px 24px;font-size:12px;color:#B0B0B0;border-top:1px solid #E8E0D5;background:#FFF}
 .footer a{color:#2C5F3F;text-decoration:none}
 @media(max-width:600px){.header{padding:22px 16px 16px}article{padding:24px 18px 60px}h1{font-size:26px}}
@@ -131,7 +166,7 @@ li:before{content:"•";color:${cfg.text};font-weight:800;font-size:18px;line-he
 
   ${actif.utilisations?.length ? `
     <h2>Utilisations</h2>
-    <ul>${actif.utilisations.map(u => `<li>${escapeHtml(u)}</li>`).join('')}</ul>
+    <ul>${actif.utilisations.map(u => renderUtilisation(u)).join('')}</ul>
   ` : ''}
 
   ${actif.dosage ? `
@@ -150,7 +185,7 @@ li:before{content:"•";color:${cfg.text};font-weight:800;font-size:18px;line-he
 
   <div class="cta-section">
     <div class="cta-title">Découvrez RESPEKTUS®</div>
-    <div class="cta-sub">${ACTIFS_COUNT} actifs naturels, ${RECETTES_COUNT} recettes certifiées aromathérapie scientifique, votre assistante Lia, et une communauté bienveillante.</div>
+    <div class="cta-sub">+${ACTIFS_COUNT} actifs naturels, ${RECETTES_COUNT} recettes certifiées aromathérapie scientifique, votre assistante Lia, et une communauté bienveillante.</div>
     <div class="cta-features">
       <span class="cta-feature">Hors connexion</span>
       <span class="cta-feature">Gratuit</span>

@@ -152,7 +152,7 @@ article{max-width:600px;margin:0 auto;padding:36px 24px 80px}
 </html>`;
 
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=3600');
+    res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate=86400');
     return res.status(200).send(html);
   } catch (e) {
     console.error('post-page error:', e);

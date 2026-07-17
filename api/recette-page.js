@@ -5,7 +5,7 @@
 import { RECETTES_BIBLIOTHEQUE } from './_recettes-data.js';
 import { ACTIFS } from './_actifs-data.js';
 
-const ACTIFS_COUNT = ACTIFS.length;
+const ACTIFS_COUNT = Math.floor(ACTIFS.length / 50) * 50; // chiffre rond pour l'affichage marketing
 
 function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
@@ -150,7 +150,7 @@ h2{font-size:18px;font-weight:800;color:#2C5F3F;text-transform:uppercase;letter-
 
   <div class="cta-section">
     <div class="cta-title">Vous voulez plus de recettes ?</div>
-    <div class="cta-sub">${RECETTES_BIBLIOTHEQUE.length} recettes certifiées aromathérapie scientifique, ${ACTIFS_COUNT} actifs naturels détaillés, votre assistante Lia, et une communauté bienveillante vous attendent dans l'app RESPEKTUS®.</div>
+    <div class="cta-sub">${RECETTES_BIBLIOTHEQUE.length} recettes certifiées aromathérapie scientifique, +${ACTIFS_COUNT} actifs naturels détaillés, votre assistante Lia, et une communauté bienveillante vous attendent dans l'app RESPEKTUS®.</div>
     <div class="cta-features">
       <span class="cta-feature">Hors connexion</span>
       <span class="cta-feature">Gratuit</span>
