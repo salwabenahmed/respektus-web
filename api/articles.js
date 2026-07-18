@@ -6,6 +6,12 @@ const CACHE_TTL_MS = 60 * 1000;
 let _cache = null;
 let _cacheAt = 0;
 
+// Retire les balises <cite index="..."> laissées par erreur lors de la rédaction
+// (artefact d'outils de recherche IA), en gardant le texte à l'intérieur.
+function stripCiteTags(s) {
+  return (s || '').replace(/<\/?cite[^>]*>/gi, '');
+}
+
 function slugify(s) {
   return (s || '')
     .toLowerCase()
@@ -40,11 +46,11 @@ async function fetchFromAirtable() {
     return {
       id: rec.id,
       slug,
-      title: f['Titre'] || '',
+      title: stripCiteTags(f['Titre'] || ''),
       category: f['Categorie'] || 'Aromathérapie',
-      intro: f['Intro'] || '',
-      content: f['Contenu'] || '',
-      tip: f['Conseil'] || '',
+      intro: stripCiteTags(f['Intro'] || ''),
+      content: stripCiteTags(f['Contenu'] || ''),
+      tip: stripCiteTags(f['Conseil'] || ''),
       photo,
       date: f['Date'] || '',
     };
