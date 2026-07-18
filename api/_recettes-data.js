@@ -212,7 +212,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Variante intensive : appliquer la veille au soir et garder toute la nuit (1x/semaine).",
     "precautions": "Bonne tolérance générale. Test cutané préalable.",
-    "source": "HV Coco et Argan : référentiels Pharmacopée européenne pour nutrition de la fibre capillaire. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)"
+    "source": "HV Coco : réduit la perte de protéines capillaires jusqu'à 39% en application avant-shampoing sur cheveux abîmés — Rele AS, Mohile RB 2003, Journal of Cosmetic Science 54(2):175-192, PMID 12715094. HV Argan : revue systématique de 22 études sur la santé capillaire — Phong VG et al. 2022, PMID 35816075. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)"
   },
   {
     "id": "rec_05_cheveux_cassants",
@@ -684,7 +684,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Recette RESPEKTUS® compatible grossesse, allaitement et nourrissons (zéro HE).",
     "precautions": "Aucune contre-indication. Ne pas laisser dans les yeux.",
-    "source": "Savon noir beldi (olive) : action mécanique asphyxiante sur les poux - usage traditionnel maghrébin documenté. Méthode sans HE adaptée aux populations sensibles"
+    "source": "Essai clinique randomisé sur un pédiculicide à base d'huile d'olive saponifiée : efficacité de 76,2% à 14 jours chez 45 enfants de 5 à 15 ans — SEMERGEN 2017, PMID 27255407. Méthode sans HE adaptée aux populations sensibles"
   },
   {
     "id": "rec_15_cicatrisation_cuir_chevelu",
@@ -994,7 +994,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les zones les plus sèches"
     ],
     "precautions": "Bonne tolérance générale. Test cutané préalable.",
-    "source": "HV Macadamia et Jojoba : profils nourrissants documentés (Pharmacopée européenne). Beurre de Karité : référentiel pour nutrition cutanée intense"
+    "source": "HV Macadamia : amélioration de l'hydratation cutanée de 51,5% — Somwongin S, Chaiyana W 2024, Nanomaterials, PMC11054140. Beurre de Karité : revue clinique sur les propriétés hydratantes et protectrices — Poljšak N, Kočevar Glavač N 2022, Frontiers in Pharmacology, PMC9083541"
   },
   {
     "id": "rec_23_peau_grasse_visage",
@@ -1149,7 +1149,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Recette RESPEKTUS® minimaliste — formule la plus douce de la gamme.",
     "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Conservation 1 mois au frigo avec Cosgard.",
-    "source": "Hydrolats de Lavande et Bleuet : référentiels Pharmacopée européenne pour peaux réactives. Camomille Romaine : effets apaisants documentés"
+    "source": "Hydrolat de Bleuet : effets anti-inflammatoires confirmés (inhibition d'œdèmes) — Garbacki N et al. 1999, Journal of Ethnopharmacology 68:235-241, PMID 10624883. HE Camomille Romaine : effet anti-inflammatoire et analgésique confirmé — Aremu OO et al. 2019, Tropical Journal of Pharmaceutical Research 17(10):1939-1945, DOI 10.4314/tjpr.v17i10.7"
   },
   {
     "id": "rec_27_lotion_tonique_acneique",
@@ -1232,7 +1232,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Recette RESPEKTUS® : sensation glaçon immédiate sortie du frigo.",
     "precautions": "Lavande Aspic contre-indiquée grossesse 1er trimestre, allaitement, enfants moins de 7 ans, épilepsie. Conservation 1 mois au frigo avec Cosgard. En cas de coup de soleil sévère ou étendu : consultation médicale urgente.",
-    "source": "Aloe Vera : référentiel Pharmacopée européenne pour apaisement post-exposition. Lavande Aspic : usage traditionnel après-soleil documenté"
+    "source": "Gel d'Aloe Vera : essai clinique randomisé montrant une guérison plus rapide sur brûlures — Mahboub M et al. 2021, Journal of Caring Sciences, PMID 36247037. HV Calendula : effets cicatrisants confirmés — Parente LML et al. 2012, Evidence-based Complementary and Alternative Medicine, PMID 22315631. HE Camomille Romaine : effet anti-inflammatoire confirmé — Aremu OO et al. 2019, DOI 10.4314/tjpr.v17i10.7"
   },
   {
     "id": "rec_29_gel_anti_imperfections",
@@ -1315,7 +1315,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Recette RESPEKTUS® à conserver au frigo pour un effet décongestionnant amplifié.",
     "precautions": "Ne JAMAIS appliquer dans l'œil. Dosage HE volontairement très faible (zone fine). Conservation 1 mois au frigo avec Cosgard.",
-    "source": "Hydrolat de Bleuet : référentiel Pharmacopée européenne pour décongestion du contour de l'œil. Aloe Vera apaisant documenté"
+    "source": "Hydrolat de Bleuet : effets anti-inflammatoires confirmés, cohérents avec son usage traditionnel décongestionnant du contour de l'œil — Garbacki N et al. 1999, Journal of Ethnopharmacology 68:235-241, PMID 10624883"
   },
   {
     "id": "rec_31_anti_cernes",
@@ -1567,7 +1567,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Recette RESPEKTUS® : sans Millepertuis pour éviter la photosensibilisation.",
     "precautions": "Lavande Aspic et Camomille contre-indiquées grossesse. Pas d'exposition solaire après application.",
-    "source": "HV Calendula : référentiel Pharmacopée européenne anti-inflammatoire cutané. Macérât de Carotte : caroténoïdes. Lavande Aspic : usage traditionnel après-soleil"
+    "source": "HV Calendula : revue systématique confirmant l'effet cicatrisant sur les plaies — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé — Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632"
   },
   {
     "id": "rec_37_baume_levres_gercees",
@@ -1606,7 +1606,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer plusieurs fois par jour"
     ],
     "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois.",
-    "source": "HV Calendula et Beurre de Karité : référentiels Pharmacopée européenne pour cicatrisation des gerçures"
+    "source": "HV Calendula : effet cicatrisant confirmé — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. Cire d'abeille : revue confirmant la protection de la barrière cutanée — Nong K et al. 2023, Journal of Cosmetic Dermatology 22:2166-2173, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée in vivo — Ebrahimzadeh Attari V et al., PMID 27853689"
   },
   {
     "id": "rec_38_corps_dynamisant",
@@ -1815,7 +1815,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Recette RESPEKTUS® bonus — composition masculine premium 6 HE.",
     "precautions": "Sauge Sclarée et Cèdre contre-indiqués mastoses et cancers hormono-dépendants. Formule réservée à l'usage adulte.",
-    "source": "Heuberger E et al. (2006) : Bois de Santal et arousal. Lee KB et al. (2014) : Sauge Sclarée cortisol. Vétiver et Patchouli : usages cosmétiques masculins traditionnels"
+    "source": "Heuberger E et al. (2006) : Bois de Santal et arousal. Lee KB et al. (2014) : Sauge Sclarée et cortisol. HE Cèdre d'Atlas : effet sédatif du cédrol par inhalation — Kagawa D et al. 2003, PMID 12898420. HE Vétiver : effet anxiolytique comparable au diazépam en modèle animal — Saiyudthong S et al. 2015, PMID 25553641. HE Patchouli : activité de type antidépressive via élévation de la dopamine — Haerani A et al. 2022, PMID 35631434"
   },
   {
     "id": "rec_43_peau_seche_corps",
@@ -1858,7 +1858,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer après la douche en massage"
     ],
     "precautions": "Bonne tolérance générale. Test cutané préalable.",
-    "source": "Beurre de Karité, HV Macadamia, Argan et Jojoba : référentiels Pharmacopée européenne pour nutrition cutanée intense"
+    "source": "HV Jojoba : augmentation du collagène III et de l'acide hyaluronique, réduction de l'inflammation cutanée — Tietel Z et al. 2024, Frontiers in Pharmacology, PMID 38344180. HV Argan : amélioration de l'élasticité cutanée — Boucetta KQ et al. 2015, PMID 25673976. Beurre de Karité : revue clinique sur les propriétés hydratantes — Poljšak N, Kočevar Glavač N 2022, PMC9083541"
   },
   {
     "id": "rec_44_peau_atopique_corps",
@@ -1936,7 +1936,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser durcir à température ambiante"
     ],
     "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois.",
-    "source": "Beurre de Karité, HV Argan, cire d'abeille : référentiels Pharmacopée européenne pour nutrition et film protecteur des mains"
+    "source": "Beurre de Karité : revue clinique sur les propriétés hydratantes — Poljšak N, Kočevar Glavač N 2022, PMC9083541. HV Argan : amélioration de l'élasticité cutanée — Boucetta KQ et al. 2015, PMID 25673976. Cire d'abeille : protection de la barrière cutanée — Nong K et al. 2023, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée — Ebrahimzadeh Attari V et al., PMID 27853689"
   },
   {
     "id": "rec_46_pieds_anti_mycoses",
@@ -2006,7 +2006,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Complémentaire avec le gel après-soleil (recette 28)"
     ],
     "precautions": "Lavande Aspic contre-indiquée grossesse, allaitement, enfants moins de 7 ans, épilepsie. Pas d'exposition solaire après application.",
-    "source": "HV Calendula et Macérât de Carotte : référentiels Pharmacopée européenne pour réparation cutanée post-exposition. Lavande Aspic : usage traditionnel après-soleil"
+    "source": "HV Calendula : revue systématique confirmant l'effet cicatrisant sur les plaies — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé — Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632"
   },
   {
     "id": "rec_48_apres_epilation",
@@ -2454,7 +2454,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     "titre": "Huile barbe",
     "categorie": "Homme",
     "sousCategorie": "Barbe",
-    "indications": "Adoucit la barbe et stimule la pousse",
+    "indications": "Adoucit et nourrit la barbe, soutient la santé du cuir chevelu et du poil",
     "duree": "Quotidien",
     "frequence": "Tous les matins sur barbe propre",
     "ingredients": [
@@ -2486,7 +2486,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les pointes"
     ],
     "precautions": "Bay Saint-Thomas potentiellement irritant : test cutané obligatoire. Formule réservée adultes.",
-    "source": "HV Ricin : référentiel Pharmacopée pour nutrition fibre pileuse. Bay Saint-Thomas : usage traditionnel pour stimulation du cuir chevelu"
+    "source": "HV Ricin : acide ricinoléique, mécanisme d'action sur la PGD2 (prostaglandine impliquée dans le cycle pilaire) documenté — Girdler K et al. 2026, Cureus, PMID 41822610. Bay Saint-Thomas : usage traditionnel pour stimulation du cuir chevelu"
   },
   {
     "id": "rec_60_apres_rasage",
@@ -2731,8 +2731,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Pour la nuit : 2 gouttes sur l'oreiller"
     ],
     "bonus": "Massage anti-stress : 5 gouttes Lavande Vraie + 3 gouttes Petit-Grain dans 30 ml HV de Noyau d'Abricot, masser le plexus solaire et les poignets.",
-    "precautions": "Méta-analyse 2020 (Journal of Affective Disorders, 32 essais cliniques) : effet significatif sur l'anxiété. Contre-indiqué 1er trimestre grossesse. Consulter un professionnel si anxiété chronique.",
-    "source": "Méta-analyse Journal of Affective Disorders (2020)"
+    "precautions": "Essai contrôlé randomisé (183 participants) : effet significatif de l'inhalation de Lavande Vraie et Camomille sur l'anxiété. Contre-indiqué 1er trimestre grossesse. Consulter un professionnel si anxiété chronique.",
+    "source": "HE Lavande Vraie (en synergie avec Camomille, inhalation) : essai contrôlé randomisé montrant une réduction de l'anxiété, du stress et de la dépression (183 participants, 30 nuits) — Ebrahimi H et al. 2022, Explore (NY) 18(3):272-278, PMID 33454232"
   },
   {
     "id": "rec_bien_depression_legere",
@@ -2768,7 +2768,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Étude iranienne : inhalation 30 nuits consécutives → baisse significative de la dépression, anxiété, stress, effets persistants 1 mois après. Combiner avec activité physique douce et lumière naturelle.",
     "precautions": "IMPORTANT : ne remplace JAMAIS un traitement médical. Si humeur basse persistante, consulter un médecin/psychologue/psychiatre. Bergamote photosensibilisante : pas d'application avant exposition solaire.",
-    "source": "Essai clinique randomisé iranien (lavande/camomille, 30 nuits) - Journal of Affective Disorders (2020)"
+    "source": "HE Lavande Vraie (en synergie avec Camomille, inhalation 30 nuits) : essai contrôlé randomisé, 183 participants, baisse significative de la dépression, l'anxiété et le stress — Ebrahimi H et al. 2022, Explore (NY) 18(3):272-278, PMID 33454232. HE Bergamote : réduction significative du stress et de la dépression (échelle DASS-21) — Wakui N et al. 2023, Complementary Therapies in Medicine 77:102976, PMID 37625623"
   },
   {
     "id": "rec_bien_arret_tabac",
@@ -3198,9 +3198,9 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Idéalement combiner avec douche fraîche et musique énergisante",
       "NE PAS utiliser après 16h (effet stimulant)"
     ],
-    "bonus": "La Menthe Poivrée augmente la vigilance et la performance cognitive (études). Les agrumes améliorent l'humeur (limonène).",
+    "bonus": "La Menthe Poivrée augmente la vigilance et la performance cognitive (études). Le Romarin à Cinéole soutient également la cognition et l'humeur.",
     "precautions": "Menthe Poivrée et Romarin INTERDITS moins de 7 ans, grossesse, épilepsie, hypertension. Zests photosensibilisants : pas avant exposition solaire si application cutanée.",
-    "source": "Moss M, Hewitt S, Moss L, Wesnes K (2008) - International Journal of Neuroscience 118(1):59-77 - \"Modulation of cognitive performance and mood by aromas of peppermint and ylang-ylang\". Étude sur 144 volontaires : la menthe poivrée améliore la mémoire et augmente la vigilance subjective"
+    "source": "HE Menthe Poivrée : améliore la mémoire et augmente la vigilance subjective (144 volontaires) — Moss M, Hewitt S, Moss L, Wesnes K 2008, International Journal of Neuroscience 118(1):59-77. HE Romarin à Cinéole : effets confirmés sur la cognition et l'humeur — Moss M et al. 2003, International Journal of Neuroscience 113(1):15-38, PMID 12690999"
   },
   {
     "id": "rec_bien_digestion_emotion",
@@ -3679,7 +3679,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Variante \"blond\" : ajouter 5 gouttes Camomille Noble pour raviver les reflets. Variante \"brun\" : ajouter 5 gouttes Ylang-Ylang supplémentaires pour la brillance.",
     "precautions": "Éviter dans les 48h suivant une coloration (laisser le cuir chevelu se rééquilibrer). Bois de Hô préféré au Bois de Rose (espèce protégée).",
-    "source": "Synergie cosmétique traditionnelle. HV d'Argan : profil lipidique protecteur documenté (Pharmacopée européenne). Ylang-Ylang : usage cosmétique capillaire traditionnel. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)"
+    "source": "HV Argan : le prétraitement à l'huile d'argan réduit les dommages oxydatifs sur la fibre capillaire, pertinent pour les cheveux colorés exposés au stress oxydatif — Sharifi et al. 2022, Journal of Cosmetic Dermatology, DOI 10.1111/jocd.14885. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)"
   },
   {
     "id": "rec_cheveux_pousse",

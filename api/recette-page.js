@@ -11,6 +11,27 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
+// Détecte PMID / PMC / DOI dans un texte de source et les transforme en liens cliquables.
+const SOURCE_LINK_RE = /(PMID[:\s]*\d{6,9}|PMC\d{6,9}|DOI[:\s]*10\.\d{4,9}\/\S+?(?=[\s,;)]|$))/gi;
+function sourceLinkUrl(match) {
+  const m = match.trim();
+  const pmid = m.match(/PMID[:\s]*(\d{6,9})/i);
+  if (pmid) return `https://pubmed.ncbi.nlm.nih.gov/${pmid[1]}/`;
+  const pmc = m.match(/PMC(\d{6,9})/i);
+  if (pmc) return `https://www.ncbi.nlm.nih.gov/pmc/articles/PMC${pmc[1]}/`;
+  const doi = m.match(/DOI[:\s]*(10\.\d{4,9}\/\S+)/i);
+  if (doi) return `https://doi.org/${doi[1].replace(/[.,;)]+$/, '')}`;
+  return null;
+}
+function linkifySource(text) {
+  const parts = String(text || '').split(SOURCE_LINK_RE);
+  return parts.map(p => {
+    const url = sourceLinkUrl(p);
+    if (url) return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener" style="color:#2C5F3F;font-weight:700;text-decoration:underline">${escapeHtml(p.trim().replace(/\.$/, ''))}</a>`;
+    return escapeHtml(p);
+  }).join('');
+}
+
 function notFound(id) {
   return `<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Recette introuvable — RESPEKTUS®</title>
 <style>body{font-family:-apple-system,sans-serif;background:#FAF7F2;text-align:center;padding:80px 24px;color:#1A1A1A}
@@ -146,7 +167,7 @@ h2{font-size:18px;font-weight:800;color:#2C5F3F;text-transform:uppercase;letter-
     </div>
   ` : ''}
 
-  ${recipe.source ? `<div class="source">Source : ${escapeHtml(recipe.source)}</div>` : ''}
+  ${recipe.source ? `<div class="source">Source : ${linkifySource(recipe.source)}</div>` : ''}
 
   <div class="cta-section">
     <div class="cta-title">Vous voulez plus de recettes ?</div>
