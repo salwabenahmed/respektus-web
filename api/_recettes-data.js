@@ -3430,8 +3430,8 @@ export const RECETTES_BIBLIOTHEQUE = [
     "frequence": "1 à 2 fois par semaine",
     "ingredients": [
       {
-        "nom": "Argile verte surfine",
-        "quantite": "2 cuillères à soupe"
+        "nom": "Argile Verte",
+        "quantite": "30g (2 cuillères à soupe)"
       },
       {
         "nom": "Hydrolat de Lavande Vraie",
