@@ -3384,7 +3384,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Protection solaire SPF 50 obligatoire en journée pendant la cure"
     ],
     "precautions": "Citron Zest et Céleri très photosensibilisants : risque de brûlure et hyperpigmentation paradoxale si exposition solaire. Cure interrompue en été. Contre-indiqué grossesse.",
-    "source": "Synergie traditionnelle en cosmétique aromatique. HV Rose Musquée riche en acides linoléique et alpha-linolénique, caroténoïdes et vitamine E, documentée pour l'éclat du teint."
+    "source": "HV Rose Musquée : réduction des taches UV observée après application topique de 5 semaines (imagerie VISIA) — Oargă et al. 2025, Cosmetics 12(3):125, DOI 10.3390/cosmetics12030125. HE Citron Jaune Zest : inhibition de 42,9% de la sécrétion de tyrosinase sur cellules de mélanome B16 — Yang et al. 2023, International Journal of Molecular Sciences 24(4):4207, PMID 36835634. HE Carotte (graines) : inhibition de 76,5% de l'activité tyrosinase in vitro — Kothapalli et al. 2024, Current Enzyme Inhibition 20(2)."
   },
   {
     "id": "rec_visage_contour_yeux",
