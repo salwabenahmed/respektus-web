@@ -797,7 +797,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "L'option Rose de Damas amplifie l'action régénérante (recette premium).",
     "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Rose de Damas contre-indiquée grossesse.",
-    "source": "Valerón-Almazán P et al. (2015) - J Cosmetics Dermatol Sci Appl 5:161-167 : étude clinique 108 patients - HV Rose Musquée améliore significativement érythème, dyschromie et atrophie cutanée"
+    "source": "Valerón-Almazán P et al. (2015) - Journal of Cosmetics, Dermatological Sciences and Applications 5:161-167, DOI 10.4236/jcdsa.2015.52019 : étude clinique 108 patients - HV Rose Musquée améliore significativement érythème, dyschromie et atrophie cutanée"
   },
   {
     "id": "rec_18_jour_bonne_mine",
@@ -916,7 +916,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser pénétrer pendant la nuit"
     ],
     "precautions": "Carotte, Géranium et Romarin contre-indiqués grossesse. Romarin contre-indiqué hypertension, épilepsie.",
-    "source": "HV Rose Musquée : Valerón-Almazán 2015 sur régénération cutanée. Macérât de Carotte : caroténoïdes documentés (Pharmacopée européenne)"
+    "source": "HV Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019, sur régénération cutanée. Macérât de Carotte : caroténoïdes documentés (Pharmacopée européenne)"
   },
   {
     "id": "rec_21_peau_atopique_visage",
@@ -1376,7 +1376,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Recette RESPEKTUS® biphase — conservation 3 mois au frigo. La caféine active la microcirculation.",
     "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Ne JAMAIS appliquer dans l'œil.",
-    "source": "Caféine périorbitale topique : PMC11175953 - effet décongestionnant et anti-cernes documenté. Hélichryse : Antunes Viegas 2014 (PMID 24239849). Rose Musquée : Valerón-Almazán 2015"
+    "source": "Caféine périorbitale topique : PMC11175953 - effet décongestionnant et anti-cernes documenté. Hélichryse : Antunes Viegas 2014 (PMID 24239849). Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019"
   },
   {
     "id": "rec_32_raffermissement",
@@ -1419,7 +1419,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "5 minutes de massage minimum"
     ],
     "precautions": "Ciste contre-indiqué grossesse, allaitement, anticoagulants. Encens contre-indiqué grossesse. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié.",
-    "source": "Moussaieff A et al. (2008) FASEB Journal - PMID 18492727 : Encens Oliban (incensole) effets régénérants. Rose Musquée : Valerón-Almazán 2015"
+    "source": "Moussaieff A et al. (2008) FASEB Journal - PMID 18492727 : Encens Oliban (incensole) effets régénérants. Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019"
   },
   {
     "id": "rec_33_baume_levres_gourmand",
@@ -2125,7 +2125,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Compatible grossesse à partir du 4ème mois (retirer alors l'Hélichryse).",
     "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié.",
-    "source": "Valerón-Almazán P et al. (2015) : HV Rose Musquée améliore élasticité et apparence cutanée. Hélichryse Italienne : Antunes Viegas 2014 (PMID 24239849)"
+    "source": "Valerón-Almazán P et al. (2015), DOI 10.4236/jcdsa.2015.52019 : HV Rose Musquée améliore élasticité et apparence cutanée. Hélichryse Italienne : Antunes Viegas 2014 (PMID 24239849)"
   },
   {
     "id": "rec_51_baume_mains_gercees",
@@ -2164,7 +2164,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer plusieurs fois par jour, idéalement le soir avec gants coton"
     ],
     "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Conservation 6 mois.",
-    "source": "HV Rose Musquée : Valerón-Almazán 2015 sur réparation cutanée. Hélichryse : Antunes Viegas 2014 (PMID 24239849). Beurre de Karité et cire : Pharmacopée européenne"
+    "source": "HV Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019, sur réparation cutanée. Hélichryse : Antunes Viegas 2014 (PMID 24239849). Beurre de Karité et cire : Pharmacopée européenne"
   },
   {
     "id": "rec_52_baume_talons",
@@ -3836,7 +3836,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     "bonus": "Étude clinique Hay et al. (Archives of Dermatology, 1998) : 44% d'amélioration significative dans le groupe traité contre 15% dans le groupe placebo, sur 7 mois. C'est l'une des rares études randomisées en aromathérapie capillaire publiée dans une revue à comité de lecture.",
     "precautions": "Thym à Thymol DERMOCAUSTIQUE : respecter strictement le dosage, ne jamais utiliser pur. Toutes ces HE contre-indiquées grossesse, allaitement, enfants moins de 7 ans. Romarin contre-indiqué hypertension, épilepsie. Cèdre d'Atlas contre-indiqué cancers hormono-dépendants. Diagnostic dermatologique préalable indispensable pour différencier alopécie areata d'autres formes de chute. Test cutané obligatoire 48h avant.",
-    "source": "Hay IC, Jamieson M, Ormerod AD - Archives of Dermatology, 1998, Vol 134:1349-1352"
+    "source": "Hay IC, Jamieson M, Ormerod AD - Archives of Dermatology, 1998, Vol 134:1349-1352, PMID 9828867"
   },
   {
     "id": "rec_olfacto_lacher_prise",
