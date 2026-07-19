@@ -61,19 +61,19 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "5 gouttes (~0,12%)"
       },
       {
-        "nom": "Conservateur Cosgard",
-        "quantite": "24 gouttes (~0,6%)"
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "4 gouttes (0,2 ml) — ~0,1%"
       }
     ],
     "etapes": [
       "Verser la base shampoing dans un flacon ambré",
-      "Ajouter la HV Jojoba, les HE puis le Cosgard, bien agiter",
+      "Ajouter la HV Jojoba, les HE puis la Vitamine E, bien agiter",
       "Agiter à chaque utilisation",
       "Laver les cheveux en massant le cuir chevelu",
       "Rincer abondamment"
     ],
     "bonus": "Pour un effet renforcé, combiner avec le « Masque brillance et éclat » 1 fois par semaine.",
-    "precautions": "Test cutané préalable. Éviter le contact avec les yeux. Conservation 2 à 3 mois avec le Cosgard.",
+    "precautions": "Test cutané préalable. Éviter le contact avec les yeux. La base shampoing contient déjà son propre conservateur ; la Vitamine E ajoutée ici protège uniquement la HV Jojoba de l'oxydation. Conservation 2 à 3 mois.",
     "source": "Ylang-Ylang : usage cosmétique traditionnel pour brillance capillaire. Bois de Hô : alternative durable au Bois de Rose (CITES)."
   },
   {
@@ -143,21 +143,17 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Citron Jaune Zest",
         "quantite": "4 gouttes (~0,10%)"
-      },
-      {
-        "nom": "Conservateur Cosgard",
-        "quantite": "24 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Verser la base shampoing dans un flacon ambré",
-      "Ajouter les huiles essentielles puis le Cosgard, agiter délicatement",
+      "Ajouter les huiles essentielles, agiter délicatement",
       "Agiter à chaque utilisation",
       "Laver les cheveux en massant le cuir chevelu",
       "Rincer abondamment puis appliquer le rinçage final (voir bonus)"
     ],
     "bonus": "Rinçage final pour amplifier les reflets : mélanger 100 ml d'Hydrolat de Camomille Romaine avec 1 cuillère à soupe de jus de citron frais. Verser sur les cheveux après le dernier rinçage à l'eau, sans rincer. Sécher au soleil — l'exposition solaire active les pigments et révèle les reflets dorés.",
-    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron photosensibilisant sur la peau : éviter le contact cutané direct. Bien rincer si coulure sur le visage ou la nuque. Le rinçage final non rincé s'applique sur la fibre capillaire — l'exposition au soleil est l'étape qui active les reflets, c'est voulu. Conservation du shampoing 2 à 3 mois avec le Cosgard ; le rinçage final (bonus) se prépare frais à chaque utilisation, sans conservateur.",
+    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron photosensibilisant sur la peau : éviter le contact cutané direct. Bien rincer si coulure sur le visage ou la nuque. Le rinçage final non rincé s'applique sur la fibre capillaire — l'exposition au soleil est l'étape qui active les reflets, c'est voulu. La base shampoing contient déjà son propre conservateur. Conservation 2 à 3 mois ; le rinçage final (bonus) se prépare frais à chaque utilisation, sans conservateur.",
     "source": "Camomille Romaine et Citron : usages référentiels traditionnels documentés pour les reflets dorés des cheveux blonds. Hydrolat de Camomille : Pharmacopée européenne."
   },
   {
@@ -2464,19 +2460,18 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "1% (40 gouttes)"
       },
       {
-        "nom": "Conservateur Cosgard",
-        "quantite": "24 gouttes (~0,6%)"
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "4 gouttes (0,2 ml) — ~0,1%"
       }
     ],
     "etapes": [
-      "Mélanger Jojoba, glycérine et HE",
+      "Mélanger Jojoba, glycérine, HE et Vitamine E",
       "Incorporer doucement à la base lavante",
-      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe ou souple",
       "Agiter avant chaque utilisation"
     ],
     "bonus": "Recette RESPEKTUS® : composition signature en accord avec le parfum femme.",
-    "precautions": "Petit-Grain contre-indiqué grossesse 1er trimestre. Conservation 2 à 3 mois avec le Cosgard.",
+    "precautions": "Petit-Grain contre-indiqué grossesse 1er trimestre. La base lavante contient déjà son propre conservateur ; la Vitamine E protège ici la HV Jojoba de l'oxydation. Conservation 2 à 3 mois.",
     "source": "HE Néroli : Choi 2014 (PMC4082953). Petit-Grain Bigarade : usage référentiel apaisant en olfactothérapie"
   },
   {
@@ -2513,19 +2508,18 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "0,5% (20 gouttes)"
       },
       {
-        "nom": "Conservateur Cosgard",
-        "quantite": "24 gouttes (~0,6%)"
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "4 gouttes (0,2 ml) — ~0,1%"
       }
     ],
     "etapes": [
-      "Mélanger Jojoba, glycérine et HE",
+      "Mélanger Jojoba, glycérine, HE et Vitamine E",
       "Incorporer à la base shampoing en douceur",
-      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe",
       "Appliquer en massant le cuir chevelu, laisser poser 1 minute, rincer"
     ],
     "bonus": "La Litsée Citronnée apporte un éclat lumineux à la fibre.",
-    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie. Conservation 2 à 3 mois avec le Cosgard.",
+    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie. La base shampoing contient déjà son propre conservateur ; la Vitamine E protège ici la HV Jojoba de l'oxydation. Conservation 2 à 3 mois.",
     "source": "Panahi Y et al. (2015) - SKINmed - PMID 25842469 : Romarin vs Minoxidil 2% - efficacité comparable à 6 mois sur alopécie androgénétique"
   },
   {
@@ -2823,19 +2817,18 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "0,2% (8 gouttes)"
       },
       {
-        "nom": "Conservateur Cosgard",
-        "quantite": "24 gouttes (~0,6%)"
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "4 gouttes (0,2 ml) — ~0,1%"
       }
     ],
     "etapes": [
-      "Mélanger Jojoba, glycérine et HE",
+      "Mélanger Jojoba, glycérine, HE et Vitamine E",
       "Incorporer doucement à la base lavante",
-      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe",
       "Idéal le matin pour un réveil dynamisant"
     ],
     "bonus": "Recette RESPEKTUS® : composition tonique en accord avec le parfum homme.",
-    "precautions": "Gingembre et Eucalyptus contre-indiqués grossesse. Conservation 2 à 3 mois avec le Cosgard.",
+    "precautions": "Gingembre et Eucalyptus contre-indiqués grossesse. La base lavante contient déjà son propre conservateur ; la Vitamine E protège ici la HV Jojoba de l'oxydation. Conservation 2 à 3 mois.",
     "source": "HE Eucalyptus Radié : tonifiant respiratoire et cutané documenté. Cèdre d'Atlas : usage cosmétique masculin référencé"
   },
   {
@@ -2872,18 +2865,17 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "0,5% (20 gouttes)"
       },
       {
-        "nom": "Conservateur Cosgard",
-        "quantite": "24 gouttes (~0,6%)"
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "4 gouttes (0,2 ml) — ~0,1%"
       }
     ],
     "etapes": [
-      "Mélanger Jojoba, glycérine et HE",
+      "Mélanger Jojoba, glycérine, HE et Vitamine E",
       "Incorporer à la base shampoing",
-      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe",
       "Appliquer en massant le cuir chevelu, laisser poser 1 minute, rincer"
     ],
-    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie. Cèdre contre-indiqué cancers hormono-dépendants. Conservation 2 à 3 mois avec le Cosgard.",
+    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie. Cèdre contre-indiqué cancers hormono-dépendants. La base shampoing contient déjà son propre conservateur ; la Vitamine E protège ici la HV Jojoba de l'oxydation. Conservation 2 à 3 mois.",
     "source": "Panahi Y et al. (2015) - SKINmed - PMID 25842469 : Romarin vs Minoxidil 2% - efficacité comparable à 6 mois sur alopécie androgénétique masculine"
   },
   {
