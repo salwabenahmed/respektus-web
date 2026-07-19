@@ -300,76 +300,40 @@ export const RECETTES_BIBLIOTHEQUE = [
   },
   {
     "id": "rec_07_pelade",
-    "titre": "Pelade (double protocole)",
+    "titre": "Pelade idiopathique ou nerveuse",
     "categorie": "Cheveux",
     "sousCategorie": "Cuir chevelu",
-    "indications": "Relance la microcirculation du cuir chevelu et renforce les follicules",
-    "duree": "Court terme 3 semaines ou protocole long 3 à 7 mois",
-    "frequence": "Le soir, tous les jours",
+    "indications": "Pelade sans raison apparente ou liée au stress, après avis médical — relance la microcirculation, renforce les capillaires et le cheveu",
+    "duree": "3 semaines, avec une pause d'une semaine toutes les 3 semaines",
+    "frequence": "Tous les soirs",
     "ingredients": [
       {
-        "nom": "PROTOCOLE COURT — test 3 semaines (flacon 50 ml)",
-        "quantite": ""
-      },
-      {
         "nom": "Huile végétale de Noisette",
-        "quantite": "38 ml (80,6%)"
-      },
-      {
-        "nom": "Huile végétale de Ricin",
-        "quantite": "9 ml (19,1%)"
+        "quantite": "47 ml (94%)"
       },
       {
         "nom": "HE Romarin à Cinéole",
-        "quantite": "0,1% (1 goutte)"
+        "quantite": "2% (20 gouttes)"
       },
       {
         "nom": "HE Citron Jaune Zest",
-        "quantite": "0,1% (1 goutte)"
+        "quantite": "2% (20 gouttes)"
       },
       {
         "nom": "HE Ylang-Ylang Totum",
-        "quantite": "0,1% (1 goutte)"
-      },
-      {
-        "nom": "PROTOCOLE LONG — protocole Hay 1998 (3 à 7 mois, flacon 100 ml)",
-        "quantite": ""
-      },
-      {
-        "nom": "Huile végétale de Jojoba",
-        "quantite": "12,5 ml (12,5%)"
-      },
-      {
-        "nom": "Huile végétale de Pépins de Raisin",
-        "quantite": "83,5 ml (83,5%)"
-      },
-      {
-        "nom": "HE Thym à Thymol",
-        "quantite": "1 ml — 20 gouttes (1%)"
-      },
-      {
-        "nom": "HE Romarin à Cinéole",
-        "quantite": "1 ml — 20 gouttes (1%)"
-      },
-      {
-        "nom": "HE Lavande Vraie",
-        "quantite": "1 ml — 20 gouttes (1%)"
-      },
-      {
-        "nom": "HE Cèdre d'Atlas",
-        "quantite": "1 ml — 20 gouttes (1%)"
+        "quantite": "2% (20 gouttes)"
       }
     ],
     "etapes": [
-      "COMMENT CHOISIR : commencer toujours par le PROTOCOLE COURT pour tester la tolérance. Si les résultats sont positifs après 3 semaines, passer au PROTOCOLE LONG",
-      "Préparer la synergie choisie dans un flacon ambré (50 ml pour le protocole court, 100 ml pour le protocole long). Ne préparer qu'UN SEUL protocole à la fois",
-      "PROTOCOLE COURT (3 semaines) : appliquer chaque soir sur les zones de pelade et la périphérie. Masser exactement 2 minutes. Évaluer les résultats au bout de 3 semaines",
-      "PROTOCOLE LONG (3 à 7 mois, si le COURT est bien toléré) : même application chaque soir. Durée calquée sur l'étude clinique Hay 1998 (7 mois). Ne pas interrompre avant 3 mois pour juger de l'efficacité",
-      "Laisser poser toute la nuit, laver le matin avec un shampoing doux"
+      "Que ce soit sans raison apparente ou dû au stress, consulter un médecin avant de commencer ce protocole",
+      "Préparer la synergie dans un flacon ambré de 50 ml",
+      "Appliquer uniquement le soir, sur la zone de pelade et sa périphérie proche",
+      "Laisser poser toute la nuit",
+      "Répéter tous les jours pendant 3 semaines, puis observer une pause d'une semaine avant de reprendre un nouveau cycle"
     ],
-    "bonus": "Protocole long Hay et al. 1998 (Archives of Dermatology) : 44% d'amélioration significative en 7 mois.",
-    "precautions": "Romarin, Thym et Cèdre contre-indiqués grossesse, hypertension, épilepsie. Citron Zest photosensibilisant. Diagnostic dermatologique préalable indispensable. Protocole long : dosage exact de l'étude Hay 1998 (1% de chaque HE, 4% d'HE au total) — application strictement localisée sur les zones de pelade uniquement.",
-    "source": "Hay IC, Jamieson M, Ormerod AD (1998) - Archives of Dermatology 134(11):1349-1352 - PMID 9828867 : étude clinique randomisée aromathérapie sur 86 patients atteints d'alopecia areata"
+    "bonus": "Le Romarin à Cinéole relance la micro-circulation, le Citron Jaune Zest renforce les capillaires, l'Ylang-Ylang Totum renforce le cheveu.",
+    "precautions": "Avis médical préalable indispensable. Romarin à Cinéole contre-indiqué grossesse, allaitement, hypertension, épilepsie. Citron Jaune Zest photosensibilisant : ne pas exposer la zone traitée au soleil après application.",
+    "source": "Synergie RESPEKTUS® pour pelade idiopathique/nerveuse. Pour le protocole spécifiquement validé par étude clinique (alopécie areata), voir la recette \"Alopécie areata / Pelade (protocole Hay)\"."
   },
   {
     "id": "rec_08_eczema_cuir_chevelu",
@@ -3825,6 +3789,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Cèdre d'Atlas",
         "quantite": "~0,4% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (2 gouttes — 0,12 ml)"
       }
     ],
     "etapes": [
@@ -3834,8 +3802,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Couvrir d'une serviette chaude pendant quelques minutes pour favoriser la pénétration",
       "Laisser poser toute la nuit, laver le matin"
     ],
-    "bonus": "Étude clinique Hay et al. (Archives of Dermatology, 1998) : 44% d'amélioration significative dans le groupe traité contre 15% dans le groupe placebo, sur 7 mois. C'est l'une des rares études randomisées en aromathérapie capillaire publiée dans une revue à comité de lecture.",
-    "precautions": "Thym à Thymol DERMOCAUSTIQUE : respecter strictement le dosage, ne jamais utiliser pur. Toutes ces HE contre-indiquées grossesse, allaitement, enfants moins de 7 ans. Romarin contre-indiqué hypertension, épilepsie. Cèdre d'Atlas contre-indiqué cancers hormono-dépendants. Diagnostic dermatologique préalable indispensable pour différencier alopécie areata d'autres formes de chute. Test cutané obligatoire 48h avant.",
+    "bonus": "Étude clinique Hay et al. (Archives of Dermatology, 1998) : 44% d'amélioration significative dans le groupe traité contre 15% dans le groupe placebo, sur 7 mois. C'est l'une des rares études randomisées en aromathérapie capillaire publiée dans une revue à comité de lecture. La Vitamine E (absente de l'étude d'origine) est ajoutée ici comme antioxydant pour éviter le rancissement de l'huile de pépins de raisin sur les 7 mois d'utilisation — elle ne modifie pas l'action de la synergie.",
+    "precautions": "Thym à Thymol DERMOCAUSTIQUE : respecter strictement le dosage, ne jamais utiliser pur. Toutes ces HE contre-indiquées grossesse, allaitement, enfants moins de 7 ans. Romarin contre-indiqué hypertension, épilepsie. Cèdre d'Atlas contre-indiqué cancers hormono-dépendants. Vitamine E contre-indiquée allergie au gluten si issue du germe de blé (préférer une origine tournesol). Diagnostic dermatologique préalable indispensable pour différencier alopécie areata d'autres formes de chute. Test cutané obligatoire 48h avant.",
     "source": "Hay IC, Jamieson M, Ormerod AD - Archives of Dermatology, 1998, Vol 134:1349-1352, PMID 9828867"
   },
   {
