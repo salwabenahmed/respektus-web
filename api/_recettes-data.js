@@ -4155,15 +4155,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Aspic",
         "quantite": "2 gouttes (10%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "1 goutte (~5%)"
       }
     ],
     "etapes": [
       "ADULTE UNIQUEMENT. Zona principalement après 60 ans — toujours sous suivi médical. Les HE NE REMPLACENT PAS le traitement antiviral (aciclovir/valaciclovir) indispensable",
-      "Préparer le mélange dans un flacon de 1 ml (total 20 gouttes)",
+      "Préparer le mélange dans un flacon de 1 ml (total 21 gouttes)",
       "Appliquer pur localement sur le trajet nerveux atteint. Application strictement localisée — protéger la peau saine autour",
       "Renouveler 6 fois par jour pendant 48 heures, puis évaluer avec le médecin"
     ],
-    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie).",
+    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® comme antioxydant pour protéger le Millepertuis (absente de la formule originale de la thèse) — utile si le flacon est conservé au-delà des 48h prévues.",
     "precautions": "Réservé ADULTE (zona principalement après 60 ans). ZONA OPHTALMIQUE (atteinte de l'oeil, rougeur ou douleur sur le trajet ophtalmique) : urgence médicale absolue, appeler le 15 immédiatement. Menthe Poivrée interdite grossesse, allaitement, épilepsie, hypertension. Niaouli et Ravintsara contre-indiqués grossesse et allaitement. Millepertuis photosensibilisant et interactions médicamenteuses possibles (par précaution chez patients sous anticoagulants, immunosuppresseurs ou contraceptifs oraux). L'aromathérapie NE GUÉRIT PAS le zona — le traitement médical antiviral (aciclovir/valaciclovir) reste indispensable. Consulter un médecin.",
     "source": "Pierre A. (2016) — L'aromathérapie adaptée aux pathologies dermatologiques de comptoir — Thèse Université de Bordeaux, HAL hal-01732967, p.108"
   },
@@ -4195,6 +4199,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Sarriette des montagnes",
         "quantite": "1 goutte (20%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "1 goutte (~17%)"
       }
     ],
     "etapes": [
@@ -4204,7 +4212,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Recouvrir d'un pansement toute la journée. En cas de brûlure ou rougeur : arrêter IMMÉDIATEMENT et appliquer HV neutre (jamais d'eau)",
       "Renouveler 2 fois par jour pendant 3 à 4 semaines. Faire une pause si irritation"
     ],
-    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). Alternative plus douce disponible (synergie verrues douce).",
+    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). Alternative plus douce disponible (synergie verrues douce). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale) : ⚠️ sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule dosée au goutte-à-goutte pour son effet dermocaustique ciblé — à retirer si l'efficacité semble réduite.",
     "precautions": "TRÈS DERMOCAUSTIQUE — protéger impérativement la peau saine autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. Ne jamais utiliser sur les verrues génitales (consulter un médecin). Contre-indiqué asthmatiques et épileptiques. Tester en pli du coude 24h avant la première application. En cas de brûlure : arrêter immédiatement et appliquer une HV neutre (jamais d'eau).",
     "source": "Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.153 (Exemple 1)"
   },
@@ -4228,15 +4236,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Menthe Poivrée",
         "quantite": "25 gouttes (25%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "1 goutte (~1%)"
       }
     ],
     "etapes": [
-      "Préparer le mélange dans un flacon de 5 ml (total 100 gouttes)",
+      "Préparer le mélange dans un flacon de 5 ml (total 101 gouttes)",
       "Appliquer le mélange pur sur la verrue au coton-tige",
       "Application strictement ciblée — protéger la peau saine",
       "Renouveler matin, soir et après la douche pendant 4 à 6 semaines"
     ],
-    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie).",
+    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale), sans fonction antioxydante réelle ici (pas de corps gras à protéger).",
     "precautions": "Menthe Poivrée interdite enfants de moins de 7 ans, grossesse, allaitement, épilepsie, hypertension. Tea Tree à éviter pendant la grossesse. Tester en pli du coude avant la première application.",
     "source": "Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.153 (Exemple 2)"
   },
@@ -4264,6 +4276,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "Huile végétale de Millepertuis",
         "quantite": "10 gouttes (10%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "1 goutte (~1%)"
       }
     ],
     "etapes": [
@@ -4273,7 +4289,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Déposer 2 à 3 gouttes du mélange sur la zone brûlée. Renouveler 6 fois par jour",
       "Millepertuis photosensibilisant : couvrir la zone brûlée avant toute exposition solaire (délai 8h minimum)"
     ],
-    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). La formule combine propriétés cicatrisantes, antidouleur et désinfectantes.",
+    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). La formule combine propriétés cicatrisantes, antidouleur et désinfectantes. Vitamine E ajoutée par RESPEKTUS® comme antioxydant pour le Millepertuis (absente de la formule originale), utile vu la durée \"selon besoin\" jusqu'à cicatrisation complète.",
     "precautions": "Brûlures de 1er degré UNIQUEMENT (peau rouge intacte, sans cloque). Ne jamais appliquer sur brûlure ouverte ou avec cloque éclatée (risque de surinfection). Pour 2e/3e degré : urgences médicales obligatoires. Brûlure étendue ou profonde : APPEL URGENT au 15 (SAMU). Lavande Aspic interdite enfants de moins de 6 ans et grossesse 1er trimestre. Millepertuis photosensibilisant et interactions médicamenteuses possibles par précaution (anticoagulants, immunosuppresseurs) : application le soir, couvrir la zone avant exposition solaire (délai 8 à 12h).",
     "source": "Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.158 (Exemple 1)",
     "avertissement_medical": "Brûlure étendue, profonde ou de 2e/3e degré : appeler immédiatement le 15 (SAMU). Cette synergie est réservée aux brûlures superficielles de 1er degré sur peau intacte."
@@ -4306,15 +4322,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Officinale (Lavande Vraie)",
         "quantite": "1 goutte (12%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "1 goutte (~10%)"
       }
     ],
     "etapes": [
-      "Préparer le mélange dans un flacon de 0,5 ml (total 9 gouttes pour 3 applications par jour)",
+      "Préparer le mélange dans un flacon de 0,5 ml (total 10 gouttes)",
       "Limer l'ongle avant chaque application pour faciliter la pénétration",
       "Appliquer 3 gouttes du mélange strictement sur l'ongle atteint",
       "Renouveler 3 fois par jour pendant 3 semaines minimum"
     ],
-    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie).",
+    "bonus": "Recette de référence académique d'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale), sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule concentrée en HE dermocaustiques dosée précisément par la thèse — à retirer si l'efficacité semble réduite.",
     "precautions": "Cannelle de Chine TRÈS DERMOCAUSTIQUE : appliquer strictement sur l'ongle, jamais sur la peau autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. En cas de rougeur ou brûlure de la peau autour : arrêter et diluer dans HV Calophylle 50/50. Onychomycose persistante après 3 semaines : consultation médicale (traitement antifongique oral parfois nécessaire).",
     "source": "Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.149 (Exemple 2)"
   }
