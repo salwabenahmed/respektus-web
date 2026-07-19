@@ -1,4 +1,4 @@
-// Recettes consolidées RESPEKTUS — synchronisé depuis l'app le 2026-07-18
+// Recettes consolidées RESPEKTUS — synchronisé depuis l'app le 2026-07-19
 // 103 recettes (originales + base + complémentaires)
 
 export const RECETTES_BIBLIOTHEQUE = [
@@ -18,6 +18,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Citron Jaune Zest",
         "quantite": "2% (20 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -26,7 +30,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser le cuir chevelu 2 à 3 minutes",
       "Laisser poser toute la nuit, laver le matin avec un shampoing doux"
     ],
-    "bonus": "Renfort hebdomadaire : 1,5% Citron Zest + 1% Ylang-Ylang Totum dans HV Noisette.",
+    "bonus": "Renfort hebdomadaire : 1,5% Citron Zest + 1% Ylang-Ylang Totum dans HV Noisette. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Citron Zest photosensibilisant — application le soir uniquement.",
     "source": "Synergie traditionnelle revitalisante. Citron Zest : limonène tonifiant cutané documenté (Pharmacopée européenne). HV Noisette : profil pénétrant adapté au cuir chevelu"
   },
@@ -55,17 +59,21 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Ylang-Ylang Totum",
         "quantite": "5 gouttes (~0,12%)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "24 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Verser la base shampoing dans un flacon ambré",
-      "Ajouter la HV Jojoba puis les HE",
+      "Ajouter la HV Jojoba, les HE puis le Cosgard, bien agiter",
       "Agiter à chaque utilisation",
       "Laver les cheveux en massant le cuir chevelu",
       "Rincer abondamment"
     ],
     "bonus": "Pour un effet renforcé, combiner avec le « Masque brillance et éclat » 1 fois par semaine.",
-    "precautions": "Test cutané préalable. Éviter le contact avec les yeux.",
+    "precautions": "Test cutané préalable. Éviter le contact avec les yeux. Conservation 2 à 3 mois avec le Cosgard.",
     "source": "Ylang-Ylang : usage cosmétique traditionnel pour brillance capillaire. Bois de Hô : alternative durable au Bois de Rose (CITES)."
   },
   {
@@ -97,6 +105,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Litsée Citronnée",
         "quantite": "5 gouttes (0,5%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -106,7 +118,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser toute la nuit (ou minimum 1 heure)",
       "Laver le lendemain avec le « Shampoing brillance et éclat »"
     ],
-    "bonus": "La Litsée Citronnée apporte une note fraîche et un éclat lumineux à la fibre.",
+    "bonus": "La Litsée Citronnée apporte une note fraîche et un éclat lumineux à la fibre. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Test cutané préalable. Romarin à Cinéole contre-indiqué grossesse, allaitement, enfants moins de 6 ans, hypertension, épilepsie. Litsée Citronnée déconseillée grossesse 1er trimestre.",
     "source": "Romarin à Cinéole : Panahi 2015 (PMID 25842469) - stimulation du cuir chevelu. Ylang-Ylang : usage cosmétique traditionnel pour brillance capillaire."
   },
@@ -131,17 +143,21 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Citron Jaune Zest",
         "quantite": "4 gouttes (~0,10%)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "24 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Verser la base shampoing dans un flacon ambré",
-      "Ajouter les huiles essentielles, agiter délicatement",
+      "Ajouter les huiles essentielles puis le Cosgard, agiter délicatement",
       "Agiter à chaque utilisation",
       "Laver les cheveux en massant le cuir chevelu",
       "Rincer abondamment puis appliquer le rinçage final (voir bonus)"
     ],
     "bonus": "Rinçage final pour amplifier les reflets : mélanger 100 ml d'Hydrolat de Camomille Romaine avec 1 cuillère à soupe de jus de citron frais. Verser sur les cheveux après le dernier rinçage à l'eau, sans rincer. Sécher au soleil — l'exposition solaire active les pigments et révèle les reflets dorés.",
-    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron photosensibilisant sur la peau : éviter le contact cutané direct. Bien rincer si coulure sur le visage ou la nuque. Le rinçage final non rincé s'applique sur la fibre capillaire — l'exposition au soleil est l'étape qui active les reflets, c'est voulu.",
+    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron photosensibilisant sur la peau : éviter le contact cutané direct. Bien rincer si coulure sur le visage ou la nuque. Le rinçage final non rincé s'applique sur la fibre capillaire — l'exposition au soleil est l'étape qui active les reflets, c'est voulu. Conservation du shampoing 2 à 3 mois avec le Cosgard ; le rinçage final (bonus) se prépare frais à chaque utilisation, sans conservateur.",
     "source": "Camomille Romaine et Citron : usages référentiels traditionnels documentés pour les reflets dorés des cheveux blonds. Hydrolat de Camomille : Pharmacopée européenne."
   },
   {
@@ -165,6 +181,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Citron Jaune Zest",
         "quantite": "6 gouttes (1%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -174,7 +194,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laver le matin avec le « Shampoing reflets blonds »",
       "Sécher de préférence au soleil pour intensifier les reflets dorés"
     ],
-    "bonus": "Pour amplifier les reflets, sécher au soleil après lavage.",
+    "bonus": "Pour amplifier les reflets, sécher au soleil après lavage. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Citron Zest photosensibilisant : application le soir uniquement.",
     "source": "Camomille Romaine et Citron : usages référentiels traditionnels documentés pour les reflets dorés des cheveux blonds."
   },
@@ -202,6 +222,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Ylang-Ylang Totum",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -210,7 +234,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser doucement, éviter les racines (alourdit)",
       "Laisser poser maximum 3 heures puis laver"
     ],
-    "bonus": "Variante intensive : appliquer la veille au soir et garder toute la nuit (1x/semaine).",
+    "bonus": "Variante intensive : appliquer la veille au soir et garder toute la nuit (1x/semaine). Vitamine E ajoutée comme antioxydant.",
     "precautions": "Bonne tolérance générale. Test cutané préalable.",
     "source": "HV Coco : réduit la perte de protéines capillaires jusqu'à 39% en application avant-shampoing sur cheveux abîmés — Rele AS, Mohile RB 2003, Journal of Cosmetic Science 54(2):175-192, PMID 12715094. HV Argan : revue systématique de 22 études sur la santé capillaire — Phong VG et al. 2022, PMID 35816075. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)"
   },
@@ -242,6 +266,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Ylang-Ylang Totum",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -250,7 +278,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser le cuir chevelu en mouvements circulaires",
       "Garder plusieurs heures ou toute la nuit puis laver"
     ],
-    "bonus": "Le Ricin nourrit en profondeur et fortifie la fibre.",
+    "bonus": "Le Ricin nourrit en profondeur et fortifie la fibre. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Romarin contre-indiqué grossesse, hypertension, épilepsie.",
     "source": "Romarin à Cinéole : Panahi 2015 (PMID 25842469) - stimulation et fortification capillaire. HV Ricin : référentiel Pharmacopée pour nutrition intense"
   },
@@ -272,6 +300,10 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "2% (20 gouttes)"
       },
       {
+        "nom": "Phase 1 — Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
+      },
+      {
         "nom": "Phase 2 — HV Millepertuis",
         "quantite": "50 ml (97%)"
       },
@@ -286,6 +318,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "Phase 2 — HE Petit-Grain Bigarade",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Phase 2 — Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -295,7 +331,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser 30 minutes minimum (ou toute la nuit), puis laver avec un shampoing très doux",
       "IMPORTANT : Millepertuis fortement photosensibilisant. Application le soir UNIQUEMENT, jamais avant exposition au soleil"
     ],
-    "precautions": "Millepertuis fortement photosensibilisant : application le soir UNIQUEMENT, jamais de jour. Allergie aux astéracées possible.",
+    "precautions": "Millepertuis fortement photosensibilisant : application le soir UNIQUEMENT, jamais de jour. Allergie aux astéracées possible. Vitamine E ajoutée dans chaque phase comme antioxydant.",
     "source": "HV Millepertuis : usage référentiel apaisant cutané (Pharmacopée). Camomille Romaine : effets apaisants documentés. Lavande Vraie : revue 2023 (PMC10671255)"
   },
   {
@@ -322,6 +358,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Ylang-Ylang Totum",
         "quantite": "2% (20 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -331,7 +371,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser toute la nuit",
       "Répéter tous les jours pendant 3 semaines, puis observer une pause d'une semaine avant de reprendre un nouveau cycle"
     ],
-    "bonus": "Le Romarin à Cinéole relance la micro-circulation, le Citron Jaune Zest renforce les capillaires, l'Ylang-Ylang Totum renforce le cheveu.",
+    "bonus": "Le Romarin à Cinéole relance la micro-circulation, le Citron Jaune Zest renforce les capillaires, l'Ylang-Ylang Totum renforce le cheveu. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Avis médical préalable indispensable. Romarin à Cinéole contre-indiqué grossesse, allaitement, hypertension, épilepsie. Citron Jaune Zest photosensibilisant : ne pas exposer la zone traitée au soleil après application.",
     "source": "Synergie RESPEKTUS® pour pelade idiopathique/nerveuse. Pour le protocole spécifiquement validé par étude clinique (alopécie areata), voir la recette \"Alopécie areata / Pelade (protocole Hay)\"."
   },
@@ -363,6 +403,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Pin Sylvestre",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -371,7 +415,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser 1 heure minimum (ou la nuit)",
       "Laver avec un shampoing très doux sans sulfates"
     ],
-    "precautions": "Pin Sylvestre contre-indiqué grossesse, hypertension. En cas d'eczéma sévère, consultation dermatologique.",
+    "precautions": "Pin Sylvestre contre-indiqué grossesse, hypertension. En cas d'eczéma sévère, consultation dermatologique. Vitamine E ajoutée comme antioxydant.",
     "source": "HV Calendula et Nigelle (thymoquinone, Salem 2005 PMID 16275613) : référentiels Pharmacopée pour peaux inflammées. Camomille Romaine : effets apaisants documentés"
   },
   {
@@ -406,6 +450,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -414,7 +462,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser 1 heure minimum",
       "Laver avec un shampoing doux antipelliculaire"
     ],
-    "precautions": "Tea Tree, Cèdre et Romarin contre-indiqués grossesse. Romarin contre-indiqué hypertension, épilepsie.",
+    "precautions": "Tea Tree, Cèdre et Romarin contre-indiqués grossesse. Romarin contre-indiqué hypertension, épilepsie. Vitamine E ajoutée comme antioxydant.",
     "source": "Orchard A et van Vuuren S (2017) - Evid Based Complement Alternat Med - PubMed PMID 28546822 / PMC5435909 : revue antimicrobiens HE incluant Malassezia. Tea Tree : Carson 2006 (PMID 16418522)"
   },
   {
@@ -449,6 +497,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Eucalyptus Radié",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -457,7 +509,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser au moins 1 heure",
       "Laver avec un shampoing doux adapté"
     ],
-    "precautions": "Toutes ces HE contre-indiquées grossesse. La dermite séborrhéique chronique nécessite un suivi dermatologique.",
+    "precautions": "Toutes ces HE contre-indiquées grossesse. La dermite séborrhéique chronique nécessite un suivi dermatologique. Vitamine E ajoutée comme antioxydant.",
     "source": "Orchard et Vuuren 2017 (PMID 28546822 / PMC5435909) : revue antimicrobiens HE en dermatologie. Tea Tree antifongique : Carson 2006 (PMID 16418522)"
   },
   {
@@ -492,6 +544,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Romarin à Cinéole",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -500,7 +556,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser doucement sans gratter les plaques. Laisser poser toute la nuit",
       "Laver le matin avec un shampoing doux"
     ],
-    "precautions": "Millepertuis très photosensibilisant : application le soir UNIQUEMENT, jamais avant soleil (délai 12h). Encens et Romarin contre-indiqués grossesse. Synergie en complément du traitement dermatologique.",
+    "precautions": "Millepertuis très photosensibilisant : application le soir UNIQUEMENT, jamais avant soleil (délai 12h). Encens et Romarin contre-indiqués grossesse. Synergie en complément du traitement dermatologique. Vitamine E ajoutée comme antioxydant.",
     "source": "Moussaieff A et al. (2008) FASEB Journal - PubMed PMID 18492727 : incensole acétate de l'Encens Oliban active TRPV3 cérébral - effets anxiolytiques et anti-inflammatoires"
   },
   {
@@ -678,6 +734,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Hélichryse Italienne",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -686,7 +746,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser pénétrer sans rincer",
       "Renouveler matin et soir jusqu'à cicatrisation"
     ],
-    "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Tea Tree contre-indiqué grossesse. Pas sur plaie infectée.",
+    "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Tea Tree contre-indiqué grossesse. Pas sur plaie infectée. Vitamine E ajoutée comme antioxydant.",
     "source": "Antunes Viegas D et al. (2014) - J Ethnopharmacol 151(1):54-65 - PMID 24239849 : Helichrysum italicum, composés italidiones pour effet cicatrisant et vasculaire. HV Calendula : référentiel Pharmacopée"
   },
   {
@@ -713,6 +773,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Romarin à Cinéole",
         "quantite": "0,5% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -720,7 +784,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Massage léger en mouvements circulaires",
       "Éviter le contour des yeux"
     ],
-    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Romarin contre-indiqué grossesse, hypertension, épilepsie.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Romarin contre-indiqué grossesse, hypertension, épilepsie. Vitamine E ajoutée comme antioxydant.",
     "source": "HV Noisette et Jojoba : profils non-comédogènes documentés (Pharmacopée européenne) pour peaux mixtes. Géranium : régulateur sébum traditionnel"
   },
   {
@@ -751,6 +815,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "Option premium — HE Rose de Damas",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -759,7 +827,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser en mouvements ascendants",
       "Insister sur les zones ridées"
     ],
-    "bonus": "L'option Rose de Damas amplifie l'action régénérante (recette premium).",
+    "bonus": "L'option Rose de Damas amplifie l'action régénérante (recette premium). Vitamine E en dose renforcée : l'HV Rose Musquée rancit vite.",
     "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Rose de Damas contre-indiquée grossesse.",
     "source": "Valerón-Almazán P et al. (2015) - Journal of Cosmetics, Dermatological Sciences and Applications 5:161-167, DOI 10.4236/jcdsa.2015.52019 : étude clinique 108 patients - HV Rose Musquée améliore significativement érythème, dyschromie et atrophie cutanée"
   },
@@ -791,6 +859,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -798,7 +870,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser en mouvements circulaires ascendants",
       "Attendre la pénétration avant maquillage"
     ],
-    "precautions": "Carotte et Géranium contre-indiqués grossesse.",
+    "precautions": "Carotte et Géranium contre-indiqués grossesse. Vitamine E ajoutée comme antioxydant.",
     "source": "HE Carotte : caroténoïdes documentés pour l'éclat du teint. HV Noyau d'Abricot et Jojoba : profils nourrissants référencés (Pharmacopée européenne)"
   },
   {
@@ -833,6 +905,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Carotte",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -840,7 +916,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser légèrement, insister sur les joues",
       "Effleurer la zone T sans appuyer"
     ],
-    "bonus": "Recette RESPEKTUS® : équilibre parfait entre matité et éclat pour peaux mixtes.",
+    "bonus": "Recette RESPEKTUS® : équilibre parfait entre matité et éclat pour peaux mixtes. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Carotte et Géranium contre-indiqués grossesse.",
     "source": "HV Noisette : profil sébo-régulateur référencé. HV Noyau d'Abricot : éclat traditionnel documenté. Carotte : caroténoïdes (Pharmacopée européenne)"
   },
@@ -872,6 +948,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Romarin à Cinéole",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -879,7 +959,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser en mouvements ascendants",
       "Laisser pénétrer pendant la nuit"
     ],
-    "precautions": "Carotte, Géranium et Romarin contre-indiqués grossesse. Romarin contre-indiqué hypertension, épilepsie.",
+    "precautions": "Carotte, Géranium et Romarin contre-indiqués grossesse. Romarin contre-indiqué hypertension, épilepsie. Vitamine E en dose renforcée : l'HV Rose Musquée rancit vite.",
     "source": "HV Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019, sur régénération cutanée. Macérât de Carotte : caroténoïdes documentés (Pharmacopée européenne)"
   },
   {
@@ -910,6 +990,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,5% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -918,7 +1002,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Tapoter doucement, ne pas frotter",
       "Laisser pénétrer complètement"
     ],
-    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Atopie sévère : suivi dermatologique.",
+    "precautions": "Allergie aux astéracées (camomille) : test cutané obligatoire. Atopie sévère : suivi dermatologique. Vitamine E ajoutée comme antioxydant.",
     "source": "Salem ML (2005) - Int Immunopharmacol - PMID 16275613 : Nigella sativa (thymoquinone) propriétés immunomodulatrices et anti-inflammatoires. HV Calendula : référentiel Pharmacopée"
   },
   {
@@ -947,6 +1031,10 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "0,5% (3 gouttes)"
       },
       {
+        "nom": "Standard — Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
+      },
+      {
         "nom": "Très sèche — ajouter Beurre de Karité fondu",
         "quantite": "15 g"
       }
@@ -957,7 +1045,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer matin et soir en massage doux",
       "Insister sur les zones les plus sèches"
     ],
-    "precautions": "Bonne tolérance générale. Test cutané préalable.",
+    "precautions": "Bonne tolérance générale. Test cutané préalable. Vitamine E ajoutée comme antioxydant (version standard).",
     "source": "HV Macadamia : amélioration de l'hydratation cutanée de 51,5% — Somwongin S, Chaiyana W 2024, Nanomaterials, PMC11054140. Beurre de Karité : revue clinique sur les propriétés hydratantes et protectrices — Poljšak N, Kočevar Glavač N 2022, Frontiers in Pharmacology, PMC9083541"
   },
   {
@@ -984,6 +1072,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Romarin à Cinéole",
         "quantite": "0,5% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -991,7 +1083,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser en mouvements circulaires",
       "Le matin : rincer simplement à l'hydrolat"
     ],
-    "bonus": "Le Jojoba a une composition très proche du sébum humain : il régule naturellement sa production.",
+    "bonus": "Le Jojoba a une composition très proche du sébum humain : il régule naturellement sa production. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Romarin contre-indiqué grossesse, hypertension, épilepsie.",
     "source": "HV Noisette et Jojoba : profils non-comédogènes documentés pour peaux mixtes à grasses (Pharmacopée européenne). Géranium : régulateur sébum traditionnel"
   },
@@ -1329,16 +1421,20 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,3% (1 goutte)"
+      },
+      {
+        "nom": "HV Rose Musquée — Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
       "FABRICATION BIPHASE : les deux phases ne se mélangent pas, elles restent séparées dans le flacon roll-on (c'est normal et voulu). Bien agiter avant chaque utilisation",
       "Préparer la PHASE AQUEUSE dans un bol : Hydrolat de Camomille (13 ml), Actif Caféine (0,6 g), Glycérine végétale (1 ml), Conservateur Cosgard (4 gouttes). Mélanger",
-      "Préparer la PHASE HUILEUSE dans un autre bol : HV Calophylle (4,5 ml), HV Rose Musquée (10,5 ml), HE Hélichryse (1 goutte), HE Lavande (1 goutte). Mélanger",
+      "Préparer la PHASE HUILEUSE dans un autre bol : HV Calophylle (4,5 ml), HV Rose Musquée (10,5 ml), HE Hélichryse (1 goutte), HE Lavande (1 goutte), Vitamine E (1 goutte). Mélanger",
       "Verser les deux phases dans un flacon roll-on biphase de 30 ml. Étiqueter et conserver au frigo (durée 3 mois)",
       "UTILISATION : agiter vigoureusement avant chaque emploi. Appliquer matin et soir sur l'os orbitaire en tapotant doucement. Ne jamais frotter, ne pas approcher de l'œil"
     ],
-    "bonus": "Recette RESPEKTUS® biphase — conservation 3 mois au frigo. La caféine active la microcirculation.",
+    "bonus": "Recette RESPEKTUS® biphase — conservation 3 mois au frigo. La caféine active la microcirculation. Vitamine E ajoutée dans la phase huileuse : l'HV Rose Musquée rancit vite.",
     "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Ne JAMAIS appliquer dans l'œil.",
     "source": "Caféine périorbitale topique : PMC11175953 - effet décongestionnant et anti-cernes documenté. Hélichryse : Antunes Viegas 2014 (PMID 24239849). Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019"
   },
@@ -1374,6 +1470,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Encens Oliban",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -1382,7 +1482,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur l'ovale du visage et le cou",
       "5 minutes de massage minimum"
     ],
-    "precautions": "Ciste contre-indiqué grossesse, allaitement, anticoagulants. Encens contre-indiqué grossesse. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié.",
+    "precautions": "Ciste contre-indiqué grossesse, allaitement, anticoagulants. Encens contre-indiqué grossesse. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Vitamine E en dose renforcée : l'HV Rose Musquée rancit vite.",
     "source": "Moussaieff A et al. (2008) FASEB Journal - PMID 18492727 : Encens Oliban (incensole) effets régénérants. Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019"
   },
   {
@@ -1409,15 +1509,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "Huile végétale de Coco",
         "quantite": "2 g (10,1%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
       "Faire fondre cire et beurre au bain-marie tiède",
-      "Hors du feu, ajouter le macérât et la coco",
+      "Hors du feu, ajouter le macérât, la coco et la Vitamine E",
       "Verser dans des pots ou sticks à lèvres",
       "Laisser durcir à température ambiante"
     ],
-    "bonus": "Recette RESPEKTUS® minimaliste — 4 ingrédients, formule sans HE.",
+    "bonus": "Recette RESPEKTUS® minimaliste — 4 ingrédients, formule sans HE. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Conservation 6 mois à température ambiante. Test cutané préalable.",
     "source": "Beurre de Karité, cire d'abeille et HV Coco : référentiels Pharmacopée européenne pour nutrition et film occlusif des lèvres"
   },
@@ -1446,6 +1550,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Cyprès Toujours Vert (ou Cèdre d'Atlas si grossesse)",
         "quantite": "0,8% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1455,7 +1563,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Ne jamais frotter. La peau couperosée est très fragilisée",
       "Le matin en complément : vaporiser un hydrolat de Camomille Romaine pour calmer les rougeurs"
     ],
-    "precautions": "GROSSESSE, ALLAITEMENT, ANTICOAGULANTS : formule CONTRE-INDIQUÉE en l'état (Hélichryse + Géranium + Cyprès). Remplacer les 3 HE par : HE Camomille Romaine Noble 5 gouttes + HE Bois de Hô 5 gouttes + HE Lavande Vraie 10 gouttes dans le même Jojoba 30 ml. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Diagnostic dermatologique préalable.",
+    "precautions": "GROSSESSE, ALLAITEMENT, ANTICOAGULANTS : formule CONTRE-INDIQUÉE en l'état (Hélichryse + Géranium + Cyprès). Remplacer les 3 HE par : HE Camomille Romaine Noble 5 gouttes + HE Bois de Hô 5 gouttes + HE Lavande Vraie 10 gouttes dans le même Jojoba 30 ml. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Diagnostic dermatologique préalable. Vitamine E ajoutée comme antioxydant.",
     "source": "Antunes Viegas D et al. (2014) - J Ethnopharmacol - PMID 24239849 : Helichrysum italicum, composés italidiones documentés pour effet vasculaire et anti-inflammatoire"
   },
   {
@@ -1486,6 +1594,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,5% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1494,7 +1606,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Sur bouton isolé : Tea Tree pur au coton-tige (2x/jour max)",
       "Ne jamais utiliser sur peau lésée"
     ],
-    "precautions": "Tea Tree, Géranium et Nigelle contre-indiqués grossesse et allaitement. Test cutané obligatoire.",
+    "precautions": "Tea Tree, Géranium et Nigelle contre-indiqués grossesse et allaitement. Test cutané obligatoire. Vitamine E ajoutée comme antioxydant.",
     "source": "Enshaieh S et al. (2007) - PMID 17314442 : Tea Tree topique sur acné. Salem ML (2005) - PMID 16275613 : Nigella sativa anti-inflammatoire"
   },
   {
@@ -1521,6 +1633,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Camomille Romaine (Noble)",
         "quantite": "0,5% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1529,7 +1645,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser pénétrer toute la nuit",
       "Complémentaire avec le gel après-soleil (recette 28)"
     ],
-    "bonus": "Recette RESPEKTUS® : sans Millepertuis pour éviter la photosensibilisation.",
+    "bonus": "Recette RESPEKTUS® : sans Millepertuis pour éviter la photosensibilisation. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Lavande Aspic et Camomille contre-indiquées grossesse. Pas d'exposition solaire après application.",
     "source": "HV Calendula : revue systématique confirmant l'effet cicatrisant sur les plaies — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé — Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632"
   },
@@ -1561,15 +1677,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,2% (1 goutte)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
       "Faire fondre cire et beurre au bain-marie",
-      "Hors du feu, ajouter HV puis HE",
+      "Hors du feu, ajouter HV puis HE et Vitamine E",
       "Verser dans un pot ou stick à lèvres",
       "Appliquer plusieurs fois par jour"
     ],
-    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois. Vitamine E ajoutée comme antioxydant.",
     "source": "HV Calendula : effet cicatrisant confirmé — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. Cire d'abeille : revue confirmant la protection de la barrière cutanée — Nong K et al. 2023, Journal of Cosmetic Dermatology 22:2166-2173, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée in vivo — Ebrahimzadeh Attari V et al., PMID 27853689"
   },
   {
@@ -1596,6 +1716,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Eucalyptus Radié",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1604,7 +1728,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Étendre sur les jambes en mouvements ascendants",
       "Respirer profondément pendant l'application"
     ],
-    "precautions": "Romarin et Pin Sylvestre contre-indiqués grossesse, allaitement, hypertension. Romarin contre-indiqué épilepsie.",
+    "precautions": "Romarin et Pin Sylvestre contre-indiqués grossesse, allaitement, hypertension. Romarin contre-indiqué épilepsie. Vitamine E ajoutée comme antioxydant.",
     "source": "Moss M et al. (2003) - Int J Neurosci - PubMed PMID 12690999 : Romarin améliore cognition et vigilance. Pin Sylvestre et Eucalyptus : tonifiants traditionnels documentés"
   },
   {
@@ -1635,6 +1759,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Ylang-Ylang Totum",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1643,7 +1771,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Respirer profondément l'effluve",
       "Idéal avant le coucher"
     ],
-    "precautions": "Petit-Grain et Ylang-Ylang contre-indiqués grossesse 1er trimestre.",
+    "precautions": "Petit-Grain et Ylang-Ylang contre-indiqués grossesse 1er trimestre. Vitamine E ajoutée comme antioxydant.",
     "source": "Kianpour M et al. (2016) - PubMed PMID 27095995 : Lavande sur stress, 140 femmes. Méta-analyse 2025 sommeil PMID 40600743. Jung DJ et al. (2013) - Effects of Ylang-Ylang aroma on blood pressure and heart rate in healthy men - J Exerc Rehabil 9(2):250-5 - PMID 24278868 (RCT 29 hommes)"
   },
   {
@@ -1674,6 +1802,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Camomille Romaine (Noble)",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1682,7 +1814,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Respirer profondément pendant le massage",
       "Compléter par 3 inspirations profondes au moment du coucher"
     ],
-    "bonus": "Recette RESPEKTUS® : la Marjolaine est parasympathomimétique (sortie du mode \"lutte ou fuite\").",
+    "bonus": "Recette RESPEKTUS® : la Marjolaine est parasympathomimétique (sortie du mode \"lutte ou fuite\"). Vitamine E ajoutée comme antioxydant.",
     "precautions": "Marjolaine contre-indiquée grossesse 1er trimestre. Camomille : allergie aux astéracées possible.",
     "source": "Méta-analyse 2025 lavande sommeil PMID 40600743 (11 RCT, 628 adultes, SMD -0.56). Kianpour 2016 PMID 27095995. Revue 2023 PMC10671255"
   },
@@ -1718,6 +1850,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Patchouli",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1726,7 +1862,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "JAMAIS sur les muqueuses intimes",
       "Diffuser également l'odeur en effleurant les zones de pulsation"
     ],
-    "precautions": "Sauge Sclarée contre-indiquée grossesse, allaitement, mastoses, cancers hormono-dépendants. Ylang-Ylang : ne pas dépasser le dosage.",
+    "precautions": "Sauge Sclarée contre-indiquée grossesse, allaitement, mastoses, cancers hormono-dépendants. Ylang-Ylang : ne pas dépasser le dosage. Vitamine E ajoutée comme antioxydant.",
     "source": "Choi SY et al. (2014) - Evid Based Complement Alternat Med - PMC4082953 : Néroli RCT. Lee KB et al. (2014) : Sauge Sclarée cortisol -36%. Hongratanaworakit 2006 : Ylang-Ylang. Méta-analyse ménopause PMID 34242093"
   },
   {
@@ -1769,6 +1905,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Patchouli",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1777,7 +1917,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "JAMAIS sur les muqueuses",
       "Composition premium boisée orientale"
     ],
-    "bonus": "Recette RESPEKTUS® bonus — composition masculine premium 6 HE.",
+    "bonus": "Recette RESPEKTUS® bonus — composition masculine premium 6 HE. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Sauge Sclarée et Cèdre contre-indiqués mastoses et cancers hormono-dépendants. Formule réservée à l'usage adulte.",
     "source": "Heuberger E et al. (2006) : Bois de Santal et arousal. Lee KB et al. (2014) : Sauge Sclarée et cortisol. HE Cèdre d'Atlas : effet sédatif du cédrol par inhalation — Kagawa D et al. 2003, PMID 12898420. HE Vétiver : effet anxiolytique comparable au diazépam en modèle animal — Saiyudthong S et al. 2015, PMID 25553641. HE Patchouli : activité de type antidépressive via élévation de la dopamine — Haerani A et al. 2022, PMID 35631434"
   },
@@ -1813,15 +1953,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
       "Faire fondre le beurre de Karité au bain-marie",
-      "Mélanger aux HV puis ajouter les HE",
+      "Mélanger aux HV puis ajouter les HE et la Vitamine E",
       "Verser dans un pot en verre, laisser refroidir",
       "Appliquer après la douche en massage"
     ],
-    "precautions": "Bonne tolérance générale. Test cutané préalable.",
+    "precautions": "Bonne tolérance générale. Test cutané préalable. Vitamine E ajoutée comme antioxydant.",
     "source": "HV Jojoba : augmentation du collagène III et de l'acide hyaluronique, réduction de l'inflammation cutanée — Tietel Z et al. 2024, Frontiers in Pharmacology, PMID 38344180. HV Argan : amélioration de l'élasticité cutanée — Boucetta KQ et al. 2015, PMID 25673976. Beurre de Karité : revue clinique sur les propriétés hydratantes — Poljšak N, Kočevar Glavač N 2022, PMC9083541"
   },
   {
@@ -1856,15 +2000,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
       "Faire fondre le Karité au bain-marie",
-      "Mélanger avec les HV puis les HE",
+      "Mélanger avec les HV puis les HE et la Vitamine E",
       "Appliquer matin et soir sur les zones atopiques",
       "Massage doux sans frotter"
     ],
-    "precautions": "Allergie aux astéracées (camomille, calendula) : test cutané obligatoire. Atopie sévère : suivi dermatologique.",
+    "precautions": "Allergie aux astéracées (camomille, calendula) : test cutané obligatoire. Atopie sévère : suivi dermatologique. Vitamine E en dose renforcée : l'HV Bourrache rancit vite.",
     "source": "Foster RH et al. (2010) - Nutrition 26:708-718 : Borage GLA et dermatite atopique. Chung BY et al. (2013) - PMC3930832 : GLA SCORAD"
   },
   {
@@ -1891,15 +2039,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Géranium Rosat Bourbon",
         "quantite": "~1% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
       "Faire fondre cire et Karité au bain-marie",
-      "Hors du feu, ajouter Argan et HE",
+      "Hors du feu, ajouter Argan, HE et Vitamine E",
       "Verser dans un pot en verre",
       "Laisser durcir à température ambiante"
     ],
-    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois.",
+    "precautions": "Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Conservation 6 mois. Vitamine E ajoutée comme antioxydant.",
     "source": "Beurre de Karité : revue clinique sur les propriétés hydratantes — Poljšak N, Kočevar Glavač N 2022, PMC9083541. HV Argan : amélioration de l'élasticité cutanée — Boucetta KQ et al. 2015, PMID 25673976. Cire d'abeille : protection de la barrière cutanée — Nong K et al. 2023, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée — Ebrahimzadeh Attari V et al., PMID 27853689"
   },
   {
@@ -1926,6 +2078,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "1% (6 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -1934,7 +2090,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister entre les orteils au coton-tige",
       "Aérer les pieds, chaussures en matière naturelle"
     ],
-    "precautions": "Tea Tree, Palmarosa contre-indiqués grossesse. Si mycose persistante ou étendue, consultation médicale.",
+    "precautions": "Tea Tree, Palmarosa contre-indiqués grossesse. Si mycose persistante ou étendue, consultation médicale. Vitamine E ajoutée comme antioxydant.",
     "source": "Carson CF, Hammer KA, Riley TV (2006) - Clinical Microbiology Reviews 19(1):50-62 - PMID 16418522 : revue exhaustive Tea Tree, activité antifongique documentée"
   },
   {
@@ -1961,6 +2117,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Camomille Romaine (Noble)",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -1969,7 +2129,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les zones les plus exposées",
       "Complémentaire avec le gel après-soleil (recette 28)"
     ],
-    "precautions": "Lavande Aspic contre-indiquée grossesse, allaitement, enfants moins de 7 ans, épilepsie. Pas d'exposition solaire après application.",
+    "precautions": "Lavande Aspic contre-indiquée grossesse, allaitement, enfants moins de 7 ans, épilepsie. Pas d'exposition solaire après application. Vitamine E ajoutée comme antioxydant.",
     "source": "HV Calendula : revue systématique confirmant l'effet cicatrisant sur les plaies — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé — Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632"
   },
   {
@@ -2000,6 +2160,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Camomille Romaine (Noble)",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -2007,7 +2171,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Massage doux jusqu'à pénétration",
       "Renouveler quotidiennement pendant 5 jours"
     ],
-    "bonus": "L'HV de Souchet est la référence traditionnelle au Maghreb pour ralentir la repousse.",
+    "bonus": "L'HV de Souchet est la référence traditionnelle au Maghreb pour ralentir la repousse. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Sauge Sclarée et Lavande Aspic contre-indiquées grossesse, allaitement. Pas sur peau lésée.",
     "source": "Grant P (2010) - Phytother Res 24(2):186-188 - PMID 19585478 : Menthe Verte et hirsutisme. HV Souchet : usage traditionnel maghrébin documenté pour ralentir la repousse pilaire"
   },
@@ -2039,6 +2203,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Citron Jaune Zest",
         "quantite": "2% (20 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -2047,7 +2215,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Type palper-rouler sur les zones installées",
       "10 à 15 minutes de massage minimum"
     ],
-    "bonus": "À combiner avec hydratation augmentée et brossage à sec.",
+    "bonus": "À combiner avec hydratation augmentée et brossage à sec. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Cyprès, Cèdre contre-indiqués grossesse, allaitement, mastoses, cancers hormono-dépendants. Citron Zest photosensibilisant : application le soir uniquement OU pas d'exposition solaire 8h après.",
     "source": "Cèdre d'Atlas et Cyprès Toujours Vert : usages référentiels aromathérapie pour drainage veino-lymphatique. HV Calophylle : effets circulatoires documentés (acide calophyllique)"
   },
@@ -2079,6 +2247,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -2087,7 +2259,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les zones à risque",
       "Résultats visibles à partir de 6 à 8 semaines"
     ],
-    "bonus": "Compatible grossesse à partir du 4ème mois (retirer alors l'Hélichryse).",
+    "bonus": "Compatible grossesse à partir du 4ème mois (retirer alors l'Hélichryse). Vitamine E en dose renforcée : l'HV Rose Musquée rancit vite.",
     "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié.",
     "source": "Valerón-Almazán P et al. (2015), DOI 10.4236/jcdsa.2015.52019 : HV Rose Musquée améliore élasticité et apparence cutanée. Hélichryse Italienne : Antunes Viegas 2014 (PMID 24239849)"
   },
@@ -2119,15 +2291,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
       "Faire fondre cire et Karité au bain-marie",
-      "Hors du feu, ajouter Rose Musquée et HE",
+      "Hors du feu, ajouter Rose Musquée, HE et Vitamine E",
       "Verser dans un pot en verre",
       "Appliquer plusieurs fois par jour, idéalement le soir avec gants coton"
     ],
-    "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Conservation 6 mois.",
+    "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Conservation 6 mois. Vitamine E en dose renforcée : l'HV Rose Musquée rancit vite.",
     "source": "HV Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019, sur réparation cutanée. Hélichryse : Antunes Viegas 2014 (PMID 24239849). Beurre de Karité et cire : Pharmacopée européenne"
   },
   {
@@ -2158,15 +2334,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "1,5% (15 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
       "Faire fondre cire et Karité au bain-marie",
-      "Hors du feu, ajouter Coco et HE",
+      "Hors du feu, ajouter Coco, HE et Vitamine E",
       "Verser dans un pot en verre",
       "Appliquer généreusement le soir et enfiler des chaussettes en coton"
     ],
-    "bonus": "Routine miracle RESPEKTUS® : application soir + chaussettes coton la nuit.",
+    "bonus": "Routine miracle RESPEKTUS® : application soir + chaussettes coton la nuit. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Hélichryse contre-indiquée grossesse, allaitement, anticoagulants.",
     "source": "Beurre de Karité et HV Coco : référentiels Pharmacopée pour réparation cutanée intense. Hélichryse : Antunes Viegas 2014 (PMID 24239849)"
   },
@@ -2198,6 +2378,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Patchouli",
         "quantite": "0,5% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -2206,7 +2390,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer sur les points de pulsation (cou, poignets, derrière les oreilles)",
       "Tapoter sans frotter pour préserver les notes de tête"
     ],
-    "bonus": "Recette RESPEKTUS® : composition floral hespéridé signature, sans alcool donc compatible peaux sensibles.",
+    "bonus": "Recette RESPEKTUS® : composition floral hespéridé signature, sans alcool donc compatible peaux sensibles. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Ylang-Ylang et Petit-Grain : ne pas dépasser le dosage. Test cutané préalable.",
     "source": "Choi SY et al. (2014) - PMC4082953 : Néroli RCT humeur. Hongratanaworakit 2006 : Ylang-Ylang harmonisant"
   },
@@ -2278,16 +2462,21 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Petit-Grain Bigarade",
         "quantite": "1% (40 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "24 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Mélanger Jojoba, glycérine et HE",
       "Incorporer doucement à la base lavante",
+      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe ou souple",
       "Agiter avant chaque utilisation"
     ],
     "bonus": "Recette RESPEKTUS® : composition signature en accord avec le parfum femme.",
-    "precautions": "Petit-Grain contre-indiqué grossesse 1er trimestre. Conservation 2 à 3 mois.",
+    "precautions": "Petit-Grain contre-indiqué grossesse 1er trimestre. Conservation 2 à 3 mois avec le Cosgard.",
     "source": "HE Néroli : Choi 2014 (PMC4082953). Petit-Grain Bigarade : usage référentiel apaisant en olfactothérapie"
   },
   {
@@ -2322,16 +2511,21 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Litsée Citronnée",
         "quantite": "0,5% (20 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "24 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Mélanger Jojoba, glycérine et HE",
       "Incorporer à la base shampoing en douceur",
+      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe",
       "Appliquer en massant le cuir chevelu, laisser poser 1 minute, rincer"
     ],
     "bonus": "La Litsée Citronnée apporte un éclat lumineux à la fibre.",
-    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie.",
+    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie. Conservation 2 à 3 mois avec le Cosgard.",
     "source": "Panahi Y et al. (2015) - SKINmed - PMID 25842469 : Romarin vs Minoxidil 2% - efficacité comparable à 6 mois sur alopécie androgénétique"
   },
   {
@@ -2362,6 +2556,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -2370,7 +2568,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les zones rasées",
       "Laisser pénétrer avant tout autre soin"
     ],
-    "precautions": "Cèdre d'Atlas contre-indiqué cancers hormono-dépendants. Formule réservée adultes.",
+    "precautions": "Cèdre d'Atlas contre-indiqué cancers hormono-dépendants. Formule réservée adultes. Vitamine E ajoutée comme antioxydant.",
     "source": "HE Cèdre d'Atlas : usage cosmétique masculin traditionnel. HV Noisette et Jojoba : profils non-comédogènes pour peau homme"
   },
   {
@@ -2401,6 +2599,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Géranium Rosat Bourbon",
         "quantite": "~0,15% (1 goutte)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -2409,7 +2611,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur le front et l'ovale",
       "Laisser pénétrer pendant la nuit"
     ],
-    "bonus": "Recette RESPEKTUS® : dosage volontairement limité à 1% HE pour respecter la peau homme.",
+    "bonus": "Recette RESPEKTUS® : dosage volontairement limité à 1% HE pour respecter la peau homme. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Encens et Cèdre contre-indiqués grossesse. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Formule réservée adultes.",
     "source": "Moussaieff A et al. (2008) FASEB Journal - PMID 18492727 : Encens Oliban (incensole) effets régénérants TRPV3"
   },
@@ -2441,6 +2643,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Bay Saint-Thomas",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -2449,7 +2655,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer sur barbe propre et peigner",
       "Insister sur les pointes"
     ],
-    "precautions": "Bay Saint-Thomas potentiellement irritant : test cutané obligatoire. Formule réservée adultes.",
+    "precautions": "Bay Saint-Thomas potentiellement irritant : test cutané obligatoire. Formule réservée adultes. Vitamine E ajoutée comme antioxydant.",
     "source": "HV Ricin : acide ricinoléique, mécanisme d'action sur la PGD2 (prostaglandine impliquée dans le cycle pilaire) documenté — Girdler K et al. 2026, Cureus, PMID 41822610. Bay Saint-Thomas : usage traditionnel pour stimulation du cuir chevelu"
   },
   {
@@ -2480,15 +2686,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Hélichryse Italienne",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
       "Faire fondre le Karité au bain-marie",
-      "Mélanger aux HV et HE",
+      "Mélanger aux HV, HE et Vitamine E",
       "Verser dans un pot en verre",
       "Appliquer juste après le rasage en effleurant"
     ],
-    "bonus": "Recette RESPEKTUS® : zéro alcool, idéal peaux sensibles et rasage à la lame.",
+    "bonus": "Recette RESPEKTUS® : zéro alcool, idéal peaux sensibles et rasage à la lame. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Hélichryse contre-indiquée anticoagulants. Conservation 6 mois.",
     "source": "Antunes Viegas D et al. (2014) - J Ethnopharmacol - PMID 24239849 : Hélichryse Italienne effets cicatrisants et vasculaires. HV Calendula : Pharmacopée européenne"
   },
@@ -2520,6 +2730,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Petit-Grain Bigarade",
         "quantite": "0,3% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -2528,7 +2742,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer sur les points de pulsation (cou, poignets)",
       "Tapoter sans frotter"
     ],
-    "bonus": "Recette RESPEKTUS® : composition signature boisée orientale masculine.",
+    "bonus": "Recette RESPEKTUS® : composition signature boisée orientale masculine. Vitamine E ajoutée comme antioxydant.",
     "precautions": "Vétiver et Patchouli peuvent tacher les tissus clairs. Test cutané préalable.",
     "source": "Cèdre d'Atlas, Vétiver et Patchouli : usages cosmétiques masculins traditionnels documentés. Petit-Grain : apaisant olfactif"
   },
@@ -2607,16 +2821,21 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Gingembre",
         "quantite": "0,2% (8 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "24 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Mélanger Jojoba, glycérine et HE",
       "Incorporer doucement à la base lavante",
+      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe",
       "Idéal le matin pour un réveil dynamisant"
     ],
     "bonus": "Recette RESPEKTUS® : composition tonique en accord avec le parfum homme.",
-    "precautions": "Gingembre et Eucalyptus contre-indiqués grossesse. Conservation 2 à 3 mois.",
+    "precautions": "Gingembre et Eucalyptus contre-indiqués grossesse. Conservation 2 à 3 mois avec le Cosgard.",
     "source": "HE Eucalyptus Radié : tonifiant respiratoire et cutané documenté. Cèdre d'Atlas : usage cosmétique masculin référencé"
   },
   {
@@ -2651,15 +2870,20 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Petit-Grain Bigarade",
         "quantite": "0,5% (20 gouttes)"
+      },
+      {
+        "nom": "Conservateur Cosgard",
+        "quantite": "24 gouttes (~0,6%)"
       }
     ],
     "etapes": [
       "Mélanger Jojoba, glycérine et HE",
       "Incorporer à la base shampoing",
+      "Ajouter le Cosgard, bien agiter",
       "Verser dans un flacon pompe",
       "Appliquer en massant le cuir chevelu, laisser poser 1 minute, rincer"
     ],
-    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie. Cèdre contre-indiqué cancers hormono-dépendants.",
+    "precautions": "Romarin contre-indiqué grossesse, allaitement, hypertension, épilepsie. Cèdre contre-indiqué cancers hormono-dépendants. Conservation 2 à 3 mois avec le Cosgard.",
     "source": "Panahi Y et al. (2015) - SKINmed - PMID 25842469 : Romarin vs Minoxidil 2% - efficacité comparable à 6 mois sur alopécie androgénétique masculine"
   },
   {
@@ -2831,6 +3055,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Bergamote",
         "quantite": "1% (6 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,17% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -2839,7 +3067,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Cure 3 semaines, pause 1 semaine, reprendre si besoin",
       "NE PAS utiliser le soir (effet tonique)"
     ],
-    "bonus": "L'Épinette Noire et le Pin Sylvestre ont une action \"cortisone-like\" qui stimule naturellement les surrénales fatiguées. À combiner avec sommeil, alimentation équilibrée et accompagnement médical.",
+    "bonus": "L'Épinette Noire et le Pin Sylvestre ont une action \"cortisone-like\" qui stimule naturellement les surrénales fatiguées. À combiner avec sommeil, alimentation équilibrée et accompagnement médical. La Vitamine E est ajoutée comme antioxydant pour conserver le mélange sur la durée de la cure.",
     "precautions": "CONTRE-INDIQUÉS grossesse, allaitement, hypertension, enfants moins de 6 ans. Bergamote photosensibilisante (matin = OK si protection UV, midi = pas avant exposition). Burn-out = consulter médecin obligatoirement.",
     "source": "Varney E et Buckle J (2013), Journal of Alternative and Complementary Medicine — PubMed PMID 23140115. Études sur la Bergamote et la régulation du stress (PMC5434918, 2017)"
   },
@@ -2935,6 +3163,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HV Noyau d'Abricot",
         "quantite": "5 ml (95,2%)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~1% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -2943,7 +3175,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Inspirer profondément le parfum 3 fois après application",
       "Renouveler toutes les 1-2h les premiers jours"
     ],
-    "bonus": "La Camomille Romaine est considérée comme l'une des HE les plus apaisantes pour les chocs émotionnels (action sur le système nerveux parasympathique). Le Néroli est traditionnellement utilisé contre la peur et l'angoisse aiguë.",
+    "bonus": "La Camomille Romaine est considérée comme l'une des HE les plus apaisantes pour les chocs émotionnels (action sur le système nerveux parasympathique). Le Néroli est traditionnellement utilisé contre la peur et l'angoisse aiguë. Vitamine E ajoutée comme antioxydant (le roll-on étant un petit volume, la proportion est légèrement plus élevée qu'à l'habitude, ce qui reste dans la plage sûre de sa fiche jusqu'à 2%).",
     "precautions": "Si choc émotionnel important (deuil, traumatisme), consulter un psychologue. L'aromathérapie est un soutien, pas un substitut au soin psychologique. Allergie astéracées (Camomille).",
     "source": "Revue systématique : Anxiety-Reducing Effects of Lavender Essential Oil Inhalation (PMC10671255, 2023 - 11 études, 972 participants). Étude Néroli aromathérapie (PubMed PMID 35206980, 2022)"
   },
@@ -3080,6 +3312,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Gingembre",
         "quantite": "0,5% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -3088,7 +3324,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "OU : diffusion 10-15 minutes dans la chambre",
       "Possibilité : ajouter 1 goutte Rose de Damas pour version luxe"
     ],
-    "bonus": "L'Ylang-Ylang est l'HE de la séduction par excellence (utilisée traditionnellement dans les rituels de mariage en Indonésie). Le Gingembre apporte tonus et chaleur.",
+    "bonus": "L'Ylang-Ylang est l'HE de la séduction par excellence (utilisée traditionnellement dans les rituels de mariage en Indonésie). Le Gingembre apporte tonus et chaleur. Vitamine E ajoutée comme antioxydant pour conserver le mélange.",
     "precautions": "Gingembre : peut irriter peaux sensibles, faire test cutané. Ylang-Ylang : usage modéré (puissant). Éviter 1er trimestre grossesse.",
     "source": "Choi SY et al. (2014), Evidence-Based Complementary and Alternative Medicine — PMC4082953. Étude RCT inhalation Néroli chez femmes ménopausées : augmentation du désir sexuel et amélioration de la qualité de vie"
   },
@@ -3115,6 +3351,14 @@ export const RECETTES_BIBLIOTHEQUE = [
         "quantite": "2 gouttes"
       },
       {
+        "nom": "HV de Noyau d'Abricot",
+        "quantite": "5 ml (si version roll-on)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~1% (1 goutte — 0,05 ml, si version roll-on)"
+      },
+      {
         "nom": "Roll-on vide ou stick inhalateur",
         "quantite": "1"
       }
@@ -3126,7 +3370,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Inspirer profondément 5 fois en comptant : 4 sec inspiration, 6 sec expiration",
       "Continuer la respiration jusqu'à apaisement"
     ],
-    "bonus": "Plusieurs études cliniques sur la Lavande (linalol) montrent une action anxiolytique comparable à certains benzodiazépines mais sans effets secondaires. Le rituel olfactif crée un \"ancrage\" qui aide à reprendre contrôle.",
+    "bonus": "Plusieurs études cliniques sur la Lavande (linalol) montrent une action anxiolytique comparable à certains benzodiazépines mais sans effets secondaires. Le rituel olfactif crée un \"ancrage\" qui aide à reprendre contrôle. En version roll-on (avec HV), la Vitamine E conserve le mélange.",
     "precautions": "Si crises de panique fréquentes/intenses, consulter un psychologue ou psychiatre. L'aromathérapie est un soutien, pas un traitement. Bergamote photosensibilisante.",
     "source": "Revue systématique 2023 : Anxiety-Reducing Effects of Lavender Essential Oil Inhalation (PubMed PMC10671255) - 11 études cliniques sur 972 participants, 10/11 montrant une réduction significative de l'anxiété. Études Silexan (lavande orale) pour l'anxiété généralisée (Phytomedicine, Woelk et Schläfke 2010, PMID 19962288)"
   },
@@ -3191,6 +3435,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Menthe Poivrée",
         "quantite": "1% (3 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -3199,7 +3447,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Inspirer profondément pendant le massage",
       "Possibilité : appliquer aussi sur le plexus solaire"
     ],
-    "bonus": "Le Basilic Tropical est l'HE digestive par excellence, particulièrement efficace pour les troubles digestifs liés au stress. La Lavande relaxe le système nerveux entérique (le \"deuxième cerveau\").",
+    "bonus": "Le Basilic Tropical est l'HE digestive par excellence, particulièrement efficace pour les troubles digestifs liés au stress. La Lavande relaxe le système nerveux entérique (le \"deuxième cerveau\"). Vitamine E ajoutée comme antioxydant pour conserver le mélange.",
     "precautions": "Menthe Poivrée et Basilic INTERDITS moins de 7 ans, grossesse, épilepsie. Test cutané au préalable.",
     "source": "Méta-analyse Khanna et al. - Peppermint Oil and IBS (PubMed PMID 30654773 / PMC6337770) : 12 essais randomisés, 835 patients. Mise à jour 2022 : 10 RCT, 1030 patients (PubMed PMID 35942669). Niveau de preuve A pour la menthe poivrée dans le syndrome de l'intestin irritable"
   },
@@ -3228,6 +3476,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Petit-Grain Bigarade",
         "quantite": "1% (6 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -3236,7 +3488,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Cure 21 jours du 14ème jour du cycle au début des règles",
       "Pour la ménopause : tous les jours en cure de 3 semaines puis pause 1 semaine"
     ],
-    "bonus": "À combiner avec Sauge Sclarée si besoin de renforcer l'action (ATTENTION : Sauge Sclarée contre-indiquée si antécédent cancer hormono-dépendant).",
+    "bonus": "À combiner avec Sauge Sclarée si besoin de renforcer l'action (ATTENTION : Sauge Sclarée contre-indiquée si antécédent cancer hormono-dépendant). Vitamine E ajoutée comme antioxydant : dosage en haut de la fourchette recommandée car l'huile d'Onagre, si utilisée, rancit rapidement.",
     "precautions": "CONTRE-INDIQUÉ grossesse, allaitement, antécédent cancer hormono-dépendant. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Toujours consulter un médecin/gynécologue.",
     "source": "Méta-analyse Aromatherapy for Managing Menopausal Symptoms (PubMed PMID 34242093, 2021). Étude inhalation Néroli chez femmes ménopausées (PMC4082953)"
   },
