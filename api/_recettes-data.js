@@ -3548,15 +3548,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Encens Oliban",
         "quantite": "1% (6 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,4% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
       "Mélanger les deux huiles végétales dans un flacon ambré",
-      "Ajouter les huiles essentielles, agiter délicatement",
+      "Ajouter les huiles essentielles et la Vitamine E, agiter délicatement",
       "Appliquer le soir sur peau propre, en massage circulaire ascendant",
       "Insister sur ovale du visage, cou et décolleté"
     ],
-    "bonus": "Le Ciste agit sur la fermeté tissulaire, l'Encens Oliban contribue au renouvellement cutané (traditionnellement utilisé pour soutenir la réparation cutanée), le Géranium est traditionnellement utilisé pour améliorer l'aspect de la peau mature.",
+    "bonus": "Le Ciste agit sur la fermeté tissulaire, l'Encens Oliban contribue au renouvellement cutané (traditionnellement utilisé pour soutenir la réparation cutanée), le Géranium est traditionnellement utilisé pour améliorer l'aspect de la peau mature. Vitamine E ajoutée comme antioxydant : la Rose Musquée rancit vite, dosage en haut de la fourchette recommandée.",
     "precautions": "Ciste contre-indiqué grossesse, allaitement et sous anticoagulants. Géranium déconseillé pendant toute la grossesse sauf avis d'un professionnel qualifié. Test cutané au préalable.",
     "source": "Synergie traditionnelle anti-âge. Effets régénérants documentés : Encens Oliban (incensole acetate, Moussaieff 2008, PubMed PMID 18492727). HV de Rose Musquée riche en acides gras essentiels (Source FAO). Géranium Rosat : propriétés cicatrisantes documentées en cosmétologie"
   },
@@ -3584,6 +3588,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Citron Jaune Zest",
         "quantite": "1% (6 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,4% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -3591,6 +3599,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Strictement le soir, jamais en journée",
       "Protection solaire SPF 50 obligatoire en journée pendant la cure"
     ],
+    "bonus": "Vitamine E ajoutée comme antioxydant : la Rose Musquée rancit vite, dosage en haut de la fourchette recommandée pour une cure de 6 semaines.",
     "precautions": "Citron Zest et Céleri très photosensibilisants : risque de brûlure et hyperpigmentation paradoxale si exposition solaire. Cure interrompue en été. Contre-indiqué grossesse.",
     "source": "HV Rose Musquée : réduction des taches UV observée après application topique de 5 semaines (imagerie VISIA) — Oargă et al. 2025, Cosmetics 12(3):125, DOI 10.3390/cosmetics12030125. HE Citron Jaune Zest : inhibition de 42,9% de la sécrétion de tyrosinase sur cellules de mélanome B16 — Yang et al. 2023, International Journal of Molecular Sciences 24(4):4207, PMID 36835634. HE Carotte (graines) : inhibition de 76,5% de l'activité tyrosinase in vitro — Kothapalli et al. 2024, Current Enzyme Inhibition 20(2)."
   },
@@ -3618,6 +3627,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Encens Oliban",
         "quantite": "0,5% (1 goutte)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -3625,6 +3638,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Appliquer 1 goutte sur l'os de l'orbite (jamais sur la paupière mobile)",
       "Tapoter délicatement avec l'annulaire jusqu'à pénétration"
     ],
+    "bonus": "Vitamine E ajoutée comme antioxydant : la Rose Musquée rancit vite, dosage en haut de la fourchette recommandée vu le petit volume du roll-on.",
     "precautions": "Ne JAMAIS appliquer dans l'œil ni sur la paupière mobile. Concentration volontairement très basse (1% total) car zone très fine. Test cutané obligatoire.",
     "source": "Effets régénérants de l'Encens Oliban documentés (Moussaieff 2008, PubMed PMID 18492727 - activation TRPV3). HV Rose Musquée riche en oméga 3-6 documentée pour la régénération cutanée. Bois de Hô = alternative durable au Bois de Rose (espèce protégée CITES)"
   },
@@ -3689,6 +3703,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "Soin local : HE Tea Tree pure",
         "quantite": "Sur bouton isolé uniquement"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,17% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -3697,7 +3715,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Ne jamais utiliser sur peau lésée ou irritée",
       "Démaquillage doux indispensable avant application"
     ],
-    "bonus": "À combiner avec un nettoyage doux sans alcool. Éviter absolument de percer les boutons.",
+    "bonus": "À combiner avec un nettoyage doux sans alcool. Éviter absolument de percer les boutons. Vitamine E ajoutée comme antioxydant (le Jojoba est stable, dose légère suffisante).",
     "precautions": "Réservé aux 12 ans et plus. Tea Tree à usage local uniquement (jamais sur grandes surfaces pures). Test cutané obligatoire. Si acné sévère, consultation dermatologique impérative.",
     "source": "Enshaieh S, Jooya A, Siadat AH, Iraji F (2007) - Indian Journal of Dermatology Venereology and Leprology 73(1):22-25 - PubMed PMID 17314442. Étude randomisée double-aveugle placebo-contrôlée : Tea Tree 5% topique réduit 40-47% des lésions acnéiques. Confirmé par revue systématique Orchard et Vuuren (PMC5435909)"
   },
@@ -3729,6 +3747,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Menthe Poivrée",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -3736,7 +3758,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Insister sur les mollets en mouvements ascendants",
       "Appliquer après une douche fraîche pour effet décuplé"
     ],
-    "bonus": "Combiner avec finition à l'eau fraîche sur les jambes pendant la douche.",
+    "bonus": "Combiner avec finition à l'eau fraîche sur les jambes pendant la douche. Vitamine E ajoutée comme antioxydant pour conserver le mélange sur la durée de la cure.",
     "precautions": "Cyprès contre-indiqué grossesse, allaitement, mastoses, cancers hormono-dépendants. Menthe Poivrée INTERDITE moins de 7 ans, grossesse, allaitement, épilepsie, hypertension. Lentisque contre-indiqué grossesse.",
     "source": "Effet venotonique traditionnel des HE conifères (Cyprès Toujours Vert) documenté en aromathérapie clinique. Menthe Poivrée : effet rafraîchissant cutané validé (menthol active les récepteurs TRPM8). Référence générale : Tisserand et Young, Essential Oil Safety, 2014"
   },
@@ -3804,6 +3826,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Lavande Vraie",
         "quantite": "3 gouttes"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,2% (2 gouttes — 0,1 ml)"
       }
     ],
     "etapes": [
@@ -3813,7 +3839,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Rincer abondamment, sécher en tamponnant",
       "Appliquer un soin nourrissant aussitôt"
     ],
-    "bonus": "Se conserve 1 mois dans un bocal hermétique au sec. Préparer en petites quantités pour fraîcheur optimale.",
+    "bonus": "Se conserve 1 mois dans un bocal hermétique au sec. Préparer en petites quantités pour fraîcheur optimale. Vitamine E ajoutée comme antioxydant pour cette durée de conservation.",
     "precautions": "Pamplemousse Zest photosensibilisant : éviter exposition solaire dans les 8 heures suivantes. Pas sur peau lésée. Sucre plutôt que sel pour peaux sensibles.",
     "source": "Synergie cosmétique traditionnelle. Pamplemousse Zest (limonène) - propriétés tonifiantes documentées. Lavande : revue systématique 2023 sur anxiolyse (PMC10671255). HV Macadamia et Coco : profil lipidique nourrissant validé (Pharmacopée européenne)"
   },
@@ -3841,6 +3867,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Ylang-Ylang Totum",
         "quantite": "1% (2 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,5% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -3849,7 +3879,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Masser ongle et cuticule jusqu'à pénétration",
       "Faire des bains d'huile complets 1x par semaine (10 min)"
     ],
-    "bonus": "Pour cuticules abîmées, ajouter 2 gouttes d'HE Lavande Vraie au mélange.",
+    "bonus": "Pour cuticules abîmées, ajouter 2 gouttes d'HE Lavande Vraie au mélange. Vitamine E ajoutée comme antioxydant vu le petit volume du roll-on.",
     "precautions": "Citron Zest photosensibilisant : application le soir uniquement. Si ongles très abîmés, écarter pathologie (mycose, carence) avec médecin.",
     "source": "Usage traditionnel cosmétique. HV de Ricin (Ricinus communis) riche en acide ricinoléique - propriétés nourrissantes documentées (USP Monograph). HV d'Argan : riche en tocophérols et oméga-9 (Pharmacopée)."
   },
@@ -3877,6 +3907,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Bois de Hô",
         "quantite": "1% (6 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,17% (1 goutte — 0,05 ml)"
       }
     ],
     "etapes": [
@@ -3885,7 +3919,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser 1 à 2 heures, ou toute la nuit",
       "Faire 2 shampoings doux pour bien rincer"
     ],
-    "bonus": "Variante \"blond\" : ajouter 5 gouttes Camomille Noble pour raviver les reflets. Variante \"brun\" : ajouter 5 gouttes Ylang-Ylang supplémentaires pour la brillance.",
+    "bonus": "Variante \"blond\" : ajouter 5 gouttes Camomille Noble pour raviver les reflets. Variante \"brun\" : ajouter 5 gouttes Ylang-Ylang supplémentaires pour la brillance. Vitamine E ajoutée comme antioxydant pour ce mélange réutilisé plusieurs fois.",
     "precautions": "Éviter dans les 48h suivant une coloration (laisser le cuir chevelu se rééquilibrer). Bois de Hô préféré au Bois de Rose (espèce protégée).",
     "source": "HV Argan : le prétraitement à l'huile d'argan réduit les dommages oxydatifs sur la fibre capillaire, pertinent pour les cheveux colorés exposés au stress oxydatif — Sharifi et al. 2022, Journal of Cosmetic Dermatology, DOI 10.1111/jocd.14885. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)"
   },
@@ -3917,6 +3951,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Bay Saint-Thomas",
         "quantite": "0,5% (5 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -3926,7 +3964,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser minimum 1h (idéalement la nuit)",
       "Laver avec un shampoing doux"
     ],
-    "bonus": "Le ricin nourrit en profondeur, le romarin active la circulation, le Bay Saint-Thomas stimule le cuir chevelu. Concentration limitée à 0,5% (irritant à forte dose).",
+    "bonus": "Le ricin nourrit en profondeur, le romarin active la circulation, le Bay Saint-Thomas stimule le cuir chevelu. Concentration limitée à 0,5% (irritant à forte dose). Vitamine E ajoutée comme antioxydant pour cette cure de 3 mois minimum.",
     "precautions": "Romarin et Bay Saint-Thomas contre-indiqués grossesse, hypertension, épilepsie. Bay Saint-Thomas irritant cutané : ne jamais dépasser 0,5%, test cutané obligatoire.",
     "source": "Panahi Y et al. (2015) - SKINmed - PubMed PMID 25842469 : étude randomisée comparative HE de Romarin vs Minoxidil 2% sur 100 patients atteints d'alopécie androgénétique - efficacité comparable à 6 mois. Murata K et al. (2013) - Phytotherapy Research - PMID 22517595 : extrait de Romarin et croissance capillaire"
   },
@@ -3954,6 +3992,10 @@ export const RECETTES_BIBLIOTHEQUE = [
       {
         "nom": "HE Petit-Grain Bigarade",
         "quantite": "1% (10 gouttes)"
+      },
+      {
+        "nom": "Vitamine E (Tocophérol)",
+        "quantite": "~0,3% (3 gouttes — 0,15 ml)"
       }
     ],
     "etapes": [
@@ -3961,7 +4003,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       "Laisser poser 30 minutes à 2 heures",
       "Laver avec un shampoing doux sans sulfates"
     ],
-    "bonus": "Formule volontairement douce, adaptée à la sensibilité hormonale du post-partum. Synergie aux notes apaisantes (Petit-Grain) utile pour le stress maternel.",
+    "bonus": "Formule volontairement douce, adaptée à la sensibilité hormonale du post-partum. Synergie aux notes apaisantes (Petit-Grain) utile pour le stress maternel. Vitamine E ajoutée comme antioxydant pour cette cure de 3 mois.",
     "precautions": "Pendant l'allaitement strict, éviter Romarin, Sauge et toutes HE œstrogène-like. Cette formule est compatible mais demander avis sage-femme ou aromathérapeute en cas de doute.",
     "source": "Effet anti-stress de la lavande post-partum documenté : Kianpour M et al., étude clinique 140 femmes - PubMed PMID 27095995. Études animales sur lavande et folliculogenèse capillaire. Formulation volontairement douce et sans HE œstrogène-like"
   },
