@@ -32,6 +32,57 @@ function linkifySource(text) {
   }).join('');
 }
 
+// ===== Pourcentages exacts (identique à src/services/recipeFormat.js de l'app) =====
+// Composition totalisant NET 100.00 % calculée depuis les quantités (1 ml = 25 gouttes).
+function parseQuantityMl(quantite) {
+  if (!quantite) return null;
+  const q = String(quantite).toLowerCase().replace(/,/g, '.');
+  let m = q.match(/(\d+(?:\.\d+)?)\s*ml\b/);
+  if (m) return parseFloat(m[1]);
+  m = q.match(/(\d+(?:\.\d+)?)\s*gouttes?\b/);
+  if (m) return parseFloat(m[1]) / 25;
+  m = q.match(/(\d+(?:\.\d+)?)\s*g\b/);
+  if (m) return parseFloat(m[1]);
+  if (/cuill[eè]re.*soupe/.test(q)) return 15;
+  if (/cuill[eè]re.*caf[eé]/.test(q)) return 5;
+  return null;
+}
+function ingredientsWithPercentages(ingredients) {
+  const items = (ingredients || []).map(ing => ({ ...ing, mlValue: parseQuantityMl(ing.quantite) }));
+  const measurable = items.filter(i => i.mlValue && i.mlValue > 0);
+  const totalMl = measurable.reduce((sum, i) => sum + i.mlValue, 0);
+  if (!totalMl || measurable.length < 2) return { items: items.map(({ mlValue, ...r }) => ({ ...r, pct: null })), total: null, totalMl: null };
+  let allocated = 0;
+  measurable.forEach((item, idx) => {
+    const isLast = idx === measurable.length - 1;
+    const pct = isLast ? Math.round((100 - allocated) * 100) / 100 : Math.round((item.mlValue / totalMl) * 100 * 100) / 100;
+    allocated = Math.round((allocated + pct) * 100) / 100;
+    item.computedPct = pct;
+  });
+  return {
+    items: items.map(({ mlValue, computedPct, ...r }) => (computedPct !== undefined ? { ...r, pct: computedPct } : { ...r, pct: null })),
+    total: '100.00',
+    totalMl,
+  };
+}
+function cleanQuantity(q) {
+  let t = String(q || '').replace(/\s*—\s*/g, ', ');
+  t = t.replace(/~?\d+(?:[.,]\d+)?\s*%/g, '');
+  t = t.replace(/\(\s*[,;]?\s*\)/g, '');
+  t = t.replace(/\(\s*[,;]\s*/g, '(');
+  t = t.replace(/\s{2,}/g, ' ').trim();
+  t = t.replace(/^[,;]\s*/, '').replace(/\s*[,;]\s*$/, '');
+  const m = t.match(/^\((.*)\)$/);
+  if (m) t = m[1].trim();
+  return t;
+}
+function formatTotalVolume(totalMl) {
+  if (!totalMl || totalMl <= 0) return null;
+  if (totalMl < 1) return `${Math.max(1, Math.round(totalMl * 25))} gouttes`;
+  if (totalMl < 10) return `${Math.round(totalMl)} ml`;
+  return `${Math.round(totalMl / 5) * 5} ml`;
+}
+
 function notFound(id) {
   return `<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Recette introuvable — RESPEKTUS®</title>
 <style>body{font-family:-apple-system,sans-serif;background:#FAF7F2;text-align:center;padding:80px 24px;color:#1A1A1A}
@@ -57,11 +108,13 @@ export default function handler(req, res) {
   const descSafe = escapeHtml(recipe.indications || '');
   const catSafe = escapeHtml(recipe.categorie || '');
 
-  const ingredientsHtml = (recipe.ingredients || []).map(ing => {
+  const { items: ingItems, total: pctTotal, totalMl } = ingredientsWithPercentages(recipe.ingredients);
+  const ingredientsHtml = ingItems.map(ing => {
     const nom = escapeHtml(ing.nom || '');
-    const qte = escapeHtml(ing.quantite || '');
-    return `<li><strong>${nom}</strong>${qte ? ` — ${qte}` : ''}</li>`;
-  }).join('');
+    const qte = escapeHtml(cleanQuantity(ing.quantite || ''));
+    const pct = ing.pct != null ? `<span class="ing-pct">${ing.pct.toFixed(2)} %</span>` : '';
+    return `<li class="ing-row"><span class="ing-main"><strong>${nom}</strong>${qte ? `<span class="ing-qty">${qte}</span>` : ''}</span>${pct}</li>`;
+  }).join('') + (pctTotal ? `<li class="ing-total"><span>Total${formatTotalVolume(totalMl) ? ` (${formatTotalVolume(totalMl)})` : ''}</span><span class="ing-pct">${pctTotal} %</span></li>` : '');
 
   const etapesHtml = (recipe.etapes || []).map((e, i) => `<li><span class="step-num">${i + 1}</span>${escapeHtml(e)}</li>`).join('');
 
@@ -70,11 +123,11 @@ export default function handler(req, res) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${titleSafe} — Recette RESPEKTUS®</title>
+<title>${titleSafe} · Recette RESPEKTUS®</title>
 <meta name="description" content="${descSafe}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="${url}">
-<meta property="og:title" content="${titleSafe} — Recette RESPEKTUS®">
+<meta property="og:title" content="${titleSafe} · Recette RESPEKTUS®">
 <meta property="og:description" content="${descSafe}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="${url}">
@@ -106,6 +159,11 @@ h2{font-size:18px;font-weight:800;color:#2C5F3F;text-transform:uppercase;letter-
 .card ul{list-style:none;padding:0}
 .card li{padding:10px 0;border-bottom:1px solid #F0EBE5;font-size:15px;color:#2C2C2C;line-height:1.5}
 .card li:last-child{border-bottom:none}
+.ing-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ing-main{display:flex;flex-direction:column;gap:2px}
+.ing-qty{font-size:12px;color:#8A8A8A}
+.ing-pct{font-weight:800;color:#2C5F3F;white-space:nowrap}
+.ing-total{display:flex;justify-content:space-between;font-weight:800;border-top:2px solid #E8E0D5 !important;margin-top:4px}
 .steps{counter-reset:step}
 .steps li{display:flex;align-items:flex-start;gap:14px;padding:14px 0}
 .step-num{flex-shrink:0;width:28px;height:28px;border-radius:14px;background:#2C5F3F;color:#FFF;font-weight:800;font-size:14px;display:inline-flex;align-items:center;justify-content:center}
@@ -131,6 +189,7 @@ h2{font-size:18px;font-weight:800;color:#2C5F3F;text-transform:uppercase;letter-
   <nav class="header-nav">
     <a href="/actifs">Actifs</a>
     <a href="/recettes">Recettes</a>
+    <a href="/calculateur">Calculateur</a>
     <a href="/blog">Blog</a>
     <a href="/a-propos">À propos</a>
   </nav>

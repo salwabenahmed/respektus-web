@@ -1,0 +1,39 @@
+// Bascule le site public en mode "bientôt disponible" pendant les tests, sauf pour :
+// - les routes API (l'app mobile en a besoin en continu, ex: /api/openai-proxy pour Lia)
+// - les fichiers techniques (sitemap, robots, vérifications SEO)
+// - la page coming-soon elle-même (éviter une boucle de redirection)
+//
+// Salwa peut voir le vrai site en visitant une fois :
+//   https://www.respektus.com/?preview=RESPEKTUS_PREVIEW_2026
+// Un cookie est alors posé pour 30 jours, donc plus besoin de répéter l'astuce.
+
+const BYPASS_COOKIE = 'respektus_preview';
+const BYPASS_TOKEN = 'RESPEKTUS_PREVIEW_2026';
+
+export const config = {
+  matcher: '/((?!api/|coming-soon.html|robots.txt|sitemap.xml|app-ads.txt|googled695e6991d8b61e2.html|favicon).*)',
+};
+
+export default function middleware(request) {
+  const url = new URL(request.url);
+  const tokenParam = url.searchParams.get('preview');
+
+  if (tokenParam === BYPASS_TOKEN) {
+    url.searchParams.delete('preview');
+    return new Response(null, {
+      status: 302,
+      headers: {
+        Location: url.toString(),
+        'Set-Cookie': `${BYPASS_COOKIE}=${BYPASS_TOKEN}; Path=/; Max-Age=2592000; SameSite=Lax; Secure`,
+      },
+    });
+  }
+
+  const cookieHeader = request.headers.get('cookie') || '';
+  const hasBypass = cookieHeader.split(';').some((c) => c.trim() === `${BYPASS_COOKIE}=${BYPASS_TOKEN}`);
+  if (hasBypass) {
+    return; // laisse passer vers le vrai site
+  }
+
+  return Response.redirect(new URL('/coming-soon.html', request.url), 302);
+}

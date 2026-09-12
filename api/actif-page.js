@@ -48,12 +48,19 @@ function renderUtilisation(u) {
   return `<li>${escapeHtml(text + suffix)}${links ? ' ' + links : ''}</li>`;
 }
 
+// Palette STRICTEMENT identique à l'app
 const CATEGORY_COLORS = {
   HE: { bg: '#EEF7F2', text: '#2C5F3F' },
   HV: { bg: '#FFF8E6', text: '#C8A96E' },
-  Hydrolat: { bg: '#EEF3FF', text: '#7B9EE0' },
-  Beurre: { bg: '#FFF8E6', text: '#C8A96E' },
-  Actif: { bg: '#FFF0F8', text: '#C05080' },
+  MACERAT: { bg: '#FBF0E1', text: '#B5793B' },
+  BEURRE: { bg: '#F8EFE6', text: '#A67C52' },
+  HYDROLAT: { bg: '#E8F4F7', text: '#4A8FA4' },
+  ARGILE: { bg: '#FAECE5', text: '#C0704F' },
+  POUDRE: { bg: '#EEF3E4', text: '#7A9B5E' },
+  ACTIF: { bg: '#F0EBF7', text: '#7B5EA7' },
+  BASE: { bg: '#E8F3EC', text: '#4E8F6D' },
+  CONSERVATEUR: { bg: '#F0F0F0', text: '#6B6B6B' },
+  CULINAIRE: { bg: '#FBEAE7', text: '#C25B4E' },
 };
 
 function notFound(id) {
