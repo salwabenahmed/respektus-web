@@ -14,7 +14,7 @@
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
     { "source": "/actifs", "destination": "/api/library-list?type=actifs" },
     { "source": "/recettes", "destination": "/api/library-list?type=recettes" },
-    { "source": "/boutique", "destination": "/api/boutique-list" },
+    { "source": "/boutique", "destination": "/boutique.html" },
     { "source": "/actif/:id", "destination": "/api/actif-page?id=:id" },
     { "source": "/recette/:id", "destination": "/api/recette-page?id=:id" },
     { "source": "/post/:id", "destination": "/api/post-page?id=:id" }
