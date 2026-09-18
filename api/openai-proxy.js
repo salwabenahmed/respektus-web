@@ -17,7 +17,10 @@
 const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 
 // Limites de garde-fou (en plus du plafond OpenAI lui-même)
-const MAX_TOKENS_CAP = 1600;        // jamais plus de 1600 tokens de sortie
+// Plafond de sortie. Relevé à 4000 (2026-09-18) : les modèles récents consomment des jetons
+// de raisonnement avant d'écrire, et un plafond trop bas renvoyait une réponse VIDE
+// (lecture photo de liste INCI, longues recettes).
+const MAX_TOKENS_CAP = 4000;
 const ALLOWED_MODELS = new Set(['gpt-5.4-mini']);
 const MODEL_REMAP = {};
 
