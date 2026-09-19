@@ -52,7 +52,12 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#FAF7F2;color:#1A1A1A;min-height:100vh}
-.hero{text-align:center;padding:80px 24px 60px}
+.premium-strip{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#162C22 0%,#1E3D2B 100%);color:#F3E7CE;text-decoration:none;padding:13px 20px;font-size:14px;font-weight:600;text-align:center;flex-wrap:wrap}
+.premium-strip strong{color:#E8C874;font-weight:800}
+.premium-strip-diamond{color:#C8A96E;font-size:15px}
+.premium-strip-arrow{color:#C8A96E;font-weight:800}
+.premium-strip:hover{background:linear-gradient(135deg,#1E3D2B 0%,#2C5F3F 100%)}
+.hero{text-align:center;padding:64px 24px 60px}
 .brand{font-size:32px;font-weight:900;color:#2C5F3F;letter-spacing:6px;margin-bottom:4px}
 .registered{font-size:14px;vertical-align:super}
 .tagline{font-size:14px;color:#4A7C59;letter-spacing:2px;font-style:italic;margin-bottom:40px}
@@ -159,6 +164,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <body>
 
 <div id="homePage">
+<a class="premium-strip" href="#fondatrice">
+  <span class="premium-strip-diamond">&#9670;</span>
+  <span><strong>Offre Fondateur&middot;rice</strong> &middot; prix de lancement bloqu&eacute; &agrave; vie, places limit&eacute;es</span>
+  <span class="premium-strip-arrow">&rarr;</span>
+</a>
 <div class="hero">
 <svg width="70" height="70" viewBox="0 0 60 60" fill="none"><path d="M30 6 C30 6,52 20,50 40 C48 54,30 56,30 56 C30 56,12 54,10 40 C8 20,30 6,30 6Z" fill="#2C5F3F" opacity="0.15"/><path d="M30 12 C30 12,46 23,44 40 C42 51,30 53,30 53 C30 53,18 51,16 40 C14 23,30 12,30 12Z" fill="#2C5F3F"/><path d="M30 51 L30 19" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round"/><path d="M30 27 L24 23" stroke="#FAF7F2" stroke-width="1.1" stroke-linecap="round"/><path d="M30 34 L24 30" stroke="#FAF7F2" stroke-width="1.1" stroke-linecap="round"/><path d="M30 41 L24 38" stroke="#FAF7F2" stroke-width="1.1" stroke-linecap="round"/><path d="M30 27 L36 23" stroke="#FAF7F2" stroke-width="1.1" stroke-linecap="round"/><path d="M30 34 L36 30" stroke="#FAF7F2" stroke-width="1.1" stroke-linecap="round"/><path d="M30 41 L36 38" stroke="#FAF7F2" stroke-width="1.1" stroke-linecap="round"/></svg>
 <div class="brand">RESPEKTUS<span class="registered">®</span></div>
@@ -214,39 +224,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 </div>
 </div>
 
-<section class="parcours-section">
-<div class="parcours-head">
-  <div class="parcours-eyebrow">Ton parcours</div>
-  <h2 class="parcours-title">Une histoire simple, un chemin cohérent</h2>
-  <p class="parcours-sub">RESPEKTUS t'accompagne à chaque étape. Ce n'est pas seulement une IA ni seulement un scanner. C'est un parcours complet.</p>
-</div>
-<div class="parcours-steps">
-  <div class="parcours-step">
-    <div class="parcours-step-num">01</div>
-    <div class="parcours-step-action">Comprendre</div>
-    <h3>Lis tes produits</h3>
-    <p>Scanne la liste INCI de tes cosmétiques. Découvre le rôle de chaque ingrédient et apprends à faire des choix éclairés.</p>
-  </div>
-  <div class="parcours-step">
-    <div class="parcours-step-num">02</div>
-    <div class="parcours-step-action">Questionner</div>
-    <h3>Pose toutes tes questions</h3>
-    <p>Lia répond à tes doutes sur les huiles essentielles, les hydrolats, les actifs. Sans jugement, à n'importe quelle heure.</p>
-  </div>
-  <div class="parcours-step">
-    <div class="parcours-step-num">03</div>
-    <div class="parcours-step-action">Créer</div>
-    <h3>Reçois tes recettes</h3>
-    <p>Lia formule des recettes sur mesure selon tes besoins. Chaque dosage est vérifié et respecte les limites de sécurité.</p>
-  </div>
-  <div class="parcours-step">
-    <div class="parcours-step-num">04</div>
-    <div class="parcours-step-action">Apprendre</div>
-    <h3>Consulte l'encyclopédie</h3>
-    <p>Plus de 200 fiches sur les huiles essentielles, huiles végétales, hydrolats, argiles et actifs cosmétiques. Sourcées et documentées.</p>
-  </div>
-</div>
-</section>
 <section class="fondatrice-section" id="fondatrice">
 <div style="display:block;text-align:center;margin-bottom:8px">
   <span style="display:inline-block;background:linear-gradient(90deg,#C8A96E,#E8C98E,#C8A96E);color:#162C22;font-size:10px;font-weight:900;letter-spacing:2.5px;text-transform:uppercase;padding:7px 22px;border-radius:30px">OFFRE FONDATEURS EXCLUSIVE</span>
@@ -326,6 +303,39 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   <p class="fondatrice-note">3 jours gratuits · sans engagement · annulable à tout moment</p>
 </div>
 </section>
+<section class="parcours-section">
+<div class="parcours-head">
+  <div class="parcours-eyebrow">Ton parcours</div>
+  <h2 class="parcours-title">Une histoire simple, un chemin cohérent</h2>
+  <p class="parcours-sub">RESPEKTUS t'accompagne à chaque étape. Ce n'est pas seulement une IA ni seulement un scanner. C'est un parcours complet.</p>
+</div>
+<div class="parcours-steps">
+  <div class="parcours-step">
+    <div class="parcours-step-num">01</div>
+    <div class="parcours-step-action">Comprendre</div>
+    <h3>Lis tes produits</h3>
+    <p>Scanne la liste INCI de tes cosmétiques. Découvre le rôle de chaque ingrédient et apprends à faire des choix éclairés.</p>
+  </div>
+  <div class="parcours-step">
+    <div class="parcours-step-num">02</div>
+    <div class="parcours-step-action">Questionner</div>
+    <h3>Pose toutes tes questions</h3>
+    <p>Lia répond à tes doutes sur les huiles essentielles, les hydrolats, les actifs. Sans jugement, à n'importe quelle heure.</p>
+  </div>
+  <div class="parcours-step">
+    <div class="parcours-step-num">03</div>
+    <div class="parcours-step-action">Créer</div>
+    <h3>Reçois tes recettes</h3>
+    <p>Lia formule des recettes sur mesure selon tes besoins. Chaque dosage est vérifié et respecte les limites de sécurité.</p>
+  </div>
+  <div class="parcours-step">
+    <div class="parcours-step-num">04</div>
+    <div class="parcours-step-action">Apprendre</div>
+    <h3>Consulte l'encyclopédie</h3>
+    <p>Plus de 200 fiches sur les huiles essentielles, huiles végétales, hydrolats, argiles et actifs cosmétiques. Sourcées et documentées.</p>
+  </div>
+</div>
+</section>
 <section class="library-section" id="bibliotheque">
 <div class="library-head">
 <div class="library-eyebrow">Notre bibliothèque</div>
@@ -370,7 +380,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 </div>
 <div class="footer">
 <p>© 2026 RESPEKTUS® ·Tous droits réservés</p>
-<p style="margin-top:8px"><a href="/actifs">Actifs</a> · <a href="/recettes">Recettes</a> · <a href="/calculateur">Calculateur</a> · <a href="/boutique">Boutique</a> · <a href="/a-propos">À propos</a> · <a href="/blog">Blog</a> · <a href="/charte">Charte du Cercle</a> · <a href="/mentions-legales">Mentions légales</a> · <a href="/cgv">CGV</a> · <a href="/confidentialite">Confidentialité</a> · <a href="/parrainage#fidelite">Fidélité</a> · <a href="/parrainage#parrainage">Parrainage</a></p>
+<p style="margin-top:8px"><a href="#fondatrice">Premium</a> · <a href="/actifs">Actifs</a> · <a href="/recettes">Recettes</a> · <a href="/calculateur">Calculateur</a> · <a href="/boutique">Boutique</a> · <a href="/a-propos">À propos</a> · <a href="/blog">Blog</a> · <a href="/charte">Charte du Cercle</a> · <a href="/mentions-legales">Mentions légales</a> · <a href="/cgv">CGV</a> · <a href="/confidentialite">Confidentialité</a> · <a href="/parrainage#fidelite">Fidélité</a> · <a href="/parrainage#parrainage">Parrainage</a></p>
 </div>
 </div>
 
