@@ -1,41 +1,108 @@
 {
   "rewrites": [
-    { "source": "/mentions-legales", "destination": "/mentions-legales.html" },
-    { "source": "/cgv", "destination": "/cgv.html" },
-    { "source": "/confidentialite", "destination": "/confidentialite.html" },
-    { "source": "/parrainage", "destination": "/parrainage.html" },
-    { "source": "/email-confirmed", "destination": "/email-confirmed.html" },
-    { "source": "/charte", "destination": "/charte.html" },
-    { "source": "/suppression-compte", "destination": "/suppression-compte.html" },
-    { "source": "/a-propos", "destination": "/a-propos.html" },
-    { "source": "/calculateur", "destination": "/calculateur.html" },
-    { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" },
-    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
-    { "source": "/actifs", "destination": "/api/library-list?type=actifs" },
-    { "source": "/recettes", "destination": "/api/library-list?type=recettes" },
-    { "source": "/boutique", "destination": "/boutique.html" },
-    { "source": "/actif/:id", "destination": "/api/actif-page?id=:id" },
-    { "source": "/recette/:id", "destination": "/api/recette-page?id=:id" },
-    { "source": "/post/:id", "destination": "/api/post-page?id=:id" }
+    {
+      "source": "/api/airtable/:chemin*",
+      "destination": "/api/airtable?chemin=:chemin*"
+    },
+    {
+      "source": "/mentions-legales",
+      "destination": "/mentions-legales.html"
+    },
+    {
+      "source": "/cgv",
+      "destination": "/cgv.html"
+    },
+    {
+      "source": "/confidentialite",
+      "destination": "/confidentialite.html"
+    },
+    {
+      "source": "/parrainage",
+      "destination": "/parrainage.html"
+    },
+    {
+      "source": "/email-confirmed",
+      "destination": "/email-confirmed.html"
+    },
+    {
+      "source": "/charte",
+      "destination": "/charte.html"
+    },
+    {
+      "source": "/suppression-compte",
+      "destination": "/suppression-compte.html"
+    },
+    {
+      "source": "/a-propos",
+      "destination": "/a-propos.html"
+    },
+    {
+      "source": "/calculateur",
+      "destination": "/calculateur.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/api/blog-page?slug=:slug"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap"
+    },
+    {
+      "source": "/actifs",
+      "destination": "/api/library-list?type=actifs"
+    },
+    {
+      "source": "/recettes",
+      "destination": "/api/library-list?type=recettes"
+    },
+    {
+      "source": "/boutique",
+      "destination": "/boutique.html"
+    },
+    {
+      "source": "/actif/:id",
+      "destination": "/api/actif-page?id=:id"
+    },
+    {
+      "source": "/recette/:id",
+      "destination": "/api/recette-page?id=:id"
+    },
+    {
+      "source": "/post/:id",
+      "destination": "/api/post-page?id=:id"
+    }
   ],
   "headers": [
     {
       "source": "/(.*\\.html)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400"
+        }
       ]
     },
     {
       "source": "/",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400"
+        }
       ]
     },
     {
       "source": "/(.*\\.js|.*\\.css|.*\\.png|.*\\.jpg|.*\\.svg|.*\\.ico|.*\\.woff2)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     }
   ]

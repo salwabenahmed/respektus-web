@@ -2,23 +2,46 @@
 // Appelée par l'app quand un post contient un lien, pour afficher une carte miniature.
 //
 // Sécurité :
-// - Secret partagé X-App-Secret
+// - Session Supabase valide (en-tête Authorization)
 // - Validation stricte de l'URL (http/https uniquement, format valide)
 // - Timeout de 5s pour ne pas bloquer si le site cible est lent
 // - User-Agent identifiable pour respecter la nétiquette
 
+// Vérification de session Supabase, en remplacement du secret partagé : celui-ci était
+// embarqué dans le bundle de l'app, donc extractible, et permettait à n'importe qui
+// d'appeler ce point d'entrée. Le jeton de session, lui, est propre à chaque personne
+// connectée et expire.
+async function verifierSession(authHeader) {
+  if (!authHeader || !authHeader.startsWith('Bearer ')) return null;
+  const jwt = authHeader.slice(7);
+  if (!jwt || jwt === 'undefined' || jwt === 'null') return null;
+  const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL;
+  const ANON_KEY = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY;
+  if (!SUPABASE_URL || !ANON_KEY) return null;
+  try {
+    const r = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
+      headers: { Authorization: `Bearer ${jwt}`, apikey: ANON_KEY },
+    });
+    if (!r.ok) return null;
+    const d = await r.json();
+    return d?.id ? { id: d.id, email: (d.email || '').toLowerCase() } : null;
+  } catch {
+    return null;
+  }
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-App-Secret');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-App-Secret');
 
   if (req.method === 'OPTIONS') return res.status(204).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   // 1. Authentification
-  const provided = req.headers['x-app-secret'];
-  if (!process.env.APP_SECRET || !provided || provided !== process.env.APP_SECRET) {
-    return res.status(401).json({ error: 'Unauthorized' });
+  const utilisateur = await verifierSession(req.headers.authorization);
+  if (!utilisateur) {
+    return res.status(401).json({ error: 'Authentification requise' });
   }
 
   // 2. Parse body
