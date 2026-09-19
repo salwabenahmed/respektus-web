@@ -142,7 +142,7 @@ article{max-width:720px;margin:0 auto;padding:50px 24px 80px}
 .cat{display:inline-block;background:#EEF7F2;color:#2C5F3F;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:6px 12px;border-radius:8px;margin-bottom:18px}
 h1{font-size:36px;font-weight:800;line-height:1.2;color:#1A1A1A;letter-spacing:-0.5px;margin-bottom:14px}
 .date{font-size:13px;color:#8A8A8A;font-style:italic;margin-bottom:28px}
-.cover{width:100%;aspect-ratio:16/9;object-fit:contain;border-radius:14px;margin-bottom:32px;background:#EEF7F2;display:block}
+.cover{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center 30%;border-radius:14px;margin-bottom:32px;background:#EEF7F2;display:block}
 .intro{font-size:18px;color:#3D3D3D;line-height:1.7;margin-bottom:28px;font-style:italic;border-left:3px solid #2C5F3F;padding-left:18px}
 .content h2{font-size:22px;font-weight:800;color:#2C5F3F;line-height:1.3;margin:34px 0 14px}
 .content h3{font-size:18px;font-weight:800;color:#2C5F3F;line-height:1.3;margin:28px 0 12px}

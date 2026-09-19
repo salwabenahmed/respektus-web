@@ -11,6 +11,25 @@ import { RECETTES_BIBLIOTHEQUE } from './_recettes-data.js';
 const ACTIFS_COUNT = Math.floor(ACTIFS.length / 50) * 50; // chiffre rond pour l'affichage marketing
 const RECETTES_COUNT = RECETTES_BIBLIOTHEQUE.length;
 
+
+// Les sources citent leurs références par identifiant (PMID, PMC, HAL, DOI). On reconstruit
+// le lien à l'affichage : l'identifiant reste la donnée, le lien n'est qu'un rendu.
+const SOURCE_PATTERNS = [
+  { re: /PMC\d{6,8}/i, url: (m) => `https://www.ncbi.nlm.nih.gov/pmc/articles/${m[0].toUpperCase()}/`, label: 'PubMed Central' },
+  { re: /PMID\s*:?\s*(\d{6,8})/i, url: (m) => `https://pubmed.ncbi.nlm.nih.gov/${m[1]}/`, label: 'PubMed' },
+  { re: /hal-\d{8,}/i, url: (m) => `https://hal.science/${m[0].toLowerCase()}`, label: 'HAL' },
+  { re: /\b10\.\d{4,9}\/[^\s,;)\]]+/, url: (m) => `https://doi.org/${m[0].replace(/[.,;)]+$/, '')}`, label: 'DOI' },
+];
+
+function sourceLink(source) {
+  const text = String(source || '');
+  for (const { re, url, label } of SOURCE_PATTERNS) {
+    const m = text.match(re);
+    if (m) return { url: url(m), label };
+  }
+  return null;
+}
+
 function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
@@ -132,6 +151,11 @@ li:before{content:"•";color:${cfg.text};font-weight:800;font-size:18px;line-he
 .callout .label{font-size:11px;font-weight:800;color:${cfg.text};letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
 .warning{background:#FFF8E6;border-left:3px solid #C8A96E}
 .warning .label{color:#C8A96E}
+.sources{margin-top:32px;padding-top:22px;border-top:1px solid #E8E0D5}
+.sources .label{font-size:11px;font-weight:800;letter-spacing:1.4px;color:#2C5F3F;margin-bottom:10px}
+.sources ul{list-style:none;padding:0;margin:0}
+.sources li{font-size:13px;color:#6B6B6B;line-height:1.6;padding:7px 0;border-bottom:1px solid #F5F0E8}
+.sources a{color:#2C5F3F;font-weight:700;white-space:nowrap}
 .cta-section{background:#2C5F3F;border-radius:18px;padding:32px 26px;margin-top:40px;text-align:center;color:#FFF}
 .cta-title{font-size:22px;font-weight:800;margin-bottom:8px}
 .cta-sub{font-size:14px;color:#C0DEC9;margin-bottom:22px;line-height:1.6}
@@ -187,6 +211,18 @@ li:before{content:"•";color:${cfg.text};font-weight:800;font-size:18px;line-he
     <div class="callout warning">
       <div class="label">Précautions</div>
       <p>${escapeHtml(actif.precautions)}</p>
+    </div>
+  ` : ''}
+
+  ${Array.isArray(actif.sources) && actif.sources.length ? `
+    <div class="sources">
+      <div class="label">Sources</div>
+      <ul>
+        ${actif.sources.map((src) => {
+          const lien = sourceLink(src);
+          return `<li>${escapeHtml(src)}${lien ? ` <a href="${lien.url}" target="_blank" rel="noopener nofollow">Consulter sur ${lien.label}</a>` : ''}</li>`;
+        }).join('')}
+      </ul>
     </div>
   ` : ''}
 
