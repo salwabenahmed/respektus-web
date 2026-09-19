@@ -15,6 +15,7 @@
 //   AIRTABLE_BASE_ID                → l'identifiant de base (app…)
 //   EXPO_PUBLIC_SUPABASE_URL        → pour valider le JWT
 //   EXPO_PUBLIC_SUPABASE_ANON_KEY   → idem
+//   SUPABASE_SERVICE_ROLE_KEY       → pour la fenêtre d'inscription (voir plus bas)
 
 const AIRTABLE_URL = 'https://api.airtable.com/v0';
 // Les pièces jointes passent par un hôte distinct chez Airtable.
@@ -65,6 +66,38 @@ async function verifierJwt(authHeader) {
   }
 }
 
+// Fenêtre d'inscription.
+//
+// La confirmation d'email est exigée sur ce projet Supabase : juste après la création du
+// compte, l'app n'a donc PAS encore de session. Or c'est précisément le moment où la
+// fiche Utilisateurs doit être écrite, sans quoi la personne n'existe nulle part.
+//
+// On accepte donc une seconde preuve : l'app annonce l'identifiant du compte qu'elle
+// vient de créer, et le serveur vérifie auprès de Supabase que ce compte existe, que
+// l'email correspond, et qu'il a été créé il y a moins de trente minutes. Sans cette
+// fenêtre, il faudrait soit laisser la table ouverte, soit perdre l'inscription.
+const FENETRE_INSCRIPTION_MS = 30 * 60 * 1000;
+
+async function verifierInscriptionRecente(userId, email) {
+  const SERVICE = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL;
+  if (!SERVICE || !SUPABASE_URL || !userId || !email) return null;
+  try {
+    const r = await fetch(`${SUPABASE_URL}/auth/v1/admin/users/${encodeURIComponent(userId)}`, {
+      headers: { Authorization: `Bearer ${SERVICE}`, apikey: SERVICE },
+    });
+    if (!r.ok) return null;
+    const u = await r.json();
+    if (!u?.id) return null;
+    if (String(u.email || '').toLowerCase() !== String(email).toLowerCase()) return null;
+    const age = Date.now() - new Date(u.created_at).getTime();
+    if (!Number.isFinite(age) || age > FENETRE_INSCRIPTION_MS) return null;
+    return { id: u.id, email: String(u.email).toLowerCase() };
+  } catch {
+    return null;
+  }
+}
+
 const echapper = (v) => String(v).replace(/'/g, "\\'");
 
 // Combine le filtre demandé par l'app et celui qu'on impose. Le filtre imposé gagne
@@ -99,7 +132,7 @@ async function ficheAutoriseeParId(recordId, email, headersAirtable, baseId) {
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Inscription-User, X-Inscription-Email');
   if (req.method === 'OPTIONS') return res.status(204).end();
 
   const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
@@ -108,9 +141,19 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Proxy Airtable non configuré' });
   }
 
+  let identite = null;
   const auth = await verifierJwt(req.headers.authorization);
-  if (auth.error) return res.status(401).json({ error: auth.error });
-  const { email } = auth.user;
+  if (!auth.error) {
+    identite = auth.user;
+  } else {
+    // Pas de session : on tente la fenêtre d'inscription avant de refuser.
+    identite = await verifierInscriptionRecente(
+      req.headers['x-inscription-user'],
+      req.headers['x-inscription-email']
+    );
+  }
+  if (!identite) return res.status(401).json({ error: auth.error || 'Authentification requise' });
+  const { email } = identite;
 
   // Chemin appelé : /api/airtable/<Table>[/<recordId>]
   const segments = String(req.query.chemin || '')
