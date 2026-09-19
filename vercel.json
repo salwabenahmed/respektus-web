@@ -46,7 +46,7 @@
     },
     {
       "source": "/blog/:slug",
-      "destination": "/api/blog-page?slug=:slug"
+      "destination": "/api/page?type=blog&slug=:slug"
     },
     {
       "source": "/sitemap.xml",
@@ -66,15 +66,15 @@
     },
     {
       "source": "/actif/:id",
-      "destination": "/api/actif-page?id=:id"
+      "destination": "/api/page?type=actif&id=:id"
     },
     {
       "source": "/recette/:id",
-      "destination": "/api/recette-page?id=:id"
+      "destination": "/api/page?type=recette&id=:id"
     },
     {
       "source": "/post/:id",
-      "destination": "/api/post-page?id=:id"
+      "destination": "/api/page?type=post&id=:id"
     }
   ],
   "headers": [
