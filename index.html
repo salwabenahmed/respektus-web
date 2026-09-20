@@ -452,11 +452,19 @@ function showError(m){var e=document.getElementById('error');e.textContent=m;e.s
 (function(){
   var hash=window.location.hash||'';
   if(hash.indexOf('access_token')===-1)return;
+  var p=new URLSearchParams(hash.substring(1));
+  var type=p.get('type')||'';
+  // Supabase renvoie ici aussi bien une confirmation d'inscription (type=signup) qu'une
+  // réinitialisation (type=recovery), avec un jeton dans les deux cas. Afficher le
+  // formulaire de mot de passe sans regarder le type demandait d'en choisir un nouveau à
+  // quelqu'un qui venait simplement de confirmer son adresse.
+  if(type!=='recovery'){
+    window.location.replace('/email-confirmed');
+    return;
+  }
   document.getElementById('homePage').style.display='none';
   document.getElementById('resetPage').style.display='block';
-  var p=new URLSearchParams(hash.substring(1));
   ACCESS_TOKEN=p.get('access_token');
-  console.log('Token:',ACCESS_TOKEN?'OK':'MANQUANT');
 })();
 
 async function handleReset(){
