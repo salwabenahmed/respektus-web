@@ -17,6 +17,8 @@
 //   EXPO_PUBLIC_SUPABASE_ANON_KEY   → idem
 //   SUPABASE_SERVICE_ROLE_KEY       → pour la fenêtre d'inscription (voir plus bas)
 
+export const maxDuration = 30;
+
 const AIRTABLE_URL = 'https://api.airtable.com/v0';
 // Les pièces jointes passent par un hôte distinct chez Airtable.
 const AIRTABLE_CONTENU_URL = 'https://content.airtable.com/v0';

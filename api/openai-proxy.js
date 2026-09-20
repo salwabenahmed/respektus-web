@@ -14,6 +14,12 @@
 //   EXPO_PUBLIC_SUPABASE_URL        → pour valider le JWT
 //   EXPO_PUBLIC_SUPABASE_ANON_KEY   → idem
 
+// Vercel coupe une fonction au bout de 10 secondes par défaut. Une génération de recette
+// avec raisonnement dépasse régulièrement ce délai : la fonction est alors interrompue et
+// répond une page d'erreur, pas du JSON. Côté app, la lecture de cette réponse levait une
+// exception et Lia affichait « Une erreur est survenue ».
+export const maxDuration = 60;
+
 const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 
 // Limites de garde-fou (en plus du plafond OpenAI lui-même)
