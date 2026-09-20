@@ -43,7 +43,7 @@ const TABLES = {
   Quiz_Reponses: { prive: true, champEmail: 'Email' },
   Quiz: { lectureSeule: true },
   Blog: { lectureSeule: true },
-  Config: { lectureSeule: true },
+  AppConfig: { lectureSeule: true },
   Produits: { lectureSeule: true },
   Paliers: { lectureSeule: true },
 };
