@@ -28,8 +28,10 @@ const AIRTABLE_CONTENU_URL = 'https://content.airtable.com/v0';
 // il suffirait de créer un compte pour tout lire. On force donc le filtre sur son email
 // en lecture, et on vérifie que la ligne visée lui appartient en écriture.
 //
-// `lectureSeule` : contenu éditorial, lisible par toute personne connectée, jamais
-// modifiable depuis l'app.
+// `lectureSeule` : contenu éditorial, sans aucune donnée personnelle. Lisible sans
+// session, parce que c'est déjà publié sur le site : exiger une session n'apporterait
+// aucune protection et rendrait l'app dépendante d'une connexion pour afficher un article
+// de blog ou la question du jour. Jamais modifiable depuis l'app.
 const TABLES = {
   Utilisateurs: { prive: true, champEmail: 'Email' },
   Fidelite: { prive: true, champEmail: 'Email' },
@@ -129,6 +131,41 @@ async function ficheAutoriseeParId(recordId, email, headersAirtable, baseId) {
   return false;
 }
 
+const entetesAirtable = (cle) => ({
+  Authorization: `Bearer ${cle}`,
+  'Content-Type': 'application/json',
+});
+
+function construireUrl(baseId, table, recordId, query, champEmail, email) {
+  const params = new URLSearchParams();
+  for (const [cle, valeur] of Object.entries(query || {})) {
+    if (cle === 'chemin') continue;
+    if (Array.isArray(valeur)) valeur.forEach((v) => params.append(cle, v));
+    else params.append(cle, valeur);
+  }
+  if (champEmail && email) {
+    params.set('filterByFormula', filtreRestreint(params.get('filterByFormula'), champEmail, email));
+  }
+  return `${AIRTABLE_URL}/${baseId}/${encodeURIComponent(table)}${recordId ? `/${recordId}` : ''}${params.toString() ? `?${params}` : ''}`;
+}
+
+async function relayer(req, res, { url, headers, corps }) {
+  try {
+    const reponse = await fetch(url, {
+      method: req.method,
+      headers,
+      body: req.method !== 'GET' && corps ? JSON.stringify(corps) : undefined,
+    });
+    const texte = await reponse.text();
+    res.status(reponse.status);
+    res.setHeader('Content-Type', 'application/json');
+    return res.send(texte || '{}');
+  } catch (e) {
+    console.error('[airtable-proxy]', e?.message);
+    return res.status(502).json({ error: 'Airtable injoignable' });
+  }
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE, OPTIONS');
@@ -139,6 +176,23 @@ export default async function handler(req, res) {
   const BASE_ID = process.env.AIRTABLE_BASE_ID;
   if (!AIRTABLE_API_KEY || !BASE_ID) {
     return res.status(500).json({ error: 'Proxy Airtable non configuré' });
+  }
+
+  // Chemin appelé : /api/airtable/<Table>[/<recordId>]
+  const segments = String(req.query.chemin || '')
+    .split('/')
+    .filter(Boolean)
+    .map(decodeURIComponent);
+  const table = segments[0];
+  const recordId = segments[1] || null;
+
+  // Contenu éditorial en lecture : aucune identité requise, ces tables ne contiennent
+  // aucune donnée personnelle et sont déjà publiées sur le site.
+  if (req.method === 'GET' && TABLES[table]?.lectureSeule) {
+    return relayer(req, res, {
+      url: construireUrl(BASE_ID, table, null, req.query, null, null),
+      headers: entetesAirtable(AIRTABLE_API_KEY),
+    });
   }
 
   let identite = null;
@@ -154,14 +208,6 @@ export default async function handler(req, res) {
   }
   if (!identite) return res.status(401).json({ error: auth.error || 'Authentification requise' });
   const { email } = identite;
-
-  // Chemin appelé : /api/airtable/<Table>[/<recordId>]
-  const segments = String(req.query.chemin || '')
-    .split('/')
-    .filter(Boolean)
-    .map(decodeURIComponent);
-  const table = segments[0];
-  const recordId = segments[1] || null;
 
   const estPieceJointe = segments.length >= 3 && segments[segments.length - 1] === 'uploadAttachment';
   const regle = estPieceJointe ? { prive: true, champEmail: 'Email' } : TABLES[table];
@@ -194,52 +240,23 @@ export default async function handler(req, res) {
     corps = { ...corps, fields: { ...corps.fields, [regle.champEmail]: email } };
   }
 
-  // Reconstruction de la requête : on reprend les paramètres de l'app, sauf le filtre
-  // des tables privées qu'on remplace par sa version restreinte.
-  const params = new URLSearchParams();
-  for (const [cle, valeur] of Object.entries(req.query)) {
-    if (cle === 'chemin') continue;
-    if (Array.isArray(valeur)) valeur.forEach((v) => params.append(cle, v));
-    else params.append(cle, valeur);
-  }
-  if (regle.prive && req.method === 'GET') {
-    params.set('filterByFormula', filtreRestreint(params.get('filterByFormula'), regle.champEmail, email));
-  }
-
-  // Envoi de pièce jointe : /api/airtable/<recordId>/<Champ>/uploadAttachment, sur
-  // l'hôte de contenu d'Airtable. La fiche visée doit appartenir à la personne connectée.
-  const piece = segments.length >= 3 && segments[segments.length - 1] === 'uploadAttachment';
-  if (piece) {
+  // Envoi de pièce jointe : /api/airtable/<recordId>/<Champ>/uploadAttachment, sur l'hôte
+  // de contenu d'Airtable. La fiche visée doit appartenir à la personne connectée.
+  if (estPieceJointe) {
     const fiche = segments[0];
     const champ = segments[1];
     const proprietaire = await ficheAutoriseeParId(fiche, email, headersAirtable, BASE_ID);
     if (!proprietaire) return res.status(403).json({ error: 'Cette fiche ne vous appartient pas' });
-    try {
-      const r = await fetch(`${AIRTABLE_CONTENU_URL}/${BASE_ID}/${fiche}/${encodeURIComponent(champ)}/uploadAttachment`, {
-        method: 'POST', headers: headersAirtable, body: JSON.stringify(req.body || {}),
-      });
-      const t = await r.text();
-      res.status(r.status); res.setHeader('Content-Type', 'application/json');
-      return res.send(t || '{}');
-    } catch {
-      return res.status(502).json({ error: 'Airtable injoignable' });
-    }
-  }
-
-  const url = `${AIRTABLE_URL}/${BASE_ID}/${encodeURIComponent(table)}${recordId ? `/${recordId}` : ''}${params.toString() ? `?${params}` : ''}`;
-
-  try {
-    const reponse = await fetch(url, {
-      method: req.method,
+    return relayer(req, res, {
+      url: `${AIRTABLE_CONTENU_URL}/${BASE_ID}/${fiche}/${encodeURIComponent(champ)}/uploadAttachment`,
       headers: headersAirtable,
-      body: ecriture && corps ? JSON.stringify(corps) : undefined,
+      corps: req.body || {},
     });
-    const texte = await reponse.text();
-    res.status(reponse.status);
-    res.setHeader('Content-Type', 'application/json');
-    return res.send(texte || '{}');
-  } catch (e) {
-    console.error('[airtable-proxy]', e?.message);
-    return res.status(502).json({ error: 'Airtable injoignable' });
   }
+
+  return relayer(req, res, {
+    url: construireUrl(BASE_ID, table, recordId, req.query, regle.prive && req.method === 'GET' ? regle.champEmail : null, email),
+    headers: headersAirtable,
+    corps,
+  });
 }
