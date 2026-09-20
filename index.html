@@ -393,8 +393,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <div class="tagline">beauté naturelle et bien-être</div>
 </div>
 <div class="card" id="resetForm">
-<h2>Nouveau mot de passe</h2>
-<p class="sub">Choisis ton nouveau mot de passe.</p>
+<h2>Ton mot de passe</h2>
+<p class="sub">Choisis le mot de passe qui protégera ton compte RESPEKTUS.</p>
 <div class="input-group">
 <label>Nouveau mot de passe</label>
 <input type="password" id="password" placeholder="6 caractères minimum"/>
@@ -406,7 +406,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <button class="eye-btn" type="button" onclick="toggleEye('confirmPassword',this)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" stroke="#A0A0A0" stroke-width="1.8"/><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="#A0A0A0" stroke-width="1.8"/></svg></button>
 </div>
 <p class="error" id="error"></p>
-<button class="btn" id="resetBtn" onclick="handleReset()">Changer mon mot de passe</button>
+<button class="btn" id="resetBtn" onclick="handleReset()">Enregistrer mon mot de passe</button>
 </div>
 <div class="success" id="successBlock">
 <h3>Mot de passe modifié !</h3>
@@ -480,7 +480,7 @@ async function handleReset(){
   }catch(e){
     console.error(e);
     showError(e.message||'Une erreur est survenue. Réessaie dans quelques instants.');
-    btn.disabled=false;btn.textContent='Changer mon mot de passe';
+    btn.disabled=false;btn.textContent='Enregistrer mon mot de passe';
   }
 }
 </script>
