@@ -80,7 +80,9 @@ export default async function handler(req, res) {
     };
 
     if (req.method === 'POST' && req.query?.fix === '1') {
-      const aCreer = manquants.filter((m) => m.confirme);
+      // Les robots de test du Play Store (cloudtestlabaccounts.com) ne sont pas des
+      // utilisateurs : ils restent dans le rapport mais jamais dans le CRM.
+      const aCreer = manquants.filter((m) => m.confirme && !m.email.endsWith('@cloudtestlabaccounts.com'));
       let crees = 0;
       // Airtable accepte 10 lignes par requête.
       for (let i = 0; i < aCreer.length; i += 10) {
