@@ -1830,7 +1830,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® comme antioxydant pour protéger le Millepertuis (absente de la formule originale de la thèse) — utile si le flacon est conservé au-delà des 48h prévues.',
     precautions: 'Réservé ADULTE (zona principalement après 60 ans). ZONA OPHTALMIQUE (atteinte de l\'oeil, rougeur ou douleur sur le trajet ophtalmique) : urgence médicale absolue, appeler le 15 immédiatement. Menthe Poivrée interdite grossesse, allaitement, épilepsie, hypertension. Niaouli et Ravintsara contre-indiqués grossesse et allaitement. Millepertuis photosensibilisant et interactions médicamenteuses possibles (par précaution chez patients sous anticoagulants, immunosuppresseurs ou contraceptifs oraux). L\'aromathérapie NE GUÉRIT PAS le zona — le traitement médical antiviral (aciclovir/valaciclovir) reste indispensable. Consulter un médecin.',
-    source: 'Pierre A. (2016) — L\'aromathérapie adaptée aux pathologies dermatologiques de comptoir — Thèse Université de Bordeaux, HAL hal-01732967, p.108',
+    source: 'Pierre A. (2016) — L\'aromathérapie adaptée aux pathologies dermatologiques de comptoir — Thèse Université de Lorraine, HAL hal-01732967, p.108',
   },
   {
     id: 'rec_pierre_verrues_forte',
@@ -1857,7 +1857,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Alternative plus douce disponible (synergie verrues douce). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale) : ⚠️ sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule dosée au goutte-à-goutte pour son effet dermocaustique ciblé — à retirer si l\'efficacité semble réduite.',
     precautions: 'TRÈS DERMOCAUSTIQUE — protéger impérativement la peau saine autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. Ne jamais utiliser sur les verrues génitales (consulter un médecin). Contre-indiqué asthmatiques et épileptiques. Tester en pli du coude 24h avant la première application. En cas de brûlure : arrêter immédiatement et appliquer une HV neutre (jamais d\'eau).',
-    source: 'Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.153 (Exemple 1)',
+    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.153 (Exemple 1)',
   },
   {
     id: 'rec_pierre_verrues_douce',
@@ -1881,7 +1881,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale), sans fonction antioxydante réelle ici (pas de corps gras à protéger).',
     precautions: 'Menthe Poivrée interdite enfants de moins de 7 ans, grossesse, allaitement, épilepsie, hypertension. Tea Tree à éviter pendant la grossesse. Tester en pli du coude avant la première application.',
-    source: 'Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.153 (Exemple 2)',
+    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.153 (Exemple 2)',
   },
   {
     id: 'rec_pierre_brulures',
@@ -1908,7 +1908,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). La formule combine propriétés cicatrisantes, antidouleur et désinfectantes. Vitamine E ajoutée par RESPEKTUS® comme antioxydant pour le Millepertuis (absente de la formule originale), utile vu la durée "selon besoin" jusqu\'à cicatrisation complète.',
     precautions: 'Brûlures de 1er degré UNIQUEMENT (peau rouge intacte, sans cloque). Ne jamais appliquer sur brûlure ouverte ou avec cloque éclatée (risque de surinfection). Pour 2e/3e degré : urgences médicales obligatoires. Brûlure étendue ou profonde : APPEL URGENT au 15 (SAMU). Lavande Aspic interdite enfants de moins de 6 ans et grossesse 1er trimestre. Millepertuis photosensibilisant et interactions médicamenteuses possibles par précaution (anticoagulants, immunosuppresseurs) : application le soir, couvrir la zone avant exposition solaire (délai 8 à 12h).',
-    source: 'Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.158 (Exemple 1)',
+    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.158 (Exemple 1)',
   },
   {
     id: 'rec_pierre_onychomycose',
@@ -1934,7 +1934,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale), sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule concentrée en HE dermocaustiques dosée précisément par la thèse — à retirer si l\'efficacité semble réduite.',
     precautions: 'Cannelle de Chine TRÈS DERMOCAUSTIQUE : appliquer strictement sur l\'ongle, jamais sur la peau autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. En cas de rougeur ou brûlure de la peau autour : arrêter et diluer dans HV Calophylle 50/50. Onychomycose persistante après 3 semaines : consultation médicale (traitement antifongique oral parfois nécessaire).',
-    source: 'Pierre A. (2016) — Thèse Université de Bordeaux, HAL hal-01732967, p.149 (Exemple 2)',
+    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.149 (Exemple 2)',
   },
   {
     id: 'rec_38_corps_dynamisant',

@@ -12,13 +12,16 @@ function escapeHtml(s) {
 }
 
 // Détecte PMID / PMC / DOI dans un texte de source et les transforme en liens cliquables.
-const SOURCE_LINK_RE = /(PMID[:\s]*\d{6,9}|PMC\d{6,9}|DOI[:\s]*10\.\d{4,9}\/\S+?(?=[\s,;)]|$))/gi;
+const SOURCE_LINK_RE = /(PMID[:\s]*\d{6,9}|PMC\d{6,9}|hal-\d{8,}|DOI[:\s]*10\.\d{4,9}\/\S+?(?=[\s,;)]|$))/gi;
 function sourceLinkUrl(match) {
   const m = match.trim();
   const pmid = m.match(/PMID[:\s]*(\d{6,9})/i);
   if (pmid) return `https://pubmed.ncbi.nlm.nih.gov/${pmid[1]}/`;
   const pmc = m.match(/PMC(\d{6,9})/i);
   if (pmc) return `https://www.ncbi.nlm.nih.gov/pmc/articles/PMC${pmc[1]}/`;
+  const hal = m.match(/hal-\d{8,}/i);
+  // Certains dépôts HAL ne sont visibles que sur le portail de leur université.
+  if (hal) return ({ 'hal-01732967': 'https://hal.univ-lorraine.fr/hal-01732967' })[hal[0].toLowerCase()] || `https://hal.science/${hal[0].toLowerCase()}`;
   const doi = m.match(/DOI[:\s]*(10\.\d{4,9}\/\S+)/i);
   if (doi) return `https://doi.org/${doi[1].replace(/[.,;)]+$/, '')}`;
   return null;

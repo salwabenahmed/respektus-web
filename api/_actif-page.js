@@ -17,7 +17,8 @@ const RECETTES_COUNT = RECETTES_BIBLIOTHEQUE.length;
 const SOURCE_PATTERNS = [
   { re: /PMC\d{6,8}/i, url: (m) => `https://www.ncbi.nlm.nih.gov/pmc/articles/${m[0].toUpperCase()}/`, label: 'PubMed Central' },
   { re: /PMID\s*:?\s*(\d{6,8})/i, url: (m) => `https://pubmed.ncbi.nlm.nih.gov/${m[1]}/`, label: 'PubMed' },
-  { re: /hal-\d{8,}/i, url: (m) => `https://hal.science/${m[0].toLowerCase()}`, label: 'HAL' },
+  // Certains dépôts HAL ne sont visibles que sur le portail de leur université.
+  { re: /hal-\d{8,}/i, url: (m) => ({ 'hal-01732967': 'https://hal.univ-lorraine.fr/hal-01732967' })[m[0].toLowerCase()] || `https://hal.science/${m[0].toLowerCase()}`, label: 'HAL' },
   { re: /\b10\.\d{4,9}\/[^\s,;)\]]+/, url: (m) => `https://doi.org/${m[0].replace(/[.,;)]+$/, '')}`, label: 'DOI' },
 ];
 
