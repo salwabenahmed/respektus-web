@@ -349,7 +349,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'La Menthe Poivrée augmente la vigilance et la performance cognitive (études). Le Romarin à Cinéole soutient également la cognition et l\'humeur.',
     precautions: 'Menthe Poivrée et Romarin INTERDITS moins de 7 ans, grossesse, épilepsie, hypertension. Zests photosensibilisants : pas avant exposition solaire si application cutanée.',
-    source: 'HE Menthe Poivrée : améliore la mémoire et augmente la vigilance subjective (144 volontaires) — Moss M, Hewitt S, Moss L, Wesnes K 2008, International Journal of Neuroscience 118(1):59-77. HE Romarin à Cinéole : effets confirmés sur la cognition et l\'humeur — Moss M et al. 2003, International Journal of Neuroscience 113(1):15-38, PMID 12690999',
+    source: 'HE Menthe Poivrée : améliore la mémoire et augmente la vigilance subjective (144 volontaires) — Moss M, Hewitt S, Moss L, Wesnes K 2008, International Journal of Neuroscience 118(1):59-77, PMID 18041606. HE Romarin à Cinéole : effets confirmés sur la cognition et l\'humeur — Moss M et al. 2003, International Journal of Neuroscience 113(1):15-38, PMID 12690999',
   },
   {
     id: 'rec_bien_digestion_emotion',
