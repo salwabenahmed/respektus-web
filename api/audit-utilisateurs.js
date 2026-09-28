@@ -56,6 +56,27 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: 'non autorisé' });
   }
 
+  // Consultation d'une fiche précise : `?email=…` renvoie ce que l'app lit pour cette
+  // personne (statut Premium accordé à la main, profil rempli), sans exposer la table.
+  const emailCherche = String(req.query?.email || '').trim().toLowerCase();
+  if (emailCherche) {
+    try {
+      const formule = encodeURIComponent(`LOWER({Email})="${emailCherche}"`);
+      const r = await fetch(`${AIRTABLE_URL}/${process.env.AIRTABLE_BASE_ID}/Utilisateurs?filterByFormula=${formule}&maxRecords=1`, {
+        headers: { Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}` },
+      });
+      const d = await r.json();
+      const f = d.records?.[0]?.fields;
+      if (!f) return res.status(404).json({ error: 'aucune fiche Airtable pour cet email' });
+      return res.status(200).json({
+        email: f.Email, prenom: f.Prenom || '', username: f.username || '',
+        isPremium: !!f.isPremium, isFounder: !!f.isFounder, isCreator: !!f.isCreator,
+      });
+    } catch (e) {
+      return res.status(500).json({ error: String(e.message || e) });
+    }
+  }
+
   try {
     const [emailsAirtable, comptes] = await Promise.all([
       listeEmailsAirtable(process.env.AIRTABLE_API_KEY, process.env.AIRTABLE_BASE_ID),
