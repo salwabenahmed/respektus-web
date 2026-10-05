@@ -29,7 +29,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Massage anti-stress : 5 gouttes Lavande Vraie + 3 gouttes Petit-Grain dans 30 ml HV de Noyau d\'Abricot, masser le plexus solaire et les poignets.',
     precautions: 'Essai contrôlé randomisé (183 participants) : effet significatif de l\'inhalation de Lavande Vraie et Camomille sur l\'anxiété. Contre-indiqué 1er trimestre grossesse. Consulter un professionnel si anxiété chronique.',
-    source: 'HE Lavande Vraie (en synergie avec Camomille, inhalation) : essai contrôlé randomisé montrant une réduction de l\'anxiété, du stress et de la dépression (183 participants, 30 nuits) — Ebrahimi H et al. 2022, Explore (NY) 18(3):272-278, PMID 33454232',
+    source: 'HE Lavande Vraie (en synergie avec Camomille, inhalation) : essai contrôlé randomisé montrant une réduction de l\'anxiété, du stress et de la dépression (183 participants, 30 nuits), Ebrahimi H et al. 2022, Explore (NY) 18(3):272-278, PMID 33454232',
   },
   {
     id: 'rec_bien_depression_legere',
@@ -53,7 +53,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Étude iranienne : inhalation 30 nuits consécutives → baisse significative de la dépression, anxiété, stress, effets persistants 1 mois après. Combiner avec activité physique douce et lumière naturelle.',
     precautions: 'IMPORTANT : ne remplace JAMAIS un traitement médical. Si humeur basse persistante, consulter un médecin/psychologue/psychiatre. Bergamote photosensibilisante : pas d\'application avant exposition solaire.',
-    source: 'HE Lavande Vraie (en synergie avec Camomille, inhalation 30 nuits) : essai contrôlé randomisé, 183 participants, baisse significative de la dépression, l\'anxiété et le stress — Ebrahimi H et al. 2022, Explore (NY) 18(3):272-278, PMID 33454232. HE Bergamote : réduction significative du stress et de la dépression (échelle DASS-21) — Wakui N et al. 2023, Complementary Therapies in Medicine 77:102976, PMID 37625623',
+    source: 'HE Lavande Vraie (en synergie avec Camomille, inhalation 30 nuits) : essai contrôlé randomisé, 183 participants, baisse significative de la dépression, l\'anxiété et le stress, Ebrahimi H et al. 2022, Explore (NY) 18(3):272-278, PMID 33454232. HE Bergamote : réduction significative du stress et de la dépression (échelle DASS-21), Wakui N et al. 2023, Complementary Therapies in Medicine 77:102976, PMID 37625623',
   },
   {
     id: 'rec_bien_arret_tabac',
@@ -117,7 +117,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Épinette Noire', quantite: '1% (6 gouttes)' },
       { nom: 'HE Pin Sylvestre', quantite: '1% (6 gouttes)' },
       { nom: 'HE Bergamote', quantite: '1% (6 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,17% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,17% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Préparer le mélange dans un flacon teinté',
@@ -127,7 +127,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'L\'Épinette Noire et le Pin Sylvestre ont une action "cortisone-like" qui stimule naturellement les surrénales fatiguées. À combiner avec sommeil, alimentation équilibrée et accompagnement médical. La Vitamine E est ajoutée comme antioxydant pour conserver le mélange sur la durée de la cure.',
     precautions: 'CONTRE-INDIQUÉS grossesse, allaitement, hypertension, enfants moins de 6 ans. Bergamote photosensibilisante (matin = OK si protection UV, midi = pas avant exposition). Burn-out = consulter médecin obligatoirement.',
-    source: 'Varney E et Buckle J (2013), Journal of Alternative and Complementary Medicine — PubMed PMID 23140115. Études sur la Bergamote et la régulation du stress (PMC5434918, 2017)',
+    source: 'Varney E et Buckle J (2013), Journal of Alternative and Complementary Medicine, PubMed PMID 23140115. Études sur la Bergamote et la régulation du stress (PMC5434918, 2017)',
   },
   {
     id: 'rec_bien_concentration',
@@ -189,7 +189,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Lavande Vraie', quantite: '1,9% (2 gouttes)' },
       { nom: 'HE Néroli (Fleur d\'Oranger)', quantite: '1% (1 goutte)' },
       { nom: 'HV Noyau d\'Abricot', quantite: '5 ml (95,2%)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~1% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~1% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Mélanger les ingrédients dans un petit flacon roll-on',
@@ -287,7 +287,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Ylang-Ylang Totum', quantite: '1% (6 gouttes)' },
       { nom: 'HE Néroli', quantite: '1% (6 gouttes)' },
       { nom: 'HE Gingembre', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger les ingrédients',
@@ -297,7 +297,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'L\'Ylang-Ylang est l\'HE de la séduction par excellence (utilisée traditionnellement dans les rituels de mariage en Indonésie). Le Gingembre apporte tonus et chaleur. Vitamine E ajoutée comme antioxydant pour conserver le mélange.',
     precautions: 'Gingembre : peut irriter peaux sensibles, faire test cutané. Ylang-Ylang : usage modéré (puissant). Éviter 1er trimestre grossesse.',
-    source: 'Choi SY et al. (2014), Evidence-Based Complementary and Alternative Medicine — PMC4082953. Étude RCT inhalation Néroli chez femmes ménopausées : augmentation du désir sexuel et amélioration de la qualité de vie',
+    source: 'Choi SY et al. (2014), Evidence-Based Complementary and Alternative Medicine, PMC4082953. Étude RCT inhalation Néroli chez femmes ménopausées : augmentation du désir sexuel et amélioration de la qualité de vie',
   },
   {
     id: 'rec_bien_panique',
@@ -313,7 +313,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Camomille Romaine', quantite: '2 gouttes' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '2 gouttes' },
       { nom: 'HV de Noyau d\'Abricot', quantite: '5 ml (si version roll-on)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~1% (1 goutte — 0,05 ml, si version roll-on)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~1% (1 goutte, 0,05 ml, si version roll-on)' },
       { nom: 'Roll-on vide ou stick inhalateur', quantite: '1' },
     ],
     etapes: [
@@ -349,7 +349,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'La Menthe Poivrée augmente la vigilance et la performance cognitive (études). Le Romarin à Cinéole soutient également la cognition et l\'humeur.',
     precautions: 'Menthe Poivrée et Romarin INTERDITS moins de 7 ans, grossesse, épilepsie, hypertension. Zests photosensibilisants : pas avant exposition solaire si application cutanée.',
-    source: 'HE Menthe Poivrée : améliore la mémoire et augmente la vigilance subjective (144 volontaires) — Moss M, Hewitt S, Moss L, Wesnes K 2008, International Journal of Neuroscience 118(1):59-77, PMID 18041606. HE Romarin à Cinéole : effets confirmés sur la cognition et l\'humeur — Moss M et al. 2003, International Journal of Neuroscience 113(1):15-38, PMID 12690999',
+    source: 'HE Menthe Poivrée : améliore la mémoire et augmente la vigilance subjective (144 volontaires), Moss M, Hewitt S, Moss L, Wesnes K 2008, International Journal of Neuroscience 118(1):59-77, PMID 18041606. HE Romarin à Cinéole : effets confirmés sur la cognition et l\'humeur, Moss M et al. 2003, International Journal of Neuroscience 113(1):15-38, PMID 12690999',
   },
   {
     id: 'rec_bien_digestion_emotion',
@@ -365,7 +365,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Basilic Tropical', quantite: '1,6% (5 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1,6% (5 gouttes)' },
       { nom: 'HE Menthe Poivrée', quantite: '1% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Préparer le mélange dans un flacon roll-on',
@@ -391,7 +391,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Géranium Rosat Bourbon', quantite: '1% (6 gouttes)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '1% (6 gouttes)' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '1% (6 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Préparer le mélange dans un flacon teinté',
@@ -425,7 +425,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'L\'inhalation d\'HE peut soutenir le rituel de pause et réduire l\'impulsivité du moment. Combiner avec hydratation, sport, et identification émotionnelle de l\'envie compulsive.',
     precautions: 'Cannelle INTERDITE en application cutanée pure (très dermocaustique). Menthe Poivrée : interdite enfants moins de 7 ans, grossesse, épilepsie. Inhalation uniquement.',
-    source: 'Note : les études sur Cannelle et glycémie concernent la poudre ou l\'extrait d\'écorce — pas l\'HE en inhalation. Usage ici : soutien olfactif du rituel, non prétention glycémique.',
+    source: 'Note : les études sur Cannelle et glycémie concernent la poudre ou l\'extrait d\'écorce, pas l\'HE en inhalation. Usage ici : soutien olfactif du rituel, non prétention glycémique.',
   },
   {
     id: 'rec_olfacto_confiance',
@@ -490,7 +490,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Ciste Ladanifère', quantite: '1% (6 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '1% (6 gouttes)' },
       { nom: 'HE Encens Oliban', quantite: '1% (6 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,4% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,4% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger les deux huiles végétales dans un flacon ambré',
@@ -509,13 +509,13 @@ export const RECETTES_BIBLIOTHEQUE = [
     sousCategorie: 'Réparation',
     indications: 'Soin éclaircissant complémentaire visant à uniformiser le teint et atténuer l\'apparence des taches pigmentaires. Action progressive sur cure longue.',
     duree: '6 semaines minimum',
-    frequence: 'Tous les soirs uniquement (jamais en journée — photosensibilisant)',
+    frequence: 'Tous les soirs uniquement (jamais en journée, photosensibilisant)',
     ingredients: [
       { nom: 'Huile végétale de Rose Musquée', quantite: '29 ml (97%)' },
       { nom: 'HE Céleri', quantite: '1% (6 gouttes)' },
       { nom: 'HE Carotte (semences)', quantite: '1% (6 gouttes)' },
       { nom: 'HE Citron Jaune Zest', quantite: '1% (6 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,4% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,4% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 1 à 2 gouttes uniquement sur les taches, au coton-tige',
@@ -524,7 +524,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Vitamine E ajoutée comme antioxydant : la Rose Musquée rancit vite, dosage en haut de la fourchette recommandée pour une cure de 6 semaines.',
     precautions: 'Citron Zest et Céleri très photosensibilisants : risque de brûlure et hyperpigmentation paradoxale si exposition solaire. Cure interrompue en été. Contre-indiqué grossesse.',
-    source: 'HV Rose Musquée : réduction des taches UV observée après application topique de 5 semaines (imagerie VISIA) — Oargă et al. 2025, Cosmetics 12(3):125, DOI 10.3390/cosmetics12030125. HE Citron Jaune Zest : inhibition de 42,9% de la sécrétion de tyrosinase sur cellules de mélanome B16 — Yang et al. 2023, International Journal of Molecular Sciences 24(4):4207, PMID 36835634. HE Carotte (graines) : inhibition de 76,5% de l\'activité tyrosinase in vitro — Kothapalli et al. 2024, Current Enzyme Inhibition 20(2).',
+    source: 'HV Rose Musquée : réduction des taches UV observée après application topique de 5 semaines (imagerie VISIA), Oargă et al. 2025, Cosmetics 12(3):125, DOI 10.3390/cosmetics12030125. HE Citron Jaune Zest : inhibition de 42,9% de la sécrétion de tyrosinase sur cellules de mélanome B16, Yang et al. 2023, International Journal of Molecular Sciences 24(4):4207, PMID 36835634. HE Carotte (graines) : inhibition de 76,5% de l\'activité tyrosinase in vitro, Kothapalli et al. 2024, Current Enzyme Inhibition 20(2).',
   },
   {
     id: 'rec_visage_contour_yeux',
@@ -539,7 +539,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Jojoba', quantite: '5 ml (49,5%)' },
       { nom: 'HE Bois de Hô', quantite: '0,5% (1 goutte)' },
       { nom: 'HE Encens Oliban', quantite: '0,5% (1 goutte)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Préparer dans un petit flacon roll-on de 10 ml',
@@ -588,7 +588,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Tea Tree', quantite: '1% (6 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1% (6 gouttes)' },
       { nom: 'Soin local : HE Tea Tree pure', quantite: 'Sur bouton isolé uniquement' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,17% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,17% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Appliquer 3 à 4 gouttes du mélange le soir sur peau propre',
@@ -613,7 +613,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Jojoba', quantite: '10 ml (32,7%)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Romarin à Cinéole', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 2 à 3 gouttes le soir sur la zone T seulement',
@@ -636,8 +636,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale d\'Argan', quantite: '10 ml (32,6%)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Bois de Hô', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Option premium — HE Rose de Damas', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes — 0,15 ml)' },
+      { nom: 'Option premium, HE Rose de Damas', quantite: '0,3% (2 gouttes)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Mélanger dans un flacon ambré pipette',
@@ -663,7 +663,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Carotte', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 2 à 3 gouttes le matin sur peau propre',
@@ -678,7 +678,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     titre: 'Soin de jour matifiant éclat',
     categorie: 'Visage',
     sousCategorie: 'Hydratation',
-    indications: 'Matifie tout en apportant éclat — spécial peaux mixtes',
+    indications: 'Matifie tout en apportant éclat, spécial peaux mixtes',
     duree: 'Quotidien',
     frequence: 'Tous les matins',
     ingredients: [
@@ -688,7 +688,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Carotte', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 2 à 3 gouttes le matin sur peau propre',
@@ -713,7 +713,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Carotte', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Romarin à Cinéole', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Appliquer 3 à 4 gouttes le soir sur peau propre',
@@ -737,7 +737,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Nigelle', quantite: '6 ml (19,8%)' },
       { nom: 'HE Camomille Romaine (Noble)', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Test cutané obligatoire 48h avant utilisation visage',
@@ -757,12 +757,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     duree: 'Quotidien en période de sécheresse',
     frequence: 'Matin et soir',
     ingredients: [
-      { nom: 'Standard — HV Macadamia', quantite: '15 ml (49,5%)' },
-      { nom: 'Standard — HV Jojoba', quantite: '15 ml (49,5%)' },
-      { nom: 'Standard — HE Bois de Hô', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Standard — HE Lavande Vraie', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Standard — Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
-      { nom: 'Très sèche — ajouter Beurre de Karité fondu', quantite: '15 g' },
+      { nom: 'Standard, HV Macadamia', quantite: '15 ml (49,5%)' },
+      { nom: 'Standard, HV Jojoba', quantite: '15 ml (49,5%)' },
+      { nom: 'Standard, HE Bois de Hô', quantite: '0,5% (3 gouttes)' },
+      { nom: 'Standard, HE Lavande Vraie', quantite: '0,5% (3 gouttes)' },
+      { nom: 'Standard, Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
+      { nom: 'Très sèche, ajouter Beurre de Karité fondu', quantite: '15 g' },
     ],
     etapes: [
       'Choisir la variante standard ou peau très sèche',
@@ -771,7 +771,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Insister sur les zones les plus sèches',
     ],
     precautions: 'Bonne tolérance générale. Test cutané préalable. Vitamine E ajoutée comme antioxydant (version standard).',
-    source: 'HV Macadamia : amélioration de l\'hydratation cutanée de 51,5% — Somwongin S, Chaiyana W 2024, Nanomaterials, PMC11054140. Beurre de Karité : revue clinique sur les propriétés hydratantes et protectrices — Poljšak N, Kočevar Glavač N 2022, Frontiers in Pharmacology, PMC9083541',
+    source: 'HV Macadamia : amélioration de l\'hydratation cutanée de 51,5%, Somwongin S, Chaiyana W 2024, Nanomaterials, PMC11054140. Beurre de Karité : revue clinique sur les propriétés hydratantes et protectrices, Poljšak N, Kočevar Glavač N 2022, Frontiers in Pharmacology, PMC9083541',
   },
   {
     id: 'rec_23_peau_grasse_visage',
@@ -786,7 +786,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Jojoba', quantite: '15 ml (49,5%)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Romarin à Cinéole', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 2 à 3 gouttes le soir sur peau propre',
@@ -819,7 +819,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Ajouter le conservateur, secouer',
       'Vaporiser sur peau propre et tapoter',
     ],
-    bonus: 'Recette RESPEKTUS® — conservation 1 mois au frigo.',
+    bonus: 'Recette RESPEKTUS®, conservation 1 mois au frigo.',
     precautions: 'Tea Tree et Géranium contre-indiqués grossesse, allaitement. Bien agiter avant chaque usage.',
     source: 'Hydrolat d\'Hamamélis : référentiel Pharmacopée européenne (astringent). Tea Tree antibactérien : Carson 2006 (PMID 16418522)',
   },
@@ -868,9 +868,9 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Vaporiser sur peau propre, tapoter doucement',
       'Conserver au réfrigérateur',
     ],
-    bonus: 'Recette RESPEKTUS® minimaliste — formule la plus douce de la gamme.',
+    bonus: 'Recette RESPEKTUS® minimaliste, formule la plus douce de la gamme.',
     precautions: 'Allergie aux astéracées (camomille) : test cutané obligatoire. Conservation 1 mois au frigo avec Cosgard.',
-    source: 'Hydrolat de Bleuet : effets anti-inflammatoires confirmés (inhibition d\'œdèmes) — Garbacki N et al. 1999, Journal of Ethnopharmacology 68:235-241, PMID 10624883. HE Camomille Romaine : effet anti-inflammatoire et analgésique confirmé — Aremu OO et al. 2019, Tropical Journal of Pharmaceutical Research 17(10):1939-1945, DOI 10.4314/tjpr.v17i10.7',
+    source: 'Hydrolat de Bleuet : effets anti-inflammatoires confirmés (inhibition d\'œdèmes), Garbacki N et al. 1999, Journal of Ethnopharmacology 68:235-241, PMID 10624883. HE Camomille Romaine : effet anti-inflammatoire et analgésique confirmé, Aremu OO et al. 2019, Tropical Journal of Pharmaceutical Research 17(10):1939-1945, DOI 10.4314/tjpr.v17i10.7',
   },
   {
     id: 'rec_27_lotion_tonique_acneique',
@@ -920,7 +920,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette RESPEKTUS® : sensation glaçon immédiate sortie du frigo.',
     precautions: 'Lavande Aspic contre-indiquée grossesse 1er trimestre, allaitement, enfants moins de 7 ans, épilepsie. Conservation 1 mois au frigo avec Cosgard. En cas de coup de soleil sévère ou étendu : consultation médicale urgente.',
-    source: 'Gel d\'Aloe Vera : essai clinique randomisé montrant une guérison plus rapide sur brûlures — Mahboub M et al. 2021, Journal of Caring Sciences, PMID 36247037. HV Calendula : effets cicatrisants confirmés — Parente LML et al. 2012, Evidence-based Complementary and Alternative Medicine, PMID 22315631. HE Camomille Romaine : effet anti-inflammatoire confirmé — Aremu OO et al. 2019, DOI 10.4314/tjpr.v17i10.7',
+    source: 'Gel d\'Aloe Vera : essai clinique randomisé montrant une guérison plus rapide sur brûlures, Mahboub M et al. 2021, Journal of Caring Sciences, PMID 36247037. HV Calendula : effets cicatrisants confirmés, Parente LML et al. 2012, Evidence-based Complementary and Alternative Medicine, PMID 22315631. HE Camomille Romaine : effet anti-inflammatoire confirmé, Aremu OO et al. 2019, DOI 10.4314/tjpr.v17i10.7',
   },
   {
     id: 'rec_29_gel_anti_imperfections',
@@ -970,7 +970,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette RESPEKTUS® à conserver au frigo pour un effet décongestionnant amplifié.',
     precautions: 'Ne JAMAIS appliquer dans l\'œil. Dosage HE volontairement très faible (zone fine). Conservation 1 mois au frigo avec Cosgard.',
-    source: 'Hydrolat de Bleuet : effets anti-inflammatoires confirmés, cohérents avec son usage traditionnel décongestionnant du contour de l\'œil — Garbacki N et al. 1999, Journal of Ethnopharmacology 68:235-241, PMID 10624883',
+    source: 'Hydrolat de Bleuet : effets anti-inflammatoires confirmés, cohérents avec son usage traditionnel décongestionnant du contour de l\'œil, Garbacki N et al. 1999, Journal of Ethnopharmacology 68:235-241, PMID 10624883',
   },
   {
     id: 'rec_31_anti_cernes',
@@ -991,7 +991,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HV Rose Musquée', quantite: '10,5 ml (69,6%)' },
       { nom: 'HE Hélichryse Italienne', quantite: '0,3% (1 goutte)' },
       { nom: 'HE Lavande Vraie', quantite: '0,3% (1 goutte)' },
-      { nom: 'HV Rose Musquée — Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte — 0,05 ml)' },
+      { nom: 'HV Rose Musquée, Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'FABRICATION BIPHASE : les deux phases ne se mélangent pas, elles restent séparées dans le flacon roll-on (c\'est normal et voulu). Bien agiter avant chaque utilisation',
@@ -1000,7 +1000,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Verser les deux phases dans un flacon roll-on biphase de 30 ml. Étiqueter et conserver au frigo (durée 3 mois)',
       'UTILISATION : agiter vigoureusement avant chaque emploi. Appliquer matin et soir sur l\'os orbitaire en tapotant doucement. Ne jamais frotter, ne pas approcher de l\'œil',
     ],
-    bonus: 'Recette RESPEKTUS® biphase — conservation 3 mois au frigo. La caféine active la microcirculation. Vitamine E ajoutée dans la phase huileuse : l\'HV Rose Musquée rancit vite.',
+    bonus: 'Recette RESPEKTUS® biphase, conservation 3 mois au frigo. La caféine active la microcirculation. Vitamine E ajoutée dans la phase huileuse : l\'HV Rose Musquée rancit vite.',
     precautions: 'Hélichryse contre-indiquée grossesse, allaitement, anticoagulants. Ne JAMAIS appliquer dans l\'œil.',
     source: 'Caféine périorbitale topique : PMC11175953 - effet décongestionnant et anti-cernes documenté. Hélichryse : Antunes Viegas 2014 (PMID 24239849). Rose Musquée : Valerón-Almazán P et al. 2015, DOI 10.4236/jcdsa.2015.52019',
   },
@@ -1019,7 +1019,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Ciste Ladanifère', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Encens Oliban', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Mélanger dans un flacon ambré',
@@ -1043,7 +1043,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Macérât huileux de Vanille', quantite: '4 g (20,2%)' },
       { nom: 'Cire d\'abeille blanche', quantite: '2 g (9,1%)' },
       { nom: 'Huile végétale de Coco', quantite: '2 g (10,1%)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Faire fondre cire et beurre au bain-marie tiède',
@@ -1051,7 +1051,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Verser dans des pots ou sticks à lèvres',
       'Laisser durcir à température ambiante',
     ],
-    bonus: 'Recette RESPEKTUS® minimaliste — 4 ingrédients, formule sans HE. Vitamine E ajoutée comme antioxydant.',
+    bonus: 'Recette RESPEKTUS® minimaliste, 4 ingrédients, formule sans HE. Vitamine E ajoutée comme antioxydant.',
     precautions: 'Conservation 6 mois à température ambiante. Test cutané préalable.',
     source: 'Beurre de Karité, cire d\'abeille et HV Coco : référentiels Pharmacopée européenne pour nutrition et film occlusif des lèvres',
   },
@@ -1068,7 +1068,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Hélichryse Italienne', quantite: '1,6% (10 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,8% (5 gouttes)' },
       { nom: 'HE Cyprès Toujours Vert (ou Cèdre d\'Atlas si grossesse)', quantite: '0,8% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Déposer les huiles essentielles dans un flacon compte-gouttes opaque de 30 ml, puis compléter avec l\'huile végétale de Jojoba',
@@ -1094,7 +1094,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Tea Tree', quantite: '1% (6 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 3 à 4 gouttes le soir sur peau propre',
@@ -1118,7 +1118,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Macérât huileux de Carotte', quantite: '9 ml (30%)' },
       { nom: 'HE Lavande Aspic', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Camomille Romaine (Noble)', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer le soir après nettoyage doux',
@@ -1128,7 +1128,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette RESPEKTUS® : sans Millepertuis pour éviter la photosensibilisation. Vitamine E ajoutée comme antioxydant.',
     precautions: 'Lavande Aspic et Camomille contre-indiquées grossesse. Pas d\'exposition solaire après application.',
-    source: 'HV Calendula : revue systématique confirmant l\'effet cicatrisant sur les plaies — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé — Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632',
+    source: 'HV Calendula : revue systématique confirmant l\'effet cicatrisant sur les plaies, Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé, Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632',
   },
   {
     id: 'rec_37_baume_levres_gercees',
@@ -1144,7 +1144,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Cire d\'abeille blanche', quantite: '2 g (10%)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,2% (1 goutte)' },
       { nom: 'HE Lavande Vraie', quantite: '0,2% (1 goutte)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Faire fondre cire et beurre au bain-marie',
@@ -1153,7 +1153,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Appliquer plusieurs fois par jour',
     ],
     precautions: 'Géranium déconseillé pendant toute la grossesse sauf avis d\'un professionnel qualifié. Conservation 6 mois. Vitamine E ajoutée comme antioxydant.',
-    source: 'HV Calendula : effet cicatrisant confirmé — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. Cire d\'abeille : revue confirmant la protection de la barrière cutanée — Nong K et al. 2023, Journal of Cosmetic Dermatology 22:2166-2173, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée in vivo — Ebrahimzadeh Attari V et al., PMID 27853689',
+    source: 'HV Calendula : effet cicatrisant confirmé, Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. Cire d\'abeille : revue confirmant la protection de la barrière cutanée, Nong K et al. 2023, Journal of Cosmetic Dermatology 22:2166-2173, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée in vivo, Ebrahimzadeh Attari V et al., PMID 27853689',
   },
 
   // ════════ CHEVEUX (21) ════════
@@ -1170,7 +1170,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Jojoba', quantite: '12 ml (39%)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '2% (12 gouttes)' },
       { nom: 'HE Bois de Hô', quantite: '1% (6 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,17% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,17% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Appliquer en masque sur cheveux secs, des longueurs aux pointes',
@@ -1180,7 +1180,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Variante "blond" : ajouter 5 gouttes Camomille Noble pour raviver les reflets. Variante "brun" : ajouter 5 gouttes Ylang-Ylang supplémentaires pour la brillance. Vitamine E ajoutée comme antioxydant pour ce mélange réutilisé plusieurs fois.',
     precautions: 'Éviter dans les 48h suivant une coloration (laisser le cuir chevelu se rééquilibrer). Bois de Hô préféré au Bois de Rose (espèce protégée).',
-    source: 'HV Argan : le prétraitement à l\'huile d\'argan réduit les dommages oxydatifs sur la fibre capillaire, pertinent pour les cheveux colorés exposés au stress oxydatif — Sharifi et al. 2022, Journal of Cosmetic Dermatology, DOI 10.1111/jocd.14885. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)',
+    source: 'HV Argan : le prétraitement à l\'huile d\'argan réduit les dommages oxydatifs sur la fibre capillaire, pertinent pour les cheveux colorés exposés au stress oxydatif, Sharifi et al. 2022, Journal of Cosmetic Dermatology, DOI 10.1111/jocd.14885. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)',
   },
   {
     id: 'rec_cheveux_pousse',
@@ -1196,7 +1196,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Ylang-Ylang Totum', quantite: '2% (20 gouttes)' },
       { nom: 'HE Romarin à Cinéole', quantite: '2% (20 gouttes)' },
       { nom: 'HE Bay Saint-Thomas', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Mélanger les huiles dans un flacon ambré',
@@ -1222,7 +1222,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Ylang-Ylang Totum', quantite: '2% (20 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '2% (20 gouttes)' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Appliquer en massage doux sur cuir chevelu propre et sec',
@@ -1238,7 +1238,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     titre: 'Alopécie areata / Pelade (protocole Hay)',
     categorie: 'Cheveux',
     sousCategorie: 'Cuir chevelu',
-    indications: 'Stimule la repousse sur les zones de pelade (alopécie areata) — protocole validé par étude clinique',
+    indications: 'Stimule la repousse sur les zones de pelade (alopécie areata), protocole validé par étude clinique',
     duree: '7 mois minimum (durée de l\'étude)',
     frequence: 'Tous les soirs',
     ingredients: [
@@ -1248,7 +1248,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Lavande Vraie', quantite: '~0,6% (3 gouttes)' },
       { nom: 'HE Romarin à Cinéole', quantite: '~0,6% (3 gouttes)' },
       { nom: 'HE Cèdre d\'Atlas', quantite: '~0,4% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (2 gouttes — 0,12 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (2 gouttes, 0,12 ml)' },
     ],
     etapes: [
       'Préparer le mélange dans un flacon ambré',
@@ -1257,7 +1257,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Couvrir d\'une serviette chaude pendant quelques minutes pour favoriser la pénétration',
       'Laisser poser toute la nuit, laver le matin',
     ],
-    bonus: 'Étude clinique Hay et al. (Archives of Dermatology, 1998) : 44% d\'amélioration significative dans le groupe traité contre 15% dans le groupe placebo, sur 7 mois. C\'est l\'une des rares études randomisées en aromathérapie capillaire publiée dans une revue à comité de lecture. La Vitamine E (absente de l\'étude d\'origine) est ajoutée ici comme antioxydant pour éviter le rancissement de l\'huile de pépins de raisin sur les 7 mois d\'utilisation — elle ne modifie pas l\'action de la synergie.',
+    bonus: 'Étude clinique Hay et al. (Archives of Dermatology, 1998) : 44% d\'amélioration significative dans le groupe traité contre 15% dans le groupe placebo, sur 7 mois. C\'est l\'une des rares études randomisées en aromathérapie capillaire publiée dans une revue à comité de lecture. La Vitamine E (absente de l\'étude d\'origine) est ajoutée ici comme antioxydant pour éviter le rancissement de l\'huile de pépins de raisin sur les 7 mois d\'utilisation, elle ne modifie pas l\'action de la synergie.',
     precautions: 'Thym à Thymol DERMOCAUSTIQUE : respecter strictement le dosage, ne jamais utiliser pur. Toutes ces HE contre-indiquées grossesse, allaitement, enfants moins de 7 ans. Romarin contre-indiqué hypertension, épilepsie. Cèdre d\'Atlas contre-indiqué cancers hormono-dépendants. Vitamine E contre-indiquée allergie au gluten si issue du germe de blé (préférer une origine tournesol). Diagnostic dermatologique préalable indispensable pour différencier alopécie areata d\'autres formes de chute. Test cutané obligatoire 48h avant.',
     source: 'Hay IC, Jamieson M, Ormerod AD - Archives of Dermatology, 1998, Vol 134:1349-1352, PMID 9828867',
   },
@@ -1272,7 +1272,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ingredients: [
       { nom: 'Huile végétale de Noisette', quantite: '49 ml (98%)' },
       { nom: 'HE Citron Jaune Zest', quantite: '2% (20 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger les ingrédients dans un flacon ambré',
@@ -1281,7 +1281,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Laisser poser toute la nuit, laver le matin avec un shampoing doux',
     ],
     bonus: 'Renfort hebdomadaire : 1,5% Citron Zest + 1% Ylang-Ylang Totum dans HV Noisette. Vitamine E ajoutée comme antioxydant.',
-    precautions: 'Citron Zest photosensibilisant — application le soir uniquement.',
+    precautions: 'Citron Zest photosensibilisant, application le soir uniquement.',
     source: 'Synergie traditionnelle revitalisante. Citron Zest : limonène tonifiant cutané documenté (Pharmacopée européenne). HV Noisette : profil pénétrant adapté au cuir chevelu',
   },
   {
@@ -1297,7 +1297,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HV Jojoba', quantite: '5 ml (2,5%)' },
       { nom: 'HE Bois de Hô', quantite: '10 gouttes (~0,25%)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '5 gouttes (~0,12%)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml) — ~0,1%' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml), ~0,1%' },
     ],
     etapes: [
       'Verser la base shampoing dans un flacon ambré',
@@ -1324,7 +1324,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Romarin à Cinéole', quantite: '20 gouttes (2%)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '15 gouttes (1,5%)' },
       { nom: 'HE Litsée Citronnée', quantite: '5 gouttes (0,5%)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger les huiles végétales dans un flacon ambré',
@@ -1357,8 +1357,8 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Laver les cheveux en massant le cuir chevelu',
       'Rincer abondamment puis appliquer le rinçage final (voir bonus)',
     ],
-    bonus: 'Rinçage final pour amplifier les reflets : mélanger 100 ml d\'Hydrolat de Camomille Romaine avec 1 cuillère à soupe de jus de citron frais. Verser sur les cheveux après le dernier rinçage à l\'eau, sans rincer. Sécher au soleil — l\'exposition solaire active les pigments et révèle les reflets dorés.',
-    precautions: 'Allergie aux astéracées (camomille) : test cutané obligatoire. Citron photosensibilisant sur la peau : éviter le contact cutané direct. Bien rincer si coulure sur le visage ou la nuque. Le rinçage final non rincé s\'applique sur la fibre capillaire — l\'exposition au soleil est l\'étape qui active les reflets, c\'est voulu. La base shampoing contient déjà son propre conservateur. Conservation 2 à 3 mois ; le rinçage final (bonus) se prépare frais à chaque utilisation, sans conservateur.',
+    bonus: 'Rinçage final pour amplifier les reflets : mélanger 100 ml d\'Hydrolat de Camomille Romaine avec 1 cuillère à soupe de jus de citron frais. Verser sur les cheveux après le dernier rinçage à l\'eau, sans rincer. Sécher au soleil, l\'exposition solaire active les pigments et révèle les reflets dorés.',
+    precautions: 'Allergie aux astéracées (camomille) : test cutané obligatoire. Citron photosensibilisant sur la peau : éviter le contact cutané direct. Bien rincer si coulure sur le visage ou la nuque. Le rinçage final non rincé s\'applique sur la fibre capillaire, l\'exposition au soleil est l\'étape qui active les reflets, c\'est voulu. La base shampoing contient déjà son propre conservateur. Conservation 2 à 3 mois ; le rinçage final (bonus) se prépare frais à chaque utilisation, sans conservateur.',
     source: 'Camomille Romaine et Citron : usages référentiels traditionnels documentés pour les reflets dorés des cheveux blonds. Hydrolat de Camomille : Pharmacopée européenne.',
   },
   {
@@ -1373,7 +1373,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HV Jojoba', quantite: '30 ml (97%)' },
       { nom: 'HE Camomille Romaine (Noble)', quantite: '12 gouttes (2%)' },
       { nom: 'HE Citron Jaune Zest', quantite: '6 gouttes (1%)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger la HV Jojoba et les HE dans un flacon ambré',
@@ -1399,7 +1399,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale d\'Argan', quantite: '15 ml (29,2%)' },
       { nom: 'HE Bois de Hô', quantite: '1,5% (15 gouttes)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger dans un flacon ambré',
@@ -1409,7 +1409,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Variante intensive : appliquer la veille au soir et garder toute la nuit (1x/semaine). Vitamine E ajoutée comme antioxydant.',
     precautions: 'Bonne tolérance générale. Test cutané préalable.',
-    source: 'HV Coco : réduit la perte de protéines capillaires jusqu\'à 39% en application avant-shampoing sur cheveux abîmés — Rele AS, Mohile RB 2003, Journal of Cosmetic Science 54(2):175-192, PMID 12715094. HV Argan : revue systématique de 22 études sur la santé capillaire — Phong VG et al. 2022, PMID 35816075. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)',
+    source: 'HV Coco : réduit la perte de protéines capillaires jusqu\'à 39% en application avant-shampoing sur cheveux abîmés, Rele AS, Mohile RB 2003, Journal of Cosmetic Science 54(2):175-192, PMID 12715094. HV Argan : revue systématique de 22 études sur la santé capillaire, Phong VG et al. 2022, PMID 35816075. Bois de Hô : alternative durable au Bois de Rose (espèce CITES)',
   },
   {
     id: 'rec_05_cheveux_cassants',
@@ -1425,7 +1425,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Romarin à Cinéole', quantite: '1% (10 gouttes)' },
       { nom: 'HE Bois de Hô', quantite: '1% (10 gouttes)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger dans un flacon ambré',
@@ -1446,19 +1446,19 @@ export const RECETTES_BIBLIOTHEQUE = [
     duree: '2 phases : 5 jours puis 10 jours',
     frequence: 'Tous les soirs pendant les 15 jours du protocole',
     ingredients: [
-      { nom: 'Phase 1 — HV Millepertuis', quantite: '50 ml (98%)' },
-      { nom: 'Phase 1 — HE Camomille Romaine (Noble)', quantite: '2% (20 gouttes)' },
-      { nom: 'Phase 1 — Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
-      { nom: 'Phase 2 — HV Millepertuis', quantite: '50 ml (97%)' },
-      { nom: 'Phase 2 — HE Camomille Romaine (Noble)', quantite: '1% (10 gouttes)' },
-      { nom: 'Phase 2 — HE Lavande Vraie', quantite: '1% (10 gouttes)' },
-      { nom: 'Phase 2 — HE Petit-Grain Bigarade', quantite: '1% (10 gouttes)' },
-      { nom: 'Phase 2 — Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Phase 1, HV Millepertuis', quantite: '50 ml (98%)' },
+      { nom: 'Phase 1, HE Camomille Romaine (Noble)', quantite: '2% (20 gouttes)' },
+      { nom: 'Phase 1, Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
+      { nom: 'Phase 2, HV Millepertuis', quantite: '50 ml (97%)' },
+      { nom: 'Phase 2, HE Camomille Romaine (Noble)', quantite: '1% (10 gouttes)' },
+      { nom: 'Phase 2, HE Lavande Vraie', quantite: '1% (10 gouttes)' },
+      { nom: 'Phase 2, HE Petit-Grain Bigarade', quantite: '1% (10 gouttes)' },
+      { nom: 'Phase 2, Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Préparer DEUX flacons ambrés séparément : un pour la Phase 1, un pour la Phase 2',
-      'PHASE 1 — Jours 1 à 5 : appliquer le flacon Phase 1 chaque soir sur le cuir chevelu. Masser doucement 2 à 3 minutes. Concentration forte pour déclencher l\'apaisement',
-      'PHASE 2 — Jours 6 à 15 : passer au flacon Phase 2. Formule plus douce, 3 actifs complémentaires. Même application chaque soir',
+      'PHASE 1, Jours 1 à 5 : appliquer le flacon Phase 1 chaque soir sur le cuir chevelu. Masser doucement 2 à 3 minutes. Concentration forte pour déclencher l\'apaisement',
+      'PHASE 2, Jours 6 à 15 : passer au flacon Phase 2. Formule plus douce, 3 actifs complémentaires. Même application chaque soir',
       'Laisser poser 30 minutes minimum (ou toute la nuit), puis laver avec un shampoing très doux',
       'IMPORTANT : Millepertuis fortement photosensibilisant. Application le soir UNIQUEMENT, jamais avant exposition au soleil',
     ],
@@ -1470,7 +1470,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     titre: 'Pelade idiopathique ou nerveuse',
     categorie: 'Cheveux',
     sousCategorie: 'Cuir chevelu',
-    indications: 'Pelade sans raison apparente ou liée au stress, après avis médical — relance la microcirculation, renforce les capillaires et le cheveu',
+    indications: 'Pelade sans raison apparente ou liée au stress, après avis médical, relance la microcirculation, renforce les capillaires et le cheveu',
     duree: '3 semaines, avec une pause d\'une semaine toutes les 3 semaines',
     frequence: 'Tous les soirs',
     ingredients: [
@@ -1478,7 +1478,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Romarin à Cinéole', quantite: '2% (20 gouttes)' },
       { nom: 'HE Citron Jaune Zest', quantite: '2% (20 gouttes)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '2% (20 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Que ce soit sans raison apparente ou dû au stress, consulter un médecin avant de commencer ce protocole',
@@ -1505,7 +1505,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Camomille Romaine (Noble)', quantite: '1% (10 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1% (10 gouttes)' },
       { nom: 'HE Pin Sylvestre', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer en massage doux sur le cuir chevelu',
@@ -1531,7 +1531,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Cèdre d\'Atlas', quantite: '1% (10 gouttes)' },
       { nom: 'HE Romarin à Cinéole', quantite: '1% (10 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer sur cuir chevelu sec, raie par raie',
@@ -1557,7 +1557,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Palmarosa', quantite: '1% (10 gouttes)' },
       { nom: 'HE Cèdre d\'Atlas', quantite: '1% (10 gouttes)' },
       { nom: 'HE Eucalyptus Radié', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer raie par raie sur cuir chevelu sec',
@@ -1583,7 +1583,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Lavande Vraie', quantite: '1% (10 gouttes)' },
       { nom: 'HE Encens Oliban', quantite: '1% (10 gouttes)' },
       { nom: 'HE Romarin à Cinéole', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'ATTENTION : Millepertuis fortement PHOTOSENSIBILISANT. Application le soir UNIQUEMENT. Ne jamais appliquer avant une exposition au soleil (délai minimum 12h)',
@@ -1596,29 +1596,29 @@ export const RECETTES_BIBLIOTHEQUE = [
   },
   {
     id: 'rec_12_poux_curatif',
-    titre: 'Poux — protocole curatif (3 âges)',
+    titre: 'Poux, protocole curatif (3 âges)',
     categorie: 'Cheveux',
     sousCategorie: 'Cuir chevelu',
     indications: 'Traite les infestations de poux et lentes',
     duree: '10 jours minimum',
     frequence: '1 application par soir pendant 10 jours',
     ingredients: [
-      { nom: 'Enfant 2-6 ans — HV Coco', quantite: '50 ml (99%)' },
-      { nom: 'Enfant 2-6 ans — HE Lavande Vraie', quantite: '~0,5% (5 gouttes)' },
-      { nom: 'Enfant 2-6 ans — HE Tea Tree', quantite: '~0,5% (5 gouttes)' },
-      { nom: 'Enfant 7-12 ans — HV Coco', quantite: '50 ml (97,5%)' },
-      { nom: 'Enfant 7-12 ans — HE Lavande Vraie', quantite: '~1% (10 gouttes)' },
-      { nom: 'Enfant 7-12 ans — HE Tea Tree', quantite: '~1% (10 gouttes)' },
-      { nom: 'Enfant 7-12 ans — HE Clou de Girofle', quantite: '~0,5% (5 gouttes)' },
-      { nom: 'Adulte — HV Coco', quantite: '50 ml (95,2%)' },
-      { nom: 'Adulte — HE Lavande Aspic', quantite: '~1,4% (15 gouttes)' },
-      { nom: 'Adulte — HE Tea Tree', quantite: '~1,4% (15 gouttes)' },
-      { nom: 'Adulte — HE Clou de Girofle', quantite: '~1% (10 gouttes)' },
-      { nom: 'Adulte — HE Romarin à Cinéole', quantite: '~1% (10 gouttes)' },
+      { nom: 'Enfant 2-6 ans, HV Coco', quantite: '50 ml (99%)' },
+      { nom: 'Enfant 2-6 ans, HE Lavande Vraie', quantite: '~0,5% (5 gouttes)' },
+      { nom: 'Enfant 2-6 ans, HE Tea Tree', quantite: '~0,5% (5 gouttes)' },
+      { nom: 'Enfant 7-12 ans, HV Coco', quantite: '50 ml (97,5%)' },
+      { nom: 'Enfant 7-12 ans, HE Lavande Vraie', quantite: '~1% (10 gouttes)' },
+      { nom: 'Enfant 7-12 ans, HE Tea Tree', quantite: '~1% (10 gouttes)' },
+      { nom: 'Enfant 7-12 ans, HE Clou de Girofle', quantite: '~0,5% (5 gouttes)' },
+      { nom: 'Adulte, HV Coco', quantite: '50 ml (95,2%)' },
+      { nom: 'Adulte, HE Lavande Aspic', quantite: '~1,4% (15 gouttes)' },
+      { nom: 'Adulte, HE Tea Tree', quantite: '~1,4% (15 gouttes)' },
+      { nom: 'Adulte, HE Clou de Girofle', quantite: '~1% (10 gouttes)' },
+      { nom: 'Adulte, HE Romarin à Cinéole', quantite: '~1% (10 gouttes)' },
     ],
     etapes: [
       'Choisir UNIQUEMENT la formule correspondant à l\'âge de la personne à traiter. Ne pas mélanger les formules',
-      '2-6 ans : dosage très doux, 2 HE seulement (Lavande Vraie uniquement). 7-12 ans : concentration légèrement renforcée, Clou de Girofle ajouté (Lavande Vraie — pas Aspic). Adulte : formule complète à 4 HE',
+      '2-6 ans : dosage très doux, 2 HE seulement (Lavande Vraie uniquement). 7-12 ans : concentration légèrement renforcée, Clou de Girofle ajouté (Lavande Vraie, pas Aspic). Adulte : formule complète à 4 HE',
       'Pré-traitement au savon noir sur cheveux secs (15 minutes)',
       'Appliquer la synergie choisie sur tout le cuir chevelu, jusqu\'aux pointes',
       'Couvrir d\'un bonnet plastique 2 à 3 heures pour asphyxier les parasites',
@@ -1651,7 +1651,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Pas besoin de rincer',
     ],
     bonus: 'Recette RESPEKTUS® : usage préventif quotidien en période d\'épidémie scolaire.',
-    precautions: 'Réservé aux enfants de 3 ans minimum. Lavande Vraie utilisée ici (pas Lavande Aspic — camphrée, interdite moins de 7 ans). Tea Tree et Géranium contre-indiqués grossesse, allaitement.',
+    precautions: 'Réservé aux enfants de 3 ans minimum. Lavande Vraie utilisée ici (pas Lavande Aspic, camphrée, interdite moins de 7 ans). Tea Tree et Géranium contre-indiqués grossesse, allaitement.',
     source: 'Trongtokit Y et al. (2005) - Phytother Res 19(4):303-309 - PubMed PMID 16041723 : étude comparative de répulsivité de 38 HE. Géraniol et linalol : composants répulsifs validés',
   },
   {
@@ -1676,7 +1676,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette RESPEKTUS® compatible grossesse, allaitement et nourrissons (zéro HE).',
     precautions: 'Aucune contre-indication. Ne pas laisser dans les yeux.',
-    source: 'Essai clinique randomisé sur un pédiculicide à base d\'huile d\'olive saponifiée : efficacité de 76,2% à 14 jours chez 45 enfants de 5 à 15 ans — SEMERGEN 2017, PMID 27255407. Méthode sans HE adaptée aux populations sensibles',
+    source: 'Essai clinique randomisé sur un pédiculicide à base d\'huile d\'olive saponifiée : efficacité de 76,2% à 14 jours chez 45 enfants de 5 à 15 ans, SEMERGEN 2017, PMID 27255407. Méthode sans HE adaptée aux populations sensibles',
   },
   {
     id: 'rec_15_cicatrisation_cuir_chevelu',
@@ -1692,7 +1692,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Lavande Vraie', quantite: '1,5% (15 gouttes)' },
       { nom: 'HE Tea Tree', quantite: '1% (10 gouttes)' },
       { nom: 'HE Hélichryse Italienne', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer localement avec un coton-tige',
@@ -1719,7 +1719,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Cyprès Toujours Vert', quantite: '2% (20 gouttes)' },
       { nom: 'HE Lentisque Pistachier', quantite: '2% (20 gouttes)' },
       { nom: 'HE Menthe Poivrée', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Masser des chevilles vers les cuisses (sens du retour veineux)',
@@ -1739,7 +1739,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     duree: 'Selon besoin',
     frequence: '2 à 3 fois par semaine maximum',
     ingredients: [
-      { nom: 'Base neutre dispersante, Solubol ou Polysorbate 80', quantite: '1 cuillère à soupe (ou lait entier — acceptable ; miel en dernier recours, dispersion imparfaite)' },
+      { nom: 'Base neutre dispersante, Solubol ou Polysorbate 80', quantite: '1 cuillère à soupe (ou lait entier, acceptable ; miel en dernier recours, dispersion imparfaite)' },
       { nom: 'HE Lavande Vraie', quantite: '5 gouttes' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '3 gouttes' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '2 gouttes' },
@@ -1768,7 +1768,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Macadamia', quantite: '1 cuillère à soupe' },
       { nom: 'HE Pamplemousse Zest', quantite: '5 gouttes' },
       { nom: 'HE Lavande Vraie', quantite: '3 gouttes' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger les ingrédients dans un bocal en verre',
@@ -1794,7 +1794,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale d\'Argan', quantite: '4 ml (39%)' },
       { nom: 'HE Citron Jaune Zest', quantite: '2% (4 gouttes)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '1% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Préparer dans un flacon roll-on de 10 ml',
@@ -1823,18 +1823,18 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Vitamine E (Tocophérol)', quantite: '1 goutte (~5%)' },
     ],
     etapes: [
-      'ADULTE UNIQUEMENT. Zona principalement après 60 ans — toujours sous suivi médical. Les HE NE REMPLACENT PAS le traitement antiviral (aciclovir/valaciclovir) indispensable',
+      'ADULTE UNIQUEMENT. Zona principalement après 60 ans, toujours sous suivi médical. Les HE NE REMPLACENT PAS le traitement antiviral (aciclovir/valaciclovir) indispensable',
       'Préparer le mélange dans un flacon de 1 ml (total 21 gouttes)',
-      'Appliquer pur localement sur le trajet nerveux atteint. Application strictement localisée — protéger la peau saine autour',
+      'Appliquer pur localement sur le trajet nerveux atteint. Application strictement localisée, protéger la peau saine autour',
       'Renouveler 6 fois par jour pendant 48 heures, puis évaluer avec le médecin',
     ],
-    bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® comme antioxydant pour protéger le Millepertuis (absente de la formule originale de la thèse) — utile si le flacon est conservé au-delà des 48h prévues.',
-    precautions: 'Réservé ADULTE (zona principalement après 60 ans). ZONA OPHTALMIQUE (atteinte de l\'oeil, rougeur ou douleur sur le trajet ophtalmique) : urgence médicale absolue, appeler le 15 immédiatement. Menthe Poivrée interdite grossesse, allaitement, épilepsie, hypertension. Niaouli et Ravintsara contre-indiqués grossesse et allaitement. Millepertuis photosensibilisant et interactions médicamenteuses possibles (par précaution chez patients sous anticoagulants, immunosuppresseurs ou contraceptifs oraux). L\'aromathérapie NE GUÉRIT PAS le zona — le traitement médical antiviral (aciclovir/valaciclovir) reste indispensable. Consulter un médecin.',
-    source: 'Pierre A. (2016) — L\'aromathérapie adaptée aux pathologies dermatologiques de comptoir — Thèse Université de Lorraine, HAL hal-01732967, p.108',
+    bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® comme antioxydant pour protéger le Millepertuis (absente de la formule originale de la thèse), utile si le flacon est conservé au-delà des 48h prévues.',
+    precautions: 'Réservé ADULTE (zona principalement après 60 ans). ZONA OPHTALMIQUE (atteinte de l\'oeil, rougeur ou douleur sur le trajet ophtalmique) : urgence médicale absolue, appeler le 15 immédiatement. Menthe Poivrée interdite grossesse, allaitement, épilepsie, hypertension. Niaouli et Ravintsara contre-indiqués grossesse et allaitement. Millepertuis photosensibilisant et interactions médicamenteuses possibles (par précaution chez patients sous anticoagulants, immunosuppresseurs ou contraceptifs oraux). L\'aromathérapie NE GUÉRIT PAS le zona, le traitement médical antiviral (aciclovir/valaciclovir) reste indispensable. Consulter un médecin.',
+    source: 'Pierre A. (2016), L\'aromathérapie adaptée aux pathologies dermatologiques de comptoir, Thèse Université de Lorraine, HAL hal-01732967, p.108',
   },
   {
     id: 'rec_pierre_verrues_forte',
-    titre: 'Anti-verrues — synergie forte',
+    titre: 'Anti-verrues, synergie forte',
     categorie: 'Corps',
     sousCategorie: 'Pieds',
     indications: 'Synergie antivirale dermocaustique puissante pour verrues vulgaires et plantaires',
@@ -1849,19 +1849,19 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Vitamine E (Tocophérol)', quantite: '1 goutte (~17%)' },
     ],
     etapes: [
-      'AVERTISSEMENT : 4 des 5 HE sont DERMOCAUSTIQUES (brûlent la peau saine). Application STRICTEMENT localisée sur la verrue — jamais sur la peau autour, jamais sur le visage, jamais pur sur grande surface. INTERDIT enfants de moins de 12 ans, grossesse, allaitement',
+      'AVERTISSEMENT : 4 des 5 HE sont DERMOCAUSTIQUES (brûlent la peau saine). Application STRICTEMENT localisée sur la verrue, jamais sur la peau autour, jamais sur le visage, jamais pur sur grande surface. INTERDIT enfants de moins de 12 ans, grossesse, allaitement',
       'Protéger IMPÉRATIVEMENT la peau saine autour avec vernis transparent ou pansement adhésif percé (ne laisser que la verrue exposée)',
       'Appliquer 1 seule goutte au coton-tige, directement sur la verrue uniquement',
       'Recouvrir d\'un pansement toute la journée. En cas de brûlure ou rougeur : arrêter IMMÉDIATEMENT et appliquer HV neutre (jamais d\'eau)',
       'Renouveler 2 fois par jour pendant 3 à 4 semaines. Faire une pause si irritation',
     ],
-    bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Alternative plus douce disponible (synergie verrues douce). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale) : ⚠️ sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule dosée au goutte-à-goutte pour son effet dermocaustique ciblé — à retirer si l\'efficacité semble réduite.',
-    precautions: 'TRÈS DERMOCAUSTIQUE — protéger impérativement la peau saine autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. Ne jamais utiliser sur les verrues génitales (consulter un médecin). Contre-indiqué asthmatiques et épileptiques. Tester en pli du coude 24h avant la première application. En cas de brûlure : arrêter immédiatement et appliquer une HV neutre (jamais d\'eau).',
-    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.153 (Exemple 1)',
+    bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Alternative plus douce disponible (synergie verrues douce). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale) : ⚠️ sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule dosée au goutte-à-goutte pour son effet dermocaustique ciblé, à retirer si l\'efficacité semble réduite.',
+    precautions: 'TRÈS DERMOCAUSTIQUE, protéger impérativement la peau saine autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. Ne jamais utiliser sur les verrues génitales (consulter un médecin). Contre-indiqué asthmatiques et épileptiques. Tester en pli du coude 24h avant la première application. En cas de brûlure : arrêter immédiatement et appliquer une HV neutre (jamais d\'eau).',
+    source: 'Pierre A. (2016), Thèse Université de Lorraine, HAL hal-01732967, p.153 (Exemple 1)',
   },
   {
     id: 'rec_pierre_verrues_douce',
-    titre: 'Anti-verrues — synergie douce',
+    titre: 'Anti-verrues, synergie douce',
     categorie: 'Corps',
     sousCategorie: 'Pieds',
     indications: 'Alternative plus douce pour verrues vulgaires et plantaires, mieux tolérée que la synergie forte',
@@ -1876,12 +1876,12 @@ export const RECETTES_BIBLIOTHEQUE = [
     etapes: [
       'Préparer le mélange dans un flacon de 5 ml (total 101 gouttes)',
       'Appliquer le mélange pur sur la verrue au coton-tige',
-      'Application strictement ciblée — protéger la peau saine',
+      'Application strictement ciblée, protéger la peau saine',
       'Renouveler matin, soir et après la douche pendant 4 à 6 semaines',
     ],
     bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale), sans fonction antioxydante réelle ici (pas de corps gras à protéger).',
     precautions: 'Menthe Poivrée interdite enfants de moins de 7 ans, grossesse, allaitement, épilepsie, hypertension. Tea Tree à éviter pendant la grossesse. Tester en pli du coude avant la première application.',
-    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.153 (Exemple 2)',
+    source: 'Pierre A. (2016), Thèse Université de Lorraine, HAL hal-01732967, p.153 (Exemple 2)',
   },
   {
     id: 'rec_pierre_brulures',
@@ -1908,7 +1908,7 @@ export const RECETTES_BIBLIOTHEQUE = [
     ],
     bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). La formule combine propriétés cicatrisantes, antidouleur et désinfectantes. Vitamine E ajoutée par RESPEKTUS® comme antioxydant pour le Millepertuis (absente de la formule originale), utile vu la durée "selon besoin" jusqu\'à cicatrisation complète.',
     precautions: 'Brûlures de 1er degré UNIQUEMENT (peau rouge intacte, sans cloque). Ne jamais appliquer sur brûlure ouverte ou avec cloque éclatée (risque de surinfection). Pour 2e/3e degré : urgences médicales obligatoires. Brûlure étendue ou profonde : APPEL URGENT au 15 (SAMU). Lavande Aspic interdite enfants de moins de 6 ans et grossesse 1er trimestre. Millepertuis photosensibilisant et interactions médicamenteuses possibles par précaution (anticoagulants, immunosuppresseurs) : application le soir, couvrir la zone avant exposition solaire (délai 8 à 12h).',
-    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.158 (Exemple 1)',
+    source: 'Pierre A. (2016), Thèse Université de Lorraine, HAL hal-01732967, p.158 (Exemple 1)',
   },
   {
     id: 'rec_pierre_onychomycose',
@@ -1932,9 +1932,9 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Appliquer 3 gouttes du mélange strictement sur l\'ongle atteint',
       'Renouveler 3 fois par jour pendant 3 semaines minimum',
     ],
-    bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale), sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule concentrée en HE dermocaustiques dosée précisément par la thèse — à retirer si l\'efficacité semble réduite.',
+    bonus: 'Recette de référence académique d\'après Pierre A. 2016 (thèse de pharmacie). Vitamine E ajoutée par RESPEKTUS® (absente de la formule originale), sans fonction antioxydante réelle ici (pas de corps gras à protéger) et dilue une formule concentrée en HE dermocaustiques dosée précisément par la thèse, à retirer si l\'efficacité semble réduite.',
     precautions: 'Cannelle de Chine TRÈS DERMOCAUSTIQUE : appliquer strictement sur l\'ongle, jamais sur la peau autour. INTERDIT enfants de moins de 12 ans, grossesse, allaitement. En cas de rougeur ou brûlure de la peau autour : arrêter et diluer dans HV Calophylle 50/50. Onychomycose persistante après 3 semaines : consultation médicale (traitement antifongique oral parfois nécessaire).',
-    source: 'Pierre A. (2016) — Thèse Université de Lorraine, HAL hal-01732967, p.149 (Exemple 2)',
+    source: 'Pierre A. (2016), Thèse Université de Lorraine, HAL hal-01732967, p.149 (Exemple 2)',
   },
   {
     id: 'rec_38_corps_dynamisant',
@@ -1949,7 +1949,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Romarin à Cinéole', quantite: '1% (10 gouttes)' },
       { nom: 'HE Pin Sylvestre', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Eucalyptus Radié', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer le matin après la douche',
@@ -1974,7 +1974,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Petit-Grain Bigarade', quantite: '1% (10 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer le soir en massage doux',
@@ -1987,7 +1987,7 @@ export const RECETTES_BIBLIOTHEQUE = [
   },
   {
     id: 'rec_40_corps_dodo',
-    titre: 'Corps Dodo — sommeil profond',
+    titre: 'Corps Dodo, sommeil profond',
     categorie: 'Corps',
     sousCategorie: 'Bien-être',
     indications: 'Favorise l\'endormissement profond',
@@ -1999,7 +1999,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Lavande Vraie', quantite: '1% (10 gouttes)' },
       { nom: 'HE Marjolaine à Coquilles', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Camomille Romaine (Noble)', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 30 à 60 minutes avant le coucher',
@@ -2026,7 +2026,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Sauge Sclarée', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Ylang-Ylang Totum', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Patchouli', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer en massage corporel sensuel',
@@ -2054,7 +2054,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Cèdre d\'Atlas', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Vétiver', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Patchouli', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer en massage corporel',
@@ -2062,9 +2062,9 @@ export const RECETTES_BIBLIOTHEQUE = [
       'JAMAIS sur les muqueuses',
       'Composition premium boisée orientale',
     ],
-    bonus: 'Recette RESPEKTUS® bonus — composition masculine premium 6 HE. Vitamine E ajoutée comme antioxydant.',
+    bonus: 'Recette RESPEKTUS® bonus, composition masculine premium 6 HE. Vitamine E ajoutée comme antioxydant.',
     precautions: 'Sauge Sclarée et Cèdre contre-indiqués mastoses et cancers hormono-dépendants. Formule réservée à l\'usage adulte.',
-    source: 'Heuberger E et al. (2006) : Bois de Santal et arousal. Lee KB et al. (2014) : Sauge Sclarée et cortisol. HE Cèdre d\'Atlas : effet sédatif du cédrol par inhalation — Kagawa D et al. 2003, PMID 12898420. HE Vétiver : effet anxiolytique comparable au diazépam en modèle animal — Saiyudthong S et al. 2015, PMID 25553641. HE Patchouli : activité de type antidépressive via élévation de la dopamine — Haerani A et al. 2022, PMID 35631434',
+    source: 'Heuberger E et al. (2006) : Bois de Santal et arousal. Lee KB et al. (2014) : Sauge Sclarée et cortisol. HE Cèdre d\'Atlas : effet sédatif du cédrol par inhalation, Kagawa D et al. 2003, PMID 12898420. HE Vétiver : effet anxiolytique comparable au diazépam en modèle animal, Saiyudthong S et al. 2015, PMID 25553641. HE Patchouli : activité de type antidépressive via élévation de la dopamine, Haerani A et al. 2022, PMID 35631434',
   },
   {
     id: 'rec_43_peau_seche_corps',
@@ -2081,7 +2081,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Jojoba', quantite: '10 ml (20,4%)' },
       { nom: 'HE Bois de Hô', quantite: '1% (10 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Faire fondre le beurre de Karité au bain-marie',
@@ -2090,7 +2090,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Appliquer après la douche en massage',
     ],
     precautions: 'Bonne tolérance générale. Test cutané préalable. Vitamine E ajoutée comme antioxydant.',
-    source: 'HV Jojoba : augmentation du collagène III et de l\'acide hyaluronique, réduction de l\'inflammation cutanée — Tietel Z et al. 2024, Frontiers in Pharmacology, PMID 38344180. HV Argan : amélioration de l\'élasticité cutanée — Boucetta KQ et al. 2015, PMID 25673976. Beurre de Karité : revue clinique sur les propriétés hydratantes — Poljšak N, Kočevar Glavač N 2022, PMC9083541',
+    source: 'HV Jojoba : augmentation du collagène III et de l\'acide hyaluronique, réduction de l\'inflammation cutanée, Tietel Z et al. 2024, Frontiers in Pharmacology, PMID 38344180. HV Argan : amélioration de l\'élasticité cutanée, Boucetta KQ et al. 2015, PMID 25673976. Beurre de Karité : revue clinique sur les propriétés hydratantes, Poljšak N, Kočevar Glavač N 2022, PMC9083541',
   },
   {
     id: 'rec_44_peau_atopique_corps',
@@ -2107,7 +2107,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Jojoba', quantite: '17 ml (33%)' },
       { nom: 'HE Camomille Romaine (Noble)', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Faire fondre le Karité au bain-marie',
@@ -2131,7 +2131,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale d\'Argan', quantite: '5 g (19,9%)' },
       { nom: 'Cire d\'abeille blanche', quantite: '2 g (8,5%)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '~1% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Faire fondre cire et Karité au bain-marie',
@@ -2140,7 +2140,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Laisser durcir à température ambiante',
     ],
     precautions: 'Géranium déconseillé pendant toute la grossesse sauf avis d\'un professionnel qualifié. Conservation 6 mois. Vitamine E ajoutée comme antioxydant.',
-    source: 'Beurre de Karité : revue clinique sur les propriétés hydratantes — Poljšak N, Kočevar Glavač N 2022, PMC9083541. HV Argan : amélioration de l\'élasticité cutanée — Boucetta KQ et al. 2015, PMID 25673976. Cire d\'abeille : protection de la barrière cutanée — Nong K et al. 2023, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée — Ebrahimzadeh Attari V et al., PMID 27853689',
+    source: 'Beurre de Karité : revue clinique sur les propriétés hydratantes, Poljšak N, Kočevar Glavač N 2022, PMC9083541. HV Argan : amélioration de l\'élasticité cutanée, Boucetta KQ et al. 2015, PMID 25673976. Cire d\'abeille : protection de la barrière cutanée, Nong K et al. 2023, PMID 36999457. HE Géranium Rosat Bourbon : amélioration de la cicatrisation confirmée, Ebrahimzadeh Attari V et al., PMID 27853689',
   },
   {
     id: 'rec_46_pieds_anti_mycoses',
@@ -2155,7 +2155,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Tea Tree', quantite: '1% (6 gouttes)' },
       { nom: 'HE Palmarosa', quantite: '1% (6 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1% (6 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (1 goutte — 0,05 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (1 goutte, 0,05 ml)' },
     ],
     etapes: [
       'Bien sécher les pieds, surtout entre les orteils',
@@ -2179,7 +2179,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Macérât huileux de Carotte', quantite: '15 ml (30%)' },
       { nom: 'HE Lavande Aspic', quantite: '1% (10 gouttes)' },
       { nom: 'HE Camomille Romaine (Noble)', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer le soir après la douche',
@@ -2188,7 +2188,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Complémentaire avec le gel après-soleil (recette 28)',
     ],
     precautions: 'Lavande Aspic contre-indiquée grossesse, allaitement, enfants moins de 7 ans, épilepsie. Pas d\'exposition solaire après application. Vitamine E ajoutée comme antioxydant.',
-    source: 'HV Calendula : revue systématique confirmant l\'effet cicatrisant sur les plaies — Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé — Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632',
+    source: 'HV Calendula : revue systématique confirmant l\'effet cicatrisant sur les plaies, Givol O et al. 2019, Wound Repair and Regeneration, PMID 31145533. HE Lavande Aspic : effet antioxydant et cicatrisant confirmé, Ben Djemaa FG et al. 2016, Journal of Tissue Viability 25(4):193-200, PMID 27769632',
   },
   {
     id: 'rec_48_apres_epilation',
@@ -2204,7 +2204,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Sauge Sclarée', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Lavande Aspic', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Camomille Romaine (Noble)', quantite: '0,5% (5 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer immédiatement après l\'épilation',
@@ -2229,7 +2229,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Cèdre d\'Atlas', quantite: '2% (20 gouttes)' },
       { nom: 'HE Cyprès Toujours Vert', quantite: '2% (20 gouttes)' },
       { nom: 'HE Citron Jaune Zest', quantite: '2% (20 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Masser énergiquement en mouvements ascendants après la douche',
@@ -2255,7 +2255,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Hélichryse Italienne', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '1,5% (15 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Appliquer matin et soir sur les vergetures',
@@ -2281,7 +2281,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Cire d\'abeille blanche', quantite: '5 g (9,1%)' },
       { nom: 'HE Hélichryse Italienne', quantite: '0,5% (5 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1% (10 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes — 0,15 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,5% (3 gouttes, 0,15 ml)' },
     ],
     etapes: [
       'Faire fondre cire et Karité au bain-marie',
@@ -2306,7 +2306,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Cire d\'abeille blanche', quantite: '5 g (9,1%)' },
       { nom: 'HE Hélichryse Italienne', quantite: '1% (10 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '1,5% (15 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Faire fondre cire et Karité au bain-marie',
@@ -2334,7 +2334,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Ylang-Ylang Totum', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Patchouli', quantite: '0,5% (3 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger dans un flacon en verre teinté',
@@ -2385,7 +2385,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Glycérine végétale', quantite: '5 ml (2,5%)' },
       { nom: 'HE Néroli', quantite: '1% (40 gouttes)' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '1% (40 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml) — ~0,1%' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml), ~0,1%' },
     ],
     etapes: [
       'Mélanger Jojoba, glycérine, HE et Vitamine E',
@@ -2412,7 +2412,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Romarin à Cinéole', quantite: '0,7% (28 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,5% (20 gouttes)' },
       { nom: 'HE Litsée Citronnée', quantite: '0,5% (20 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml) — ~0,1%' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml), ~0,1%' },
     ],
     etapes: [
       'Mélanger Jojoba, glycérine, HE et Vitamine E',
@@ -2440,7 +2440,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Cèdre d\'Atlas', quantite: '0,8% (5 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Lavande Vraie', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 2 à 3 gouttes le matin après le rasage',
@@ -2465,7 +2465,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Encens Oliban', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Cèdre d\'Atlas', quantite: '0,3% (2 gouttes)' },
       { nom: 'HE Géranium Rosat Bourbon', quantite: '~0,15% (1 goutte)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Appliquer 3 à 4 gouttes le soir sur peau propre',
@@ -2491,7 +2491,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale d\'Argan', quantite: '5 ml (16,5%)' },
       { nom: 'HE Cèdre d\'Atlas', quantite: '0,7% (4 gouttes)' },
       { nom: 'HE Bay Saint-Thomas', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger dans un flacon ambré pipette',
@@ -2500,7 +2500,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       'Insister sur les pointes',
     ],
     precautions: 'Bay Saint-Thomas potentiellement irritant : test cutané obligatoire. Formule réservée adultes. Vitamine E ajoutée comme antioxydant.',
-    source: 'HV Ricin : acide ricinoléique, mécanisme d\'action sur la PGD2 (prostaglandine impliquée dans le cycle pilaire) documenté — Girdler K et al. 2026, Cureus, PMID 41822610. Bay Saint-Thomas : usage traditionnel pour stimulation du cuir chevelu',
+    source: 'HV Ricin : acide ricinoléique, mécanisme d\'action sur la PGD2 (prostaglandine impliquée dans le cycle pilaire) documenté, Girdler K et al. 2026, Cureus, PMID 41822610. Bay Saint-Thomas : usage traditionnel pour stimulation du cuir chevelu',
   },
   {
     id: 'rec_60_apres_rasage',
@@ -2516,7 +2516,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'Huile végétale de Jojoba', quantite: '10 ml (32,7%)' },
       { nom: 'HE Lavande Vraie', quantite: '0,7% (4 gouttes)' },
       { nom: 'HE Hélichryse Italienne', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,3% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Faire fondre le Karité au bain-marie',
@@ -2542,7 +2542,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Vétiver', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Patchouli', quantite: '0,5% (3 gouttes)' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '0,3% (2 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes — 0,1 ml)' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '~0,2% (2 gouttes, 0,1 ml)' },
     ],
     etapes: [
       'Mélanger dans un flacon en verre teinté',
@@ -2594,7 +2594,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Eucalyptus Radié', quantite: '0,5% (20 gouttes)' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '0,4% (16 gouttes)' },
       { nom: 'HE Gingembre', quantite: '0,2% (8 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml) — ~0,1%' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml), ~0,1%' },
     ],
     etapes: [
       'Mélanger Jojoba, glycérine, HE et Vitamine E',
@@ -2621,7 +2621,7 @@ export const RECETTES_BIBLIOTHEQUE = [
       { nom: 'HE Romarin à Cinéole', quantite: '1% (40 gouttes)' },
       { nom: 'HE Cèdre d\'Atlas', quantite: '0,75% (30 gouttes)' },
       { nom: 'HE Petit-Grain Bigarade', quantite: '0,5% (20 gouttes)' },
-      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml) — ~0,1%' },
+      { nom: 'Vitamine E (Tocophérol)', quantite: '4 gouttes (0,2 ml), ~0,1%' },
     ],
     etapes: [
       'Mélanger Jojoba, glycérine, HE et Vitamine E',
